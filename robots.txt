@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/sitemap.xml

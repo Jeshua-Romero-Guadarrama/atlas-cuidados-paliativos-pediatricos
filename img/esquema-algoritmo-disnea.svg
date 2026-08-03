@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img"
+     aria-label="Secuencia de actuacion ante la disnea">
+  <title>Secuencia de actuación ante la disnea</title>
+  <desc>Esquema propio. Autor: Jeshua Romero Guadarrama.</desc>
+  <style>
+    .fondo { fill: #faf8fd; }
+    .txt   { fill: #1e1830; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt2  { fill: #55496b; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt3  { fill: #837792; font-family: "Segoe UI", system-ui, sans-serif; }
+    .caja  { fill: #ffffff; stroke: #e5dff0; }
+    .verde { fill: #dcfce7; stroke: #15803d; }
+    .lila  { fill: #ede9fe; stroke: #6d4aa8; }
+    .ambar { fill: #fef3c7; stroke: #b45309; }
+    .rojo  { fill: #ffe4e9; stroke: #be123c; }
+    .flecha{ stroke: #9b7ede; }
+    @media (prefers-color-scheme: dark) {
+      .fondo { fill: #231c3b; }
+      .txt   { fill: #efe9f8; }
+      .txt2  { fill: #b6a9cd; }
+      .txt3  { fill: #8b7da3; }
+      .caja  { fill: #1c1630; stroke: #33294f; }
+      .verde { fill: #0d3320; stroke: #4ade80; }
+      .lila  { fill: #322657; stroke: #b79bf0; }
+      .ambar { fill: #3a2a09; stroke: #fcd34d; }
+      .rojo  { fill: #3d1220; stroke: #fda4b8; }
+      .flecha{ stroke: #b79bf0; }
+    }
+  </style>
+  <defs>
+    <marker id="p3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9b7ede"/>
+    </marker>
+  </defs>
+
+  <rect class="fondo" width="640" height="430" rx="12"/>
+
+  <text class="txt" x="320" y="34" font-size="16" font-weight="700" text-anchor="middle">El niño refiere falta de aire</text>
+  <text class="txt3" x="320" y="54" font-size="12.5" text-anchor="middle" font-style="italic">La saturación no mide la disnea: se trata lo que el niño siente</text>
+
+  <!-- Paso 1 -->
+  <rect class="verde" x="64" y="72" width="512" height="60" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="84" y="98" font-size="14" font-weight="700">1 · Aire en la cara</text>
+  <text class="txt2" x="84" y="119" font-size="13">Ventilador de mano o ventana abierta. Actúa en segundos y no tiene efectos adversos</text>
+
+  <!-- Paso 2 -->
+  <rect class="caja" x="64" y="146" width="512" height="60" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="84" y="172" font-size="14" font-weight="700">2 · Medidas ambientales</text>
+  <text class="txt2" x="84" y="193" font-size="13">Posición incorporada, ropa holgada, ambiente fresco, menos gente en la habitación</text>
+
+  <!-- Paso 3 -->
+  <rect class="lila" x="64" y="220" width="512" height="72" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="84" y="246" font-size="14" font-weight="700">3 · Morfina</text>
+  <text class="txt2" x="84" y="267" font-size="13">Sin opioide previo: 0.1 mg/kg VO o 0.05 mg/kg SC cada 4 h</text>
+  <text class="txt2" x="84" y="285" font-size="13">Con opioide previo: subir la dosis diaria entre un 25 y un 50 por ciento</text>
+
+  <!-- Paso 4 -->
+  <rect class="ambar" x="64" y="306" width="248" height="66" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="84" y="332" font-size="14" font-weight="700">4a · Si hay pánico</text>
+  <text class="txt2" x="84" y="353" font-size="13">Midazolam o lorazepam,</text>
+  <text class="txt2" x="84" y="369" font-size="13">siempre junto al opioide</text>
+
+  <rect class="caja" x="328" y="306" width="248" height="66" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="348" y="332" font-size="14" font-weight="700">4b · Causa tratable</text>
+  <text class="txt2" x="348" y="353" font-size="13">Derrame, anemia, infección,</text>
+  <text class="txt2" x="348" y="369" font-size="13">congestión, broncoespasmo</text>
+
+  <!-- Refractaria -->
+  <rect class="rojo" x="64" y="386" width="512" height="34" rx="8" stroke-width="1.6"/>
+  <text class="txt" x="320" y="408" font-size="13" font-weight="600" text-anchor="middle">Si es refractaria pese a todo: consultar equipo especializado y valorar sedación paliativa</text>
+
+  <path class="flecha" d="M320 132 L320 142" stroke-width="2" marker-end="url(#p3)"/>
+  <path class="flecha" d="M320 206 L320 216" stroke-width="2" marker-end="url(#p3)"/>
+  <path class="flecha" d="M320 292 L320 302" stroke-width="2" marker-end="url(#p3)"/>
+</svg>

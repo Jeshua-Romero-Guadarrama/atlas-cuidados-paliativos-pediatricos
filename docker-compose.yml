@@ -1,0 +1,60 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: atlas-cpp-mongo
+    restart: unless-stopped
+    ports:
+      # 27018 en el equipo para no chocar con el MongoDB del atlas de radiologia
+      - "27018:27017"
+    volumes:
+      - datos_mongo_cpp:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  app:
+    build: .
+    container_name: atlas-cpp-app
+    restart: unless-stopped
+    ports:
+      # 8082 en el equipo porque el 8081 lo usa el atlas de radiologia
+      - "8082:3000"
+    volumes:
+      # Todo lo que se edita a mano se monta desde el equipo: asi, al cambiar
+      # un JSON, un SVG, una hoja de estilo o un modulo de JavaScript, basta
+      # recargar el navegador y no hace falta reconstruir la imagen.
+      - ./data:/app/data:ro
+      - ./img:/app/img:ro
+      - ./css:/app/css:ro
+      - ./js:/app/js:ro
+      - ./index.html:/app/index.html:ro
+      - ./manifest.webmanifest:/app/manifest.webmanifest:ro
+      - ./sw.js:/app/sw.js:ro
+      - ./paleta.config.json:/app/paleta.config.json:ro
+      # Las paginas estaticas y los archivos de publicacion tambien se montan,
+      # para que el contenedor sirva lo mismo que GitHub Pages sin reconstruir
+      - ./sintomas:/app/sintomas:ro
+      - ./farmacos:/app/farmacos:ro
+      - ./escalas:/app/escalas:ro
+      - ./calculadoras:/app/calculadoras:ro
+      - ./comunicacion:/app/comunicacion:ro
+      - ./temas:/app/temas:ro
+      - ./casos:/app/casos:ro
+      - ./404.html:/app/404.html:ro
+      - ./sitemap.xml:/app/sitemap.xml:ro
+      - ./robots.txt:/app/robots.txt:ro
+      - ./portada.svg:/app/portada.svg:ro
+      - ./seo.json:/app/seo.json:ro
+    environment:
+      MONGO_URI: mongodb://mongo:27017
+      MONGO_DB: atlas_cuidados_paliativos_pediatricos
+      PORT: 3000
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+volumes:
+  datos_mongo_cpp:

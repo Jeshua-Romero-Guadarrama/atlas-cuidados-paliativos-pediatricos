@@ -1,0 +1,213 @@
+/*
+ * Estilo de las páginas estáticas del atlas.
+ * Estas páginas existen para que los buscadores encuentren el contenido, que en la aplicación se carga con JavaScript.
+ * Se mantienen aparte y sin dependencias, de modo que carguen deprisa y no se rompan al cambiar la aplicación.
+ * Todo, incluidos los tokens, vive bajo el ámbito .seo-pagina, de modo que
+ * esta hoja nunca puede pisar la paleta de la aplicación aunque se carguen juntas.
+ */
+
+.seo-pagina {
+  --marca: #6a4bab;
+  --tinta: #16202c;
+  --tinta-2: #4a5a6a;
+  --tinta-3: #7b8b9a;
+  --fondo: #ffffff;
+  --superficie: #f6f8fb;
+  --borde: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .seo-pagina {
+    --tinta: #e8eef6;
+    --tinta-2: #a7b6c9;
+    --tinta-3: #7688a0;
+    --fondo: #0d1520;
+    --superficie: #151f2e;
+    --borde: #253345;
+  }
+}
+
+/* El tema elegido en la aplicación se guarda en localStorage y un guion de
+   arranque lo escribe en data-tema. Con valor guardado, esa elección manda
+   sobre la preferencia del sistema, en los dos sentidos. */
+:root[data-tema="oscuro"] .seo-pagina {
+  --tinta: #e8eef6;
+  --tinta-2: #a7b6c9;
+  --tinta-3: #7688a0;
+  --fondo: #0d1520;
+  --superficie: #151f2e;
+  --borde: #253345;
+}
+
+:root[data-tema="claro"] .seo-pagina {
+  --tinta: #16202c;
+  --tinta-2: #4a5a6a;
+  --tinta-3: #7b8b9a;
+  --fondo: #ffffff;
+  --superficie: #f6f8fb;
+  --borde: #e2e8f0;
+}
+
+.seo-pagina, .seo-pagina * { margin: 0; padding: 0; box-sizing: border-box; }
+
+body.seo-pagina {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+  color: var(--tinta);
+  background: var(--fondo);
+  padding: 2rem 1.25rem 3rem;
+  max-width: 46rem;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.seo-pagina .seo-migas { font-size: 0.82rem; color: var(--tinta-3); margin-bottom: 1.5rem; }
+.seo-pagina .seo-migas a { color: var(--tinta-2); text-decoration: none; }
+.seo-pagina .seo-migas a:hover { color: var(--marca); text-decoration: underline; }
+.seo-pagina .seo-migas span { margin: 0 0.4rem; }
+
+.seo-pagina .seo-tipo {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+  font-weight: 700; color: var(--marca); margin-bottom: 0.4rem;
+}
+
+.seo-pagina h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; letter-spacing: -0.025em; line-height: 1.15; }
+.seo-pagina h2 {
+  font-size: 1.05rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.5rem;
+  color: var(--marca); letter-spacing: -0.01em;
+}
+
+.seo-pagina p { margin-bottom: 0.9rem; color: var(--tinta-2); }
+.seo-pagina .seo-entrada { font-size: 1.08rem; color: var(--tinta); margin-top: 0.8rem; margin-bottom: 1.4rem; }
+.seo-pagina em { font-style: normal; font-weight: 700; color: var(--tinta); }
+
+.seo-pagina ul, .seo-pagina dl { margin-bottom: 1rem; }
+.seo-pagina li { margin-left: 1.2rem; margin-bottom: 0.35rem; color: var(--tinta-2); }
+.seo-pagina dt { font-weight: 700; color: var(--tinta); margin-top: 0.7rem; }
+.seo-pagina dd { margin-left: 0; color: var(--tinta-2); }
+
+/* La ficha ocupa el ancho completo de la columna de lectura. */
+.seo-pagina .seo-ficha { display: block; margin-top: 0.5rem; }
+
+.seo-pagina table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.seo-pagina th {
+  background: var(--superficie); text-align: left; padding: 0.6rem 0.75rem;
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--tinta-2);
+}
+.seo-pagina td { padding: 0.55rem 0.75rem; border-top: 1px solid var(--borde); color: var(--tinta-2); vertical-align: top; }
+
+.seo-pagina .seo-etiquetas { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.seo-pagina .seo-etiquetas span {
+  font-size: 0.74rem; color: var(--tinta-3); background: var(--superficie);
+  border: 1px solid var(--borde); border-radius: 99px; padding: 0.15rem 0.6rem;
+}
+
+.seo-pagina .seo-listado { list-style: none; display: grid; gap: 0.5rem; margin-top: 1.5rem; }
+.seo-pagina .seo-listado li { margin: 0; }
+.seo-pagina .seo-listado a {
+  display: block; padding: 0.8rem 1rem; border: 1px solid var(--borde);
+  border-radius: 10px; text-decoration: none; background: var(--fondo);
+  transition: border-color 0.2s, transform 0.2s;
+}
+.seo-pagina .seo-listado a:hover { border-color: var(--marca); transform: translateY(-2px); }
+.seo-pagina .seo-listado strong { display: block; color: var(--tinta); font-size: 0.98rem; }
+.seo-pagina .seo-listado span { display: block; color: var(--tinta-3); font-size: 0.85rem; margin-top: 0.2rem; }
+
+.seo-pagina .seo-llamada { margin: 2.5rem 0 1rem; }
+.seo-pagina .seo-boton {
+  display: inline-block; background: var(--marca); color: #fff;
+  padding: 0.7rem 1.4rem; border-radius: 10px; text-decoration: none;
+  font-weight: 700; font-size: 0.94rem;
+}
+.seo-pagina .seo-boton:hover { filter: brightness(1.08); }
+
+.seo-pagina .seo-pie {
+  margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--borde);
+  font-size: 0.82rem; color: var(--tinta-3);
+}
+.seo-pagina .seo-pie a { color: var(--marca); }
+
+/* Datos breves de la ficha: pares término y valor en una sola línea cada uno. */
+.seo-pagina .seo-datos {
+  display: grid; grid-template-columns: auto 1fr; gap: 0.15rem 0.8rem;
+  margin: 1rem 0 0.5rem; font-size: 0.9rem;
+}
+.seo-pagina .seo-datos dt { margin-top: 0; }
+.seo-pagina .seo-datos dd { margin: 0; }
+
+/* Esquemas e imágenes publicados con su pie visible. */
+.seo-pagina .seo-figura { margin: 1.5rem 0; }
+.seo-pagina .seo-figura img {
+  max-width: 100%; height: auto; display: block;
+  border: 1px solid var(--borde); border-radius: 10px; background: var(--superficie);
+}
+.seo-pagina .seo-figura figcaption { font-size: 0.84rem; color: var(--tinta-3); margin-top: 0.4rem; }
+
+/* ------------------------------------------------------------
+   Menú lateral de las páginas estáticas
+   Reproduce el botón flotante y el panel de la aplicación, pero
+   con clases propias bajo .seo-pagina para no depender de sus
+   hojas ni pisarlas. Los colores salen de los mismos tokens, de
+   modo que el tema claro y el oscuro quedan cubiertos.
+   ------------------------------------------------------------ */
+.seo-pagina .seo-menu-boton {
+  position: fixed; left: 0; top: 50%; transform: translate(-110%, -50%);
+  z-index: 110; min-width: 46px; min-height: 46px;
+  border: 1px solid var(--borde); border-left: none; border-radius: 0 14px 14px 0;
+  background: var(--superficie); color: var(--marca); cursor: pointer;
+  display: grid; place-items: center; visibility: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, visibility 0.3s, background 0.2s, color 0.2s;
+}
+.seo-pagina .seo-menu-boton.visible { visibility: visible; transform: translate(0, -50%); }
+.seo-pagina .seo-menu-boton:hover { background: var(--marca); color: #fff; border-color: transparent; }
+
+.seo-pagina .seo-menu-fondo {
+  position: fixed; inset: 0; z-index: 115;
+  background: rgba(10, 16, 24, 0.45); opacity: 0; visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.seo-pagina .seo-menu-fondo.abierto { opacity: 1; visibility: visible; }
+
+.seo-pagina .seo-menu-panel {
+  position: fixed; left: 0; top: 0; bottom: 0; z-index: 120;
+  width: min(320px, 86vw); background: var(--fondo);
+  border-right: 1px solid var(--borde); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  padding: 1rem 0.85rem 1.25rem; overflow-y: auto;
+  display: flex; flex-direction: column;
+  transform: translateX(-105%); visibility: hidden;
+  transition: transform 0.3s ease, visibility 0.3s;
+}
+.seo-pagina .seo-menu-panel.abierto { transform: none; visibility: visible; }
+
+.seo-pagina .seo-menu-cabecera {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+  padding: 0 0.35rem 0.6rem; border-bottom: 1px solid var(--borde); margin-bottom: 0.5rem;
+}
+.seo-pagina .seo-menu-titulo {
+  font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--tinta-3); margin: 0;
+}
+.seo-pagina .seo-menu-cerrar {
+  min-width: 44px; min-height: 44px; border: 1px solid var(--borde);
+  background: var(--superficie); color: var(--tinta-2); border-radius: 14px;
+  font-size: 1rem; cursor: pointer; display: grid; place-items: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+.seo-pagina .seo-menu-cerrar:hover { border-color: var(--marca); color: var(--marca); }
+
+.seo-pagina .seo-menu-lista { display: flex; flex-direction: column; gap: 0.25rem; }
+.seo-pagina .seo-menu-item {
+  display: flex; align-items: center; min-height: 44px; padding: 0.55rem 0.8rem;
+  border-radius: 12px; color: var(--tinta-2); font-size: 0.95rem; font-weight: 600;
+  text-decoration: none; transition: color 0.2s, background 0.2s;
+}
+.seo-pagina .seo-menu-item:hover { color: var(--tinta); background: var(--superficie); }
+.seo-pagina .seo-menu-item.activa { color: var(--marca); background: var(--superficie); }
+
+/* Con menos movimiento pedido, las transiciones del menú se vuelven instantáneas. */
+@media (prefers-reduced-motion: reduce) {
+  .seo-pagina .seo-menu-boton,
+  .seo-pagina .seo-menu-fondo,
+  .seo-pagina .seo-menu-panel { transition: none; }
+}

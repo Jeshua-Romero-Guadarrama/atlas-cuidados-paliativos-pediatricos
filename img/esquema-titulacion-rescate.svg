@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img"
+     aria-label="Ciclo de titulacion del opioide a partir de los rescates registrados">
+  <title>Ciclo de titulación: dosis fija, rescates registrados y nueva dosis diaria</title>
+  <style>
+    .fondo { fill: #faf8fd; }
+    .txt   { fill: #1e1830; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt2  { fill: #55496b; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt3  { fill: #837792; font-family: "Segoe UI", system-ui, sans-serif; }
+    .caja  { fill: #ffffff; stroke: #e5dff0; }
+    .caja2 { fill: #ede9fe; stroke: #9b7ede; }
+    .flecha{ stroke: #6d4aa8; }
+    @media (prefers-color-scheme: dark) {
+      .fondo { fill: #231c3b; }
+      .txt   { fill: #efe9f8; }
+      .txt2  { fill: #b6a9cd; }
+      .txt3  { fill: #8b7da3; }
+      .caja  { fill: #1c1630; stroke: #33294f; }
+      .caja2 { fill: #322657; stroke: #9b7ede; }
+      .flecha{ stroke: #b79bf0; }
+    }
+  </style>
+  <defs>
+    <marker id="p2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#6d4aa8"/>
+    </marker>
+  </defs>
+
+  <rect class="fondo" width="640" height="400" rx="12"/>
+  <text class="txt" x="320" y="36" font-size="16" font-weight="700" text-anchor="middle">Cada 24 a 48 horas</text>
+
+  <!-- 1 -->
+  <rect class="caja" x="44" y="62" width="240" height="86" rx="10" stroke-width="1.5"/>
+  <circle cx="70" cy="88" r="13" fill="#6d4aa8"/>
+  <text x="70" y="93" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+  <text class="txt" x="92" y="93" font-size="14" font-weight="600">Dosis fija cada 4 h</text>
+  <text class="txt2" x="64" y="118" font-size="13">0.2 mg/kg de morfina oral</text>
+  <text class="txt3" x="64" y="136" font-size="12">a horas fijas, no a demanda</text>
+
+  <!-- 2 -->
+  <rect class="caja" x="356" y="62" width="240" height="86" rx="10" stroke-width="1.5"/>
+  <circle cx="382" cy="88" r="13" fill="#6d4aa8"/>
+  <text x="382" y="93" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+  <text class="txt" x="404" y="93" font-size="14" font-weight="600">Rescate disponible</text>
+  <text class="txt2" x="376" y="118" font-size="13">10 a 15 % de la dosis diaria</text>
+  <text class="txt3" x="376" y="136" font-size="12">repetible cada hora</text>
+
+  <!-- 3 -->
+  <rect class="caja2" x="356" y="196" width="240" height="86" rx="10" stroke-width="1.5"/>
+  <circle cx="382" cy="222" r="13" fill="#6d4aa8"/>
+  <text x="382" y="227" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+  <text class="txt" x="404" y="227" font-size="14" font-weight="600">Sumar los rescates</text>
+  <text class="txt2" x="376" y="252" font-size="13">de las últimas 24 h</text>
+  <text class="txt3" x="376" y="270" font-size="12">por eso hay que registrarlos</text>
+
+  <!-- 4 -->
+  <rect class="caja" x="44" y="196" width="240" height="86" rx="10" stroke-width="1.5"/>
+  <circle cx="70" cy="222" r="13" fill="#6d4aa8"/>
+  <text x="70" y="227" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+  <text class="txt" x="92" y="227" font-size="14" font-weight="600">Nueva dosis diaria</text>
+  <text class="txt2" x="64" y="252" font-size="13">anterior + rescates</text>
+  <text class="txt3" x="64" y="270" font-size="12">y recalcular el rescate</text>
+
+  <!-- Flechas del ciclo -->
+  <path class="flecha" d="M284 105 L350 105" stroke-width="2" fill="none" marker-end="url(#p2)"/>
+  <path class="flecha" d="M476 148 L476 190" stroke-width="2" fill="none" marker-end="url(#p2)"/>
+  <path class="flecha" d="M356 239 L290 239" stroke-width="2" fill="none" marker-end="url(#p2)"/>
+  <path class="flecha" d="M164 196 L164 154" stroke-width="2" fill="none" marker-end="url(#p2)"/>
+
+  <!-- Criterio de parada -->
+  <rect class="caja" x="128" y="316" width="384" height="56" rx="10" stroke-width="1.5"/>
+  <text class="txt" x="320" y="340" font-size="14" font-weight="600" text-anchor="middle">Se deja de subir cuando</text>
+  <text class="txt2" x="320" y="360" font-size="13" text-anchor="middle">el niño necesita dos rescates al día o menos</text>
+</svg>

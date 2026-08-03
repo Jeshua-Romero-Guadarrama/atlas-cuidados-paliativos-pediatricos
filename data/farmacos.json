@@ -1,0 +1,1311 @@
+[
+  {
+    "codigo": "morfina",
+    "nombre": "Morfina",
+    "grupo": "Opioide",
+    "vias": ["VO", "SC", "IV", "REC"],
+    "controlado": true,
+    "descripcion": "El opioide de referencia y el fármaco con el que se compara todo lo demás. Es el analgésico de elección para el dolor moderado e intenso del niño, tiene la farmacocinética mejor conocida en pediatría, admite todas las vías útiles en paliativos y no tiene dosis techo. También es el tratamiento de primera línea de la disnea.",
+    "indicaciones": [
+      "Dolor moderado o intenso de cualquier origen",
+      "Dolor irruptivo, como dosis de rescate",
+      "Disnea, a dosis menores que las analgésicas",
+      "Tos rebelde que no responde a otras medidas"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Neonato: 0.05 mg/kg cada 6 h. De 1 a 12 meses: 0.08 a 0.2 mg/kg cada 4 h. De 1 a 12 años: 0.2 a 0.5 mg/kg cada 4 h", "indicacion": "Liberación inmediata, inicio en paciente sin opioide previo", "maximo": "Dosis inicial de 5 a 10 mg por toma; después no hay techo, se titula" },
+      { "via": "VO", "pauta": "Dosis diaria total dividida en 2 tomas cada 12 h", "indicacion": "Liberación prolongada, solo cuando la dosis ya está estabilizada con la de liberación inmediata" },
+      { "via": "SC", "pauta": "0.05 a 0.1 mg/kg cada 4 h en bolo. Infusión continua: 20 microgramos/kg/h (10 microgramos/kg/h de 1 a 3 meses)", "indicacion": "Cuando falla la vía oral. Es la vía de elección en domicilio" },
+      { "via": "IV", "pauta": "Neonato 25 a 50 microgramos/kg cada 6 h. Lactante de 1 a 6 meses 0.1 mg/kg cada 6 h. De 6 meses a 12 años 0.1 a 0.2 mg/kg cada 4 h, lento en 5 minutos", "indicacion": "Cuando ya existe acceso venoso o se necesita efecto inmediato" },
+      { "via": "REC", "pauta": "Igual que la dosis oral", "indicacion": "Alternativa puntual si no hay otra vía. Absorción irregular" }
+    ],
+    "presentaciones": "Solución oral de liberación inmediata en distintas concentraciones, comprimidos de liberación inmediata y de liberación prolongada, y ampolletas para uso parenteral. La solución oral es la presentación clave en pediatría porque permite dosificar con precisión en niños pequeños.",
+    "inicioDuracion": "Por vía oral, inicio en 20 a 30 minutos y pico a los 60 minutos, con duración de 4 h. Por vía subcutánea o intravenosa, inicio en 5 a 10 minutos. Las presentaciones de liberación prolongada tardan de 2 a 4 h en alcanzar el efecto y duran 12 h.",
+    "adversos": [
+      "Estreñimiento: Es el único que no desarrolla tolerancia, así que se previene desde la primera dosis con un laxante pautado",
+      "Náusea y vómito al inicio: Ceden en 3 a 5 días, conviene avisar y cubrir con un antiemético los primeros días",
+      "Somnolencia inicial: También suele ceder en pocos días",
+      "Prurito, sobre todo en la cara, por liberación de histamina",
+      "Retención urinaria, más frecuente en los primeros días",
+      "Mioclonías si la dosis es alta o hay insuficiencia renal, por acumulación de metabolitos"
+    ],
+    "precauciones": [
+      "En insuficiencia renal se acumula el metabolito morfina 6 glucurónido: Hay que alargar el intervalo o rotar a fentanilo, que es más seguro",
+      "La depresión respiratoria clínicamente relevante es rara si se titula sobre un dolor real, y siempre va precedida de sedación progresiva: Vigilar el nivel de conciencia es más útil que contar respiraciones",
+      "Nunca se suspende de forma brusca tras un uso prolongado, por el síndrome de abstinencia: Se reduce entre un 20 y un 30 por ciento cada 1 a 2 días",
+      "Precaución al asociar otros depresores del sistema nervioso central, en especial benzodiacepinas"
+    ],
+    "practico": "La dosis de rescate es siempre del 10 al 15 por ciento de la dosis diaria total, y se puede repetir cada hora. Al día siguiente se suman todos los rescates administrados y se reparten entre las dosis fijas: Ese es el mecanismo completo de la titulación. Para la disnea se usan dosis de en torno a la mitad de las analgésicas, y en el niño que ya toma morfina se aumenta entre un 25 y un 50 por ciento la dosis que ya tenía.",
+    "etiquetas": ["dolor", "disnea", "titulación", "rescate", "primera línea"]
+  },
+  {
+    "codigo": "fentanilo",
+    "nombre": "Fentanilo",
+    "grupo": "Opioide",
+    "vias": ["IV", "SC", "TD", "IN", "SL"],
+    "controlado": true,
+    "descripcion": "Opioide sintético entre 50 y 100 veces más potente que la morfina, muy liposoluble, de inicio muy rápido por vía parenteral y transmucosa. Es el opioide de elección cuando hay insuficiencia renal, porque no genera metabolitos activos que se acumulen, y su presentación transdérmica resuelve el problema del niño estable que no puede tragar.",
+    "indicaciones": [
+      "Dolor moderado o intenso en el niño con insuficiencia renal",
+      "Dolor estable de fondo, en parche transdérmico",
+      "Dolor irruptivo de instauración muy rápida, por vía transmucosa o nasal",
+      "Analgesia para procedimientos dolorosos",
+      "Crisis de disnea, por su rapidez de acción"
+    ],
+    "dosis": [
+      { "via": "IV", "pauta": "1 a 2 microgramos/kg en bolo lento. Infusión continua: 0.5 a 2.5 microgramos/kg/h", "indicacion": "Dolor agudo y procedimientos" },
+      { "via": "SC", "pauta": "1 a 2 microgramos/kg en bolo. Infusión continua a partir de la dosis diaria equivalente", "indicacion": "Alternativa a la morfina en insuficiencia renal" },
+      { "via": "TD", "pauta": "Parche de 12 microgramos/h equivale aproximadamente a 30 a 45 mg de morfina oral al día; el de 25 microgramos/h, a 60 a 90 mg al día", "indicacion": "Solo en niño con dolor estable y tolerancia previa a opioides. Nunca para iniciar", "maximo": "No usar en niño sin opioide previo ni en dolor inestable" },
+      { "via": "IN", "pauta": "1 a 2 microgramos/kg, repartido entre las dos fosas nasales con dispositivo atomizador", "indicacion": "Dolor irruptivo o procedimiento, cuando no hay acceso venoso" },
+      { "via": "SL", "pauta": "1 a 2 microgramos/kg", "indicacion": "Dolor irruptivo con inicio en pocos minutos" }
+    ],
+    "presentaciones": "Ampolletas para uso parenteral, parches transdérmicos de distintas potencias y presentaciones transmucosas. En pediatría la ampolleta se usa también por vía nasal y sublingual, aunque esa administración no figure en la ficha técnica.",
+    "inicioDuracion": "Por vía intravenosa el inicio es casi inmediato y dura de 30 a 60 minutos. Por vía nasal o sublingual, inicio en 5 a 10 minutos. El parche transdérmico tarda de 12 a 24 h en alcanzar niveles estables y mantiene el efecto 72 h; al retirarlo, el depósito cutáneo sigue liberando fármaco durante 12 a 24 h.",
+    "adversos": [
+      "Los mismos que el resto de opioides, aunque produce menos estreñimiento, menos náusea y menos prurito que la morfina",
+      "Rigidez torácica si se administra un bolo intravenoso rápido a dosis alta",
+      "Reacción cutánea local bajo el parche"
+    ],
+    "precauciones": [
+      "El parche no sirve para iniciar tratamiento ni para dolor inestable: Tarda demasiado en subir y en bajar",
+      "La fiebre y las fuentes de calor externas, como una manta eléctrica o un baño caliente, aumentan la absorción del parche y pueden provocar sobredosis",
+      "El parche se coloca sobre piel sana, sin vello, seca y sin lociones, y se rota el sitio en cada cambio",
+      "Los parches usados conservan una cantidad importante de fármaco: Se doblan sobre sí mismos y se desechan de forma segura, fuera del alcance de otros niños"
+    ],
+    "practico": "Un parche nunca cubre el dolor irruptivo: Siempre hay que pautar además un rescate con opioide de liberación inmediata. Al iniciar el parche se mantiene la analgesia previa durante las primeras 12 h, porque el parche todavía no ha alcanzado nivel. Al retirarlo por rotación, se espera de 12 a 18 h antes de que la nueva pauta alcance su efecto pleno y se cubre ese hueco con rescates.",
+    "etiquetas": ["insuficiencia renal", "parche", "dolor irruptivo", "transmucoso"]
+  },
+  {
+    "codigo": "hidromorfona",
+    "nombre": "Hidromorfona",
+    "grupo": "Opioide",
+    "vias": ["VO", "SC", "IV"],
+    "controlado": true,
+    "descripcion": "Opioide potente, entre 5 y 7 veces más potente que la morfina por vía oral, muy soluble en agua. Esa solubilidad es su mayor ventaja práctica: Permite concentrar dosis altas en volúmenes muy pequeños, lo que la hace ideal para infusión subcutánea cuando el niño necesita dosis grandes.",
+    "indicaciones": [
+      "Dolor intenso, como alternativa a la morfina",
+      "Rotación de opioide por efectos adversos intolerables o por toxicidad neurológica",
+      "Dosis altas por vía subcutánea, cuando el volumen de morfina resultaría excesivo"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.03 a 0.08 mg/kg cada 3 a 4 h", "indicacion": "Liberación inmediata" },
+      { "via": "SC", "pauta": "0.015 mg/kg cada 4 a 6 h en bolo. Infusión continua a partir de la dosis diaria calculada", "indicacion": "Elección cuando se requieren dosis altas en poco volumen" },
+      { "via": "IV", "pauta": "0.015 mg/kg cada 4 a 6 h, lento", "indicacion": "Cuando ya existe acceso venoso" }
+    ],
+    "presentaciones": "Comprimidos de liberación inmediata y prolongada y ampolletas para uso parenteral, incluida una presentación concentrada. La disponibilidad varía mucho entre países y hay que confirmarla antes de planificar una rotación.",
+    "inicioDuracion": "Por vía oral, inicio en 30 minutos y duración de 4 h. Por vía parenteral, inicio en 5 minutos y duración de 3 a 4 h.",
+    "adversos": [
+      "Los propios de todos los opioides: Estreñimiento, náusea inicial, somnolencia y retención urinaria",
+      "Produce algo menos de prurito y de náusea que la morfina, lo que justifica en parte su uso en rotación"
+    ],
+    "precauciones": [
+      "El error de conversión es el riesgo principal, porque la potencia es varias veces la de la morfina: Toda rotación debe recalcularse dos veces y por dos personas",
+      "También se acumula en insuficiencia renal, aunque algo menos que la morfina",
+      "Conviene comprobar siempre la concentración de la ampolleta, porque coexisten presentaciones muy distintas y la confusión entre ellas es un error grave descrito"
+    ],
+    "practico": "En toda rotación de opioide se reduce entre un 25 y un 50 por ciento la dosis equianalgésica calculada, porque la tolerancia cruzada entre opioides es incompleta, y se compensa la diferencia con rescates durante las primeras 24 h. Esta regla se olvida con frecuencia y es la causa más común de sobredosis durante una rotación.",
+    "etiquetas": ["rotación", "subcutáneo", "dosis altas", "equianalgesia"]
+  },
+  {
+    "codigo": "metadona",
+    "nombre": "Metadona",
+    "grupo": "Opioide",
+    "vias": ["VO", "SC", "IV"],
+    "controlado": true,
+    "descripcion": "Opioide potente con un perfil doble: Además de actuar sobre el receptor mu, bloquea el receptor NMDA e inhibe la recaptación de monoaminas, lo que le da una eficacia particular en el dolor neuropático y en el dolor con componente de tolerancia. A cambio, su farmacocinética es la más difícil de todos los opioides y su manejo requiere experiencia.",
+    "indicaciones": [
+      "Dolor neuropático o mixto que no responde a otros opioides",
+      "Tolerancia rápida a otros opioides con escalada de dosis sin control del dolor",
+      "Insuficiencia renal, ya que no genera metabolitos activos"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Inicio en paciente sin opioide previo: 0.1 a 0.2 mg/kg cada 4 h durante las primeras 2 o 3 dosis y después cada 6 a 12 h según respuesta", "indicacion": "Solo bajo indicación de profesional con experiencia en el fármaco", "maximo": "El ajuste no se hace antes de 5 a 7 días por el riesgo de acumulación" },
+      { "via": "SC", "pauta": "Aproximadamente la mitad de la dosis oral", "indicacion": "Puede producir irritación local en el punto de inyección" },
+      { "via": "IV", "pauta": "Aproximadamente la mitad de la dosis oral" }
+    ],
+    "presentaciones": "Solución oral y comprimidos, y ampolletas para uso parenteral en algunos países. La solución oral facilita el ajuste fino de la dosis en niños.",
+    "inicioDuracion": "Inicio del efecto analgésico en 30 minutos, pero la vida media es larguísima y muy variable, entre 8 y más de 60 h, y además cambia con el tiempo de tratamiento. El efecto máximo puede tardar varios días en alcanzarse.",
+    "adversos": [
+      "Los propios de los opioides, con menos estreñimiento que la morfina",
+      "Prolongación del intervalo QT, dependiente de la dosis",
+      "Sedación acumulativa a los 3 a 5 días de iniciar o de subir la dosis, que es el efecto adverso característico y peligroso"
+    ],
+    "precauciones": [
+      "La disociación entre la vida media analgésica, corta, y la vida media de eliminación, larga, hace que se acumule: Se han descrito muertes por titular con la rapidez con la que se titula la morfina",
+      "No existe una razón de conversión fija con la morfina: Depende de la dosis previa y a dosis altas de morfina la potencia relativa de la metadona es mucho mayor",
+      "Interacciona con numerosos fármacos a través del citocromo P450, incluidos varios antifúngicos, antirretrovirales y antiepilépticos",
+      "Conviene un electrocardiograma basal y de control si hay factores de riesgo de QT largo o si se usan otros fármacos que lo prolonguen"
+    ],
+    "practico": "Es el opioide que más beneficio puede dar en el dolor neuropático refractario y el que más daño puede hacer si se maneja como si fuera morfina. La regla práctica es no iniciarla ni rotarla sin consultar con un equipo con experiencia, y no modificar la dosis antes de 5 a 7 días salvo para bajarla.",
+    "etiquetas": ["dolor neuropático", "NMDA", "refractario", "experto", "QT"]
+  },
+  {
+    "codigo": "oxicodona",
+    "nombre": "Oxicodona",
+    "grupo": "Opioide",
+    "vias": ["VO", "SC", "IV"],
+    "controlado": true,
+    "descripcion": "Opioide potente de administración oral, entre 1.5 y 2 veces más potente que la morfina por esa vía. Tiene mejor biodisponibilidad oral y produce algo menos de náusea, prurito y alucinaciones que la morfina, por lo que es una alternativa razonable en la rotación.",
+    "indicaciones": [
+      "Dolor moderado o intenso, como alternativa a la morfina por vía oral",
+      "Rotación cuando la morfina produce náusea, prurito o confusión mal tolerados"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.1 a 0.2 mg/kg cada 4 a 6 h en liberación inmediata. En liberación prolongada, la dosis diaria total dividida en 2 tomas cada 12 h", "indicacion": "Uso general en mayores de 6 meses" },
+      { "via": "SC", "pauta": "Aproximadamente la mitad de la dosis oral", "indicacion": "Disponibilidad parenteral limitada según el país" },
+      { "via": "IV", "pauta": "Aproximadamente la mitad de la dosis oral, lento" }
+    ],
+    "presentaciones": "Solución oral, comprimidos de liberación inmediata y de liberación prolongada, presentaciones combinadas con naloxona para reducir el estreñimiento y ampolletas parenterales en algunos países.",
+    "inicioDuracion": "Por vía oral, inicio en 20 a 30 minutos y duración de 4 a 6 h. Las presentaciones de liberación prolongada duran 12 h.",
+    "adversos": [
+      "Los propios de los opioides",
+      "Menos prurito, menos náusea y menos alucinaciones que la morfina en la comparación directa"
+    ],
+    "precauciones": [
+      "Se metaboliza por vía hepática y sus metabolitos se acumulan en insuficiencia renal, aunque menos que los de la morfina",
+      "Hay menos experiencia pediátrica publicada que con morfina, sobre todo por debajo del año",
+      "La confusión entre presentaciones de liberación inmediata y prolongada es un error grave y frecuente: Conviene escribir siempre en la receta cuál de las dos es"
+    ],
+    "practico": "La combinación fija con naloxona reduce el estreñimiento porque la naloxona actúa sobre los receptores intestinales y apenas se absorbe, pero limita la flexibilidad de dosificación y tiene poca experiencia pediátrica, así que en niños suele preferirse la oxicodona sola con un laxante bien pautado.",
+    "etiquetas": ["rotación", "oral", "alternativa a morfina"]
+  },
+  {
+    "codigo": "tramadol",
+    "nombre": "Tramadol",
+    "grupo": "Opioide",
+    "vias": ["VO", "IV"],
+    "controlado": false,
+    "descripcion": "Opioide de potencia intermedia con un mecanismo doble: Acción sobre el receptor mu, que depende de su conversión por el CYP2D6, e inhibición de la recaptación de serotonina y noradrenalina. La OMS eliminó los opioides débiles de la escalera pediátrica precisamente por la imprevisibilidad de esa conversión, así que hoy tiene un papel limitado.",
+    "indicaciones": [
+      "Dolor moderado en adolescentes, cuando no se dispone de morfina o hay barreras para prescribirla",
+      "Dolor con componente neuropático leve, por su acción sobre la recaptación de monoaminas"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "1 a 2 mg/kg cada 6 a 8 h", "indicacion": "Preferentemente en mayores de 12 años", "maximo": "8 mg/kg/día, sin superar 400 mg al día" },
+      { "via": "IV", "pauta": "1 a 2 mg/kg cada 6 h, lento", "maximo": "400 mg al día" }
+    ],
+    "presentaciones": "Solución oral en gotas, cápsulas de liberación inmediata y prolongada, y ampolletas parenterales.",
+    "inicioDuracion": "Inicio en 30 a 60 minutos por vía oral, con duración de 6 h.",
+    "adversos": [
+      "Náusea y vómito, más frecuentes que con otros opioides",
+      "Mareo y somnolencia",
+      "Reducción del umbral convulsivo"
+    ],
+    "precauciones": [
+      "Depende del CYP2D6, con el mismo polimorfismo que hace peligrosa a la codeína: En metabolizadores ultrarrápidos puede producir concentraciones tóxicas y en lentos no hace nada",
+      "Está restringido o contraindicado en menores de 12 años en muchas agencias reguladoras",
+      "Riesgo de síndrome serotoninérgico al asociarlo con antidepresivos inhibidores de la recaptación de serotonina, con amitriptilina o con ondansetrón",
+      "Baja el umbral convulsivo: Precaución en el niño con epilepsia, que es una situación muy frecuente en este ámbito"
+    ],
+    "practico": "En cuidados paliativos pediátricos hay pocas razones para elegir tramadol pudiendo usar morfina a dosis baja, que es más predecible, más titulable y más segura. Si se usa, conviene tener presente que muchos de estos niños tienen epilepsia y toman antidepresivos, las dos situaciones en las que peor encaja.",
+    "etiquetas": ["CYP2D6", "opioide débil", "serotoninérgico", "uso limitado"]
+  },
+  {
+    "codigo": "codeina",
+    "nombre": "Codeína",
+    "grupo": "Opioide",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Profármaco que necesita del CYP2D6 para convertirse en morfina. La enorme variabilidad genética de ese enzima la vuelve impredecible en niños y ha llevado a su contraindicación pediátrica. Se incluye aquí precisamente para dejar claro por qué no debe usarse.",
+    "indicaciones": [
+      "Ninguna en cuidados paliativos pediátricos: Hay alternativas mejores para todas sus indicaciones clásicas"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "No se recomienda en menores de 12 años en ninguna indicación", "indicacion": "Contraindicada por debajo de 12 años y tras amigdalectomía o adenoidectomía a cualquier edad", "maximo": "Contraindicada" }
+    ],
+    "presentaciones": "Comprimidos y jarabes solos o combinados con paracetamol, y en muchas presentaciones antitusígenas de venta común, lo que hace que sea fácil que un niño la reciba sin que el equipo lo sepa.",
+    "inicioDuracion": "Inicio en 30 a 60 minutos, con duración de 4 h, siempre que el niño sea capaz de metabolizarla.",
+    "adversos": [
+      "En metabolizadores lentos, entre el 5 y el 10 por ciento de la población: Ningún efecto analgésico, solo los efectos adversos",
+      "En metabolizadores ultrarrápidos: Concentraciones tóxicas de morfina con depresión respiratoria grave",
+      "Estreñimiento muy marcado"
+    ],
+    "precauciones": [
+      "Contraindicada en menores de 12 años y en menores de 18 años tras amigdalectomía o adenoidectomía por apnea obstructiva del sueño",
+      "Contraindicada durante la lactancia materna, porque una madre metabolizadora ultrarrápida puede intoxicar al lactante a través de la leche",
+      "Conviene revisar activamente los jarabes antitusígenos que la familia pueda tener en casa"
+    ],
+    "practico": "Cuando una familia trae un jarabe con codeína o un profesional la prescribe por costumbre, la conversación útil no es prohibir sin más, sino explicar el mecanismo: Es una medicina que en unos niños no hace nada y en otros hace demasiado, y no hay forma de saber de antemano cuál es cuál. La sustitución natural es morfina oral a dosis baja.",
+    "etiquetas": ["contraindicada", "CYP2D6", "seguridad", "no usar"]
+  },
+  {
+    "codigo": "paracetamol",
+    "nombre": "Paracetamol",
+    "grupo": "Analgésico no opioide",
+    "vias": ["VO", "IV", "REC"],
+    "controlado": false,
+    "descripcion": "El analgésico y antipirético de primera línea en pediatría y el primer escalón de la escalera de la OMS. Su gran virtud es el perfil de seguridad: No irrita la mucosa gástrica, no afecta a la función plaquetaria y no daña el riñón, lo que lo hace utilizable en niños con trombopenia o con nefropatía, donde los antiinflamatorios están vedados.",
+    "indicaciones": [
+      "Dolor leve, solo",
+      "Dolor moderado o intenso, asociado a un opioide, porque permite reducir la dosis de este",
+      "Fiebre que produce malestar"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "15 mg/kg cada 4 a 6 h", "indicacion": "Vía de elección", "maximo": "60 mg/kg/día en lactantes y 75 mg/kg/día en niños mayores, sin superar 4 g al día" },
+      { "via": "IV", "pauta": "15 mg/kg cada 6 h. En menores de 10 kg, 10 mg/kg cada 6 h", "indicacion": "Cuando no se tolera la vía oral", "maximo": "60 mg/kg/día" },
+      { "via": "REC", "pauta": "20 mg/kg cada 6 h", "indicacion": "Absorción más lenta e irregular que la oral", "maximo": "90 mg/kg/día por periodos cortos" }
+    ],
+    "presentaciones": "Solución oral y gotas en varias concentraciones, comprimidos, supositorios y solución para infusión intravenosa.",
+    "inicioDuracion": "Inicio en 30 minutos por vía oral y en 10 a 15 minutos por vía intravenosa, con duración de 4 a 6 h.",
+    "adversos": [
+      "Muy escasos a dosis correctas, que es la razón principal de su uso",
+      "Hepatotoxicidad si se supera la dosis máxima diaria o si se acumulan varias fuentes"
+    ],
+    "precauciones": [
+      "El error más frecuente y más peligroso es la duplicación: Muchos preparados combinados lo contienen, y la familia puede estar dando dos productos distintos que son el mismo fármaco",
+      "En pediatría coexisten presentaciones con concentraciones muy diferentes en gotas y en solución: Hay que prescribir siempre en miligramos y comprobar los mililitros con la familia",
+      "Reducir la dosis en desnutrición, en hepatopatía y en niños con ayuno prolongado",
+      "Es antipirético y analgésico, pero no es antiinflamatorio: En el dolor con componente inflamatorio claro rinde menos que un antiinflamatorio"
+    ],
+    "practico": "Asociarlo a un opioide es una de las medidas más rentables que existen, porque el efecto es aditivo y permite bajar la dosis de opioide y con ella sus efectos adversos. No hay ninguna razón para retirarlo cuando se inicia la morfina, y sin embargo se hace continuamente.",
+    "etiquetas": ["primer escalón", "seguro", "trombopenia", "fiebre"]
+  },
+  {
+    "codigo": "ibuprofeno",
+    "nombre": "Ibuprofeno",
+    "grupo": "Analgésico no opioide",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Antiinflamatorio no esteroideo de referencia en pediatría. Su papel específico en paliativos es el dolor con componente inflamatorio y sobre todo el dolor óseo, donde los antiinflamatorios son claramente superiores al paracetamol por su acción sobre las prostaglandinas implicadas en la sensibilización del periostio.",
+    "indicaciones": [
+      "Dolor con componente inflamatorio",
+      "Dolor óseo, incluido el de origen tumoral",
+      "Dolor musculoesquelético y por espasticidad",
+      "Fiebre que no cede con paracetamol"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "5 a 10 mg/kg cada 6 a 8 h", "indicacion": "A partir de los 3 meses de edad", "maximo": "40 mg/kg/día, sin superar 2.4 g al día" }
+    ],
+    "presentaciones": "Suspensión oral en dos concentraciones habituales, comprimidos y granulado. La coexistencia de dos concentraciones de suspensión es una fuente frecuente de error de dosificación en casa.",
+    "inicioDuracion": "Inicio en 30 minutos, con duración de 6 a 8 h.",
+    "adversos": [
+      "Irritación gástrica, dispepsia y riesgo de sangrado digestivo, sobre todo con uso prolongado",
+      "Deterioro de la función renal, en especial si hay deshidratación o hipovolemia",
+      "Inhibición de la agregación plaquetaria, con aumento del riesgo de sangrado"
+    ],
+    "precauciones": [
+      "Contraindicado si hay trombopenia, alteración de la coagulación o riesgo de sangrado, situación muy frecuente en oncología pediátrica",
+      "Contraindicado o de uso muy cuidadoso en insuficiencia renal y en deshidratación",
+      "Si se prevé un uso prolongado, asociar protección gástrica con un inhibidor de la bomba de protones",
+      "Evitar en niños con hipovolemia o inestables, porque el flujo renal depende en ellos de las prostaglandinas"
+    ],
+    "practico": "En el dolor óseo de origen tumoral, un antiinflamatorio bien pautado puede aportar más que subir la dosis de opioide, y conviene probarlo antes de escalar. En el niño oncológico hay que revisar antes la cifra de plaquetas, que es el factor que más veces lo descarta.",
+    "etiquetas": ["dolor óseo", "antiinflamatorio", "trombopenia", "renal"]
+  },
+  {
+    "codigo": "ketorolaco",
+    "nombre": "Ketorolaco",
+    "grupo": "Analgésico no opioide",
+    "vias": ["IV", "VO"],
+    "controlado": false,
+    "descripcion": "Antiinflamatorio no esteroideo de potencia analgésica alta, comparable en algunos escenarios a la de dosis bajas de opioide. Su uso está limitado a periodos cortos por la toxicidad gástrica y renal, pero en esos periodos cortos es muy útil como ahorrador de opioide.",
+    "indicaciones": [
+      "Dolor moderado o intenso de corta duración, en particular postoperatorio",
+      "Dolor óseo intenso, por periodos limitados",
+      "Como ahorrador de opioide cuando los efectos adversos de este limitan la escalada"
+    ],
+    "dosis": [
+      { "via": "IV", "pauta": "0.5 mg/kg cada 6 a 8 h, lento", "indicacion": "Habitualmente a partir de los 2 años", "maximo": "2 mg/kg/día, sin superar 90 mg al día y no más de 5 días seguidos" },
+      { "via": "VO", "pauta": "0.5 a 1 mg/kg cada 6 a 8 h", "maximo": "No más de 5 a 7 días seguidos" }
+    ],
+    "presentaciones": "Ampolletas para uso parenteral y comprimidos.",
+    "inicioDuracion": "Inicio en 30 minutos por vía intravenosa, con duración de 6 h.",
+    "adversos": [
+      "Sangrado digestivo, con riesgo mayor que el de otros antiinflamatorios",
+      "Deterioro de la función renal",
+      "Inhibición plaquetaria con aumento del sangrado quirúrgico"
+    ],
+    "precauciones": [
+      "La duración máxima de 5 días no es una recomendación blanda: El riesgo de sangrado digestivo crece de forma marcada a partir de ahí",
+      "Contraindicado con trombopenia, alteración de la coagulación, insuficiencia renal o deshidratación",
+      "Asociar siempre protección gástrica",
+      "Evitar el uso simultáneo con otro antiinflamatorio"
+    ],
+    "practico": "Es un fármaco de rescate para una situación concreta y limitada, no un analgésico de fondo. Cuando aparece pautado durante semanas en un niño con enfermedad avanzada, casi siempre conviene sustituirlo por una combinación de opioide y coadyuvante.",
+    "etiquetas": ["potente", "corta duración", "ahorrador de opioide", "sangrado"]
+  },
+  {
+    "codigo": "metamizol",
+    "nombre": "Metamizol",
+    "grupo": "Analgésico no opioide",
+    "vias": ["VO", "IV"],
+    "controlado": false,
+    "descripcion": "Analgésico y antipirético con acción espasmolítica añadida, ampliamente usado en México y en varios países de habla hispana, y retirado en otros por el riesgo de agranulocitosis. Su ventaja específica es el efecto sobre el dolor visceral de tipo cólico y que no daña la mucosa gástrica como los antiinflamatorios.",
+    "indicaciones": [
+      "Dolor visceral de tipo cólico",
+      "Dolor moderado cuando el paracetamol no basta y los antiinflamatorios están contraindicados",
+      "Fiebre que no cede con otros antitérmicos"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "10 a 20 mg/kg cada 6 a 8 h", "maximo": "Habitualmente no más de 40 a 60 mg/kg/día ni 2 g por toma en adolescentes" },
+      { "via": "IV", "pauta": "10 a 20 mg/kg cada 6 a 8 h, en infusión lenta diluida", "indicacion": "La administración rápida produce hipotensión" }
+    ],
+    "presentaciones": "Solución oral en gotas, comprimidos, supositorios y ampolletas parenterales.",
+    "inicioDuracion": "Inicio en 30 a 45 minutos por vía oral y en 15 a 30 minutos por vía parenteral, con duración de 6 a 8 h.",
+    "adversos": [
+      "Hipotensión si se administra rápido por vía intravenosa",
+      "Agranulocitosis, poco frecuente pero grave e impredecible",
+      "Reacciones de hipersensibilidad"
+    ],
+    "precauciones": [
+      "Ante fiebre, odinofagia o infección inesperada en un niño que lo toma de forma prolongada, hay que pensar en agranulocitosis y solicitar una biometría hemática",
+      "Precaución especial en el niño oncológico con neutropenia, en el que puede enmascarar o agravar el cuadro",
+      "Administración intravenosa siempre diluida y lenta"
+    ],
+    "practico": "Su nicho real es el dolor cólico visceral, donde suele rendir más que el paracetamol. En el niño con neutropenia o en tratamiento mielosupresor conviene preferir otras opciones, no porque el riesgo sea muy alto, sino porque en ese contexto es especialmente difícil de detectar a tiempo.",
+    "etiquetas": ["dolor visceral", "cólico", "agranulocitosis", "México"]
+  },
+  {
+    "codigo": "gabapentina",
+    "nombre": "Gabapentina",
+    "grupo": "Coadyuvante",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Antiepiléptico que actúa sobre la subunidad alfa 2 delta de los canales de calcio y que se ha convertido en el coadyuvante de primera línea para el dolor neuropático en pediatría. En cuidados paliativos pediátricos tiene además un papel muy importante y menos conocido: El tratamiento de la irritabilidad y del dolor visceral de origen central del niño con daño neurológico grave.",
+    "indicaciones": [
+      "Dolor neuropático de cualquier origen",
+      "Irritabilidad y llanto inconsolable del niño con encefalopatía grave, la llamada tormenta neurovegetativa",
+      "Hiperalgesia visceral",
+      "Espasticidad dolorosa, como coadyuvante"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Inicio: 5 mg/kg en dosis única nocturna. Segundo día: 5 mg/kg cada 12 h. Tercer día: 5 mg/kg cada 8 h. Después se sube cada 3 días hasta 10 a 20 mg/kg cada 8 h", "indicacion": "Titulación lenta para evitar la sedación inicial", "maximo": "60 mg/kg/día, sin superar 3600 mg al día" }
+    ],
+    "presentaciones": "Cápsulas, comprimidos y solución oral. La solución oral es la que permite titular en niños pequeños y en los que reciben alimentación por sonda.",
+    "inicioDuracion": "El efecto sobre el dolor neuropático puede tardar de 1 a 2 semanas en manifestarse plenamente tras alcanzar la dosis eficaz, lo que hay que advertir a la familia para que no lo abandone antes.",
+    "adversos": [
+      "Somnolencia y mareo al inicio, que suelen ceder si se titula despacio",
+      "Ataxia e inestabilidad",
+      "Aumento del apetito y de peso",
+      "Edema periférico"
+    ],
+    "precauciones": [
+      "Se elimina por vía renal sin metabolizar: Hay que reducir la dosis en insuficiencia renal",
+      "No se suspende de forma brusca por el riesgo de convulsión de retirada",
+      "La titulación demasiado rápida es la causa más frecuente de abandono, por sedación"
+    ],
+    "practico": "En el niño con parálisis cerebral grave que llora sin causa identificable, con irritabilidad persistente y estudio negativo, la gabapentina es una de las intervenciones con mejor relación entre beneficio y riesgo, y muchas veces transforma la vida de la familia. Merece la pena una prueba terapéutica bien titulada de 2 a 4 semanas antes de descartarla.",
+    "etiquetas": ["dolor neuropático", "irritabilidad", "encefalopatía", "primera línea"]
+  },
+  {
+    "codigo": "pregabalina",
+    "nombre": "Pregabalina",
+    "grupo": "Coadyuvante",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Análogo estructural de la gabapentina con el mismo mecanismo sobre los canales de calcio, pero con absorción lineal y predecible y con posología cada 12 h, lo que simplifica el cumplimiento. Es la alternativa cuando la gabapentina no se tolera o cuando el número de tomas diarias es un problema.",
+    "indicaciones": [
+      "Dolor neuropático, como alternativa a la gabapentina",
+      "Ansiedad asociada al dolor crónico",
+      "Irritabilidad de origen neurológico"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Inicio: 1 mg/kg/día repartido en 2 tomas. Se sube cada 3 a 7 días hasta 3 a 6 mg/kg/día", "indicacion": "Menos experiencia pediátrica publicada que con gabapentina", "maximo": "10 mg/kg/día, sin superar 600 mg al día" }
+    ],
+    "presentaciones": "Cápsulas en varias dosis y solución oral en algunos países. La falta de solución oral limita su uso en niños pequeños.",
+    "inicioDuracion": "El efecto puede notarse antes que con gabapentina, a menudo en la primera semana tras alcanzar la dosis eficaz.",
+    "adversos": [
+      "Somnolencia y mareo, algo más marcados que con gabapentina al inicio",
+      "Aumento de peso y de apetito",
+      "Edema periférico",
+      "Visión borrosa"
+    ],
+    "precauciones": [
+      "Ajuste de dosis en insuficiencia renal",
+      "No suspender de forma brusca",
+      "Menos datos de seguridad en pediatría que la gabapentina, sobre todo por debajo de los 4 años"
+    ],
+    "practico": "La razón práctica más habitual para preferirla es pasar de tres tomas al día a dos en un niño con muchos fármacos pautados. La conversión aproximada desde gabapentina es de 6 a 1, y conviene hacerla de forma escalonada y no de un día para otro.",
+    "etiquetas": ["dolor neuropático", "dos tomas", "alternativa"]
+  },
+  {
+    "codigo": "amitriptilina",
+    "nombre": "Amitriptilina",
+    "grupo": "Coadyuvante",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Antidepresivo tricíclico usado a dosis muy inferiores a las antidepresivas por su efecto sobre el dolor neuropático, mediado por la inhibición de la recaptación de noradrenalina y serotonina en las vías descendentes inhibitorias. Su ventaja adicional en paliativos es que mejora el sueño y reduce la sialorrea.",
+    "indicaciones": [
+      "Dolor neuropático, sobre todo el continuo y de tipo quemante",
+      "Dolor neuropático asociado a insomnio",
+      "Sialorrea, por su efecto anticolinérgico",
+      "Vejiga hiperactiva dolorosa"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Inicio: 0.2 a 0.5 mg/kg en dosis única, 1 a 2 h antes de acostarse. Se sube cada 5 a 7 días hasta 1 mg/kg", "indicacion": "Dosis analgésicas, muy por debajo de las antidepresivas", "maximo": "2 mg/kg/día, sin superar habitualmente 75 mg al día" }
+    ],
+    "presentaciones": "Comprimidos y solución oral en algunos países. Cuando solo hay comprimidos, la dosificación en niños pequeños obliga a formulación magistral.",
+    "inicioDuracion": "El efecto sobre el sueño se nota la primera noche; el efecto analgésico tarda de 1 a 2 semanas en establecerse. Es imprescindible advertirlo para evitar el abandono precoz.",
+    "adversos": [
+      "Somnolencia, que se aprovecha administrando la dosis por la noche",
+      "Sequedad de boca, estreñimiento y retención urinaria por efecto anticolinérgico",
+      "Aumento de peso",
+      "Hipotensión ortostática"
+    ],
+    "precauciones": [
+      "Prolonga el intervalo QT: Conviene un electrocardiograma basal si hay cardiopatía, otros fármacos que lo prolonguen o antecedentes familiares",
+      "Riesgo de síndrome serotoninérgico al asociarla con tramadol, ondansetrón o inhibidores de la recaptación de serotonina",
+      "Suma efecto anticolinérgico con la escopolamina, la butilhioscina y los antihistamínicos, con riesgo de delirium",
+      "No suspender de forma brusca"
+    ],
+    "practico": "Se administra 1 o 2 h antes de acostarse, no justo al meterse en la cama, porque el pico de somnolencia tarda en llegar y de lo contrario el niño amanece atontado. En el dolor neuropático que además impide dormir, resuelve dos problemas con un solo fármaco y suele ser la opción más eficiente.",
+    "etiquetas": ["dolor neuropático", "insomnio", "sialorrea", "QT"]
+  },
+  {
+    "codigo": "ketamina",
+    "nombre": "Ketamina",
+    "grupo": "Coadyuvante",
+    "vias": ["SC", "IV", "VO", "IN"],
+    "controlado": true,
+    "descripcion": "Antagonista del receptor NMDA que a dosis subanestésicas produce analgesia potente sin depresión respiratoria y sin comprometer la vía aérea. En cuidados paliativos es el recurso para el dolor refractario a opioides, sobre todo el neuropático y el que cursa con hiperalgesia o tolerancia rápida, porque revierte parcialmente esos dos fenómenos.",
+    "indicaciones": [
+      "Dolor refractario a dosis crecientes de opioide",
+      "Dolor neuropático intenso",
+      "Hiperalgesia inducida por opioides",
+      "Analgesia para procedimientos dolorosos, como las curas de heridas"
+    ],
+    "dosis": [
+      { "via": "SC", "pauta": "Bolo de 0.1 a 0.3 mg/kg. Infusión continua de 0.1 a 0.3 mg/kg/h, ajustando cada 24 h", "indicacion": "Vía habitual en paliativos domiciliarios", "maximo": "Titulación bajo indicación de equipo con experiencia" },
+      { "via": "IV", "pauta": "Bolo de 0.1 a 0.5 mg/kg. Infusión continua de 0.1 a 0.3 mg/kg/h", "indicacion": "Dolor refractario en el hospital" },
+      { "via": "VO", "pauta": "0.2 a 0.5 mg/kg cada 6 a 8 h, usando la presentación parenteral por vía oral", "indicacion": "Alternativa en domicilio si no hay bomba" },
+      { "via": "IN", "pauta": "0.5 a 1 mg/kg", "indicacion": "Procedimientos, cuando no hay acceso venoso" }
+    ],
+    "presentaciones": "Ampolletas para uso parenteral en distintas concentraciones. La administración oral, nasal y subcutánea se hace con la misma presentación parenteral y no figura en la ficha técnica.",
+    "inicioDuracion": "Inicio en minutos por vía parenteral y en 20 a 30 minutos por vía oral. El efecto ahorrador de opioide se aprecia en las primeras 24 a 48 h.",
+    "adversos": [
+      "Fenómenos psicomiméticos: Sueños vívidos, sensación de irrealidad, alucinaciones. A dosis analgésicas son poco frecuentes y ceden reduciendo la dosis o añadiendo una benzodiacepina",
+      "Hipersalivación, que puede requerir un antisecretor",
+      "Aumento de la presión arterial y de la frecuencia cardiaca",
+      "Nistagmo y visión borrosa"
+    ],
+    "precauciones": [
+      "Precaución en el niño con hipertensión intracraneal, aunque la contraindicación clásica se ha matizado mucho",
+      "Al iniciarla suele ser necesario reducir la dosis de opioide entre un 25 y un 50 por ciento, porque el efecto ahorrador es notable y de lo contrario aparece sedación",
+      "Requiere indicación y seguimiento por un equipo con experiencia en el fármaco"
+    ],
+    "practico": "Es el fármaco que hay que recordar cuando la escalada de opioide no consigue el control y solo añade sedación, que es la firma de la hiperalgesia inducida por opioides. En ese escenario, añadir ketamina y bajar el opioide funciona mejor que seguir subiendo.",
+    "etiquetas": ["dolor refractario", "NMDA", "hiperalgesia", "procedimientos"]
+  },
+  {
+    "codigo": "lidocaina-topica",
+    "nombre": "Lidocaína tópica",
+    "grupo": "Coadyuvante",
+    "vias": ["TD"],
+    "controlado": false,
+    "descripcion": "Anestésico local en presentación de parche o de crema que bloquea los canales de sodio de las fibras nerviosas periféricas sensibilizadas. Su gran ventaja en pediatría es que actúa donde duele con absorción sistémica muy baja, así que no añade sedación ni interacciona con el resto del tratamiento.",
+    "indicaciones": [
+      "Dolor neuropático localizado y superficial, con alodinia",
+      "Dolor cicatricial o postquirúrgico circunscrito",
+      "Prevención del dolor de la punción, en crema anestésica",
+      "Dolor sobre una zona concreta de piel infiltrada por tumor"
+    ],
+    "dosis": [
+      { "via": "TD", "pauta": "Parche al 5 por ciento: Aplicar 12 h y retirar 12 h. Se puede recortar al tamaño de la zona dolorosa", "indicacion": "Dolor neuropático localizado", "maximo": "Limitar la superficie total tratada según el peso del niño" },
+      { "via": "TD", "pauta": "Crema anestésica: Aplicar 30 a 60 minutos antes de la punción bajo apósito oclusivo", "indicacion": "Prevención del dolor por procedimiento" }
+    ],
+    "presentaciones": "Parche al 5 por ciento, crema de lidocaína con prilocaína y gel de lidocaína para mucosas.",
+    "inicioDuracion": "El parche empieza a hacer efecto en las primeras horas y el beneficio pleno puede tardar días. La crema anestésica necesita de 30 a 60 minutos de contacto para anestesiar la piel.",
+    "adversos": [
+      "Irritación o eritema local bajo el parche o la crema",
+      "Metahemoglobinemia con prilocaína en lactantes pequeños o si se aplica sobre superficie extensa"
+    ],
+    "precauciones": [
+      "No aplicar sobre piel lesionada, ulcerada o mucosas, porque la absorción aumenta mucho",
+      "Vigilar la superficie total en niños pequeños para no superar dosis sistémicas seguras",
+      "Precaución con prilocaína en menores de 3 meses por el riesgo de metahemoglobinemia"
+    ],
+    "practico": "Está claramente infrautilizada. En el niño con una zona concreta de alodinia, donde el roce de la ropa o de la sábana produce dolor, un parche recortado a medida puede evitar tener que subir un opioide sistémico con todos sus efectos adversos.",
+    "etiquetas": ["dolor localizado", "alodinia", "punción", "tópico"]
+  },
+  {
+    "codigo": "dexametasona",
+    "nombre": "Dexametasona",
+    "grupo": "Corticoide",
+    "vias": ["VO", "SC", "IV"],
+    "controlado": false,
+    "descripcion": "Corticoide de potencia alta, con muy poca actividad mineralocorticoide y vida media larga, que permite una sola dosis diaria. Es uno de los fármacos más versátiles de todo el arsenal paliativo: Reduce el edema peritumoral, mejora el apetito y el ánimo, alivia el dolor por compresión y actúa como antiemético.",
+    "indicaciones": [
+      "Hipertensión intracraneal por tumor o por edema",
+      "Compresión medular, como urgencia",
+      "Dolor por compresión nerviosa o por infiltración de partes blandas",
+      "Obstrucción intestinal maligna, por su efecto sobre el edema de la pared",
+      "Náusea y vómito, sola o asociada a otro antiemético",
+      "Anorexia y astenia, por periodos cortos"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Hipertensión intracraneal: 0.25 a 0.5 mg/kg cada 6 h las primeras 48 h y después la dosis mínima eficaz. Antiemético o estimulante del apetito: 0.1 a 0.2 mg/kg/día en dosis única matutina", "indicacion": "La dosis depende mucho de la indicación", "maximo": "Habitualmente 16 mg al día en hipertensión intracraneal" },
+      { "via": "SC", "pauta": "Misma dosis que por vía oral", "indicacion": "Cuando no se tolera la vía oral. Es compatible con la mayoría de las mezclas subcutáneas" },
+      { "via": "IV", "pauta": "Misma dosis que por vía oral, lento" }
+    ],
+    "presentaciones": "Comprimidos, solución oral y ampolletas parenterales. La ampolleta se puede administrar también por vía oral cuando no hay solución disponible.",
+    "inicioDuracion": "El efecto sobre el edema peritumoral se aprecia en 24 a 48 h. El efecto sobre el ánimo y el apetito, en pocos días. La vida media biológica es de 36 a 54 h, lo que justifica la dosis única.",
+    "adversos": [
+      "Cambios de conducta e irritabilidad, que en niños son muy llamativos y a veces motivo suficiente para retirarla",
+      "Insomnio, sobre todo si se administra por la tarde",
+      "Aumento del apetito, edema, cara redondeada y cambios en la imagen corporal, muy mal tolerados por adolescentes",
+      "Hiperglucemia",
+      "Miopatía proximal con el uso prolongado",
+      "Candidiasis oral"
+    ],
+    "precauciones": [
+      "Administrar siempre por la mañana para respetar el ritmo circadiano y no provocar insomnio",
+      "Asociar protección gástrica si se combina con un antiinflamatorio",
+      "Revisar la indicación cada 5 a 7 días y bajar a la dosis mínima eficaz: El error más frecuente es dejarla puesta indefinidamente a la dosis de inicio",
+      "Retirada gradual si el uso ha sido superior a 2 semanas",
+      "En el adolescente hay que hablar antes del cambio de aspecto físico, porque descubrirlo sin aviso es motivo frecuente de abandono del tratamiento"
+    ],
+    "practico": "Cuando se prescribe hay que fijar de entrada una fecha de revisión y un objetivo comprobable, por ejemplo que ceda la cefalea matutina o que vuelva a comer. Si a los 5 o 7 días ese objetivo no se ha alcanzado, se retira en lugar de mantenerla por inercia acumulando efectos adversos.",
+    "etiquetas": ["hipertensión intracraneal", "compresión medular", "apetito", "antiemético", "versátil"]
+  },
+  {
+    "codigo": "prednisolona",
+    "nombre": "Prednisolona",
+    "grupo": "Corticoide",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Corticoide de potencia intermedia y vida media más corta que la dexametasona, con presentaciones orales pediátricas cómodas. Se prefiere cuando se busca efecto antiinflamatorio sistémico mantenido o cuando la dexametasona produce demasiados efectos sobre la conducta.",
+    "indicaciones": [
+      "Efecto antiinflamatorio mantenido",
+      "Estimulación del apetito, como alternativa a la dexametasona",
+      "Broncoespasmo asociado",
+      "Patología inflamatoria de base que ya lo requería"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.5 a 2 mg/kg/día en dosis única matutina o repartido en 2 tomas", "indicacion": "La dosis depende de la indicación", "maximo": "Habitualmente 60 mg al día" }
+    ],
+    "presentaciones": "Solución oral, comprimidos y comprimidos bucodispersables, que son cómodos en niños con dificultad para tragar.",
+    "inicioDuracion": "Inicio del efecto en horas y vida media biológica de 18 a 36 h.",
+    "adversos": [
+      "Los mismos que la dexametasona, con más retención de líquidos por su mayor actividad mineralocorticoide",
+      "Cambios de conducta algo menos marcados que con dexametasona"
+    ],
+    "precauciones": [
+      "Dosis única matutina para respetar el ritmo circadiano",
+      "Retirada gradual si el uso supera las 2 semanas",
+      "Vigilar la glucemia y la tensión arterial en tratamientos prolongados"
+    ],
+    "practico": "La equivalencia práctica es que 0.75 mg de dexametasona corresponden a unos 5 mg de prednisolona. Cambiar de una a otra es una maniobra útil cuando los efectos sobre la conducta de la dexametasona resultan intolerables para la familia pero se necesita mantener el corticoide.",
+    "etiquetas": ["antiinflamatorio", "apetito", "alternativa"]
+  },
+  {
+    "codigo": "ondansetron",
+    "nombre": "Ondansetrón",
+    "grupo": "Antiemético",
+    "vias": ["VO", "IV", "SC"],
+    "controlado": false,
+    "descripcion": "Antagonista de los receptores 5HT3 de la serotonina, muy eficaz en la náusea y el vómito mediados por liberación de serotonina en el intestino, que es el mecanismo de la quimioterapia y la radioterapia. Fuera de ese mecanismo rinde bastante menos, y ese matiz es la clave para usarlo bien.",
+    "indicaciones": [
+      "Náusea y vómito por quimioterapia o radioterapia",
+      "Náusea y vómito postoperatorios",
+      "Náusea por irritación de la mucosa intestinal o por distensión"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.1 a 0.15 mg/kg cada 8 h", "maximo": "8 mg por toma y 24 mg al día" },
+      { "via": "IV", "pauta": "0.1 a 0.15 mg/kg cada 8 h, lento", "maximo": "8 mg por dosis" },
+      { "via": "SC", "pauta": "Misma dosis que por vía intravenosa, en bolo o en infusión continua", "indicacion": "Compatible con las mezclas subcutáneas habituales" }
+    ],
+    "presentaciones": "Comprimidos, comprimidos bucodispersables, solución oral y ampolletas parenterales. Los bucodispersables son muy útiles en el niño que vomita todo lo que traga.",
+    "inicioDuracion": "Inicio en 30 minutos por vía oral y en pocos minutos por vía intravenosa, con duración de 8 a 12 h.",
+    "adversos": [
+      "Estreñimiento, que es su efecto adverso más relevante en paliativos porque se suma al de los opioides",
+      "Cefalea",
+      "Prolongación del intervalo QT, dependiente de la dosis"
+    ],
+    "precauciones": [
+      "Vigilar el estreñimiento y reforzar el laxante, porque la combinación con opioides puede producir un cuadro obstructivo",
+      "Precaución con otros fármacos que prolonguen el QT, como el haloperidol, la metadona o la amitriptilina",
+      "Riesgo de síndrome serotoninérgico con tramadol y con antidepresivos serotoninérgicos"
+    ],
+    "practico": "Es el antiemético que más se prescribe y muchas veces el que peor encaja, porque en paliativos la náusea suele ser de origen central, por opioides, por hipertensión intracraneal o metabólica, y ahí el mecanismo correcto es dopaminérgico y no serotoninérgico. Antes de prescribirlo conviene preguntarse cuál es el mecanismo del vómito de este niño.",
+    "etiquetas": ["quimioterapia", "5HT3", "estreñimiento", "QT"]
+  },
+  {
+    "codigo": "metoclopramida",
+    "nombre": "Metoclopramida",
+    "grupo": "Antiemético",
+    "vias": ["VO", "IV", "SC"],
+    "controlado": false,
+    "descripcion": "Antagonista dopaminérgico D2 con efecto procinético sobre el tubo digestivo alto. Su doble mecanismo la hace especialmente útil cuando la náusea se acompaña de sensación de plenitud precoz o de retraso del vaciamiento gástrico, un cuadro muy frecuente en el niño con enfermedad avanzada.",
+    "indicaciones": [
+      "Náusea y vómito con retraso del vaciamiento gástrico",
+      "Saciedad precoz y plenitud posprandial",
+      "Náusea inducida por opioides",
+      "Hipo persistente"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.1 a 0.15 mg/kg cada 8 h", "indicacion": "Antes de las comidas para aprovechar el efecto procinético", "maximo": "0.5 mg/kg/día y no más de 5 días seguidos" },
+      { "via": "IV", "pauta": "0.1 a 0.15 mg/kg cada 8 h, lento", "maximo": "0.5 mg/kg/día" },
+      { "via": "SC", "pauta": "Misma dosis, en bolo o en infusión continua", "indicacion": "Compatible con morfina en la misma jeringa" }
+    ],
+    "presentaciones": "Solución oral, comprimidos y ampolletas parenterales.",
+    "inicioDuracion": "Inicio en 30 a 60 minutos por vía oral y en pocos minutos por vía parenteral, con duración de 6 a 8 h.",
+    "adversos": [
+      "Reacciones extrapiramidales agudas: Crisis oculógiras, tortícolis, trismo y distonía. Son mucho más frecuentes en niños y adolescentes que en adultos y resultan muy alarmantes para la familia",
+      "Inquietud y acatisia",
+      "Somnolencia"
+    ],
+    "precauciones": [
+      "Las agencias reguladoras han restringido su uso pediátrico a periodos cortos, habitualmente no más de 5 días, por el riesgo extrapiramidal",
+      "Contraindicada si hay obstrucción intestinal mecánica completa, porque el efecto procinético contra un obstáculo produce dolor cólico",
+      "La distonía aguda se trata con difenhidramina o con biperideno y cede rápido, pero conviene avisar a la familia de que puede ocurrir",
+      "Evitar asociarla con antipsicóticos, que suman bloqueo dopaminérgico"
+    ],
+    "practico": "En la obstrucción intestinal incompleta puede ayudar, pero en la completa está contraindicada, así que antes de usarla hay que decidir si hay o no obstáculo mecánico. Cuando aparece una distonía aguda en un niño, la metoclopramida es la primera causa que hay que descartar.",
+    "etiquetas": ["procinético", "vaciamiento gástrico", "extrapiramidal", "obstrucción"]
+  },
+  {
+    "codigo": "haloperidol",
+    "nombre": "Haloperidol",
+    "grupo": "Antiemético",
+    "vias": ["VO", "SC", "IV"],
+    "controlado": false,
+    "descripcion": "Antipsicótico típico y potente antagonista dopaminérgico D2, que a dosis muy bajas es uno de los mejores antieméticos de que se dispone en paliativos, y a dosis algo mayores es el fármaco de elección para el delirium. Es compatible con la morfina en la misma jeringa, lo que lo hace muy práctico en infusión subcutánea.",
+    "indicaciones": [
+      "Náusea y vómito de origen central: Por opioides, metabólico, por uremia o por hipercalcemia",
+      "Delirium hiperactivo con agitación",
+      "Náusea en la obstrucción intestinal maligna",
+      "Hipo persistente"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Antiemético: 0.01 a 0.02 mg/kg cada 8 a 12 h. Delirium: 0.01 a 0.05 mg/kg cada 8 h", "indicacion": "La dosis antiemética es muy inferior a la antipsicótica", "maximo": "Habitualmente 5 mg al día como antiemético" },
+      { "via": "SC", "pauta": "Misma dosis, en bolo o en infusión continua de 24 h", "indicacion": "Compatible con morfina y midazolam en la misma mezcla" },
+      { "via": "IV", "pauta": "Misma dosis, lento", "indicacion": "Requiere vigilancia del intervalo QT" }
+    ],
+    "presentaciones": "Solución oral en gotas, comprimidos y ampolletas parenterales. La solución en gotas permite dosificar cantidades muy pequeñas, que es justo lo que se necesita como antiemético.",
+    "inicioDuracion": "Inicio en 30 a 60 minutos, con duración de 8 a 12 h. La vida media larga permite en muchos casos una sola dosis nocturna.",
+    "adversos": [
+      "Reacciones extrapiramidales, poco frecuentes a las dosis antieméticas bajas pero posibles",
+      "Sedación, generalmente leve a estas dosis",
+      "Prolongación del intervalo QT",
+      "Acatisia, que se confunde con facilidad con empeoramiento de la agitación y lleva al error de subir la dosis"
+    ],
+    "precauciones": [
+      "Vigilar el QT si hay cardiopatía o se asocian otros fármacos que lo prolonguen",
+      "Ante un niño que se pone más inquieto tras subir la dosis, pensar en acatisia antes que en falta de efecto",
+      "Precaución en el niño con enfermedad extrapiramidal de base"
+    ],
+    "practico": "Es el antiemético de elección para la náusea inducida por opioides, que es la causa más frecuente en el niño que acaba de iniciar morfina, y la dosis que hace falta es sorprendentemente pequeña. En delirium es de primera línea y funciona mejor que las benzodiacepinas, que en solitario suelen empeorar el cuadro.",
+    "etiquetas": ["náusea central", "delirium", "opioides", "subcutáneo"]
+  },
+  {
+    "codigo": "levomepromazina",
+    "nombre": "Levomepromazina",
+    "grupo": "Antiemético",
+    "vias": ["VO", "SC"],
+    "controlado": false,
+    "descripcion": "Fenotiazina de amplio espectro que bloquea receptores dopaminérgicos, histaminérgicos, muscarínicos y serotoninérgicos a la vez. Esa promiscuidad la convierte en el antiemético de rescate cuando han fallado los de mecanismo único, y su efecto sedante a dosis mayores la hace útil en sedación paliativa y en delirium.",
+    "indicaciones": [
+      "Náusea y vómito refractarios a otros antieméticos",
+      "Náusea de mecanismo múltiple o desconocido",
+      "Delirium con agitación, especialmente si el haloperidol no basta",
+      "Sedación paliativa, como segunda línea tras el midazolam"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Antiemético: 0.05 a 0.1 mg/kg en dosis nocturna. Sedación: 0.35 a 3 mg/kg/día", "indicacion": "La dosis antiemética es muy inferior a la sedante" },
+      { "via": "SC", "pauta": "Antiemético: 0.05 a 0.1 mg/kg cada 12 a 24 h. Sedación: Infusión continua de 0.35 a 3 mg/kg en 24 h", "indicacion": "Puede irritar el punto de inyección: Conviene diluir bien" }
+    ],
+    "presentaciones": "Comprimidos, solución oral en gotas y ampolletas parenterales. La disponibilidad varía mucho entre países.",
+    "inicioDuracion": "Inicio en 30 minutos por vía subcutánea, con duración prolongada que permite dosis cada 12 o 24 h.",
+    "adversos": [
+      "Sedación, que es dosis dependiente y a veces es el efecto buscado",
+      "Hipotensión ortostática",
+      "Efectos anticolinérgicos: Sequedad de boca, retención urinaria",
+      "Reacciones extrapiramidales",
+      "Irritación en el punto de inyección subcutánea"
+    ],
+    "precauciones": [
+      "A dosis antieméticas la sedación es leve, pero conviene advertirla porque la familia puede alarmarse",
+      "Diluir bien para la administración subcutánea y vigilar el punto",
+      "Suma efecto anticolinérgico con otros fármacos del mismo perfil",
+      "Precaución con la hipotensión en el niño con volumen intravascular reducido"
+    ],
+    "practico": "Es el fármaco que hay que recordar cuando ya se han probado dos antieméticos de mecanismos distintos sin resultado. Su ventaja es precisamente que cubre varios mecanismos a la vez, así que sirve cuando no se ha logrado identificar cuál es el que domina.",
+    "etiquetas": ["antiemético de rescate", "amplio espectro", "sedación", "delirium"]
+  },
+  {
+    "codigo": "dimenhidrinato",
+    "nombre": "Dimenhidrinato",
+    "grupo": "Antiemético",
+    "vias": ["VO", "IV", "REC"],
+    "controlado": false,
+    "descripcion": "Antihistamínico H1 con efecto anticolinérgico que actúa sobre el centro del vómito y sobre el aparato vestibular. Es el antiemético de elección cuando la náusea tiene un componente de movimiento o vestibular, y también resulta útil en la náusea asociada a hipertensión intracraneal.",
+    "indicaciones": [
+      "Náusea de origen vestibular o que empeora con el movimiento",
+      "Náusea asociada a hipertensión intracraneal",
+      "Vértigo",
+      "Náusea por obstrucción intestinal, como coadyuvante"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "1 a 1.5 mg/kg cada 6 a 8 h", "maximo": "300 mg al día" },
+      { "via": "IV", "pauta": "1 a 1.5 mg/kg cada 6 a 8 h, diluido y lento", "maximo": "300 mg al día" },
+      { "via": "REC", "pauta": "1 a 1.5 mg/kg cada 6 a 8 h", "indicacion": "Útil si el niño vomita todo lo que traga" }
+    ],
+    "presentaciones": "Comprimidos, solución oral, supositorios y ampolletas parenterales.",
+    "inicioDuracion": "Inicio en 30 minutos, con duración de 6 a 8 h.",
+    "adversos": [
+      "Somnolencia, que es marcada y suele ser el efecto limitante",
+      "Sequedad de boca y visión borrosa por efecto anticolinérgico",
+      "Excitación paradójica en niños pequeños, que ocurre con cierta frecuencia y desconcierta"
+    ],
+    "precauciones": [
+      "Suma sedación con opioides y benzodiacepinas",
+      "Suma efecto anticolinérgico con escopolamina, butilhioscina y amitriptilina, con riesgo de delirium en el niño frágil",
+      "Puede empeorar el estreñimiento"
+    ],
+    "practico": "El dato que orienta a usarlo es que la náusea del niño empeore claramente al incorporarlo o al moverlo en la cama, o que se acompañe de cefalea matutina y vómito en escopetazo. En esos dos escenarios rinde más que el ondansetrón.",
+    "etiquetas": ["vestibular", "movimiento", "hipertensión intracraneal", "antihistamínico"]
+  },
+  {
+    "codigo": "midazolam",
+    "nombre": "Midazolam",
+    "grupo": "Sedante",
+    "vias": ["SC", "IV", "IN", "SL", "VO"],
+    "controlado": true,
+    "descripcion": "Benzodiacepina de acción corta e hidrosoluble, que es probablemente el fármaco más versátil de la maleta de urgencias domiciliaria. Sirve para la crisis convulsiva, para la ansiedad extrema, para la disnea con componente de pánico y para la sedación paliativa, y se puede administrar por vías que no requieren una aguja intravenosa.",
+    "indicaciones": [
+      "Crisis convulsiva prolongada, por vía bucal o nasal",
+      "Ansiedad extrema y crisis de pánico asociada a disnea",
+      "Sedación paliativa, como fármaco de primera línea",
+      "Agitación terminal",
+      "Espasmo muscular doloroso"
+    ],
+    "dosis": [
+      { "via": "SL", "pauta": "0.3 mg/kg administrado en el surco entre la encía y la mejilla", "indicacion": "Crisis convulsiva en domicilio: Es la vía de elección por su rapidez y facilidad", "maximo": "10 mg por dosis" },
+      { "via": "IN", "pauta": "0.2 a 0.3 mg/kg repartido entre las dos fosas nasales con atomizador", "indicacion": "Crisis convulsiva o ansiedad aguda, si no se puede usar la vía bucal", "maximo": "10 mg por dosis" },
+      { "via": "SC", "pauta": "Bolo de 0.05 a 0.1 mg/kg. Infusión continua de 0.02 a 0.1 mg/kg/h, titulando", "indicacion": "Sedación paliativa y control de la agitación en los últimos días" },
+      { "via": "IV", "pauta": "0.05 a 0.1 mg/kg lento, repetible", "indicacion": "Hospital, con acceso venoso disponible" },
+      { "via": "VO", "pauta": "0.5 mg/kg", "indicacion": "Ansiólisis previa a un procedimiento", "maximo": "20 mg por dosis" }
+    ],
+    "presentaciones": "Ampolletas parenterales en varias concentraciones y solución bucal precargada en jeringas por dosis. La solución bucal precargada es el formato ideal para el domicilio porque la familia no tiene que calcular nada.",
+    "inicioDuracion": "Por vía bucal o nasal, inicio en 5 a 10 minutos. Por vía intravenosa, en 2 a 3 minutos. La duración del efecto de un bolo es de 1 a 2 h, lo que obliga a la infusión continua cuando se busca sedación mantenida.",
+    "adversos": [
+      "Sedación, que casi siempre es el efecto buscado",
+      "Depresión respiratoria, sobre todo si se asocia a opioides o si el bolo es rápido",
+      "Excitación paradójica, más frecuente en niños que en adultos",
+      "Tolerancia con el uso prolongado, que obliga a subir la dosis"
+    ],
+    "precauciones": [
+      "Comprobar siempre la concentración de la ampolleta: Coexisten presentaciones muy distintas y la confusión es un error grave descrito",
+      "La combinación con opioides potencia la depresión respiratoria: Al asociarlos, se titula despacio",
+      "No suspender de forma brusca tras un uso prolongado",
+      "En el delirium hiperactivo puede empeorar la agitación: Ahí el fármaco correcto es un antipsicótico, no una benzodiacepina"
+    ],
+    "practico": "Es el fármaco que hay que dejar preparado en casa, con la dosis ya calculada en miligramos y en mililitros y escrita en la nevera, para la crisis convulsiva y para la crisis de disnea. Enseñar a la familia a administrarlo por vía bucal, con demostración práctica y no solo con explicación, evita la mayoría de los traslados nocturnos a urgencias.",
+    "etiquetas": ["convulsión", "sedación paliativa", "kit domiciliario", "bucal", "ansiedad"]
+  },
+  {
+    "codigo": "lorazepam",
+    "nombre": "Lorazepam",
+    "grupo": "Sedante",
+    "vias": ["VO", "SL"],
+    "controlado": true,
+    "descripcion": "Benzodiacepina de acción intermedia, con la ventaja de tener una presentación sublingual que actúa rápido sin necesidad de tragar. En paliativos pediátricos su papel principal es la ansiedad de fondo y el insomnio del niño mayor y del adolescente.",
+    "indicaciones": [
+      "Ansiedad anticipatoria, por ejemplo antes de un procedimiento o de una prueba",
+      "Insomnio con componente de ansiedad",
+      "Disnea con componente ansioso, asociado a un opioide",
+      "Náusea anticipatoria por quimioterapia"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.02 a 0.05 mg/kg cada 6 a 8 h", "maximo": "2 mg por dosis" },
+      { "via": "SL", "pauta": "0.02 a 0.05 mg/kg, dejando disolver bajo la lengua", "indicacion": "Inicio más rápido y sin necesidad de tragar", "maximo": "2 mg por dosis" }
+    ],
+    "presentaciones": "Comprimidos, algunos de ellos ranurados y aptos para uso sublingual.",
+    "inicioDuracion": "Inicio en 20 a 30 minutos por vía oral y en 10 a 15 minutos por vía sublingual, con duración de 6 a 8 h.",
+    "adversos": [
+      "Somnolencia y enlentecimiento",
+      "Excitación paradójica en niños pequeños",
+      "Amnesia anterógrada, que a veces resulta útil antes de un procedimiento",
+      "Tolerancia y dependencia con el uso prolongado"
+    ],
+    "precauciones": [
+      "Suma depresión respiratoria con opioides",
+      "No suspender de forma brusca tras un uso mantenido",
+      "En el niño con delirium puede empeorar el cuadro"
+    ],
+    "practico": "La ansiedad anticipatoria ante un procedimiento repetido, como una punción lumbar mensual, responde mucho mejor a una dosis administrada con tiempo suficiente antes de salir de casa que a una administrada ya en la sala. El componente aprendido de esa ansiedad se puede desmontar si se anticipa bien.",
+    "etiquetas": ["ansiedad", "sublingual", "insomnio", "anticipatoria"]
+  },
+  {
+    "codigo": "diazepam",
+    "nombre": "Diazepam",
+    "grupo": "Anticonvulsivo",
+    "vias": ["REC", "VO", "IV"],
+    "controlado": true,
+    "descripcion": "Benzodiacepina de acción larga cuyo papel en cuidados paliativos pediátricos es hoy casi exclusivamente la crisis convulsiva en domicilio por vía rectal, cuando no se dispone de midazolam bucal. También se usa como relajante muscular en el espasmo doloroso.",
+    "indicaciones": [
+      "Crisis convulsiva prolongada, por vía rectal, si no hay midazolam bucal",
+      "Espasmo muscular doloroso y espasticidad",
+      "Ansiedad, aunque hoy se prefieren otras benzodiacepinas"
+    ],
+    "dosis": [
+      { "via": "REC", "pauta": "0.3 a 0.5 mg/kg en microenema", "indicacion": "Crisis convulsiva en domicilio", "maximo": "10 mg por dosis" },
+      { "via": "VO", "pauta": "0.1 a 0.3 mg/kg cada 8 a 12 h", "indicacion": "Espasticidad y espasmo muscular" },
+      { "via": "IV", "pauta": "0.1 a 0.3 mg/kg lento", "indicacion": "Hospital", "maximo": "10 mg por dosis" }
+    ],
+    "presentaciones": "Microenemas rectales en dosis fijas, comprimidos, solución oral y ampolletas parenterales.",
+    "inicioDuracion": "Por vía rectal, inicio en 5 a 10 minutos. La vida media es muy larga, con metabolitos activos que se acumulan y prolongan la sedación durante muchas horas.",
+    "adversos": [
+      "Sedación prolongada, por la vida media larga y los metabolitos activos",
+      "Depresión respiratoria",
+      "Excitación paradójica"
+    ],
+    "precauciones": [
+      "No se administra por vía subcutánea: Produce necrosis tisular en el punto de inyección",
+      "La sedación posterior a una dosis rectal puede durar muchas horas, lo que hay que advertir a la familia",
+      "Se acumula con dosis repetidas"
+    ],
+    "practico": "Donde se dispone de midazolam bucal, este ha desplazado al diazepam rectal por comodidad y por la dignidad del niño mayor, para quien la administración rectal delante de otras personas puede ser muy humillante. El diazepam rectal sigue siendo la alternativa cuando el midazolam no está disponible.",
+    "etiquetas": ["crisis convulsiva", "rectal", "espasticidad", "no subcutáneo"]
+  },
+  {
+    "codigo": "fenobarbital",
+    "nombre": "Fenobarbital",
+    "grupo": "Anticonvulsivo",
+    "vias": ["SC", "IV", "VO"],
+    "controlado": true,
+    "descripcion": "Barbitúrico de acción prolongada con doble papel en cuidados paliativos: Control de convulsiones refractarias y sedación paliativa de tercera línea cuando el midazolam y la levomepromazina han fallado. Es uno de los pocos fármacos con acción anticonvulsiva potente que admite la vía subcutánea.",
+    "indicaciones": [
+      "Convulsiones refractarias, incluido el estado epiléptico en domicilio",
+      "Prevención de convulsiones cuando no se puede usar la vía oral",
+      "Sedación paliativa refractaria al midazolam y a la levomepromazina"
+    ],
+    "dosis": [
+      { "via": "SC", "pauta": "Carga de 10 a 20 mg/kg. Mantenimiento en infusión continua de 5 a 20 mg/kg en 24 h", "indicacion": "Debe administrarse en línea propia: Es incompatible con casi todo lo demás" },
+      { "via": "IV", "pauta": "Carga de 15 a 20 mg/kg, lento. Mantenimiento de 3 a 5 mg/kg/día", "indicacion": "Estado epiléptico en el hospital" },
+      { "via": "VO", "pauta": "3 a 5 mg/kg/día en 1 o 2 tomas", "indicacion": "Mantenimiento anticonvulsivo" }
+    ],
+    "presentaciones": "Comprimidos, solución oral y ampolletas parenterales.",
+    "inicioDuracion": "Por vía parenteral el efecto anticonvulsivo aparece en 15 a 30 minutos. La vida media es muy larga, de 2 a 5 días en niños, lo que da estabilidad pero también acumulación.",
+    "adversos": [
+      "Sedación marcada, que puede ser el efecto buscado",
+      "Depresión respiratoria a dosis altas",
+      "Hiperactividad paradójica en niños con uso crónico",
+      "Exantema, y con poca frecuencia reacciones cutáneas graves"
+    ],
+    "precauciones": [
+      "Es incompatible en mezcla con la mayoría de los fármacos de uso subcutáneo: Requiere una vía exclusiva",
+      "Potente inductor enzimático: Reduce los niveles de muchos fármacos que el niño pueda tomar",
+      "La vida media larga hace que el efecto de un cambio de dosis tarde días en verse por completo",
+      "No suspender de forma brusca"
+    ],
+    "practico": "En el niño con enfermedad neurodegenerativa que llega a los últimos días con convulsiones y sin vía oral, el fenobarbital subcutáneo resuelve dos problemas a la vez, la convulsión y la necesidad de sedación, y evita tener que trasladarlo al hospital. Hay que recordar poner una segunda vía para el resto de la medicación.",
+    "etiquetas": ["convulsiones refractarias", "sedación de tercera línea", "subcutáneo", "vía exclusiva"]
+  },
+  {
+    "codigo": "levetiracetam",
+    "nombre": "Levetiracetam",
+    "grupo": "Anticonvulsivo",
+    "vias": ["VO", "IV"],
+    "controlado": false,
+    "descripcion": "Antiepiléptico de amplio espectro con un perfil de interacciones excepcionalmente limpio, ya que apenas se metaboliza en el hígado. Esa característica lo hace especialmente valioso en el niño paliativo, que suele llevar muchos fármacos simultáneos.",
+    "indicaciones": [
+      "Prevención de crisis convulsivas de cualquier tipo",
+      "Epilepsia en el niño con enfermedad neurodegenerativa",
+      "Convulsiones en el niño con tumor cerebral"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Inicio: 10 mg/kg cada 12 h. Se sube cada 2 semanas hasta 30 mg/kg cada 12 h según respuesta", "maximo": "60 mg/kg/día, sin superar 3 g al día" },
+      { "via": "IV", "pauta": "Misma dosis que por vía oral, en infusión de 15 minutos", "indicacion": "La conversión entre vías es de 1 a 1" }
+    ],
+    "presentaciones": "Solución oral, comprimidos, comprimidos recubiertos y solución para infusión. La solución oral es muy útil en niños con sonda de alimentación.",
+    "inicioDuracion": "Alcanza niveles eficaces con rapidez, en 1 o 2 días, sin necesidad de titulación prolongada.",
+    "adversos": [
+      "Irritabilidad, agresividad y cambios de conducta, que son su efecto adverso característico y a veces obligan a retirarlo",
+      "Somnolencia",
+      "Astenia"
+    ],
+    "precauciones": [
+      "Ajustar la dosis en insuficiencia renal, porque se elimina sin metabolizar por el riñón",
+      "Vigilar los cambios de conducta, que en el niño con daño neurológico pueden confundirse con progresión de la enfermedad",
+      "La administración de piridoxina puede reducir la irritabilidad en algunos casos"
+    ],
+    "practico": "Su gran ventaja es la ausencia de interacciones, lo que evita tener que recalcular el resto del tratamiento. Su gran desventaja es la irritabilidad, y si aparece hay que reconocerla como efecto del fármaco y no como empeoramiento del niño.",
+    "etiquetas": ["antiepiléptico", "sin interacciones", "irritabilidad", "renal"]
+  },
+  {
+    "codigo": "butilhioscina",
+    "nombre": "Butilhioscina",
+    "grupo": "Antisecretor",
+    "vias": ["SC", "IV", "VO"],
+    "controlado": false,
+    "descripcion": "Anticolinérgico de amonio cuaternario que no atraviesa la barrera hematoencefálica, lo que significa que reduce las secreciones y el espasmo visceral sin producir sedación ni confusión. Esa propiedad lo convierte en el antisecretor de elección cuando se quiere que el niño siga despierto.",
+    "indicaciones": [
+      "Estertores de los últimos días",
+      "Dolor cólico visceral e intestinal",
+      "Obstrucción intestinal maligna, para reducir las secreciones y el espasmo",
+      "Sialorrea"
+    ],
+    "dosis": [
+      { "via": "SC", "pauta": "0.3 a 0.5 mg/kg cada 6 a 8 h en bolo, o la dosis equivalente en infusión continua de 24 h", "indicacion": "Vía de elección para estertores", "maximo": "5 mg/kg/día, sin superar 100 mg al día" },
+      { "via": "IV", "pauta": "0.3 a 0.5 mg/kg cada 6 a 8 h, lento", "maximo": "100 mg al día" },
+      { "via": "VO", "pauta": "0.3 a 0.5 mg/kg cada 6 a 8 h", "indicacion": "Biodisponibilidad oral baja: Rinde bastante menos que por vía parenteral" }
+    ],
+    "presentaciones": "Comprimidos, supositorios y ampolletas parenterales. La ampolleta es la presentación relevante en paliativos.",
+    "inicioDuracion": "Inicio en 15 a 30 minutos por vía subcutánea, con duración de 6 a 8 h.",
+    "adversos": [
+      "Sequedad de boca, que obliga a reforzar los cuidados de la mucosa oral",
+      "Retención urinaria",
+      "Visión borrosa",
+      "Taquicardia"
+    ],
+    "precauciones": [
+      "No revierte las secreciones que ya están acumuladas: Solo impide que se produzcan más, así que hay que administrarlo en cuanto aparecen los primeros estertores y no cuando ya son intensos",
+      "Suma efecto anticolinérgico con amitriptilina, dimenhidrinato y escopolamina",
+      "Vigilar la retención urinaria, sobre todo si el niño ya toma opioides"
+    ],
+    "practico": "La diferencia con la escopolamina es la que decide cuál usar: La butilhioscina no atraviesa la barrera hematoencefálica y por tanto no seda ni confunde, así que es la elección cuando el niño está consciente y se quiere que siga estándolo. Y la regla de oro de los estertores es que se administra pronto, porque el fármaco solo previene.",
+    "etiquetas": ["estertores", "cólico", "no sedante", "primera línea"]
+  },
+  {
+    "codigo": "escopolamina",
+    "nombre": "Escopolamina (hioscina hidrobromuro)",
+    "grupo": "Antisecretor",
+    "vias": ["SC", "TD", "IV"],
+    "controlado": false,
+    "descripcion": "Anticolinérgico de amina terciaria que sí atraviesa la barrera hematoencefálica, lo que le añade un efecto sedante y antiemético central que puede ser deseable o problemático según el caso. Su presentación en parche transdérmico es muy cómoda para la sialorrea crónica.",
+    "indicaciones": [
+      "Estertores de los últimos días, cuando además interesa cierta sedación",
+      "Sialorrea crónica del niño con enfermedad neurológica, en parche",
+      "Náusea de origen vestibular",
+      "Espasmo visceral"
+    ],
+    "dosis": [
+      { "via": "SC", "pauta": "10 microgramos/kg cada 4 a 8 h, o la dosis equivalente en infusión continua de 24 h", "indicacion": "Estertores", "maximo": "Habitualmente 2.4 mg al día en adolescentes" },
+      { "via": "TD", "pauta": "Un parche de 1 mg cada 72 h en niños mayores. En niños pequeños se puede usar medio parche", "indicacion": "Sialorrea crónica" },
+      { "via": "IV", "pauta": "10 microgramos/kg cada 4 a 8 h, lento" }
+    ],
+    "presentaciones": "Parches transdérmicos y ampolletas parenterales.",
+    "inicioDuracion": "Por vía subcutánea, inicio en 15 a 30 minutos con duración de 4 a 8 h. El parche tarda de 6 a 12 h en hacer efecto y dura 72 h.",
+    "adversos": [
+      "Sedación, por atravesar la barrera hematoencefálica",
+      "Confusión, agitación paradójica y delirium, sobre todo en el niño frágil o en el que ya toma otros anticolinérgicos",
+      "Sequedad de boca marcada",
+      "Retención urinaria",
+      "Visión borrosa y midriasis, sobre todo si el niño se toca los ojos tras manipular el parche"
+    ],
+    "precauciones": [
+      "El delirium anticolinérgico es un riesgo real: Si aparece agitación tras iniciarla, hay que sospecharla antes que atribuirlo a la enfermedad",
+      "Lavarse las manos tras manipular el parche para no producir midriasis unilateral, que se confunde con un signo neurológico grave",
+      "Suma con todos los demás anticolinérgicos del tratamiento"
+    ],
+    "practico": "La elección entre escopolamina y butilhioscina se decide por si se quiere o no sedación. En un niño en las últimas horas, ya inconsciente, la sedación añadida no importa y la escopolamina es cómoda. En un niño consciente, la butilhioscina o el glicopirronio son mejores porque no lo confunden.",
+    "etiquetas": ["estertores", "sialorrea", "parche", "sedante", "delirium"]
+  },
+  {
+    "codigo": "glicopirronio",
+    "nombre": "Glicopirronio",
+    "grupo": "Antisecretor",
+    "vias": ["SC", "VO", "IV"],
+    "controlado": false,
+    "descripcion": "Anticolinérgico de amonio cuaternario que no atraviesa la barrera hematoencefálica y que es el más potente de los antisecretores disponibles sobre la secreción salival. Es el fármaco de elección para la sialorrea crónica del niño con enfermedad neurológica, donde tiene la mejor evidencia pediátrica.",
+    "indicaciones": [
+      "Sialorrea crónica del niño con parálisis cerebral o enfermedad neurodegenerativa",
+      "Estertores de los últimos días",
+      "Secreciones respiratorias abundantes",
+      "Hiperhidrosis"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Inicio de 20 microgramos/kg cada 8 h, subiendo cada 5 a 7 días hasta 100 microgramos/kg cada 8 h", "indicacion": "Sialorrea crónica: Requiere titulación", "maximo": "1.5 a 3 mg por dosis según edad" },
+      { "via": "SC", "pauta": "4 a 10 microgramos/kg cada 6 a 8 h, o la dosis equivalente en infusión continua de 24 h", "indicacion": "Estertores", "maximo": "200 microgramos por dosis" },
+      { "via": "IV", "pauta": "4 a 10 microgramos/kg cada 6 a 8 h" }
+    ],
+    "presentaciones": "Solución oral, comprimidos y ampolletas parenterales. La disponibilidad de la solución oral varía y a veces requiere formulación magistral.",
+    "inicioDuracion": "Por vía subcutánea, inicio en 15 a 30 minutos con duración de 6 a 8 h. El efecto sobre la sialorrea crónica requiere titulación durante semanas.",
+    "adversos": [
+      "Sequedad de boca, que en la sialorrea es el efecto buscado pero que puede llegar a ser excesiva",
+      "Estreñimiento, que se suma al de los opioides",
+      "Retención urinaria",
+      "Rubor y sofoco",
+      "Espesamiento de las secreciones bronquiales, que puede dificultar la expectoración"
+    ],
+    "precauciones": [
+      "Titular despacio en la sialorrea crónica, buscando el punto en que el niño ya no babea pero conserva algo de saliva",
+      "Vigilar el estreñimiento de forma activa",
+      "Espesa las secreciones bronquiales: Precaución en el niño con tos débil y riesgo de tapón mucoso"
+    ],
+    "practico": "En la sialorrea crónica el objetivo no es la boca seca, sino que el niño no empape la ropa ni tenga lesiones cutáneas en el mentón. Pasarse de dosis produce una boca pastosa que resulta muy incómoda y que empeora la higiene oral, así que el punto correcto se busca subiendo despacio.",
+    "etiquetas": ["sialorrea", "estertores", "no sedante", "titulación"]
+  },
+  {
+    "codigo": "polietilenglicol",
+    "nombre": "Polietilenglicol (macrogol)",
+    "grupo": "Laxante",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Laxante osmótico que retiene agua en la luz intestinal por enlace de hidrógeno, sin absorberse ni fermentarse. Es el laxante de primera línea en pediatría por su eficacia, su tolerancia y la ausencia de dolor cólico, y es el que mejor funciona en el estreñimiento inducido por opioides.",
+    "indicaciones": [
+      "Prevención del estreñimiento inducido por opioides, desde la primera dosis del opioide",
+      "Estreñimiento crónico",
+      "Impactación fecal, a dosis de desimpactación"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "Mantenimiento: 0.4 a 0.8 g/kg/día, en 1 o 2 tomas, disuelto en agua", "indicacion": "Se ajusta la dosis según la consistencia de las heces, no según una tabla fija" },
+      { "via": "VO", "pauta": "Desimpactación: 1 a 1.5 g/kg/día durante 3 a 6 días", "indicacion": "Cuando hay impactación fecal establecida", "maximo": "Vigilar la tolerancia y el volumen de líquido necesario" }
+    ],
+    "presentaciones": "Sobres de polvo para disolver, con y sin electrolitos, en presentaciones pediátricas y de adulto.",
+    "inicioDuracion": "El efecto aparece a las 24 a 48 h de iniciarlo, no antes, lo que hay que advertir para que la familia no lo abandone el primer día.",
+    "adversos": [
+      "Distensión abdominal y flatulencia al inicio",
+      "Náusea si el volumen de líquido es grande",
+      "Diarrea si la dosis es excesiva, que se corrige bajando la dosis"
+    ],
+    "precauciones": [
+      "Requiere que el niño tome el líquido en el que se disuelve, lo que puede ser un problema en el que bebe poco",
+      "No usar si hay sospecha de obstrucción intestinal mecánica",
+      "En niños con sonda de alimentación se administra por la sonda sin problema, lavando después"
+    ],
+    "practico": "Todo niño que recibe un opioide debe llevar un laxante pautado desde el primer día, no cuando aparezca el estreñimiento. Es la medida preventiva más rentable de todo el tratamiento y la que más se olvida. La dosis se ajusta con la escala de Bristol como objetivo: Heces de tipo 3 o 4.",
+    "etiquetas": ["opioides", "prevención", "primera línea", "Bristol"]
+  },
+  {
+    "codigo": "senosidos",
+    "nombre": "Senósidos",
+    "grupo": "Laxante",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Laxante estimulante de origen vegetal que actúa sobre el plexo mientérico aumentando el peristaltismo. En el estreñimiento inducido por opioides, donde el problema principal es la parálisis de la motilidad, un estimulante es exactamente lo que hace falta, y se suele combinar con un osmótico.",
+    "indicaciones": [
+      "Estreñimiento inducido por opioides, en combinación con un laxante osmótico",
+      "Estreñimiento con heces blandas pero sin propulsión",
+      "Estreñimiento crónico que no responde solo al osmótico"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "1 a 2 mg/kg de senósidos en dosis única nocturna", "indicacion": "Se administra por la noche para que el efecto llegue por la mañana", "maximo": "Habitualmente 30 mg al día" }
+    ],
+    "presentaciones": "Comprimidos, solución oral y presentaciones combinadas con docusato.",
+    "inicioDuracion": "Efecto a las 8 a 12 h de la toma, de ahí la administración nocturna.",
+    "adversos": [
+      "Dolor cólico abdominal, que es su efecto adverso característico",
+      "Diarrea si la dosis es excesiva",
+      "Coloración de la orina"
+    ],
+    "precauciones": [
+      "Contraindicado si hay sospecha de obstrucción intestinal mecánica, porque estimular contra un obstáculo produce dolor intenso",
+      "Si aparece cólico, conviene bajar la dosis o repartirla en lugar de retirarlo",
+      "No usar en presencia de impactación fecal sin desimpactar antes"
+    ],
+    "practico": "La combinación clásica y eficaz para el estreñimiento por opioides es un osmótico que ablande y un estimulante que empuje. Usar solo el osmótico deja heces blandas que el niño no consigue expulsar, y es una de las causas más frecuentes de fracaso del tratamiento del estreñimiento.",
+    "etiquetas": ["estimulante", "opioides", "combinación", "cólico"]
+  },
+  {
+    "codigo": "lactulosa",
+    "nombre": "Lactulosa",
+    "grupo": "Laxante",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Disacárido no absorbible que llega intacto al colon, donde las bacterias lo fermentan produciendo ácidos que retienen agua y acidifican el medio. Es un laxante osmótico eficaz y de sabor dulce, aunque la fermentación produce gas y molestias que limitan su tolerancia.",
+    "indicaciones": [
+      "Estreñimiento, como alternativa al polietilenglicol",
+      "Encefalopatía hepática, por su efecto sobre el amonio"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.5 a 1 mL/kg cada 12 a 24 h", "indicacion": "Se ajusta según la respuesta", "maximo": "Habitualmente 30 mL por toma" }
+    ],
+    "presentaciones": "Solución oral en frascos y en sobres.",
+    "inicioDuracion": "Efecto a las 24 a 48 h de iniciarlo.",
+    "adversos": [
+      "Flatulencia y distensión abdominal, marcadas y frecuentes por la fermentación",
+      "Dolor cólico",
+      "Náusea por el sabor muy dulce, que en niños es motivo frecuente de rechazo"
+    ],
+    "precauciones": [
+      "No usar si hay sospecha de obstrucción intestinal",
+      "La distensión que produce puede resultar especialmente molesta en el niño con tumor abdominal o con ascitis",
+      "Precaución en el niño diabético por el contenido de azúcares"
+    ],
+    "practico": "Donde se dispone de polietilenglicol, este suele preferirse porque produce mucho menos gas y se tolera mejor a largo plazo. La lactulosa mantiene su lugar por disponibilidad y coste, y como opción cuando el niño rechaza el sabor del otro.",
+    "etiquetas": ["osmótico", "flatulencia", "alternativa"]
+  },
+  {
+    "codigo": "naloxona",
+    "nombre": "Naloxona",
+    "grupo": "Otros",
+    "vias": ["IV", "SC", "IN"],
+    "controlado": false,
+    "descripcion": "Antagonista competitivo de los receptores opioides que revierte todos sus efectos. En cuidados paliativos su uso es excepcional y su manejo es radicalmente distinto del de una intoxicación aguda: Se administra muy diluida y titulada, porque revertir de golpe produce dolor incontrolable y una crisis de abstinencia gravísima.",
+    "indicaciones": [
+      "Depresión respiratoria significativa por opioides, con bradipnea y desaturación en un niño no despertable",
+      "Sobredosis accidental de opioide"
+    ],
+    "dosis": [
+      { "via": "IV", "pauta": "Diluir 1 ampolleta de 0.4 mg en 10 mL de suero fisiológico, quedando 40 microgramos por mL. Administrar 0.5 a 1 microgramo/kg cada 1 a 2 minutos hasta que mejore la respiración, no hasta que despierte", "indicacion": "Uso en paciente en tratamiento crónico con opioides", "maximo": "Detenerse en cuanto la frecuencia respiratoria sea aceptable" },
+      { "via": "SC", "pauta": "Misma pauta diluida, si no hay acceso venoso" },
+      { "via": "IN", "pauta": "Presentación nasal específica, en caso de sobredosis accidental fuera del ámbito sanitario" }
+    ],
+    "presentaciones": "Ampolletas parenterales y espray nasal en algunos países.",
+    "inicioDuracion": "Inicio en 1 a 2 minutos por vía intravenosa, pero la duración es de solo 20 a 60 minutos, más corta que la de casi todos los opioides. Por eso puede reaparecer la depresión respiratoria y hay que vigilar y repetir.",
+    "adversos": [
+      "Dolor intenso e inmediato por reversión completa de la analgesia",
+      "Síndrome de abstinencia agudo: Agitación, vómito, taquicardia e hipertensión",
+      "Edema agudo de pulmón en casos graves de reversión brusca"
+    ],
+    "precauciones": [
+      "En el niño en tratamiento crónico con opioides, la dosis convencional de reanimación es un error grave: Hay que diluir y titular",
+      "El objetivo es recuperar una respiración adecuada, no la conciencia plena",
+      "La duración corta obliga a vigilar varias horas y, si hace falta, a una infusión continua",
+      "Antes de administrarla, comprobar que la causa es realmente el opioide y no otra cosa, porque en el paciente en situación de últimos días la bradipnea suele formar parte del proceso"
+    ],
+    "practico": "Antes de recurrir a la naloxona conviene comprobar lo básico: Estimular al niño, colocarlo en posición adecuada, administrar oxígeno y suspender la infusión de opioide. En muchos casos eso basta y se evita el efecto rebote. La naloxona en paliativos se reserva para la depresión respiratoria real, no para la somnolencia.",
+    "etiquetas": ["antagonista", "urgencia", "diluir", "abstinencia"]
+  },
+  {
+    "codigo": "octreotido",
+    "nombre": "Octreótido",
+    "grupo": "Otros",
+    "vias": ["SC"],
+    "controlado": false,
+    "descripcion": "Análogo de la somatostatina que reduce de forma potente las secreciones gastrointestinales y enlentece la motilidad. Es el fármaco clave en la obstrucción intestinal maligna, donde rompe el círculo de distensión, secreción y vómito, y a menudo permite retirar una sonda nasogástrica.",
+    "indicaciones": [
+      "Obstrucción intestinal maligna, para reducir el volumen de secreciones y el vómito",
+      "Vómito de gran volumen refractario a antieméticos",
+      "Diarrea secretora de alto débito",
+      "Fístulas digestivas de alto débito"
+    ],
+    "dosis": [
+      { "via": "SC", "pauta": "1 a 10 microgramos/kg/día, repartido en 2 o 3 bolos o en infusión continua de 24 h", "indicacion": "Se empieza por la dosis baja y se sube según la respuesta en 48 a 72 h", "maximo": "Habitualmente 600 a 900 microgramos al día en adolescentes" }
+    ],
+    "presentaciones": "Ampolletas para uso parenteral y presentaciones de liberación prolongada de administración mensual, estas últimas de uso raro en paliativos.",
+    "inicioDuracion": "El efecto sobre el volumen de secreciones se aprecia en 24 a 48 h. La duración de un bolo es de 8 a 12 h.",
+    "adversos": [
+      "Dolor y escozor en el punto de inyección",
+      "Náusea y distensión al inicio",
+      "Hiperglucemia o hipoglucemia por su efecto sobre la insulina y el glucagón",
+      "Barro biliar con el uso prolongado"
+    ],
+    "precauciones": [
+      "El fármaco frío duele más al inyectarlo: Conviene sacarlo del refrigerador un rato antes",
+      "Vigilar la glucemia, sobre todo en el niño diabético o con corticoides",
+      "Evaluar la respuesta a las 72 h: Si no ha reducido el volumen de vómito, se retira"
+    ],
+    "practico": "En la obstrucción intestinal maligna la combinación clásica es un antisecretor, un antiemético de acción central y un corticoide, y el octreótido se añade cuando esa combinación no basta. Conseguir retirar una sonda nasogástrica es un objetivo muy valioso para el niño y para la familia, y merece la pena intentarlo.",
+    "etiquetas": ["obstrucción intestinal", "secreciones", "vómito", "sonda nasogástrica"]
+  },
+  {
+    "codigo": "melatonina",
+    "nombre": "Melatonina",
+    "grupo": "Otros",
+    "vias": ["VO"],
+    "controlado": false,
+    "descripcion": "Hormona reguladora del ritmo circadiano que en pediatría tiene un papel establecido en los trastornos del sueño, especialmente en niños con alteraciones del neurodesarrollo. Su interés en paliativos es que mejora el sueño sin sedar, sin producir tolerancia y sin sumarse a la depresión respiratoria de otros fármacos.",
+    "indicaciones": [
+      "Insomnio de conciliación, sobre todo en el niño con enfermedad neurológica",
+      "Alteración del ritmo circadiano por hospitalización prolongada",
+      "Insomnio en el niño que ya toma muchos sedantes y en el que no conviene añadir otro"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "2 a 6 mg administrados de 30 a 60 minutos antes de acostarse. En niños pequeños se empieza por 1 a 2 mg", "indicacion": "El momento de la administración importa tanto como la dosis", "maximo": "Habitualmente 10 mg al día" }
+    ],
+    "presentaciones": "Comprimidos, comprimidos de liberación prolongada y solución oral. La regulación como medicamento o como complemento varía según el país.",
+    "inicioDuracion": "Reduce el tiempo que tarda en dormirse, con efecto en 30 a 60 minutos. Las presentaciones de liberación prolongada ayudan además al mantenimiento del sueño.",
+    "adversos": [
+      "Somnolencia diurna si se administra demasiado tarde",
+      "Cefalea",
+      "Sueños vívidos"
+    ],
+    "precauciones": [
+      "La hora de administración es determinante: Darla justo al acostarse desperdicia buena parte de su efecto",
+      "Es preciso acompañarla de medidas de higiene del sueño, porque sola rinde poco",
+      "Precaución en el niño con epilepsia, donde los datos son contradictorios y conviene vigilar la frecuencia de las crisis"
+    ],
+    "practico": "En el niño paliativo con muchos fármacos, la melatonina resuelve a veces el insomnio sin añadir una benzodiacepina más, y ese ahorro tiene un valor considerable. También ayuda a recuperar el ritmo día noche tras una hospitalización larga.",
+    "etiquetas": ["insomnio", "no sedante", "neurodesarrollo", "circadiano"]
+  },
+  {
+    "codigo": "difenhidramina",
+    "nombre": "Difenhidramina",
+    "grupo": "Otros",
+    "vias": ["VO", "IV"],
+    "controlado": false,
+    "descripcion": "Antihistamínico H1 de primera generación con efecto sedante y anticolinérgico marcado. En paliativos pediátricos su papel principal es el prurito, sobre todo el inducido por opioides, y el tratamiento de la distonía aguda por antidopaminérgicos.",
+    "indicaciones": [
+      "Prurito, incluido el inducido por opioides",
+      "Distonía aguda por metoclopramida o por haloperidol",
+      "Insomnio, aunque hoy se prefieren otras opciones",
+      "Náusea con componente vestibular"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "1 mg/kg cada 6 a 8 h", "maximo": "50 mg por dosis y 300 mg al día" },
+      { "via": "IV", "pauta": "1 mg/kg lento, para la distonía aguda", "indicacion": "El efecto sobre la distonía aparece en minutos", "maximo": "50 mg por dosis" }
+    ],
+    "presentaciones": "Solución oral, comprimidos, cápsulas y ampolletas parenterales.",
+    "inicioDuracion": "Inicio en 30 minutos por vía oral, con duración de 4 a 6 h.",
+    "adversos": [
+      "Sedación marcada",
+      "Excitación paradójica en niños pequeños, bastante frecuente",
+      "Sequedad de boca, estreñimiento y retención urinaria",
+      "Espesamiento de las secreciones"
+    ],
+    "precauciones": [
+      "Suma anticolinérgicos con amitriptilina, escopolamina y butilhioscina, con riesgo de delirium",
+      "Suma sedación con opioides y benzodiacepinas",
+      "Puede empeorar el estreñimiento inducido por opioides"
+    ],
+    "practico": "En el prurito por opioides, antes de recurrir al antihistamínico conviene valorar la rotación de opioide, porque el prurito varía mucho entre ellos y el problema desaparece sin añadir un fármaco sedante más. Como tratamiento de la distonía aguda, en cambio, es rápido y muy eficaz.",
+    "etiquetas": ["prurito", "distonía", "antihistamínico", "anticolinérgico"]
+  },
+  {
+    "codigo": "omeprazol",
+    "nombre": "Omeprazol",
+    "grupo": "Otros",
+    "vias": ["VO", "IV"],
+    "controlado": false,
+    "descripcion": "Inhibidor de la bomba de protones que reduce la secreción ácida gástrica. Su papel en paliativos es doble: Protección gástrica en el niño que recibe corticoides con antiinflamatorios, y tratamiento del reflujo gastroesofágico, que es una causa muy frecuente y muy infradiagnosticada de dolor e irritabilidad en el niño con daño neurológico.",
+    "indicaciones": [
+      "Reflujo gastroesofágico, causa frecuente de irritabilidad en el niño con encefalopatía",
+      "Protección gástrica con corticoides asociados a antiinflamatorios",
+      "Esofagitis",
+      "Dispepsia y dolor epigástrico"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.7 a 1.4 mg/kg/día en dosis única matutina, 30 minutos antes del desayuno", "maximo": "40 mg al día" },
+      { "via": "IV", "pauta": "0.5 a 1 mg/kg/día", "indicacion": "Cuando no se tolera la vía oral", "maximo": "40 mg al día" }
+    ],
+    "presentaciones": "Cápsulas con microgránulos, comprimidos bucodispersables, suspensión oral y viales para uso intravenoso. Los bucodispersables y los microgránulos se pueden administrar por sonda.",
+    "inicioDuracion": "El efecto pleno tarda de 3 a 5 días en establecerse, lo que hay que advertir para que no se valore el resultado el primer día.",
+    "adversos": [
+      "Cefalea",
+      "Diarrea o estreñimiento",
+      "Con uso muy prolongado, hipomagnesemia y déficit de vitamina B12"
+    ],
+    "precauciones": [
+      "Se administra en ayunas, unos 30 minutos antes de la primera comida: Darlo con la comida reduce bastante su eficacia",
+      "Interacciona con algunos fármacos a través del citocromo P450",
+      "Revisar periódicamente si sigue haciendo falta, porque se mantiene por inercia durante años"
+    ],
+    "practico": "En el niño con parálisis cerebral grave que llora de forma inexplicable, sobre todo si empeora al acostarlo o tras la alimentación, una prueba terapéutica de 2 a 4 semanas con inhibidor de la bomba de protones es una de las primeras cosas que hay que hacer antes de escalar analgesia.",
+    "etiquetas": ["reflujo", "irritabilidad", "protección gástrica", "encefalopatía"]
+  },
+  {
+    "codigo": "furosemida",
+    "nombre": "Furosemida",
+    "grupo": "Otros",
+    "vias": ["VO", "IV", "SC"],
+    "controlado": false,
+    "descripcion": "Diurético de asa potente que en cuidados paliativos se emplea para aliviar los síntomas de la sobrecarga de volumen, sobre todo la disnea por congestión pulmonar. Admite la vía subcutánea, lo que permite mantenerlo en domicilio cuando el niño ya no tolera la vía oral.",
+    "indicaciones": [
+      "Disnea por congestión pulmonar o insuficiencia cardiaca",
+      "Edema sintomático que produce molestia o limita la movilidad",
+      "Sobrecarga de volumen en el niño con cardiopatía avanzada"
+    ],
+    "dosis": [
+      { "via": "VO", "pauta": "0.5 a 2 mg/kg cada 8 a 24 h", "maximo": "6 mg/kg/día" },
+      { "via": "IV", "pauta": "0.5 a 1 mg/kg por dosis, lento", "indicacion": "Efecto rápido en la disnea por congestión" },
+      { "via": "SC", "pauta": "Misma dosis diaria, en bolo o en infusión continua de 24 h", "indicacion": "Permite mantener el tratamiento en domicilio sin acceso venoso" }
+    ],
+    "presentaciones": "Comprimidos, solución oral y ampolletas parenterales.",
+    "inicioDuracion": "Por vía intravenosa el efecto aparece en 5 minutos; por vía oral, en 30 a 60 minutos, con duración de 6 h.",
+    "adversos": [
+      "Alteraciones electrolíticas, sobre todo hipopotasemia",
+      "Deshidratación e hipotensión si se usa en exceso",
+      "Ototoxicidad con dosis altas o administración rápida"
+    ],
+    "precauciones": [
+      "En la fase de últimos días el objetivo es el alivio del síntoma, no la corrección de una cifra: No se piden analíticas de control si no van a cambiar la conducta",
+      "Vigilar la aparición de hipotensión sintomática",
+      "El aumento de la diuresis puede obligar a sondaje en el niño encamado, lo que hay que valorar antes"
+    ],
+    "practico": "La posibilidad de administrarla por vía subcutánea se conoce poco y resuelve una situación concreta y frecuente: El niño con cardiopatía avanzada en domicilio que ya no traga y en el que la retirada del diurético produciría disnea en pocos días.",
+    "etiquetas": ["disnea", "congestión", "edema", "subcutáneo"]
+  }
+]

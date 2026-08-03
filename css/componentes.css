@@ -1,0 +1,304 @@
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   3. Componentes
+   ------------------------------------------------------------
+   Piezas reutilizables por cualquier sección: buscador, chips,
+   rejilla, tarjeta con medallón, insignias, modales, bloques
+   destacados y tablas.
+   ============================================================ */
+
+/* ============================================================
+   Rejilla de tarjetas
+   ============================================================
+   A diferencia de un atlas de imagen, aquí la tarjeta no lleva
+   miniatura: manda el texto. La identidad de cada tarjeta la da
+   un medallón con ícono y una franja de color del dominio.
+   ============================================================ */
+.rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1rem; }
+.rejilla-ancha { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 1.1rem; }
+
+.tarjeta {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--r-lg);
+  padding: 1.15rem 1.3rem 1.25rem;
+  box-shadow: var(--sombra-sm);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  transition: transform 0.25s var(--paso), box-shadow 0.25s var(--paso), border-color 0.25s;
+  animation: aparecer 0.5s var(--paso) both;
+}
+/* Franja de color del dominio, siempre visible pero discreta */
+.tarjeta::before {
+  content: "";
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--acento, var(--marca-400));
+  opacity: 0.85;
+}
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-lg);
+  border-color: color-mix(in srgb, var(--acento, var(--marca-400)) 45%, var(--borde));
+}
+.tarjeta h3 { font-size: 1.04rem; line-height: 1.32; font-weight: 700; letter-spacing: -0.01em; }
+.tarjeta-resumen { font-size: 0.87rem; color: var(--tinta-2); flex: 1; }
+
+/* Medallón con el ícono del dominio */
+.tarjeta-cabeza { display: flex; align-items: flex-start; gap: 0.75rem; }
+.medallon {
+  width: 42px; height: 42px; flex: none;
+  border-radius: 13px;
+  display: grid; place-items: center;
+  background: color-mix(in srgb, var(--acento, var(--marca-500)) 14%, transparent);
+  color: var(--acento, var(--marca-500));
+}
+.medallon .ico { width: 21px; height: 21px; }
+/* En oscuro el acento se aclara mezclándolo con blanco, porque el tinte del
+   medallón oscurece su fondo. Se declara por los dos caminos del tema, igual
+   que los tokens de base.css. */
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-tema="claro"])) .medallon {
+    background: color-mix(in srgb, var(--acento, var(--marca-400)) 22%, transparent);
+    color: color-mix(in srgb, var(--acento, var(--marca-400)) 68%, #fff);
+  }
+}
+:root[data-tema="oscuro"] .medallon {
+  background: color-mix(in srgb, var(--acento, var(--marca-400)) 22%, transparent);
+  color: color-mix(in srgb, var(--acento, var(--marca-400)) 68%, #fff);
+}
+.tarjeta-cabeza-texto { flex: 1; min-width: 0; }
+
+/* Insignias */
+.insignias { display: flex; gap: 0.4rem; flex-wrap: wrap; align-items: center; }
+.insignia {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.18rem 0.62rem;
+  border-radius: 8px;
+  background: var(--superficie-3);
+  color: var(--tinta-2);
+  border: 1px solid var(--borde-2);
+}
+.insignia.dominio {
+  background: color-mix(in srgb, var(--acento, var(--marca-500)) 15%, transparent);
+  color: var(--acento, var(--marca-500));
+  border: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-tema="claro"])) .insignia.dominio {
+    background: color-mix(in srgb, var(--acento, var(--marca-400)) 24%, transparent);
+    color: color-mix(in srgb, var(--acento, var(--marca-400)) 72%, #fff);
+  }
+}
+:root[data-tema="oscuro"] .insignia.dominio {
+  background: color-mix(in srgb, var(--acento, var(--marca-400)) 24%, transparent);
+  color: color-mix(in srgb, var(--acento, var(--marca-400)) 72%, #fff);
+}
+/* Las tintas de estado, de vía y de nivel ya traen su paso oscuro medido en
+   base.css, de modo que aquí no hace falta corregirlas por tema. */
+/* La insignia hereda el acento de familia de su tarjeta; sin él conserva el
+   azul de información de siempre. El fondo se deriva del propio acento para
+   que ambos temas queden cubiertos sin reglas dobles. */
+.insignia.categoria {
+  background: color-mix(in srgb, var(--acento, var(--info)) 14%, transparent);
+  color: var(--acento, var(--info));
+  border: none;
+}
+.insignia.edad { background: var(--calido-suave); color: var(--calido); border: none; }
+.insignia.nivel { text-transform: uppercase; font-size: 0.64rem; }
+.insignia.nivel.dom-basico { background: var(--exito-suave); color: var(--exito); border: none; }
+.insignia.nivel.dom-intermedio { background: var(--alerta-suave); color: var(--alerta); border: none; }
+.insignia.nivel.dom-avanzado { background: var(--peligro-suave); color: var(--peligro); border: none; }
+
+/* Vías de administración */
+.insignia.via-vo { background: var(--via-vo-suave); color: var(--via-vo); border: none; }
+.insignia.via-sc { background: var(--via-sc-suave); color: var(--via-sc); border: none; }
+.insignia.via-iv { background: var(--via-iv-suave); color: var(--via-iv); border: none; }
+.insignia.via-otra { background: var(--via-otra-suave); color: var(--via-otra); border: none; }
+
+/* Distintivo de urgencia. El fondo lleno usa su propio token porque en
+   oscuro el peligro pasa a ser una tinta clara que no soporta texto blanco. */
+.insignia.urgencia {
+  background: var(--peligro-solido);
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.63rem;
+  letter-spacing: 0.06em;
+  display: inline-flex; align-items: center; gap: 0.28rem;
+}
+.insignia.urgencia .ico { width: 12px; height: 12px; stroke-width: 2.4; }
+
+.sin-resultados {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--tinta-3);
+}
+.icono-vacio { margin-bottom: 0.5rem; }
+.icono-vacio .ico { width: 46px; height: 46px; color: var(--tinta-3); stroke-width: 1.5; }
+
+/* ============================================================
+   Modales
+   ============================================================ */
+.modal { position: fixed; inset: 0; z-index: 150; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.modal-fondo {
+  position: absolute; inset: 0;
+  background: rgba(20, 12, 34, 0.66);
+  backdrop-filter: blur(6px);
+  animation: fundido 0.25s ease;
+}
+@keyframes fundido { from { opacity: 0; } to { opacity: 1; } }
+.modal-tarjeta {
+  position: relative;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--r-xl);
+  max-width: 800px;
+  width: 100%;
+  max-height: 92vh;
+  overflow-y: auto;
+  box-shadow: var(--sombra-lg);
+  animation: surgir 0.4s var(--paso);
+}
+@keyframes surgir {
+  from { opacity: 0; transform: translateY(24px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.cerrar {
+  position: absolute;
+  top: 0.85rem; right: 0.85rem;
+  z-index: 3;
+  background: color-mix(in srgb, var(--superficie) 72%, transparent);
+  backdrop-filter: blur(8px);
+  color: var(--tinta);
+  border: 1px solid var(--borde);
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: grid; place-items: center;
+  transition: transform 0.2s var(--paso), background 0.2s;
+}
+.cerrar:hover { transform: rotate(90deg); background: var(--peligro-suave); color: var(--peligro); border-color: var(--peligro); }
+.cerrar:active { transform: rotate(90deg) scale(0.9); }
+
+.modal-cuerpo { padding: 1.6rem 1.85rem 2rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.modal-cuerpo h2 {
+  font-family: var(--serif);
+  font-size: 1.6rem; font-weight: 600;
+  letter-spacing: -0.015em; line-height: 1.22;
+  margin-bottom: 0.2rem;
+}
+.modal-cuerpo > h3 {
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--tinta-3); font-weight: 700;
+  margin-top: 1.2rem; padding-bottom: 0.15rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.modal-cuerpo > h3 .ico { color: var(--marca-tinta); }
+.modal-cuerpo > p { color: var(--tinta); font-size: 0.96rem; }
+.modal-cuerpo ul { padding-left: 1.25rem; font-size: 0.94rem; }
+.modal-cuerpo li { margin-bottom: 0.4rem; }
+.modal-cuerpo li::marker { color: var(--marca-400); }
+.modal-insignias { margin-bottom: 0.3rem; }
+
+/* Esquema explicativo dentro de una ficha */
+.modal-esquema {
+  margin-top: 1rem;
+  border: 1px solid var(--borde);
+  border-radius: var(--r-md);
+  background: var(--superficie-2);
+  padding: 0.9rem;
+  text-align: center;
+}
+.modal-esquema img { max-width: 100%; height: auto; display: inline-block; border-radius: var(--r-sm); }
+.modal-esquema figcaption { font-size: 0.78rem; color: var(--tinta-3); margin-top: 0.5rem; }
+
+/* Bloques destacados */
+.bloque-perla, .bloque-error, .bloque-clave, .bloque-calido {
+  border-radius: var(--r-md);
+  padding: 1rem 1.2rem;
+  margin-top: 1rem;
+}
+.bloque-perla h3, .bloque-error h3, .bloque-clave h3, .bloque-calido h3 {
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em;
+  font-weight: 700; margin-bottom: 0.4rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.bloque-perla { background: var(--alerta-suave); border-left: 3px solid #f59e0b; }
+.bloque-perla h3 { color: var(--alerta); }
+.bloque-error { background: var(--peligro-suave); border-left: 3px solid var(--peligro); }
+.bloque-error h3 { color: var(--peligro); }
+.bloque-clave { background: var(--info-suave); border-left: 3px solid var(--info); }
+.bloque-clave h3 { color: var(--info); }
+.bloque-calido { background: var(--calido-suave); border-left: 3px solid var(--calido-400); }
+.bloque-calido h3 { color: var(--calido); }
+
+/* Frase textual para decirle a la familia: se lee como una cita */
+.frase-cita {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--tinta);
+}
+.frase-cita::before { content: "«"; opacity: 0.5; }
+.frase-cita::after { content: "»"; opacity: 0.5; }
+
+.boton-enlace {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: color-mix(in srgb, var(--marca-500) 12%, transparent);
+  color: var(--marca-tinta);
+  border: 1px solid color-mix(in srgb, var(--marca-500) 35%, transparent);
+  padding: 0.55rem 1.05rem;
+  border-radius: var(--r-sm);
+  font-size: 0.9rem; font-weight: 600; font-family: inherit;
+  cursor: pointer; margin-top: 0.5rem;
+  transition: all 0.2s var(--paso);
+}
+.boton-enlace:hover { background: var(--marca-grad); color: #fff; border-color: transparent; transform: translateY(-1px); box-shadow: var(--sombra-marca); }
+.boton-enlace:active { transform: translateY(0) scale(0.98); box-shadow: none; }
+
+/* Tablas */
+.tabla-envoltorio { overflow-x: auto; margin-top: 0.5rem; border: 1px solid var(--borde); border-radius: var(--r-md); }
+.tabla { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 460px; }
+.tabla thead th {
+  background: var(--superficie-3);
+  color: var(--tinta-2);
+  text-align: left; padding: 0.62rem 0.85rem;
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;
+  position: sticky; top: 0;
+}
+.tabla td { padding: 0.62rem 0.85rem; border-top: 1px solid var(--borde); vertical-align: top; color: var(--tinta); }
+.tabla tbody tr:nth-child(odd) { background: var(--superficie-2); }
+.tabla tbody tr:hover { background: color-mix(in srgb, var(--marca-400) 9%, transparent); }
+.tabla .celda-dosis { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
+
+/* ============================================================
+   Error visible de formulario
+   ------------------------------------------------------------
+   Un campo problemático no puede comunicarse solo ocultando la
+   salida: El borde de peligro y el mensaje bajo el campo dicen
+   qué falta, y aria-invalid con aria-describedby se lo cuentan
+   al lector de pantalla.
+   ============================================================ */
+.calc-input.invalido {
+  border-color: var(--peligro);
+}
+.calc-input.invalido:focus {
+  border-color: var(--peligro);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--peligro) 28%, transparent);
+}
+.calc-aviso {
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--peligro);
+}

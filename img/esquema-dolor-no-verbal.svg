@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img"
+     aria-label="Busqueda sistematica de causas de dolor en el nino sin lenguaje">
+  <title>Búsqueda sistemática de causas de dolor en el niño sin lenguaje</title>
+  <desc>Esquema propio. Autor: Jeshua Romero Guadarrama.</desc>
+  <style>
+    .fondo { fill: #faf8fd; }
+    .txt   { fill: #1e1830; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt2  { fill: #55496b; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt3  { fill: #837792; font-family: "Segoe UI", system-ui, sans-serif; }
+    .caja  { fill: #ffffff; stroke: #e5dff0; }
+    .destaca { fill: #ede9fe; stroke: #6d4aa8; }
+    .calido { fill: #fdf0e4; stroke: #c2622c; }
+    .num   { fill: #6d4aa8; }
+    @media (prefers-color-scheme: dark) {
+      .fondo { fill: #231c3b; }
+      .txt   { fill: #efe9f8; }
+      .txt2  { fill: #b6a9cd; }
+      .txt3  { fill: #8b7da3; }
+      .caja  { fill: #1c1630; stroke: #33294f; }
+      .destaca { fill: #322657; stroke: #b79bf0; }
+      .calido { fill: #3a2413; stroke: #e8955f; }
+      .num   { fill: #b79bf0; }
+    }
+  </style>
+
+  <rect class="fondo" width="640" height="430" rx="12"/>
+
+  <rect class="calido" x="40" y="24" width="560" height="52" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="60" y="48" font-size="14" font-weight="700">Empezar siempre por aquí</text>
+  <text class="txt2" x="60" y="67" font-size="13">Cómo saben ustedes que a su hijo le duele algo. La familia detecta lo que nadie más ve</text>
+
+  <text class="txt3" x="320" y="100" font-size="12.5" text-anchor="middle" font-style="italic">Cuatro causas explican la mayoría de los casos y las cuatro tienen tratamiento</text>
+
+  <!-- Cuatro causas principales -->
+  <g>
+    <rect class="destaca" x="40" y="116" width="270" height="70" rx="10" stroke-width="1.6"/>
+    <text class="num" x="62" y="146" font-size="20" font-weight="800">1</text>
+    <text class="txt" x="86" y="144" font-size="14" font-weight="700">Reflujo gastroesofágico</text>
+    <text class="txt2" x="86" y="166" font-size="12.5">Empeora al acostarlo o tras comer</text>
+    <text class="txt3" x="86" y="181" font-size="12">Prueba con omeprazol 2 a 4 semanas</text>
+  </g>
+  <g>
+    <rect class="destaca" x="330" y="116" width="270" height="70" rx="10" stroke-width="1.6"/>
+    <text class="num" x="352" y="146" font-size="20" font-weight="800">2</text>
+    <text class="txt" x="376" y="144" font-size="14" font-weight="700">Estreñimiento y fecaloma</text>
+    <text class="txt2" x="376" y="166" font-size="12.5">Palpar abdomen, revisar el registro</text>
+    <text class="txt3" x="376" y="181" font-size="12">Objetivo: heces tipo 3 o 4 de Bristol</text>
+  </g>
+  <g>
+    <rect class="destaca" x="40" y="198" width="270" height="70" rx="10" stroke-width="1.6"/>
+    <text class="num" x="62" y="228" font-size="20" font-weight="800">3</text>
+    <text class="txt" x="86" y="226" font-size="14" font-weight="700">Cadera</text>
+    <text class="txt2" x="86" y="248" font-size="12.5">Luxación o subluxación dolorosa</text>
+    <text class="txt3" x="86" y="263" font-size="12">Movilización pasiva y asimetría</text>
+  </g>
+  <g>
+    <rect class="destaca" x="330" y="198" width="270" height="70" rx="10" stroke-width="1.6"/>
+    <text class="num" x="352" y="228" font-size="20" font-weight="800">4</text>
+    <text class="txt" x="376" y="226" font-size="14" font-weight="700">Boca</text>
+    <text class="txt2" x="376" y="248" font-size="12.5">Caries, absceso, mucositis</text>
+    <text class="txt3" x="376" y="263" font-size="12">Casi nunca se explora</text>
+  </g>
+
+  <!-- Segunda linea -->
+  <text class="txt3" x="320" y="296" font-size="12.5" text-anchor="middle">Si el estudio sigue negativo, revisar además</text>
+
+  <rect class="caja" x="40" y="308" width="176" height="46" rx="9" stroke-width="1.4"/>
+  <text class="txt2" x="128" y="328" font-size="12.5" text-anchor="middle">Retención urinaria</text>
+  <text class="txt2" x="128" y="345" font-size="12.5" text-anchor="middle">e infección urinaria</text>
+
+  <rect class="caja" x="232" y="308" width="176" height="46" rx="9" stroke-width="1.4"/>
+  <text class="txt2" x="320" y="328" font-size="12.5" text-anchor="middle">Fractura patológica</text>
+  <text class="txt2" x="320" y="345" font-size="12.5" text-anchor="middle">sin traumatismo aparente</text>
+
+  <rect class="caja" x="424" y="308" width="176" height="46" rx="9" stroke-width="1.4"/>
+  <text class="txt2" x="512" y="328" font-size="12.5" text-anchor="middle">Espasticidad, distonía</text>
+  <text class="txt2" x="512" y="345" font-size="12.5" text-anchor="middle">postura y ortesis</text>
+
+  <!-- Ultimo recurso -->
+  <rect class="calido" x="40" y="370" width="560" height="42" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="60" y="388" font-size="13" font-weight="700">Solo si todo lo anterior es negativo: dolor central</text>
+  <text class="txt2" x="60" y="405" font-size="12.5">Prueba terapéutica con gabapentina bien titulada, valorada durante 2 a 4 semanas</text>
+</svg>

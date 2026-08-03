@@ -1,0 +1,296 @@
+[
+  {
+    "codigo": "caso-titulacion-morfina",
+    "titulo": "Titulación de morfina tras un día con rescates",
+    "dominio": "Dolor",
+    "vineta": "Sofía tiene 8 años y un osteosarcoma con metástasis. Lleva 24 h con morfina oral de liberación inmediata, 6 mg cada 4 h, es decir 36 mg al día, con rescates de 4 mg. En el registro de la última jornada constan cuatro rescates administrados y la madre dice que con cada uno se alivió bien, pero que el dolor volvía.",
+    "pregunta": "¿Qué haces al pasar visita esta mañana?",
+    "opciones": [
+      { "texto": "Sumar los 16 mg de rescates a los 36 mg, pautar 52 mg al día repartidos en 8.7 mg cada 4 h y recalcular el rescate a 5.2 mg", "correcta": true, "explicacion": "Es exactamente el ciclo de titulación: La nueva dosis diaria es la anterior más todos los rescates administrados, y el rescate se recalcula sobre la nueva dosis diaria." },
+      { "texto": "Mantener la pauta y decirle a la familia que siga usando los rescates, porque están funcionando", "correcta": false, "explicacion": "Cuatro rescates diarios de forma mantenida significan que la dosis de fondo se ha quedado corta. Rescatar sin reajustar deja al niño con dolor recurrente evitable." },
+      { "texto": "Rotar a fentanilo en parche porque la morfina no controla el dolor", "correcta": false, "explicacion": "La morfina sí está funcionando: Cada rescate alivió. Además el parche no sirve para dolor inestable ni para titular, porque tarda entre 12 y 24 h en alcanzar nivel." },
+      { "texto": "Añadir gabapentina porque el dolor debe de ser neuropático", "correcta": false, "explicacion": "Nada sugiere componente neuropático y el dolor sí responde a la morfina. El problema es de dosis insuficiente, no de mecanismo equivocado." }
+    ],
+    "aprendizaje": "La suma de los rescates de las últimas 24 h es lo que hay que añadir a la dosis diaria. Y el rescate se recalcula siempre sobre la nueva dosis, error que se olvida con mucha frecuencia."
+  },
+  {
+    "codigo": "caso-disnea-saturacion",
+    "titulo": "Disnea con buena saturación",
+    "dominio": "Respiratorio",
+    "vineta": "Mateo tiene 12 años y una atrofia muscular espinal tipo 2. Está en su casa, muy angustiado, dice que se ahoga y no consigue terminar las frases. El pulsioxímetro marca 95 por ciento. Su madre te llama por teléfono, asustada, y dice que no entiende nada porque el aparato está bien.",
+    "pregunta": "¿Qué le indicas por teléfono?",
+    "opciones": [
+      { "texto": "Ponerle aire en la cara con un ventilador de mano, incorporarlo y administrar la dosis de rescate de morfina que tiene preparada", "correcta": true, "explicacion": "La disnea es una sensación subjetiva y no se correlaciona con la saturación. El aire en la cara actúa en segundos y la morfina es el tratamiento de primera línea." },
+      { "texto": "Tranquilizarla explicando que la saturación es normal y que por tanto no está pasando nada grave", "correcta": false, "explicacion": "La saturación no mide la disnea. Un niño puede estar al 95 por ciento y sufrir un ahogo intenso: Negar el síntoma por una cifra es uno de los errores que más sufrimiento produce." },
+      { "texto": "Indicar oxígeno a alto flujo con mascarilla", "correcta": false, "explicacion": "No está hipoxémico, así que el oxígeno no va a mejorar la sensación, y la mascarilla suele aumentar el agobio. Se usa solo si hay hipoxemia y solo si el niño nota alivio." },
+      { "texto": "Enviar una ambulancia para traslado urgente al hospital", "correcta": false, "explicacion": "La crisis se puede resolver en casa con lo que ya tiene pautado. Trasladar sin intentarlo primero contradice el plan y añade sufrimiento al niño y a la familia." }
+    ],
+    "aprendizaje": "La disnea se trata por lo que el niño siente, no por lo que marca el pulsioxímetro. El primer gesto es aire en la cara, y el fármaco de primera línea es la morfina."
+  },
+  {
+    "codigo": "caso-nino-no-verbal",
+    "titulo": "Llanto inexplicable en niño con parálisis cerebral",
+    "dominio": "Dolor",
+    "vineta": "Iker tiene 6 años, parálisis cerebral grave, no habla y no camina. Desde hace dos semanas llora casi todo el día y su madre dice que no lo reconoce. Lo has explorado, la analítica es normal y la radiografía de tórax también.",
+    "pregunta": "¿Cuál es el siguiente paso más razonable?",
+    "opciones": [
+      { "texto": "Buscar de forma sistemática reflujo, estreñimiento, cadera y boca antes de nada", "correcta": true, "explicacion": "Esas cuatro causas explican la mayoría de los casos en esta población y las cuatro tienen tratamiento. Además hay que preguntar a la madre cómo sabe ella que a su hijo le duele algo." },
+      { "texto": "Iniciar risperidona porque la irritabilidad es conductual", "correcta": false, "explicacion": "Sedar la conducta sin buscar la causa del malestar deja el dolor sin tratar y solo enmascara el problema. Es uno de los errores más frecuentes en el niño sin lenguaje." },
+      { "texto": "Solicitar una resonancia cerebral urgente", "correcta": false, "explicacion": "No hay signos que la justifiquen y no va a cambiar la conducta. La causa está casi siempre fuera del cerebro y se encuentra con una exploración sistemática." },
+      { "texto": "Concluir que forma parte de su enfermedad de base y explicárselo así a la familia", "correcta": false, "explicacion": "Es exactamente lo que hace que el dolor de estos niños se infratrate. Atribuir la irritabilidad a la condición de base sin buscar causa es el error central de esta población." }
+    ],
+    "aprendizaje": "Antes de concluir que un niño con encefalopatía llora por su enfermedad hay que haber descartado reflujo, estreñimiento, cadera y boca, y haber escuchado a su familia."
+  },
+  {
+    "codigo": "caso-nausea-opioide",
+    "titulo": "Náusea al tercer día de morfina",
+    "dominio": "Digestivo",
+    "vineta": "Valentina tiene 10 años y un tumor abdominal. Lleva tres días con morfina oral y el dolor está bien controlado, pero tiene náusea casi continua y ha vomitado dos veces. No hay distensión, ventosea, hizo deposición ayer y la exploración abdominal es normal.",
+    "pregunta": "¿Qué antiemético eliges?",
+    "opciones": [
+      { "texto": "Haloperidol a dosis baja, 0.01 a 0.02 mg/kg cada 8 a 12 h", "correcta": true, "explicacion": "La náusea inducida por opioides es de origen central y dopaminérgico, así que el antidopaminérgico es lo indicado. Además cede sola en 3 a 5 días, lo que conviene avisar." },
+      { "texto": "Ondansetrón, 0.15 mg/kg cada 8 h", "correcta": false, "explicacion": "Su mecanismo es serotoninérgico y rinde en la náusea por quimioterapia o por irritación intestinal, no en la de origen central por opioides. Además empeoraría el estreñimiento." },
+      { "texto": "Suspender la morfina y volver al paracetamol", "correcta": false, "explicacion": "El dolor está controlado y la náusea es transitoria y tratable. Retirar el opioide devolvería el dolor y es justo lo que la familia teme que ocurra." },
+      { "texto": "Metoclopramida en perfusión continua durante dos semanas", "correcta": false, "explicacion": "No hay datos de estasis gástrica que la justifiquen, y su uso pediátrico está limitado a periodos cortos por el riesgo de reacciones extrapiramidales." }
+    ],
+    "aprendizaje": "En cuidados paliativos la náusea suele ser de origen central, y ahí el fármaco correcto es el haloperidol a dosis pequeña, no el ondansetrón."
+  },
+  {
+    "codigo": "caso-estrenimiento-osmotico",
+    "titulo": "Estreñimiento que no cede con el laxante",
+    "dominio": "Digestivo",
+    "vineta": "Diego tiene 7 años y toma morfina desde hace un mes. Su padre cuenta que le da polietilenglicol todos los días y que las heces son blandas, casi pastosas, pero que el niño se pasa mucho rato en el baño, se queja y consigue expulsar muy poca cantidad.",
+    "pregunta": "¿Qué haces?",
+    "opciones": [
+      { "texto": "Añadir un laxante estimulante como senósidos, manteniendo el osmótico", "correcta": true, "explicacion": "El problema de fondo de los opioides es la parálisis de la motilidad. El osmótico ablanda pero no empuja, así que hace falta un estimulante que aporte propulsión." },
+      { "texto": "Subir la dosis de polietilenglicol", "correcta": false, "explicacion": "Las heces ya están blandas: Ablandar más no resuelve la falta de propulsión y puede producir incontinencia por rebosamiento." },
+      { "texto": "Retirar el polietilenglicol porque las heces ya son pastosas", "correcta": false, "explicacion": "Retirarlo empeoraría la situación. El niño necesita el osmótico y además algo que mueva el intestino." },
+      { "texto": "Reducir la dosis de morfina para que estriña menos", "correcta": false, "explicacion": "El estreñimiento se trata, no se acepta bajando la analgesia. Reducir el opioide devolvería el dolor sin resolver el problema intestinal." }
+    ],
+    "aprendizaje": "La combinación que funciona en el estreñimiento por opioides es un osmótico que ablande más un estimulante que empuje. Usar solo el osmótico es la causa más frecuente de fracaso aparente."
+  },
+  {
+    "codigo": "caso-estertores",
+    "titulo": "Ruido respiratorio en las últimas horas",
+    "dominio": "Últimos días",
+    "vineta": "Lucía tiene 4 años y está en situación de últimos días en su casa, inconsciente, con morfina en infusión subcutánea. Desde hace una hora hace un ruido húmedo muy llamativo al respirar. Sus padres están desesperados y te piden que hagas algo porque creen que se está ahogando.",
+    "pregunta": "¿Cuál es la actuación principal?",
+    "opciones": [
+      { "texto": "Explicar a los padres qué es el ruido y que ella no lo percibe, colocarla en decúbito lateral y administrar butilhioscina subcutánea", "correcta": true, "explicacion": "La explicación a la familia es la intervención principal, porque el sufrimiento aquí es de ellos. El decúbito lateral favorece el drenaje y el antisecretor evita que se produzcan más secreciones." },
+      { "texto": "Aspirar las secreciones con sonda cada vez que aparezca el ruido", "correcta": false, "explicacion": "La aspiración profunda es traumática, produce sangrado y estimula más secreción. Solo se retira lo accesible en la boca, si acaso." },
+      { "texto": "Aumentar la sueroterapia para fluidificar las secreciones", "correcta": false, "explicacion": "Es justo al contrario: El aporte de líquidos aumenta las secreciones y los edemas en esta fase, así que se reduce o se suspende." },
+      { "texto": "Iniciar antibiótico intravenoso por sospecha de neumonía", "correcta": false, "explicacion": "El ruido se debe a saliva que ya no traga, no a una infección, y en esta fase el antibiótico no aporta confort ni cambia el curso." }
+    ],
+    "aprendizaje": "Los estertores molestan a quien los oye y no al niño inconsciente. La explicación a la familia es el tratamiento principal, y el antisecretor se administra al primer ruido, no cuando ya es intenso."
+  },
+  {
+    "codigo": "caso-agitacion-final",
+    "titulo": "Agitación en la fase final",
+    "dominio": "Neurológico",
+    "vineta": "Tomás tiene 14 años, está en situación de últimos días y lleva doce horas muy inquieto, intentando levantarse, sin reconocer a su madre y hablando de cosas incoherentes. Está con morfina y con escopolamina en parche desde ayer.",
+    "pregunta": "¿Cuál es tu primera actuación?",
+    "opciones": [
+      { "texto": "Comprobar si tiene globo vesical o fecaloma y revisar la lista de fármacos anticolinérgicos", "correcta": true, "explicacion": "Son las causas reversibles más frecuentes de delirium y se comprueban en un minuto. La escopolamina, además, atraviesa la barrera hematoencefálica y puede ser la causa directa." },
+      { "texto": "Administrar midazolam en bolo y dejarlo en infusión continua", "correcta": false, "explicacion": "En el delirium hiperactivo las benzodiacepinas en solitario suelen empeorar la agitación. Y sedar sin buscar la causa deja sin resolver algo que podía revertirse." },
+      { "texto": "Subir la dosis de morfina porque probablemente tiene dolor", "correcta": false, "explicacion": "Podría tener dolor, pero subir el opioide a ciegas en un cuadro de delirium puede agravarlo por acumulación de metabolitos. Primero hay que buscar la causa." },
+      { "texto": "Trasladar al hospital para hacer analítica y tomografía craneal", "correcta": false, "explicacion": "En situación de últimos días el traslado no cambia la conducta y sí rompe el plan acordado. Lo reversible se comprueba en la propia cama." }
+    ],
+    "aprendizaje": "Ante agitación en la fase final, las tres primeras comprobaciones son la vejiga, el recto y la lista de fármacos. Y si hay que tratar, el fármaco de elección es un antipsicótico, no una benzodiacepina."
+  },
+  {
+    "codigo": "caso-conspiracion-silencio",
+    "titulo": "Los padres piden que no se le diga nada",
+    "dominio": "Emocional",
+    "vineta": "Los padres de Ana, de 9 años con una recaída de leucemia, te piden en el pasillo que no le digáis nada de la recaída. Dicen que si se entera se hundirá y perderá las ganas de luchar. La niña te ha preguntado esta mañana por qué han vuelto a ingresarla.",
+    "pregunta": "¿Cómo respondes a los padres?",
+    "opciones": [
+      { "texto": "Validar su intención, preguntarles qué temen que ocurra si ella lo sabe y proponer no mentirle en lo que pregunte, sin sentarla a contarle todo", "correcta": true, "explicacion": "La petición nace del amor y del miedo. Explorar el miedo concreto y ofrecer una vía intermedia, no mentir, permite avanzar sin romper la alianza con la familia." },
+      { "texto": "Explicarles que la niña tiene derecho a la información y que vas a hablar con ella", "correcta": false, "explicacion": "Convertirlo en un enfrentamiento de derechos rompe la relación con la familia y no ayuda a la niña. Nunca se informa al niño a espaldas de sus padres." },
+      { "texto": "Aceptar y decirle a Ana que ha ingresado para unas pruebas rutinarias", "correcta": false, "explicacion": "Mentir de forma activa destruye la confianza cuando la niña lo descubra, y lo descubrirá. Ceder por completo convierte al equipo en cómplice del aislamiento." },
+      { "texto": "Derivar el asunto a psicología y no intervenir", "correcta": false, "explicacion": "El apoyo de psicología es valioso, pero desentenderse deja a la niña sin respuesta hoy y a los padres sin acompañamiento en la decisión." }
+    ],
+    "aprendizaje": "La petición de no le digan nada suele significar no soportamos verle sufrir y no sabemos cómo hacerlo. Responder a eso, y no a la petición literal, cambia la conversación."
+  },
+  {
+    "codigo": "caso-me-voy-a-morir",
+    "titulo": "El niño pregunta si se va a morir",
+    "dominio": "Emocional",
+    "vineta": "Estás cambiando una vía a Pablo, de 7 años, con un tumor de tronco en progresión. Sin mirarte, te pregunta: ¿Yo me voy a morir?. Sus padres han salido un momento de la habitación.",
+    "pregunta": "¿Qué respondes?",
+    "opciones": [
+      { "texto": "Devolverle la pregunta con calma: ¿Qué has pensado tú sobre eso?", "correcta": true, "explicacion": "Devolver la pregunta antes de responder indica el nivel exacto en el que hay que situarse y evita adelantar información que no ha pedido. Casi siempre lo que le preocupa es algo concreto." },
+      { "texto": "Decirle que no, que se va a poner bien", "correcta": false, "explicacion": "Es mentir, y cuando lo descubra perderá la confianza en los adultos justo cuando más los necesita. Además él ya intuye la respuesta." },
+      { "texto": "Decirle que eso lo tiene que hablar con sus papás", "correcta": false, "explicacion": "Es una forma de esquivar que le enseña a no volver a preguntar, y lo deja solo con el miedo en ese momento concreto." },
+      { "texto": "Confirmarle que sí y explicarle cuánto tiempo se calcula que le queda", "correcta": false, "explicacion": "Adelantar información que no ha pedido, y sobre todo una cifra de tiempo, es desproporcionado y dañino. Primero hay que saber qué está preguntando en realidad." }
+    ],
+    "aprendizaje": "Ante la pregunta directa de un niño, la mejor primera respuesta es una pregunta. Y lo que sí se le puede prometer siempre es que no va a tener dolor y que no va a estar solo."
+  },
+  {
+    "codigo": "caso-rotacion-hidromorfona",
+    "titulo": "Rotación de opioide por toxicidad",
+    "dominio": "Dolor",
+    "vineta": "Emma tiene 11 años y recibe 90 mg de morfina oral al día. Tiene mioclonías, está confusa a ratos y su creatinina ha subido. Decides rotar a hidromorfona oral, cuyo factor de conversión respecto de la morfina oral es de 5 a 1.",
+    "pregunta": "¿Con qué dosis diaria de hidromorfona empiezas?",
+    "opciones": [
+      { "texto": "Entre 9 y 13.5 mg al día, es decir los 18 mg equianalgésicos reducidos entre un 25 y un 50 por ciento", "correcta": true, "explicacion": "La equianalgesia da 18 mg, pero la tolerancia cruzada entre opioides es incompleta, así que hay que reducir entre un 25 y un 50 por ciento y cubrir la diferencia con rescates." },
+      { "texto": "18 mg al día, la dosis equianalgésica exacta", "correcta": false, "explicacion": "Aplicar la equianalgesia sin reducir es la causa más frecuente de sobredosis durante una rotación, porque ignora la tolerancia cruzada incompleta." },
+      { "texto": "90 mg al día, manteniendo la misma cifra", "correcta": false, "explicacion": "Sería una sobredosis de cinco veces la dosis equianalgésica. La hidromorfona es varias veces más potente que la morfina por vía oral." },
+      { "texto": "4 mg al día, para ir con mucha prudencia", "correcta": false, "explicacion": "Reducir tanto deja al niño con dolor y con riesgo de abstinencia. La reducción prudente es del 25 al 50 por ciento, no del 80." }
+    ],
+    "aprendizaje": "Toda rotación de opioide se recalcula por equianalgesia y después se reduce entre un 25 y un 50 por ciento. Conviene que el cálculo lo comprueben dos personas."
+  },
+  {
+    "codigo": "caso-parche-fentanilo",
+    "titulo": "Fiebre en un niño con parche de fentanilo",
+    "dominio": "Dolor",
+    "vineta": "Álvaro tiene 13 años y lleva un parche de fentanilo de 25 microgramos por hora, con buen control del dolor desde hace un mes. Hoy tiene 39 grados de fiebre por una infección respiratoria y su madre lo ha tapado con una manta eléctrica porque tenía escalofríos. Está más somnoliento de lo habitual.",
+    "pregunta": "¿Qué es lo primero que consideras?",
+    "opciones": [
+      { "texto": "Que la fiebre y el calor externo aumentan la absorción del parche y puede estar sobredosificado", "correcta": true, "explicacion": "La absorción transdérmica depende de la temperatura. La fiebre y una manta eléctrica pueden aumentarla de forma significativa, y la somnolencia creciente es el signo que precede a la depresión respiratoria." },
+      { "texto": "Que la somnolencia se debe a la infección y no requiere ninguna acción sobre el parche", "correcta": false, "explicacion": "Puede contribuir, pero atribuirlo todo a la infección hace pasar por alto una causa corregible y potencialmente peligrosa." },
+      { "texto": "Añadir un segundo parche porque probablemente tiene más dolor por la infección", "correcta": false, "explicacion": "El niño está más somnoliento, no con más dolor. Subir el opioide en este contexto agravaría el problema." },
+      { "texto": "Retirar el parche y administrar naloxona a dosis de reanimación", "correcta": false, "explicacion": "Retirar el foco de calor y vigilar suele bastar. La naloxona a dosis plena en un paciente con opioide crónico provoca dolor incontrolable y abstinencia grave: Si se usa, va muy diluida y titulada." }
+    ],
+    "aprendizaje": "El calor externo y la fiebre aumentan la absorción del parche de fentanilo. Es un aviso que hay que dar por escrito a la familia cuando se prescribe."
+  },
+  {
+    "codigo": "caso-crisis-domicilio",
+    "titulo": "Crisis convulsiva en casa",
+    "dominio": "Urgencias",
+    "vineta": "Son las tres de la mañana. La madre de Noa, de 5 años con una enfermedad neurodegenerativa, te llama porque la niña lleva convulsionando unos seis minutos. Tiene midazolam bucal en casa, con la dosis escrita en la nevera.",
+    "pregunta": "¿Qué le indicas?",
+    "opciones": [
+      { "texto": "Que la coloque de lado, le administre la dosis de midazolam bucal ya calculada y anote la hora, y que si a los 10 minutos no cede repita la dosis y vuelva a llamar", "correcta": true, "explicacion": "Pasados los cinco minutos hay indicación de tratar, y la primera dosis debe darse en casa. Cuanto más dura la crisis, peor responde a las benzodiacepinas." },
+      { "texto": "Que llame a una ambulancia y espere sin dar nada hasta que llegue", "correcta": false, "explicacion": "Esperar es perder el tiempo que más cuenta. La medicación está en casa precisamente para esto." },
+      { "texto": "Que intente abrirle la boca para comprobar que no se muerde la lengua", "correcta": false, "explicacion": "Nunca se introduce nada en la boca durante una crisis: Es peligroso para el niño y para quien lo intenta, y no previene nada." },
+      { "texto": "Que espere unos minutos más porque muchas crisis ceden solas", "correcta": false, "explicacion": "El umbral de cinco minutos ya se ha superado, lo que define un estado epiléptico y obliga a tratar." }
+    ],
+    "aprendizaje": "En el domicilio, el tratamiento del estado epiléptico empieza en la nevera: Con la dosis escrita, la jeringa preparada y la familia habiendo practicado."
+  },
+  {
+    "codigo": "caso-compresion-medular",
+    "titulo": "Dolor de espalda en niño oncológico",
+    "dominio": "Urgencias",
+    "vineta": "Bruno tiene 9 años y un neuroblastoma metastásico. Desde hace tres días se queja de dolor de espalda que empeora cuando se acuesta y que le despierta de madrugada. Camina, aunque dice que las piernas le pesan un poco. No hay alteración de esfínteres.",
+    "pregunta": "¿Cuál es tu conducta?",
+    "opciones": [
+      { "texto": "Explorar la fuerza, iniciar dexametasona de inmediato ante la sospecha y solicitar resonancia urgente de todo el raquis", "correcta": true, "explicacion": "El dolor de espalda que empeora en decúbito precede a la debilidad en la compresión medular. Se inicia corticoide sin esperar a la imagen, porque cada hora perdida es función que no se recupera." },
+      { "texto": "Pautar ibuprofeno y revalorar en una semana", "correcta": false, "explicacion": "Retrasar una semana en una compresión medular puede significar una paraplejia definitiva. La sensación de piernas pesadas ya es un signo de alarma." },
+      { "texto": "Subir la dosis de morfina y añadir un relajante muscular por contractura", "correcta": false, "explicacion": "Atribuirlo a una contractura sin explorar es el error clásico. El dolor mejorará, pero la compresión seguirá progresando en silencio." },
+      { "texto": "Esperar a que aparezca alteración de esfínteres para confirmar el diagnóstico", "correcta": false, "explicacion": "La alteración de esfínteres es el último signo en aparecer y para entonces el pronóstico funcional ya es malo. Es justo lo que hay que evitar." }
+    ],
+    "aprendizaje": "En la compresión medular el orden es constante: Primero dolor, luego debilidad y por último esfínteres. Todo dolor de espalda nuevo en un niño oncológico obliga a explorar la fuerza."
+  },
+  {
+    "codigo": "caso-hemorragia-preparacion",
+    "titulo": "Riesgo previsible de hemorragia",
+    "dominio": "Urgencias",
+    "vineta": "Julia tiene 15 años y un sarcoma de cabeza y cuello que infiltra la región cervical. Ha tenido dos pequeños sangrados por boca esta semana, que cedieron solos. Está en su casa y quiere seguir allí.",
+    "pregunta": "¿Qué preparas con la familia?",
+    "opciones": [
+      { "texto": "Toallas de color oscuro y midazolam preparado en la habitación, explicando con calma qué hacer si ocurre un sangrado grande", "correcta": true, "explicacion": "Los sangrados centinela anuncian el riesgo. Preparar toallas oscuras y tener midazolam a mano reduce de forma drástica el trauma de la escena, que es lo que la familia recordará durante años." },
+      { "texto": "No decirles nada para no asustarlos, y confiar en que no ocurra", "correcta": false, "explicacion": "No preparar cuando el riesgo es previsible multiplica el trauma. La familia se encontrará sola, sin material y sin saber qué hacer." },
+      { "texto": "Ingresarla de forma preventiva en el hospital hasta que fallezca", "correcta": false, "explicacion": "Contradice su voluntad de estar en casa. El riesgo puede prepararse en el domicilio, y el ingreso no evita el sangrado." },
+      { "texto": "Dejar ácido tranexámico intravenoso preparado para revertir una hemorragia masiva", "correcta": false, "explicacion": "El ácido tranexámico tiene su papel en sangrados menores y en prevención, pero no revierte una hemorragia masiva. Lo que hace falta es sedación rápida y compañía." }
+    ],
+    "aprendizaje": "Las toallas de color oscuro son una de las intervenciones de menor coste y mayor impacto de la medicina paliativa: Cambian el recuerdo que la familia guardará de esa escena."
+  },
+  {
+    "codigo": "caso-sedacion-indicacion",
+    "titulo": "¿Está indicada la sedación paliativa?",
+    "dominio": "Últimos días",
+    "vineta": "Un residente te plantea sedar a un niño de 10 años con dolor intenso. Al revisar el caso, el niño está con paracetamol y con morfina oral a 0.1 mg/kg cada 6 h, sin rescates pautados, y nunca se ha ajustado la dosis desde que se inició hace cuatro días.",
+    "pregunta": "¿Qué respondes?",
+    "opciones": [
+      { "texto": "Que este dolor no es refractario sino difícil, y que primero hay que titular la morfina correctamente y pautar rescates", "correcta": true, "explicacion": "Un síntoma refractario es el que no responde al tratamiento adecuado aplicado por expertos. Aquí ni la dosis ni el intervalo ni los rescates son correctos, así que quedan muchas opciones." },
+      { "texto": "Que se puede iniciar la sedación porque el dolor es intenso y el niño sufre", "correcta": false, "explicacion": "La intensidad no equivale a refractariedad. Sedar sin haber optimizado el tratamiento sería un error grave y evitable." },
+      { "texto": "Que se consulte al comité de ética antes de tomar ninguna decisión clínica", "correcta": false, "explicacion": "El comité es muy valioso en conflictos de valores, pero aquí el problema es técnico y tiene solución inmediata: Ajustar la analgesia." },
+      { "texto": "Que se añada midazolam a dosis bajas para que descanse mientras se decide", "correcta": false, "explicacion": "Sedar parcialmente para ganar tiempo enmascara el dolor sin tratarlo y retrasa lo que de verdad hace falta." }
+    ],
+    "aprendizaje": "Antes de llamar refractario a un síntoma hay que poder decir qué se ha probado y por qué no queda nada más. Intenso no es lo mismo que refractario."
+  },
+  {
+    "codigo": "caso-hermano-invisible",
+    "titulo": "El hermano que no da problemas",
+    "dominio": "Familia y entorno",
+    "vineta": "Durante una visita domiciliaria, la madre te comenta de pasada que su otro hijo, Marcos, de 8 años, se está portando fenomenal: Ya no pide nada, hace los deberes solo y no molesta. Antes era muy movido. Su hermana lleva cuatro meses ingresada de forma intermitente.",
+    "pregunta": "¿Cómo interpretas ese comentario?",
+    "opciones": [
+      { "texto": "Como una señal de alarma: La madurez repentina suele ser la forma en que un niño intenta no añadir carga, y hay que explorar cómo está", "correcta": true, "explicacion": "El hermano que no da problemas es el que más preocupación debería generar. Conviene preguntar por él, explorar la culpa y buscarle un adulto de referencia que no sean sus padres." },
+      { "texto": "Como algo positivo, y felicitar a la madre por cómo lo está llevando el niño", "correcta": false, "explicacion": "Reforzar esa conducta consolida la invisibilidad del hermano y le confirma que su papel es no molestar." },
+      { "texto": "Como algo esperable que se resolverá solo cuando pase la crisis", "correcta": false, "explicacion": "Los hermanos suelen manifestar el malestar de formas que no parecen duelo, y sin intervención el problema se prolonga mucho después de la crisis." },
+      { "texto": "Como un asunto familiar en el que el equipo no debe entrar", "correcta": false, "explicacion": "En cuidados paliativos pediátricos la unidad de atención es el niño y su familia, incluidos los hermanos. Atenderlos forma parte del trabajo." }
+    ],
+    "aprendizaje": "La madurez y la obediencia repentinas en un hermano suelen esconder un sufrimiento que nadie está mirando. Preguntar por él, por su nombre, cambia mucho."
+  },
+  {
+    "codigo": "caso-cuidador-agotado",
+    "titulo": "La madre que no duerme",
+    "dominio": "Familia y entorno",
+    "vineta": "En la visita, la madre de un niño con enfermedad neurodegenerativa está pálida, llora con facilidad y dice que está bien, que no le pasa nada. Al preguntarle, reconoce que duerme en tramos de una hora porque el niño despierta por dolor varias veces cada noche. Lleva así cuatro meses.",
+    "pregunta": "¿Cuál es la intervención más útil ahora?",
+    "opciones": [
+      { "texto": "Ajustar la pauta analgésica nocturna del niño y organizar una noche de relevo a la semana", "correcta": true, "explicacion": "La privación de sueño es el factor que mejor predice la claudicación. Si el niño despierta por dolor, corregir eso resuelve el problema de los dos a la vez." },
+      { "texto": "Aplicar la escala de Zarit y esperar al resultado antes de hacer nada", "correcta": false, "explicacion": "La escala es útil para objetivar y para el seguimiento, pero aquí el problema ya está identificado y esperar retrasa una intervención evidente." },
+      { "texto": "Recomendarle que se cuide más y que intente descansar", "correcta": false, "explicacion": "Es un consejo vacío que además traslada a ella la responsabilidad de un problema estructural. No cambia nada de su situación real." },
+      { "texto": "Derivarla a psicología y dejar el caso ahí", "correcta": false, "explicacion": "El apoyo psicológico puede ayudar, pero no soluciona la causa: Un niño que despierta por dolor cada noche. Primero se corrige eso." }
+    ],
+    "aprendizaje": "La pregunta más útil al cuidador es cuántas horas seguidas duerme. Muchas veces la solución no es psicológica, sino ajustar la pauta nocturna del niño."
+  },
+  {
+    "codigo": "caso-comer-ultimos-dias",
+    "titulo": "Ya no quiere comer",
+    "dominio": "Digestivo",
+    "vineta": "Los padres de un niño de 6 años en situación de últimos días están angustiados porque lleva dos días sin comer casi nada y hoy ya no quiere ni beber. Piden que se le ponga una sonda o un suero porque no quieren que se muera de hambre.",
+    "pregunta": "¿Qué haces?",
+    "opciones": [
+      { "texto": "Explicar que no se muere por no comer sino que ha dejado de comer porque se está muriendo, y enseñarles a cuidarle la boca cada media hora", "correcta": true, "explicacion": "La explicación deshace la culpa y el cuidado de la boca les devuelve un papel activo. Un niño con la mucosa húmeda no tiene sensación de sed aunque no reciba líquidos." },
+      { "texto": "Colocar una sonda nasogástrica para alimentación", "correcta": false, "explicacion": "En esta fase el organismo no aprovecha el alimento, y forzarlo produce vómitos, distensión y riesgo de aspiración. Además añade una molestia sin beneficio." },
+      { "texto": "Iniciar sueroterapia a necesidades basales completas", "correcta": false, "explicacion": "El aporte completo de líquidos en los últimos días aumenta las secreciones respiratorias y los edemas sin mejorar la sensación de sed." },
+      { "texto": "Prescribir dexametasona como estimulante del apetito", "correcta": false, "explicacion": "El estimulante del apetito tiene sentido semanas antes, con un objetivo concreto. En situación de últimos días no aporta y suma efectos adversos." }
+    ],
+    "aprendizaje": "En los últimos días, el cuidado de la boca sustituye a la hidratación. Y es un cuidado que la familia puede dar, lo cual importa tanto como su efecto fisiológico."
+  },
+  {
+    "codigo": "caso-gabapentina-abandono",
+    "titulo": "La familia quiere dejar la gabapentina",
+    "dominio": "Dolor",
+    "vineta": "Hace cinco días iniciaste gabapentina para el dolor neuropático de una niña de 9 años, con pauta de titulación. Su padre llama diciendo que la va a suspender porque no le hace nada y porque la niña está más dormida de lo normal.",
+    "pregunta": "¿Qué le explicas?",
+    "opciones": [
+      { "texto": "Que el efecto sobre el dolor neuropático tarda de 1 a 2 semanas tras alcanzar la dosis eficaz, y que la somnolencia inicial suele ceder si se titula despacio", "correcta": true, "explicacion": "El desconocimiento del retraso en el efecto es la causa principal de abandono de este fármaco. Y la sedación inicial es transitoria si la subida es gradual." },
+      { "texto": "Que la suspenda y se cambie a otro fármaco porque claramente no funciona", "correcta": false, "explicacion": "Cinco días no permiten juzgar la eficacia. Se estaría descartando un fármaco que probablemente habría funcionado." },
+      { "texto": "Que suba la dosis al doble para acelerar el efecto", "correcta": false, "explicacion": "Subir rápido es lo que produce la sedación que le preocupa, y es la causa más frecuente de intolerancia." },
+      { "texto": "Que la mantenga sin darle más explicaciones porque es lo que está pautado", "correcta": false, "explicacion": "Sin entender el motivo, la familia acabará suspendiéndola igual. La explicación es parte del tratamiento." }
+    ],
+    "aprendizaje": "Advertir del retraso de 1 a 2 semanas en el efecto de la gabapentina es tan importante como prescribirla bien: Sin ese aviso, la familia la abandona antes de tiempo."
+  },
+  {
+    "codigo": "caso-hagan-todo",
+    "titulo": "Los padres piden que se haga todo",
+    "dominio": "Familia y entorno",
+    "vineta": "Los padres de un niño de 3 años con una enfermedad metabólica en fase terminal insisten en que se le intube y se le ingrese en cuidados intensivos si empeora. El equipo considera que sería desproporcionado. La madre repite que quiere que se haga todo. Sabes que una abuela llega de otro país en dos días.",
+    "pregunta": "¿Cuál es el siguiente paso más útil?",
+    "opciones": [
+      { "texto": "Explorar qué significa para ellos hacer todo y qué temen que pase si no se hace, y preguntar si están esperando a alguien", "correcta": true, "explicacion": "Detrás de hagan todo suele haber algo concreto: Culpa, desconfianza, una promesa o la espera de un familiar. Nombrar eso desactiva la petición mucho mejor que discutirla." },
+      { "texto": "Explicarles que eso sería obstinación terapéutica y que el equipo no lo va a hacer", "correcta": false, "explicacion": "Usar ese término delante de la familia suena a reproche y convierte la conversación en un pulso. Además no responde a lo que están pidiendo en realidad." },
+      { "texto": "Aceptar y programar el ingreso en cuidados intensivos", "correcta": false, "explicacion": "Ceder a una medida desproporcionada no es respetar la autonomía: Es evitar una conversación difícil a costa del niño." },
+      { "texto": "Convocar el comité de ética de inmediato", "correcta": false, "explicacion": "El comité es el recurso adecuado si el conflicto persiste, pero antes hay que entender qué hay detrás de la petición. Convocarlo de entrada se percibe como una escalada." }
+    ],
+    "aprendizaje": "Hagan todo rara vez significa quiero todas las técnicas disponibles. Suele significar no quiero que piensen que me he rendido con mi hijo, y a eso sí se puede responder."
+  },
+  {
+    "codigo": "caso-codeina-jarabe",
+    "titulo": "Un jarabe traído de casa",
+    "dominio": "Dolor",
+    "vineta": "La abuela de un niño de 5 años con tos persistente te enseña orgullosa un jarabe antitusígeno que le ha dado esta semana y que a ella le va muy bien. Al leer la composición ves que contiene codeína.",
+    "pregunta": "¿Qué haces?",
+    "opciones": [
+      { "texto": "Explicar el motivo por el que no debe usarse en niños y sustituirlo por morfina oral a dosis baja si la tos lo requiere", "correcta": true, "explicacion": "La codeína depende del CYP2D6 y es impredecible: En unos niños no hace nada y en otros produce concentraciones tóxicas de morfina. Está contraindicada por debajo de los 12 años." },
+      { "texto": "Permitir que siga usándolo porque la tos ha mejorado", "correcta": false, "explicacion": "El riesgo de depresión respiratoria en un metabolizador ultrarrápido es real y se han descrito muertes infantiles por esta causa." },
+      { "texto": "Retirarlo sin explicar nada para no alarmar a la familia", "correcta": false, "explicacion": "Sin explicación, la familia volverá a usarlo o lo dará a otros nietos. Entender el mecanismo es lo que evita que se repita." },
+      { "texto": "Reducir la dosis a la mitad para minimizar el riesgo", "correcta": false, "explicacion": "El problema no es la dosis sino la variabilidad genética del metabolismo, que no se corrige ajustando la cantidad." }
+    ],
+    "aprendizaje": "Conviene revisar activamente los jarabes que la familia tiene en casa. La sustitución natural de la codeína es morfina oral a dosis baja, que es predecible y titulable."
+  }
+]

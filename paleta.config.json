@@ -1,0 +1,18 @@
+{
+  "grupos": [
+    {
+      "nombre": "Familias funcionales de los acentos, tema claro",
+      "fondo": "#ffffff",
+      "minimoNormal": 15,
+      "minimoDaltonismo": 8,
+      "colores": ["#0b8060", "#3556bd", "#8c0e4c", "#a25417"]
+    },
+    {
+      "nombre": "Familias funcionales de los acentos, tema oscuro",
+      "fondo": "#1e1930",
+      "minimoNormal": 15,
+      "minimoDaltonismo": 8,
+      "colores": ["#5ad9c4", "#7f93f2", "#ed4f8b", "#e8a23e"]
+    }
+  ]
+}

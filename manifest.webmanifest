@@ -1,0 +1,44 @@
+{
+  "id": "./",
+  "name": "Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida",
+  "short_name": "Atlas CPP",
+  "description": "Control de síntomas, fármacos, escalas, calculadoras y comunicación en cuidados paliativos pediátricos.",
+  "lang": "es-MX",
+  "dir": "ltr",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f7f5fb",
+  "theme_color": "#6a4bab",
+  "categories": ["medical", "education", "reference"],
+  "icons": [
+    {
+      "src": "img/icono-colibri.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icono-colibri-recortable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Calculadoras",
+      "short_name": "Calcular",
+      "url": "./#/calculadoras",
+      "description": "Dosis por peso, rescates y rotación de opioides"
+    },
+    {
+      "name": "Urgencias",
+      "short_name": "Urgencias",
+      "url": "./#/sintomas",
+      "description": "Situaciones que requieren actuación inmediata"
+    }
+  ]
+}

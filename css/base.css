@@ -1,0 +1,342 @@
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   1. Base
+   ------------------------------------------------------------
+   Variables de color, tema oscuro, reajuste inicial, tipografía
+   del documento y fondo. Es la única hoja que define tokens: el
+   resto de las hojas solo los consume.
+   ============================================================ */
+
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   Sistema de diseño
+   ------------------------------------------------------------
+   La paleta parte del lavanda, color internacional de los
+   cuidados paliativos, y la acompaña un verde azulado que recoge
+   la iridiscencia del colibrí de la marca. El ámbar cálido queda
+   reservado a lo que acompaña más que trata: la familia, las
+   conversaciones y el cuidado.
+
+   Tres reglas gobiernan toda la paleta:
+
+   1. Los colores de texto cumplen el contraste AA sobre su fondo,
+      tanto en tema claro como en oscuro.
+   2. Los acentos de dominio comparten luminosidad y saturación,
+      de modo que ninguno pese más que otro y todos se distingan
+      entre sí.
+   3. El rojo se reserva para lo que de verdad es urgente. Si todo
+      grita, nada avisa.
+   ============================================================ */
+
+/* ---------- Tokens ---------- */
+:root {
+  /* Marca: lavanda de los cuidados paliativos */
+  --marca-500: #6a4bab;
+  --marca-600: #563a8e;
+  --marca-700: #3f2a6b;
+  --marca-400: #9b7fe0;
+  --marca-300: #c3b0f0;
+  /* La marca como tinta de texto o de ícono. Se separa de --marca-500 porque
+     en oscuro el violeta de marca cae a 2.6 a 1 y hay que sustituirlo por el
+     paso claro. Medido: 6.55 a 1 sobre superficie y 5.08 a 1 sobre el fondo
+     de la pestaña activa. */
+  --marca-tinta: #6a4bab;
+  /* La transición evita el punto magenta apagado de la versión anterior */
+  --marca-grad: linear-gradient(135deg, #5a3d95 0%, #7c5cd6 55%, #a86fc4 100%);
+
+  /* Iridiscencia: el verde azulado de la garganta del colibrí */
+  --iris: #17867d;
+  --iris-400: #35b3a6;
+  --iris-suave: #e0f5f1;
+
+  /* Acento cálido, para lo que acompaña más que trata */
+  --calido: #a9541f;
+  --calido-400: #e08a4e;
+  --calido-suave: #fdf1e6;
+
+  /* Superficies (claro) */
+  --fondo: #f7f5fb;
+  --fondo-2: #f0ecf8;
+  --superficie: #ffffff;
+  --superficie-2: #faf8fd;
+  --superficie-3: #f0ecf9;
+
+  /* Texto: 15.2, 9.1 y 5.5 a 1 de contraste sobre superficie */
+  --tinta: #1c1633;
+  --tinta-2: #4e4363;
+  --tinta-3: #6f6483;
+
+  /* Bordes y sombras */
+  --borde: #e6e0f2;
+  --borde-2: #f0ebf8;
+  --anillo: rgba(106, 75, 171, 0.28);
+  --sombra-sm: 0 1px 2px rgba(40, 24, 66, 0.05), 0 1px 3px rgba(40, 24, 66, 0.05);
+  --sombra-md: 0 4px 16px rgba(40, 24, 66, 0.09), 0 2px 6px rgba(40, 24, 66, 0.05);
+  --sombra-lg: 0 20px 50px rgba(40, 24, 66, 0.16), 0 8px 20px rgba(40, 24, 66, 0.10);
+  --sombra-marca: 0 8px 24px rgba(106, 75, 171, 0.30);
+
+  /* Estados. Cada tinta está medida sobre su fondo suave y sobre superficie,
+     porque son los dos fondos donde se usa como texto:
+       exito   4.93 sobre suave, 5.59 sobre superficie
+       alerta  5.52 sobre suave, 6.22 sobre superficie
+       peligro 5.01 sobre suave, 5.92 sobre superficie
+       info    5.22 sobre suave, 6.37 sobre superficie */
+  --exito: #137747;
+  --exito-suave: #dcf7e8;
+  --alerta: #8f5209;
+  --alerta-suave: #fdf1cf;
+  --peligro: #c11f45;
+  --peligro-suave: #ffe6ec;
+  --info: #4a52c4;
+  --info-suave: #e6e7fc;
+  /* Fondo lleno de la insignia de urgencia, con texto blanco encima: 5.92 a 1 */
+  --peligro-solido: #c11f45;
+
+  /* Vías de administración (color por vía) */
+  --via-vo: #7c3fc9;   --via-vo-suave: #f0e9fc;
+  --via-sc: #0e7fa8;   --via-sc-suave: #e2f2fa;
+  --via-iv: #c11f45;   --via-iv-suave: #ffe6ec;
+  --via-otra: #12867d; --via-otra-suave: #e0f5f1;
+
+  /* Opacidad de cada mancha de la aurora. Son tokens para que el tema oscuro
+     pueda atenuarlas sin duplicar las reglas de las manchas. */
+  --aurora-1: 0.45;
+  --aurora-2: 0.26;
+  --aurora-3: 0.22;
+
+  /* Geometría y movimiento */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 28px;
+  --paso: cubic-bezier(0.16, 1, 0.3, 1);
+  --max: 1180px;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+}
+
+/* ============================================================
+   Tema oscuro
+   ------------------------------------------------------------
+   En oscuro se baja la saturación de las superficies para que el
+   violeta no domine la pantalla, y las tintas de estado no se
+   heredan del tema claro sino que tienen su propio paso claro,
+   porque las tintas calculadas para fondo blanco caen a menos de
+   2.8 a 1 sobre los fondos suaves oscurecidos. Cada paso está
+   medido con la luminancia relativa WCAG sobre sus dos fondos:
+
+     exito   #6ee7a8   9.12 sobre suave, 11.04 sobre superficie
+     alerta  #fcd34d   9.77 sobre suave, 11.77 sobre superficie
+     peligro #fda4b8   8.51 sobre suave, 9.04 sobre superficie
+     info    #a5a1ff   6.46 sobre suave, 7.39 sobre superficie
+     calido  #e08a4e   5.39 sobre suave, 6.40 sobre superficie
+     via vo  #c4b5fd   8.31 sobre suave    via sc  #7cc7e8  7.85
+     via iv  #fda4b8   8.51 sobre suave    via otra #6ee7b7 9.44
+     marca   #9b7fe0   5.26 sobre superficie, 5.30 en pestaña activa
+     tinta 3 #9a91ae   4.66 sobre superficie 3, 5.69 sobre superficie
+
+   El bloque aparece dos veces con los mismos valores: Una bajo la
+   preferencia del sistema, que rige cuando el documento no fija
+   data-tema, y otra bajo data-tema="oscuro", que rige cuando quien
+   usa la aplicación lo eligió a mano. El :where mantiene la
+   especificidad en cero para que data-tema="claro" pueda ganar.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-tema="claro"])) {
+    --fondo: #14111f;
+    --fondo-2: #191527;
+    --superficie: #1e1930;
+    --superficie-2: #262038;
+    --superficie-3: #2f2845;
+
+    --marca-tinta: #9b7fe0;
+
+    --tinta: #f0ecf8;
+    --tinta-2: #bcb2d0;
+    --tinta-3: #9a91ae;
+
+    --borde: #362e4e;
+    --borde-2: #2b2440;
+    --anillo: rgba(155, 127, 224, 0.42);
+    --sombra-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+    --sombra-md: 0 6px 18px rgba(0, 0, 0, 0.5);
+    --sombra-lg: 0 20px 50px rgba(0, 0, 0, 0.65);
+    --sombra-marca: 0 8px 26px rgba(124, 92, 214, 0.40);
+
+    --iris-suave: #0d2f2c;
+    --calido: #e08a4e;
+    --calido-suave: #3a2614;
+
+    --exito: #6ee7a8;
+    --exito-suave: #0e3222;
+    --alerta: #fcd34d;
+    --alerta-suave: #38290b;
+    --peligro: #fda4b8;
+    --peligro-suave: #3c1421;
+    --info: #a5a1ff;
+    --info-suave: #22234d;
+    --peligro-solido: #c92950;
+
+    --via-vo: #c4b5fd;   --via-vo-suave: #2a1c4c;
+    --via-sc: #7cc7e8;   --via-sc-suave: #0c2b3c;
+    --via-iv: #fda4b8;   --via-iv-suave: #3c1421;
+    --via-otra: #6ee7b7; --via-otra-suave: #0d2f2c;
+
+    --aurora-1: 0.32;
+    --aurora-2: 0.24;
+    --aurora-3: 0.32;
+  }
+}
+
+:root[data-tema="oscuro"] {
+  --fondo: #14111f;
+  --fondo-2: #191527;
+  --superficie: #1e1930;
+  --superficie-2: #262038;
+  --superficie-3: #2f2845;
+
+  --marca-tinta: #9b7fe0;
+
+  --tinta: #f0ecf8;
+  --tinta-2: #bcb2d0;
+  --tinta-3: #9a91ae;
+
+  --borde: #362e4e;
+  --borde-2: #2b2440;
+  --anillo: rgba(155, 127, 224, 0.42);
+  --sombra-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --sombra-md: 0 6px 18px rgba(0, 0, 0, 0.5);
+  --sombra-lg: 0 20px 50px rgba(0, 0, 0, 0.65);
+  --sombra-marca: 0 8px 26px rgba(124, 92, 214, 0.40);
+
+  --iris-suave: #0d2f2c;
+  --calido: #e08a4e;
+  --calido-suave: #3a2614;
+
+  --exito: #6ee7a8;
+  --exito-suave: #0e3222;
+  --alerta: #fcd34d;
+  --alerta-suave: #38290b;
+  --peligro: #fda4b8;
+  --peligro-suave: #3c1421;
+  --info: #a5a1ff;
+  --info-suave: #22234d;
+  --peligro-solido: #c92950;
+
+  --via-vo: #c4b5fd;   --via-vo-suave: #2a1c4c;
+  --via-sc: #7cc7e8;   --via-sc-suave: #0c2b3c;
+  --via-iv: #fda4b8;   --via-iv-suave: #3c1421;
+  --via-otra: #6ee7b7; --via-otra-suave: #0d2f2c;
+
+  --aurora-1: 0.32;
+  --aurora-2: 0.24;
+  --aurora-3: 0.32;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  background:
+    radial-gradient(1100px 560px at 100% -10%, rgba(124, 92, 214, 0.09), transparent 60%),
+    radial-gradient(900px 500px at -10% 8%, rgba(53, 179, 166, 0.07), transparent 58%),
+    var(--fondo);
+  background-attachment: fixed;
+  color: var(--tinta);
+  line-height: 1.62;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.oculta { display: none !important; }
+
+/* ---------- Texto solo para lectores de pantalla ----------
+   Recorte accesible en lugar de display none, porque una región viva
+   que nace sin pintar no se registra y pierde su primer anuncio. */
+.solo-lector {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+::selection { background: var(--marca-400); color: #fff; }
+
+/* ---------- Foco visible ----------
+   Solo aparece cuando se navega con teclado, gracias a :focus-visible,
+   de modo que no molesta al usar el ratón. Sin esta regla, quien recorre
+   la aplicación tabulando no sabe dónde está. */
+:focus-visible {
+  outline: 3px solid var(--marca-400);
+  outline-offset: 3px;
+  border-radius: var(--r-sm);
+}
+.tarjeta:focus-visible { outline-offset: 2px; }
+
+/* ---------- Saltar al contenido ----------
+   Primer elemento enfocable de la página. Permite a quien usa teclado o
+   lector de pantalla evitar la navegación en cada cambio de vista. */
+.saltar-al-contenido {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -120%);
+  z-index: 300;
+  background: var(--marca-grad);
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0 0 var(--r-md) var(--r-md);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--sombra-md);
+  transition: transform 0.2s var(--paso);
+}
+.saltar-al-contenido:focus { transform: translate(-50%, 0); }
+
+/* Scrollbar */
+* { scrollbar-width: thin; scrollbar-color: var(--borde) transparent; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: var(--borde); border-radius: 99px; border: 2px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background: var(--tinta-3); }
+
+/* ---------- Barra de progreso de scroll ---------- */
+.barra-progreso {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--marca-grad);
+  z-index: 200;
+  transition: width 0.1s linear;
+}
+
+/* ============================================================
+   Fondo aurora
+   ============================================================ */
+.aurora { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.aurora-blob { position: absolute; border-radius: 50%; filter: blur(84px); opacity: var(--aurora-1); will-change: transform; }
+/* Los tres tonos del colibrí: violeta del lomo, ámbar del pecho y verde
+   azulado de la garganta. */
+.aurora-blob.b1 { width: 46vw; height: 46vw; top: -14vw; right: -10vw; background: radial-gradient(circle, #7c5cd6, transparent 68%); animation: flotar1 26s ease-in-out infinite; }
+.aurora-blob.b2 { width: 40vw; height: 40vw; bottom: -12vw; left: -12vw; background: radial-gradient(circle, #e08a4e, transparent 68%); opacity: var(--aurora-2); animation: flotar2 32s ease-in-out infinite; }
+.aurora-blob.b3 { width: 32vw; height: 32vw; top: 34%; left: 44%; background: radial-gradient(circle, #35b3a6, transparent 70%); opacity: var(--aurora-3); animation: flotar3 29s ease-in-out infinite; }
+@keyframes flotar1 { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-4vw, 5vw) scale(1.1); } }
+@keyframes flotar2 { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(5vw, -4vw) scale(1.08); } }
+@keyframes flotar3 { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-6vw, -3vw) scale(0.92); } }
+
+/* Respeta la preferencia de menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .aurora { display: none; }
+}

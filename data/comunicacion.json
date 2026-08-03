@@ -1,0 +1,898 @@
+[
+  {
+    "codigo": "dar-mala-noticia",
+    "titulo": "Dar una mala noticia a los padres",
+    "interlocutor": "Padres",
+    "dominio": "Emocional",
+    "momento": "Diagnóstico o cambio de pronóstico",
+    "cuando": "Cuando hay que comunicar un diagnóstico grave, una recaída, el fracaso de un tratamiento o un cambio de pronóstico. Es la conversación que la familia va a recordar palabra por palabra durante el resto de su vida, y la forma en que se dé condiciona toda la relación posterior con el equipo.",
+    "objetivo": "Que la familia comprenda la situación real, se sienta acompañada y salga de la conversación sabiendo qué va a pasar ahora y quién estará con ellos. No se busca que lo acepten en ese momento, porque eso no ocurre en una sola conversación.",
+    "pasos": [
+      "Prepararse: Revisar la historia, confirmar la información, elegir un lugar privado, sentarse, silenciar el teléfono y calcular tiempo suficiente sin interrupciones. Nunca en un pasillo ni de pie.",
+      "Preguntar qué saben antes de contar nada: Qué le han explicado hasta ahora, qué entiende usted de lo que está pasando. La respuesta indica desde dónde hay que empezar y evita repetir o contradecir.",
+      "Preguntar cuánto quieren saber ahora y en qué nivel de detalle. Algunas familias quieren todo de golpe y otras necesitan por partes.",
+      "Avisar de que viene algo difícil, con una frase corta que dé un par de segundos para prepararse. Ese aviso reduce mucho el impacto del golpe.",
+      "Dar la información en una o dos frases claras, sin tecnicismos y sin rodeos, y después callarse. El silencio que sigue es incómodo y es imprescindible: Es el tiempo que necesitan para encajarlo.",
+      "Responder a la emoción antes que a los datos. Si lloran, no seguir explicando. Nombrar lo que se ve y esperar.",
+      "Comprobar qué han entendido pidiéndoles que lo cuenten con sus palabras, no preguntando si han entendido.",
+      "Cerrar con un plan concreto: Qué pasa ahora, cuándo se vuelven a ver, a quién llaman si algo va mal, y decir explícitamente que no se les va a dejar solos."
+    ],
+    "frasesUtiles": [
+      "Antes de contarle nada, me gustaría saber qué le han explicado hasta ahora.",
+      "Me temo que tengo malas noticias.",
+      "Los resultados muestran que la enfermedad ha vuelto.",
+      "Veo que esto es muy duro. Tómese el tiempo que necesite, no tengo prisa.",
+      "No sé cuánto tiempo será. Lo que sí sé es que vamos a estar con ustedes todo el camino.",
+      "Quiero asegurarme de que me he explicado bien. Podría contarme con sus palabras lo que ha entendido.",
+      "Esto no lo ha provocado nada de lo que ustedes hayan hecho o dejado de hacer."
+    ],
+    "frasesQueEvitar": [
+      "No hay nada más que hacer.",
+      "Lo siento, pero hay que ser realistas.",
+      "Le quedan tres meses.",
+      "Sé cómo se siente.",
+      "Al menos tienen otros hijos.",
+      "Tienen que ser fuertes por él.",
+      "Es la voluntad de Dios, salvo que la familia lo haya expresado antes en esos términos."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Cuánto tiempo le queda", "respuesta": "No dar una cifra exacta, porque casi siempre se acierta poco y la familia la vive como una cuenta atrás. Se responde con rangos y con honestidad sobre la incertidumbre: Es difícil de precisar y podría equivocarme, pero por lo que veo hablaríamos más de semanas que de meses. Y después preguntar por qué lo preguntan, porque muchas veces detrás hay algo concreto que organizar." },
+      { "pregunta": "Es culpa nuestra, deberíamos haber venido antes", "respuesta": "Desmentirlo de forma explícita y sin ambigüedad, aunque el retraso hubiera existido: Esta enfermedad no se produce por nada que ustedes hicieran ni dejaran de hacer, y venir antes no habría cambiado el curso. La culpa es uno de los factores que más complica el duelo posterior y merece la pena atajarla desde el principio." },
+      { "pregunta": "Hay algo más que podamos probar en otro sitio", "respuesta": "No cerrar la puerta a la búsqueda de segundas opiniones, que es una reacción normal, pero acompañarla: Entiendo perfectamente que quieran explorar todas las opciones, yo haría lo mismo. Puedo ayudarles a valorar lo que encuentren y decirles con honestidad qué creo de cada cosa." }
+    ],
+    "porEdad": [
+      { "edad": "Cualquier edad", "como": "El niño debe estar presente o no según su edad y su deseo, pero nunca se le engaña. Si no está presente, hay que planificar en la misma conversación qué se le va a contar a él y quién lo hará." }
+    ],
+    "errores": [
+      "Dar la noticia de pie, en un pasillo o con la puerta abierta",
+      "Llenar el silencio con más información técnica porque la emoción resulta incómoda",
+      "Dar cifras de pronóstico con una precisión que no se tiene",
+      "Preguntar si han entendido en lugar de pedir que lo repitan con sus palabras",
+      "Terminar sin un plan concreto y sin un teléfono al que llamar",
+      "Delegar la conversación en el profesional más joven del equipo"
+    ],
+    "perla": "El silencio después de dar la noticia no es un fallo de la conversación: Es la parte más importante. Contar hasta veinte mentalmente antes de volver a hablar es una técnica sencilla y sorprendentemente eficaz.",
+    "etiquetas": ["SPIKES", "mala noticia", "diagnóstico", "pronóstico"]
+  },
+  {
+    "codigo": "hablar-de-la-muerte-con-el-nino",
+    "titulo": "Hablar de la muerte con el niño",
+    "interlocutor": "Niño",
+    "dominio": "Emocional",
+    "momento": "Cuando el niño lo plantea",
+    "cuando": "Cuando el niño pregunta directamente, cuando habla de la muerte a través del juego o del dibujo, o cuando el equipo detecta que ya lo sabe y nadie se lo ha confirmado. Casi nunca es la primera conversación del proceso, sino una que se ha ido posponiendo.",
+    "objetivo": "Que el niño no se quede solo con lo que ya intuye. El daño no lo produce la información, sino descubrir que los adultos que lo quieren le mienten justo cuando más los necesita.",
+    "pasos": [
+      "Hablar antes con los padres y llegar a un acuerdo. Si no lo hay, trabajar primero con ellos: Nunca se le cuenta al niño algo a espaldas de sus padres.",
+      "Elegir un momento tranquilo, sin procedimientos pendientes y sin prisa, y ponerse a su altura física.",
+      "Devolver la pregunta antes de responderla: Qué has pensado tú sobre eso. La respuesta indica exactamente en qué nivel hay que situarse.",
+      "Responder solo lo que ha preguntado, con palabras concretas y verdaderas, sin adelantar información que no ha pedido.",
+      "Usar la palabra morir, no eufemismos. Explicar de forma concreta lo que significa: El cuerpo deja de funcionar, ya no respira, ya no siente dolor.",
+      "Desmentir explícitamente la culpa aunque no la haya mencionado, sobre todo por debajo de los siete años.",
+      "Preguntar qué es lo que más le preocupa, porque casi nunca es lo que el adulto supone: Suele ser el dolor, quedarse solo o qué será de sus padres.",
+      "Dejar la puerta abierta: Decirle que puede preguntar lo que quiera cuando quiera, y volver sobre el tema en los días siguientes."
+    ],
+    "frasesUtiles": [
+      "Qué has pensado tú sobre eso.",
+      "Es una pregunta muy buena y muy valiente.",
+      "Eso no lo sé. Te prometo que si lo supiera te lo diría.",
+      "Nadie tiene la culpa de esto. Ni tú, ni papá, ni mamá.",
+      "Vamos a hacer todo lo posible para que no te duela nada.",
+      "No te vas a quedar solo en ningún momento.",
+      "Hay cosas que sí puedo prometerte: Que te vamos a cuidar y que no te vamos a mentir.",
+      "Puedes preguntarme lo que quieras siempre que quieras, aunque sea difícil."
+    ],
+    "frasesQueEvitar": [
+      "Se quedó dormido para siempre.",
+      "Se fue de viaje.",
+      "Lo perdimos.",
+      "Eso no va a pasar, no te preocupes.",
+      "No pienses en esas cosas.",
+      "Tienes que ser valiente y no llorar.",
+      "Dios se lleva a los mejores.",
+      "Si te portas bien y te tomas la medicina te vas a curar."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Me voy a morir", "respuesta": "Primero devolver: Qué piensas tú. Si el niño dice que cree que sí, no se le desmiente. Se confirma con calma y se acompaña: Sí, es posible. Tu cuerpo está muy cansado y los médicos ya no podemos curarlo. Y a continuación, lo que sí se puede prometer: Que no le va a doler y que no va a estar solo." },
+      { "pregunta": "Va a doler", "respuesta": "Esta es en realidad la pregunta más frecuente y la que más alivia responder bien. Se responde con seguridad porque es verdad: No. Tenemos medicinas muy buenas para que no te duela, y si algo te duele nos lo dices y lo quitamos. Nunca te vamos a dejar con dolor." },
+      { "pregunta": "Y mis papás qué van a hacer sin mí", "respuesta": "No minimizarlo. Se reconoce que van a estar muy tristes y se le libera de la responsabilidad: Van a estar muy tristes, porque te quieren muchísimo. Pero se van a cuidar el uno al otro y hay mucha gente que los va a acompañar. Tú no tienes que preocuparte de cuidarlos a ellos." },
+      { "pregunta": "Qué hay después", "respuesta": "Devolver primero a la familia y a sus creencias: Qué te han contado en casa. Se acompaña dentro del marco de valores de la familia, y si no hay uno claro, se responde con honestidad: Hay gente que cree cosas distintas. Nadie lo sabe seguro. Lo que sí sé es que la gente que te quiere se va a acordar de ti siempre." }
+    ],
+    "porEdad": [
+      { "edad": "Menos de 2 años", "como": "No hay concepto de muerte, pero sí percepción de la separación y del estado emocional de los adultos. Lo que ayuda es presencia constante, contacto físico, voz conocida y control del dolor." },
+      { "edad": "De 2 a 6 años", "como": "Pensamiento mágico: Puede creer que la enfermedad es un castigo o que él la provocó. Hay que desmentir la culpa de forma explícita. Prohibidos los eufemismos de sueño y de viaje. Explicar en términos corporales concretos." },
+      { "edad": "De 6 a 12 años", "como": "Ya entiende que la muerte es irreversible y universal. Aparecen preguntas biológicas concretas que escandalizan a los adultos y son sanas: Hay que responderlas con información veraz. Preguntar qué es lo que más le preocupa." },
+      { "edad": "Adolescente", "como": "El concepto es completo y se añade la dimensión existencial. Casi siempre ya conoce su pronóstico. Hay que ofrecerle tiempo a solas sin los padres y preguntarle explícitamente cuánto quiere saber y cuánto quiere decidir." }
+    ],
+    "errores": [
+      "Adelantar información que el niño no ha pedido",
+      "Usar eufemismos que producen miedo a dormirse o sensación de abandono",
+      "Decidir lo que puede entender por su edad en el calendario en lugar de por lo que él dice",
+      "Hablar con el niño sin haber acordado antes con los padres",
+      "Prometer cosas que no se pueden cumplir, como que se va a curar",
+      "Interpretar el silencio del niño como falta de interés: Muchas veces es protección hacia sus padres"
+    ],
+    "perla": "El niño enfermo entiende la muerte varios años antes de lo que le corresponde por edad, porque ha visto hospitalizaciones, procedimientos y otros niños que ya no vuelven. Por eso nunca se decide lo que puede entender por su edad, sino preguntándole primero.",
+    "etiquetas": ["desarrollo", "eufemismos", "verdad", "preguntas difíciles"]
+  },
+  {
+    "codigo": "conspiracion-del-silencio",
+    "titulo": "Cuando los padres piden que no se le diga nada al niño",
+    "interlocutor": "Padres",
+    "dominio": "Familia y entorno",
+    "momento": "En cualquier fase",
+    "cuando": "Cuando los padres piden explícitamente que no se informe al niño de su diagnóstico o de su pronóstico. Es una de las situaciones más frecuentes y más incómodas, y enfrentarla mal rompe la relación con la familia sin conseguir nada a cambio.",
+    "objetivo": "Que los padres pasen de proteger al niño mediante el silencio a protegerlo mediante la verdad acompañada. No se trata de vencer una discusión, sino de que ellos lleguen a esa conclusión.",
+    "pasos": [
+      "No confrontar. La petición nace del amor y del miedo, no de la ignorancia, y tratarla como un obstáculo garantiza el fracaso.",
+      "Validar la intención: Reconocer en voz alta que quieren protegerlo y que eso es exactamente lo que corresponde a un padre.",
+      "Explorar el miedo concreto que hay detrás: Qué es lo que temen que ocurra si el niño lo sabe. Casi siempre es que pierda la esperanza, que se hunda o que sufra más.",
+      "Aportar la información que ellos no tienen: Que la mayoría de los niños ya lo saben o lo intuyen, que los que hablan de ello con sus padres tienen menos ansiedad, y que los padres que hablaron con su hijo no se arrepienten mientras que muchos de los que no lo hicieron sí.",
+      "Explicar lo que el silencio produce en la práctica: El niño lo intuye, ve las caras, oye conversaciones a medias, y concluye que la situación es tan terrible que ni siquiera se puede nombrar. Se queda solo con su miedo y además finge estar bien para proteger a sus padres.",
+      "Ofrecer control sobre el proceso: No se trata de sentarlo y contarle todo, sino de dejar de mentir y de responder a lo que él pregunte, en el momento en que pregunte, y en el nivel que él marque.",
+      "Ofrecer acompañamiento: Que no tienen que hacerlo solos, que el equipo puede estar delante o hacerlo con ellos.",
+      "Dar tiempo. Rara vez se resuelve en una conversación. Se plantea, se deja reposar y se retoma en la visita siguiente."
+    ],
+    "frasesUtiles": [
+      "Entiendo perfectamente que quieran protegerlo. Es lo que haría cualquier padre.",
+      "Qué es lo que más temen que pase si él lo sabe.",
+      "Han notado si él ha preguntado algo últimamente, o si ha dejado de preguntar.",
+      "Muchos niños ya lo saben antes de que nadie se lo diga: Lo notan en las caras y en los silencios.",
+      "No estoy proponiendo sentarlo y contarle todo. Propongo que si él pregunta, no le mintamos.",
+      "Ustedes deciden cuánto y cuándo. Lo único que le pido es que no lo dejemos solo con su miedo.",
+      "Si quieren, puedo estar presente cuando hablen con él, o pueden hacerlo ustedes y yo estoy fuera por si me necesitan.",
+      "No hace falta que decidan hoy. Piénsenlo y lo hablamos la próxima vez."
+    ],
+    "frasesQueEvitar": [
+      "El niño tiene derecho a saberlo y ustedes no pueden impedirlo.",
+      "Se están equivocando.",
+      "Le van a hacer más daño así.",
+      "Es mi obligación decírselo.",
+      "Todos los padres acaban aceptándolo.",
+      "Ustedes lo hacen por ustedes, no por él."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Si se entera va a perder la esperanza y se va a rendir", "respuesta": "La evidencia dice lo contrario: Los niños que pueden hablar de su enfermedad con sus padres tienen menos ansiedad y menos depresión, no más. La esperanza no desaparece, se transforma: Deja de ser esperanza de curación y pasa a ser esperanza de estar bien, de no tener dolor, de estar en casa, de que llegue la fecha que le hace ilusión." },
+      { "pregunta": "Es muy pequeño, no lo va a entender", "respuesta": "No se trata de contarle todo, sino de no mentirle en lo que pregunte. Aunque sea pequeño, entiende que algo pasa y percibe el estado de ustedes con una precisión enorme. Lo que no entiende es por qué nadie se lo explica, y eso lo interpreta como que es demasiado terrible para nombrarlo." },
+      { "pregunta": "Y si pregunta directamente si se va a morir", "respuesta": "Se prepara la respuesta juntos, con antelación, y se acuerda quién responde. Lo importante es que la respuesta no sea una mentira y que incluya lo que sí se le puede prometer: Que no le va a doler y que no va a estar solo. Y que ustedes no tienen que responder solos si no quieren." }
+    ],
+    "porEdad": [
+      { "edad": "Preescolar", "como": "El argumento que más ayuda a los padres es el del pensamiento mágico: Sin explicación, el niño construye una propia, y la que construyen a esta edad suele ser que es un castigo por algo que hicieron." },
+      { "edad": "Escolar y adolescente", "como": "El argumento decisivo suele ser el de la confianza: Si descubre que le han mentido, y lo descubrirá, perderá la confianza en las únicas personas a las que puede agarrarse. Ese razonamiento moviliza a los padres más que ningún otro." }
+    ],
+    "errores": [
+      "Convertirlo en un enfrentamiento de derechos del menor",
+      "Informar al niño sin el acuerdo de los padres, que rompe la alianza con la familia de forma irreparable",
+      "Insistir en la misma conversación hasta que cedan",
+      "Ceder por completo y colaborar activamente en la mentira",
+      "No preguntar por el miedo concreto que hay detrás de la petición",
+      "No ofrecer acompañamiento y dejarles solos ante la conversación"
+    ],
+    "perla": "La petición nunca es no le digan nada. Traducida, es no soportamos verle sufrir y no sabemos cómo hacerlo. Si se responde a lo que de verdad están diciendo en lugar de a lo que han dicho literalmente, la conversación cambia por completo.",
+    "etiquetas": ["pacto de silencio", "verdad", "protección", "alianza"]
+  },
+  {
+    "codigo": "presentar-cuidados-paliativos",
+    "titulo": "Presentar los cuidados paliativos por primera vez",
+    "interlocutor": "Padres",
+    "dominio": "Familia y entorno",
+    "momento": "En el diagnóstico o al derivar",
+    "cuando": "Cuando se propone por primera vez la intervención de un equipo de cuidados paliativos. La palabra tiene una carga tan fuerte que muchas familias oyen la propuesta como una sentencia de muerte, y esa reacción hay que anticiparla en lugar de sufrirla.",
+    "objetivo": "Que la familia entienda que se añade un equipo y no se retira ninguno, que esto no significa que se haya renunciado a nada, y que acepte al menos una primera visita.",
+    "pasos": [
+      "Anticipar la palabra en lugar de esquivarla: Nombrarla y explicar de inmediato qué significa realmente, antes de que ellos completen el significado por su cuenta.",
+      "Explicar en términos de lo que se añade, no de lo que se quita: Un equipo más, que se ocupa de que el niño esté cómodo y de sostener a la familia.",
+      "Dejar claro explícitamente que el equipo de siempre no desaparece y que el tratamiento de la enfermedad no se suspende si sigue teniendo sentido.",
+      "Poner ejemplos concretos y cotidianos de lo que van a hacer: Ajustar el dolor, resolver el estreñimiento, conseguir que duerma, evitar ingresos, atenderlos por teléfono a las tres de la mañana.",
+      "Mencionar que también atienden a los hermanos y a los padres, porque suele ser lo que más les sorprende y lo que más les alivia.",
+      "Nombrar el miedo antes de que lo digan: Sé que la palabra asusta y que suena a final. No es eso.",
+      "Proponer una sola visita sin compromiso, que es una petición mucho más fácil de aceptar que la incorporación de un equipo.",
+      "Corregir de forma explícita la confusión con la sedación y con la eutanasia, porque está muy extendida y casi nunca se verbaliza."
+    ],
+    "frasesUtiles": [
+      "Quiero proponerles que entre a ayudarnos otro equipo. Se llaman cuidados paliativos y sé que el nombre asusta, así que déjenme explicarles qué hacen.",
+      "No sustituyen a nadie: Se suman. Nosotros seguimos igual que hasta ahora.",
+      "Son los que mejor saben quitar el dolor y controlar los síntomas. Eso es lo que hacen todos los días.",
+      "También están para ustedes y para sus otros hijos, no solo para él.",
+      "Pueden entrar ahora y acompañarlos durante años. No es algo del final.",
+      "Tienen un teléfono que responde de noche, que es cuando pasan las cosas.",
+      "No es dormirlo ni adelantar nada. Es exactamente lo contrario: Es que viva lo mejor posible.",
+      "Les propongo una sola visita. Si no les convence, no seguimos."
+    ],
+    "frasesQueEvitar": [
+      "Ya no hay nada que hacer, así que los paso a paliativos.",
+      "Es el siguiente paso.",
+      "Ya solo queda esto.",
+      "Es para que estén más cómodos al final.",
+      "Hemos agotado todas las opciones.",
+      "Ahora se harán cargo ellos."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Esto quiere decir que se va a morir", "respuesta": "No dar una respuesta tranquilizadora falsa, pero separar las dos cosas: Que entren no cambia el pronóstico ni significa que hayamos dejado de intentar nada. Hay niños que están con ellos durante años. Lo que sí quiere decir es que su enfermedad es seria, y eso ya lo sabíamos antes de hoy." },
+      { "pregunta": "Nos van a quitar el tratamiento", "respuesta": "No. Todo lo que esté sirviendo sigue. Ellos añaden el control de síntomas y el apoyo. Si en algún momento hay que replantear un tratamiento, será una decisión conjunta con ustedes y conmigo, no de ellos por su cuenta." },
+      { "pregunta": "Lo van a dormir", "respuesta": "Esta confusión es muy común y conviene desmentirla siempre, aunque no la pregunten. La sedación es una cosa concreta, que se usa muy pocas veces, solo cuando hay un síntoma que no se puede controlar de ninguna otra manera, y siempre hablándolo con ustedes antes. No es lo que hacen los cuidados paliativos." }
+    ],
+    "porEdad": [
+      { "edad": "Cualquier edad", "como": "Al niño se le presenta el equipo por lo que hace, no por su nombre: Son los que se encargan de que no te duela nada y de que puedas hacer las cosas que te gustan." }
+    ],
+    "errores": [
+      "Presentarlos cuando ya no queda nada, que confirma exactamente lo que la familia temía",
+      "Derivar sin explicar, dejando que la familia descubra el nombre en un informe",
+      "Evitar la palabra paliativos, lo que hace que la descubran después y sientan que se les ocultó",
+      "No corregir la confusión con la sedación y con la eutanasia",
+      "Presentarlo como una decisión ya tomada en lugar de como una propuesta"
+    ],
+    "perla": "El mejor momento para presentarlos es cuando el niño está estable, no en una crisis. Introducidos en un buen momento, se perciben como un apoyo; introducidos en una recaída, se perciben como el anuncio del final, y esa asociación ya no se deshace.",
+    "etiquetas": ["derivación", "primera visita", "estigma", "malentendidos"]
+  },
+  {
+    "codigo": "hablar-con-los-hermanos",
+    "titulo": "Hablar con los hermanos",
+    "interlocutor": "Hermanos",
+    "dominio": "Familia y entorno",
+    "momento": "Durante toda la enfermedad",
+    "cuando": "Desde el diagnóstico y durante todo el proceso. Los hermanos son los dolientes olvidados: Pierden atención, rutina y a veces su casa, y después se encuentran con unos padres rotos y asumen el papel de no dar más problemas, lo que los vuelve invisibles.",
+    "objetivo": "Que el hermano tenga información veraz, un lugar en lo que está pasando y un adulto disponible al que preguntar. Y que no cargue en silencio con la culpa que casi siempre tiene y casi nunca expresa.",
+    "pasos": [
+      "Preguntar por ellos en cada visita, por su nombre. Que el equipo pregunte por los hermanos cambia la percepción de los padres sobre su importancia.",
+      "Recomendar a los padres que les informen desde el principio, con lenguaje adaptado a su edad, y que no esperen a que la situación sea grave.",
+      "Ayudar a identificar un adulto de referencia que no sean los padres, porque en esta etapa los padres no tienen disponibilidad emocional aunque quieran tenerla. Una tía, un abuelo, un maestro.",
+      "Preguntar directamente por la culpa, porque no aparece sola: Ha pensado alguna vez que él tuvo algo que ver, o se ha sentido mal por enfadarse con su hermano.",
+      "Normalizar los celos y el enfado de forma explícita, delante de ellos si es posible.",
+      "Darles un papel concreto y a su medida si quieren tenerlo: Elegir la música, hacer un dibujo, contarle algo, traerle algo suyo. Sentirse útil protege mucho.",
+      "Mantener sus rutinas y su escuela, y proteger tiempos exclusivos con cada padre aunque sean breves.",
+      "Ofrecerles la opción de ver al hermano, también después de morir, explicándoles antes lo que van a ver. Nunca obligar y nunca impedir."
+    ],
+    "frasesUtiles": [
+      "Cómo está tu hermano, y cómo estás tú.",
+      "Es normal que a veces te enfades con él o que te canses de que todo el mundo hable de él.",
+      "Nada de lo que hayas pensado o dicho ha hecho que tu hermano se ponga enfermo.",
+      "Tus papás están muy tristes, pero no es culpa tuya y siguen queriéndote igual.",
+      "Puedes seguir jugando, riéndote y pasándotelo bien. Eso no está mal.",
+      "Quieres verlo. Si quieres te cuento antes cómo lo vas a ver.",
+      "Si tienes alguna pregunta, puedes preguntármela a mí o a tu tía, cuando quieras.",
+      "No tienes que ser el fuerte de la casa."
+    ],
+    "frasesQueEvitar": [
+      "Tienes que portarte bien ahora que tus papás están mal.",
+      "Ya eres mayor, tienes que ayudar.",
+      "No molestes a mamá.",
+      "Tu hermano está muy malito, así que no puedes quejarte.",
+      "No llores delante de tus papás.",
+      "Ahora tú eres el hermano mayor."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Yo también me voy a poner enfermo", "respuesta": "Es una de las preocupaciones más frecuentes y casi nunca se expresa espontáneamente. Se responde con la verdad y de forma tranquilizadora cuando la enfermedad no es hereditaria: No, lo que tiene tu hermano no se contagia y a ti no te va a pasar. Si sí hay componente genético, se responde con honestidad adaptada y se organiza el estudio que corresponda, sin dejarlo en el aire." },
+      { "pregunta": "Es culpa mía porque una vez le deseé que desapareciera", "respuesta": "Desmentirlo con absoluta claridad, sin restarle importancia al hecho de que lo haya pensado: Los pensamientos no hacen que pasen cosas. Todos los hermanos se enfadan y a veces desean cosas feas, y eso no enferma a nadie. Lo que tú pensaste no tiene nada que ver con lo que le pasa." },
+      { "pregunta": "Por qué mis papás ya no están nunca conmigo", "respuesta": "No justificar a los padres sin más. Reconocer la pérdida real: Tienes razón, están mucho tiempo en el hospital y eso es duro para ti. No es porque te quieran menos, es porque tu hermano necesita mucha ayuda ahora. Y a continuación hacer algo concreto: Hablarlo con los padres para proteger un tiempo exclusivo, aunque sea corto." }
+    ],
+    "porEdad": [
+      { "edad": "De 2 a 6 años", "como": "Regresión, pesadillas y pensamiento mágico con culpa. Necesita rutinas estables, explicaciones muy concretas y desmentido explícito de la culpa." },
+      { "edad": "De 6 a 12 años", "como": "Preocupación por contagiarse y por los padres, caída del rendimiento escolar y quejas somáticas como dolor de cabeza o de barriga sin causa. Responde bien a la información concreta y a tener un papel." },
+      { "edad": "Adolescente", "como": "Suele asumir responsabilidades de adulto y ocultar su propio malestar. Puede reaccionar con retirada o con conductas de riesgo. Necesita espacio propio, permiso explícito para seguir con su vida y que alguien pregunte por él sin que tenga que pedirlo." }
+    ],
+    "errores": [
+      "Excluirlos de la información para protegerlos, lo que los deja imaginando cosas peores",
+      "Convertirlos en cuidadores o en apoyo emocional de los padres",
+      "Interpretar la buena conducta como que están bien: Suele ser lo contrario",
+      "Impedirles ver al hermano, antes o después de morir",
+      "No preguntar nunca por la culpa, que no se expresa sola",
+      "Olvidar avisar a la escuela"
+    ],
+    "perla": "El hermano que no da ningún problema es el que más preocupación debería generar. La madurez y la obediencia repentinas suelen ser la forma en que un niño intenta no añadir carga a unos padres que ya no pueden más.",
+    "etiquetas": ["hermanos", "culpa", "invisibles", "adulto de referencia"]
+  },
+  {
+    "codigo": "adecuacion-del-esfuerzo",
+    "titulo": "Proponer la adecuación del esfuerzo terapéutico",
+    "interlocutor": "Padres",
+    "dominio": "Últimos días",
+    "momento": "Cuando un tratamiento deja de aportar",
+    "cuando": "Cuando una medida ha dejado de ofrecer beneficio razonable y mantenerla solo prolonga el proceso de morir o añade carga sin contrapartida. Es la conversación que más miedo da al equipo y la que peor sale cuando se plantea como una retirada.",
+    "objetivo": "Que la familia comprenda que se está cambiando el objetivo del tratamiento y no abandonando al niño, y que participe en la decisión sin cargar con el peso de haberla tomado sola.",
+    "pasos": [
+      "Preparar dentro del equipo primero: Llegar con una posición común y comprobar que enfermería, la especialidad de referencia y quien vaya a estar de guardia lo comparten. Un mensaje contradictorio destruye la conversación.",
+      "Empezar por los objetivos, no por los tratamientos: Qué es lo importante para ustedes ahora, qué creen que él querría.",
+      "Explicar qué ha cambiado en la situación clínica, en términos concretos y comprobables, para que la propuesta no parezca arbitraria.",
+      "Presentarlo como un cambio de objetivo, no como una retirada: Se pasa de intentar revertir a garantizar que esté cómodo.",
+      "Enumerar de forma explícita todo lo que se mantiene, que es siempre mucho más de lo que se retira: Analgesia, cuidado de la boca y de la piel, higiene, compañía, información.",
+      "No pedirles que decidan. Hacer una recomendación clara y pedir su acuerdo: Lo que nosotros recomendamos es esto. Cómo lo ven ustedes.",
+      "Dar tiempo y ofrecer una segunda conversación. Rara vez se cierra en una sola.",
+      "Documentar en la historia la deliberación, quién participó, el acuerdo alcanzado y el plan, incluido lo que se hará si aparece una complicación."
+    ],
+    "frasesUtiles": [
+      "Lo que ha cambiado es esto, y por eso creo que tenemos que replantear el objetivo.",
+      "No vamos a hacer menos por él. Vamos a hacer cosas distintas, dirigidas a que esté bien.",
+      "Esto no es dejar de cuidarlo. Es dejar de hacerle cosas que ya no le ayudan.",
+      "Lo que sí vamos a seguir haciendo siempre es que no tenga dolor, cuidarle la boca, moverlo con cuidado y que ustedes puedan estar con él.",
+      "No les estoy pidiendo que decidan ustedes. Yo les digo lo que creo que es mejor y ustedes me dicen qué les parece.",
+      "Qué creen que él querría si pudiera decírnoslo.",
+      "Podemos probar esto durante tres días y volver a valorarlo juntos.",
+      "No hace falta que respondan hoy."
+    ],
+    "frasesQueEvitar": [
+      "Ya no hay nada más que hacer.",
+      "Ustedes deciden si lo desconectamos.",
+      "Es cuestión de dejarlo ir.",
+      "Sería mejor para él.",
+      "Están alargando su sufrimiento.",
+      "Vamos a limitar el esfuerzo terapéutico.",
+      "Ya hemos hecho todo lo que se podía."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Nos están pidiendo que lo matemos", "respuesta": "Separar con claridad las dos cosas: No. No vamos a hacer nada que le cause la muerte. Lo que proponemos es dejar de hacerle cosas que ya no le ayudan y que le producen molestias. Su enfermedad seguirá su curso, y nosotros nos ocuparemos de que no sufra en ningún momento." },
+      { "pregunta": "Y si es el que se salva", "respuesta": "No prometer certeza que no se tiene, pero explicar en qué se basa el juicio: Nadie puede estar seguro al cien por cien. Lo que puedo decirles es en qué me baso: Estos datos concretos, esta evolución, esta ausencia de respuesta. Y podemos acordar un plazo para volver a valorarlo juntos." },
+      { "pregunta": "Si dejamos de darle la comida, se va a morir de hambre", "respuesta": "Es uno de los miedos más dolorosos y merece una explicación cuidadosa: No. En esta situación el cuerpo ya no puede aprovechar el alimento, y forzarlo produce vómitos, distensión y aspiración. No se muere por no comer, deja de comer porque el cuerpo se está apagando. Y le vamos a cuidar la boca constantemente para que no tenga sensación de sed." }
+    ],
+    "porEdad": [
+      { "edad": "Escolar y adolescente", "como": "Si el niño tiene capacidad de comprensión, debe participar en la conversación en la medida en que quiera. El asentimiento del menor se busca siempre que pueda darlo, y la disidencia de un adolescente maduro pesa." }
+    ],
+    "errores": [
+      "Plantearlo sin acuerdo previo dentro del equipo",
+      "Usar la palabra limitación, que sugiere que se hará menos por el niño",
+      "Trasladar la decisión a los padres y dejarles solos con ella",
+      "Hablar de tratamientos antes de haber hablado de objetivos",
+      "No enumerar de forma explícita todo lo que se mantiene",
+      "Plantearlo en una guardia, de noche y con un profesional que la familia no conoce"
+    ],
+    "perla": "El miedo real de los padres casi nunca es la medida concreta que se propone retirar: Es que se deje de cuidar a su hijo. Si esa preocupación se responde antes de que la formulen, enumerando en voz alta todo lo que se va a seguir haciendo, la conversación cambia de tono por completo.",
+    "etiquetas": ["adecuación", "objetivos", "retirada", "deliberación"]
+  },
+  {
+    "codigo": "cuando-piden-hagan-todo",
+    "titulo": "Cuando la familia pide que se haga todo",
+    "interlocutor": "Padres",
+    "dominio": "Familia y entorno",
+    "momento": "En el conflicto de objetivos",
+    "cuando": "Cuando la familia insiste en continuar o iniciar medidas que el equipo considera desproporcionadas. Suele vivirse como un choque de voluntades, y casi nunca lo es: Detrás de hagan todo hay casi siempre otra cosa que nadie ha preguntado.",
+    "objetivo": "Entender qué significa todo para esa familia concreta, y reconstruir un objetivo común a partir de ahí. No convencerlos de que se equivocan.",
+    "pasos": [
+      "No responder a la petición literal. Explorar qué significa para ellos: Cuando dice que hagamos todo, qué es lo que espera que consigamos.",
+      "Buscar lo que hay detrás. Las razones más frecuentes son la culpa por haber decidido algo antes, la desconfianza en el equipo, la sensación de no haber sido escuchados, una promesa hecha al niño, un familiar que no ha llegado todavía, o una creencia religiosa concreta.",
+      "Preguntar por lo que temen que pase si no se hace todo. La respuesta suele ser la clave real de la conversación.",
+      "Reformular todo en términos de objetivos y no de técnicas: Vamos a hacer todo lo que sirva para el objetivo que ustedes quieren.",
+      "Reconocer y nombrar lo que sí se ha hecho, con detalle, porque muchas veces la insistencia nace de la sensación de que no se ha intentado bastante.",
+      "Ofrecer un tratamiento a prueba con plazo y criterios acordados de antemano, cuando la medida no es claramente dañina. Es la salida más frecuente y la que mejor funciona.",
+      "Comprometerse por escrito con lo que sí se garantiza: Que no tendrá dolor, que no estará solo, que se les informará de todo.",
+      "Si el conflicto persiste, ofrecer una segunda opinión y recurrir al comité de ética asistencial, presentándolo como un apoyo y no como un tribunal."
+    ],
+    "frasesUtiles": [
+      "Cuando dice hagamos todo, qué es lo que espera que consigamos.",
+      "Qué es lo que más teme que pase si no seguimos con esto.",
+      "Hay algo que le hayamos hecho o dicho que le haya hecho perder la confianza.",
+      "Están esperando a alguien.",
+      "Vamos a hacer todo lo que sirva para que esté cómodo y acompañado. Eso se lo garantizo.",
+      "Déjeme contarle todo lo que hemos hecho hasta ahora, porque creo que no lo saben.",
+      "Podemos probarlo durante setenta y dos horas y valorarlo juntos con criterios que acordemos ahora.",
+      "Podemos pedir la opinión de otro equipo si eso les ayuda a estar tranquilos."
+    ],
+    "frasesQueEvitar": [
+      "Eso sería encarnizamiento.",
+      "No tiene sentido seguir.",
+      "Están pensando en ustedes, no en él.",
+      "Es inútil.",
+      "Ya se lo hemos explicado varias veces.",
+      "La decisión es médica, no suya."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Es por dinero, verdad", "respuesta": "No ofenderse ni desestimarlo. Responder de frente: No. Le doy mi palabra de que el coste no ha entrado en ninguna de nuestras conversaciones sobre su hijo. Si esa duda existe, prefiero que me la diga, porque no podemos trabajar juntos si desconfían de nosotros." },
+      { "pregunta": "Nos están rindiendo antes de tiempo", "respuesta": "Reconocer que se ve así desde fuera y dar los datos: Entiendo que lo viva así. Déjeme contarle en qué me baso y qué hemos ido probando. Y si tras oírlo siguen sin verlo igual, podemos pedir otra opinión: No tengo ningún inconveniente." },
+      { "pregunta": "Nuestra fe dice que hay que luchar hasta el final", "respuesta": "No discutir la creencia. Explorarla y buscar el punto de encuentro, si es posible con el acompañante espiritual de la familia: Respeto eso y me gustaría entenderlo mejor. Podríamos hablarlo con alguien de su comunidad. En muchas tradiciones religiosas también se contempla que no hay obligación de usar medios desproporcionados, y quizá merezca la pena explorarlo juntos." }
+    ],
+    "porEdad": [
+      { "edad": "Adolescente", "como": "Cuando el paciente es un adolescente con capacidad, su opinión debe buscarse y pesa. No es infrecuente que el adolescente quiera parar y los padres quieran seguir, y esa situación exige tiempo, entrevistas por separado y a menudo apoyo del comité de ética." }
+    ],
+    "errores": [
+      "Responder a la petición literal en lugar de a lo que hay detrás",
+      "Interpretarlo como falta de comprensión y repetir la explicación técnica más alto",
+      "Convertirlo en un pulso entre el equipo y la familia",
+      "No detectar la culpa, la desconfianza o la espera de un familiar",
+      "No ofrecer nunca un tratamiento a prueba con plazo",
+      "Llegar al comité de ética como último recurso, cuando la relación ya está rota"
+    ],
+    "perla": "Hagan todo casi nunca significa quiero todas las técnicas disponibles. Suele significar no quiero que piensen que me he rendido con mi hijo. Cuando el equipo dice en voz alta que nadie se está rindiendo y que ellos han sido unos padres extraordinarios, la petición se desactiva sola con una frecuencia sorprendente.",
+    "etiquetas": ["conflicto", "obstinación", "culpa", "comité de ética"]
+  },
+  {
+    "codigo": "planificacion-anticipada",
+    "titulo": "Planificación anticipada de la atención",
+    "interlocutor": "Padres",
+    "dominio": "Familia y entorno",
+    "momento": "En fase estable, nunca en crisis",
+    "cuando": "En un momento de estabilidad, cuando hay tiempo y lucidez para pensar. Es una conversación que se pospone continuamente y que después se echa de menos a las tres de la mañana en un servicio de urgencias.",
+    "objetivo": "Que existan decisiones pensadas con calma y documentadas, para que cuando llegue la crisis no haya que improvisar y para que la familia no cargue con el peso de decidir en el peor momento posible.",
+    "pasos": [
+      "Elegir el momento: Fase estable, consulta programada, tiempo suficiente y con las personas que la familia quiera presentes.",
+      "Introducirla con normalidad y sin dramatismo, como algo que se hace con todos los niños con esta enfermedad, no como algo específico de su hijo porque esté peor.",
+      "Empezar por los valores y no por los procedimientos: Qué es lo más importante para ustedes, qué le hace disfrutar a él, qué es lo que no querrían para él en ningún caso.",
+      "Explorar la comprensión de la enfermedad y del pronóstico antes de decidir nada.",
+      "Bajar a lo concreto y previsible: Qué hacer si tiene una neumonía, si deja de comer, si tiene una crisis convulsiva larga, si deja de respirar. Y dónde querrían que estuviera si empeora.",
+      "Incluir al niño según su madurez, y ofrecerle al adolescente tiempo a solas.",
+      "Documentar el resultado de forma que sea accesible: En la historia, en el domicilio y comunicado al servicio de urgencias y a la ambulancia de la zona.",
+      "Dejar claro que todo es revisable en cualquier momento y sin dar explicaciones. Esa reversibilidad es lo que hace posible que las familias se atrevan a decidir."
+    ],
+    "frasesUtiles": [
+      "Esto lo hablamos con todas las familias, no porque él esté peor.",
+      "Prefiero que lo pensemos ahora con calma, y no de madrugada en urgencias con prisa.",
+      "Qué es lo más importante para ustedes en el cuidado de su hijo.",
+      "Qué cosas le hacen disfrutar todavía.",
+      "Hay algo que ustedes tengan claro que no querrían para él en ningún caso.",
+      "Si empeorase de repente, dónde les gustaría que estuviera.",
+      "Todo lo que decidamos hoy se puede cambiar mañana, sin tener que dar explicaciones a nadie.",
+      "Esto no es firmar nada definitivo: Es dejar escrito lo que ustedes quieren para que se respete."
+    ],
+    "frasesQueEvitar": [
+      "Tenemos que hablar de lo que va a pasar cuando muera.",
+      "Hay que rellenar este documento.",
+      "Necesito que firmen la orden de no reanimación.",
+      "Es mejor que vayan haciéndose a la idea.",
+      "No podemos seguir sin que decidan esto."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Nos están diciendo que se va a morir pronto", "respuesta": "Separar la conversación del pronóstico inmediato: No. Lo hacemos precisamente ahora que está estable, porque es cuando se puede pensar con calma. Si lo dejáramos para cuando esté mal, tendrían que decidir con prisa y con miedo, y eso es mucho peor." },
+      { "pregunta": "Y si cambiamos de opinión", "respuesta": "Insistir en que es lo esperable: Pueden cambiar de opinión cuantas veces quieran y cuando quieran, y no tienen que justificarlo. De hecho, es normal que cambie: Lo que uno decide hoy no tiene por qué valer dentro de seis meses, y por eso lo revisamos periódicamente." },
+      { "pregunta": "Si ponemos que no lo reanimen, lo van a atender igual en urgencias", "respuesta": "Es una preocupación muy legítima y hay que responderla con concreción: Sí. Una decisión de no reanimar no significa no tratar. Le van a atender el dolor, la fiebre, la dificultad para respirar y todo lo demás. Lo único que dice ese documento es que no se le harán maniobras de reanimación, que en su situación no conseguirían nada y le harían daño. Y me voy a ocupar de que urgencias y la ambulancia lo tengan por escrito." }
+    ],
+    "porEdad": [
+      { "edad": "De 6 a 12 años", "como": "Se le puede preguntar por preferencias concretas y comprensibles: Dónde prefiere estar si se pone malito, quién quiere que esté con él, qué cosas no le gustan nada de venir al hospital." },
+      { "edad": "Adolescente", "como": "Debe participar directamente y se le ofrece tiempo a solas. Existen herramientas escritas específicas para adolescentes que estructuran muy bien esta conversación y que suelen aceptar mejor de lo que los adultos esperan." }
+    ],
+    "errores": [
+      "Dejarla para cuando el niño empeora, que es cuando ya no sirve",
+      "Empezar por los procedimientos en lugar de por los valores",
+      "Presentarla como un trámite administrativo o como un documento que hay que firmar",
+      "No comunicarla al servicio de urgencias, a la ambulancia y al equipo de guardia",
+      "No revisarla nunca una vez hecha",
+      "Excluir al adolescente de la conversación sobre su propia atención"
+    ],
+    "perla": "El valor de la planificación anticipada no está en el documento sino en la conversación. Familias que nunca llegan a firmar nada salen de esa conversación con las ideas claras y deciden mucho mejor cuando llega el momento.",
+    "etiquetas": ["planificación", "voluntades", "urgencias", "documentar"]
+  },
+  {
+    "codigo": "dar-la-noticia-de-la-muerte",
+    "titulo": "Dar la noticia de la muerte",
+    "interlocutor": "Padres",
+    "dominio": "Últimos días",
+    "momento": "En el momento de la muerte",
+    "cuando": "Cuando hay que comunicar que el niño ha muerto, sobre todo si ocurre de forma inesperada o si la familia no estaba presente. Es una conversación de muy pocas frases y todas ellas importan.",
+    "objetivo": "Que la información sea inequívoca, que la familia no se quede sola y que tengan la oportunidad de despedirse en las condiciones que ellos elijan.",
+    "pasos": [
+      "No darla nunca por teléfono si se puede evitar. Si la familia no está, se les pide que vengan sin dar la noticia y sin mentir: Ha empeorado, es importante que vengan ahora, vengan acompañados y sin prisa al volante.",
+      "Recibirlos alguien que sepa lo que ha pasado, no dejarlos esperando en un pasillo mientras se busca a quien pueda informarles.",
+      "Llevarlos a un espacio privado y sentarse con ellos.",
+      "Dar un aviso brevísimo y después la frase clara. Usar la palabra murió o falleció, nunca lo perdimos, se nos fue o ya no está.",
+      "Callarse. Lo que sigue es tiempo suyo. No explicar el proceso clínico salvo que lo pregunten.",
+      "Estar presente sin llenar el silencio. No hace falta decir nada; hace falta no irse.",
+      "Explicar de forma sencilla qué pasó, cuando lo pregunten, y decir explícitamente si sufrió o no, porque es lo que van a preguntar antes o después.",
+      "Ofrecer verlo, sin límite estricto de tiempo, y acompañarlos si quieren."
+    ],
+    "frasesUtiles": [
+      "Tengo que darles una noticia muy dura.",
+      "Su hijo ha muerto.",
+      "Lo siento muchísimo.",
+      "No sufrió. Estuvo tranquilo hasta el final.",
+      "Estuvimos con él en todo momento, no estuvo solo.",
+      "Pueden estar con él todo el tiempo que necesiten. No hay ninguna prisa.",
+      "Si quieren, pueden lavarlo y vestirlo ustedes. Hay familias que lo hacen y les ayuda.",
+      "Voy a estar aquí fuera. Cuando quieran algo, me llaman."
+    ],
+    "frasesQueEvitar": [
+      "Lo hemos perdido.",
+      "Ya descansa.",
+      "Está en un lugar mejor.",
+      "Al menos ya no sufre.",
+      "Hicimos todo lo que pudimos.",
+      "Tienen que ser fuertes.",
+      "El tiempo lo cura todo.",
+      "Son jóvenes, pueden tener otro hijo."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Sufrió", "respuesta": "Es la pregunta que llega siempre y la respuesta que más va a pesar en su duelo durante años. Se responde con concreción y sin frases hechas, describiendo lo que se hizo: No. Estaba con la medicación para el dolor puesta, estuvo tranquilo, la respiración se fue haciendo más suave hasta que se paró. No se despertó ni se quejó en ningún momento." },
+      { "pregunta": "Por qué no estábamos aquí", "respuesta": "Aliviar la culpa de forma explícita, porque esta es una de las que más daño hace y más dura: Es muy frecuente que ocurra justo cuando el familiar sale un momento. Muchos profesionales creemos que a veces esperan a quedarse solos. Ustedes han estado con él todos estos días, y eso es lo que cuenta." },
+      { "pregunta": "Podríamos haber hecho algo más", "respuesta": "Responder con claridad y sin dejar hueco a la duda: No. Ustedes hicieron todo lo que se podía hacer, y más. Yo lo he visto. Estar aquí y quererlo así fue exactamente lo que él necesitaba." }
+    ],
+    "porEdad": [
+      { "edad": "Hermanos", "como": "Se les dice la verdad con palabras claras y sin eufemismos, a ser posible por parte de sus padres y con un profesional cerca. Se les ofrece verlo, explicándoles antes lo que van a ver: Que estará frío, que no se moverá, que parecerá dormido pero no lo está. Nunca obligar y nunca impedir." }
+    ],
+    "errores": [
+      "Dar la noticia por teléfono cuando se podía evitar",
+      "Mentir para que vengan, diciendo que está estable",
+      "Usar eufemismos que dejen dudas sobre lo que ha pasado",
+      "Llenar el silencio con explicaciones clínicas",
+      "Marcar tiempos para estar con el cuerpo",
+      "Irse de la habitación por no saber qué decir",
+      "No preguntar por los hermanos"
+    ],
+    "perla": "En ese momento no hace falta decir nada correcto. Hace falta estar. La presencia silenciosa de alguien que conocía a su hijo vale más que cualquier frase, y las familias lo recuerdan durante años.",
+    "etiquetas": ["muerte", "presencia", "sufrió", "despedida"]
+  },
+  {
+    "codigo": "acompanar-tras-la-muerte",
+    "titulo": "Las horas siguientes a la muerte",
+    "interlocutor": "Padres",
+    "dominio": "Últimos días",
+    "momento": "Inmediatamente después",
+    "cuando": "En las horas que siguen a la muerte del niño, tanto en el hospital como en el domicilio. Es un tiempo que suele gestionarse con prisa administrativa y que en cambio es determinante para el duelo posterior.",
+    "objetivo": "Que la familia pueda despedirse a su manera, sin prisa, y que salga de allí con lo que va a querer conservar y con la información práctica que va a necesitar.",
+    "pasos": [
+      "Retirar los dispositivos que ya no hacen falta y adecentar al niño y la habitación antes de que entren, si no estaban presentes.",
+      "Ofrecer tiempo a solas, sin plazo. Explicar cómo avisar cuando quieran algo y salir de la habitación.",
+      "Ofrecer participar en el aseo y en vestirlo. Para muchas familias es el último acto de cuidado y ayuda mucho, aunque conviene ofrecerlo sin insistir.",
+      "Ofrecer recuerdos si encaja con sus valores: Un mechón de pelo, la huella de la mano o del pie, una fotografía, la pulsera identificativa, un dibujo suyo. Si dudan, guardarlos y decirles que estarán disponibles si más adelante los quieren.",
+      "Preguntar por los hermanos y ofrecerles la opción de ver el cuerpo, preparándolos antes con una descripción concreta de lo que van a ver.",
+      "Preguntar por ritos religiosos o culturales y facilitarlos, incluidos los que impliquen manipular el cuerpo de una forma determinada o en un plazo concreto.",
+      "Acompañar en los trámites por escrito, porque en ese estado nadie retiene instrucciones habladas.",
+      "Acordar un contacto posterior y darles el nombre y el teléfono de la persona del equipo que los llamará."
+    ],
+    "frasesUtiles": [
+      "Quédense todo el tiempo que necesiten. No hay ninguna prisa.",
+      "Si quieren, pueden lavarlo y vestirlo ustedes. Yo les ayudo si prefieren.",
+      "Podemos guardarle un mechón de pelo y la huella de su mano. No tienen que decidirlo ahora: Lo guardamos y si lo quieren, se lo damos.",
+      "Sus hermanos pueden verlo si quieren. Les explico antes cómo lo van a ver.",
+      "Hay algo que en su familia sea importante hacer ahora.",
+      "Les voy a dejar por escrito los pasos que hay que dar, porque ahora es imposible retener nada.",
+      "Le voy a llamar dentro de unas semanas, no para nada oficial, solo para saber cómo están.",
+      "Ha sido un privilegio cuidar a su hijo."
+    ],
+    "frasesQueEvitar": [
+      "Necesitamos la habitación.",
+      "Cuando puedan, hay que ir firmando los papeles.",
+      "Es mejor que no lo vean así.",
+      "Los niños no deberían ver esto.",
+      "Ya pueden descansar ustedes también.",
+      "Hay que pasar página."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Podemos llevárnoslo a casa", "respuesta": "Depende de la normativa local y conviene conocerla de antemano en lugar de improvisar. Si es posible, facilitarlo. Si no lo es, explicarlo con claridad y sin culpar a la burocracia en abstracto, y ofrecer las alternativas reales que existan." },
+      { "pregunta": "Qué hacemos ahora", "respuesta": "Dar los pasos concretos, por escrito, en orden y con teléfonos: Certificado, funeraria, registro. Y decir explícitamente lo que no hay que hacer con prisa. Ofrecer también avisar a la escuela y a quien ellos decidan, porque hacer esas llamadas es de las cosas que más cuestan." },
+      { "pregunta": "Van a olvidarse de él", "respuesta": "Responder con concreción y no con promesas genéricas: No. Nosotros nos acordamos de todos los niños que hemos cuidado. Y decir el nombre del niño en voz alta al hablar de él, ese día y en los contactos siguientes, es la forma más real de demostrarlo." }
+    ],
+    "porEdad": [
+      { "edad": "Hermanos", "como": "Se les ofrece ver el cuerpo con preparación previa concreta: Estará frío al tocarlo, no se moverá, tendrá los ojos cerrados. Se les permite tocarlo si quieren, dejarle un dibujo o un juguete, y se respeta si prefieren no entrar. Ambas decisiones son válidas y hay que decírselo." }
+    ],
+    "errores": [
+      "Marcar plazos para estar con el cuerpo",
+      "Empezar por los trámites administrativos",
+      "No ofrecer recuerdos, o descartarlos por suponer que no los querrán",
+      "Impedir que los hermanos vean el cuerpo",
+      "No preguntar por ritos religiosos o culturales",
+      "Despedir a la familia sin acordar un contacto posterior",
+      "No volver a llamar nunca"
+    ],
+    "perla": "Una llamada del equipo a las pocas semanas y otra en el primer aniversario cuestan muy poco y tienen un valor enorme. Lo que transmiten no es información: Es que su hijo existió, que importó y que no se ha olvidado.",
+    "etiquetas": ["despedida", "recuerdos", "trámites", "seguimiento de duelo"]
+  },
+  {
+    "codigo": "hablar-con-el-adolescente",
+    "titulo": "Hablar con el adolescente sobre su enfermedad",
+    "interlocutor": "Adolescente",
+    "dominio": "Emocional",
+    "momento": "Durante todo el proceso",
+    "cuando": "Siempre que haya un paciente adolescente. Es el grupo peor comunicado de toda la pediatría: Demasiado mayor para que se le hable como a un niño y demasiado joven para que se le trate como a un adulto, así que a menudo no se le habla en absoluto.",
+    "objetivo": "Que tenga la información que quiera tener, el control que pueda ejercer y un espacio propio donde decir lo que no dice delante de sus padres.",
+    "pasos": [
+      "Establecer desde el principio, y delante de los padres, que a partir de cierta edad una parte de la consulta se hace a solas. Presentarlo como la norma, no como una excepción para él.",
+      "Explicar los límites de la confidencialidad de forma clara antes de que cuente nada: Lo que hablemos queda entre nosotros salvo que haya riesgo para tu vida, y si tengo que contar algo te lo diré antes.",
+      "Preguntar directamente cuánto quiere saber y qué prefiere no saber, y respetarlo. Que no quiera saberlo todo es una opción legítima.",
+      "Preguntar cuánto quiere decidir y en qué. Muchos quieren decidir cosas concretas y aparentemente menores: El horario, la vía, qué se les dice a sus amigos.",
+      "Dirigirse a él y no a sus padres cuando esté presente. Es un error tan elemental como frecuente y se detecta de inmediato.",
+      "Preguntar por lo que le importa a él y no solo por los síntomas: Los amigos, el cuerpo, los estudios, la pareja, la sexualidad, el aspecto físico. La caída del pelo o el aumento de peso por corticoides pueden pesarle más que el pronóstico.",
+      "Ofrecer herramientas de planificación anticipada escritas para adolescentes, que suelen aceptar mejor de lo que los adultos esperan.",
+      "No forzar. Si no quiere hablar, dejar claro que la puerta sigue abierta y volver a ofrecerlo en otra ocasión."
+    ],
+    "frasesUtiles": [
+      "A partir de tu edad hago una parte de la consulta a solas con el paciente. Es lo normal.",
+      "Lo que hablemos aquí queda entre nosotros. Si algo tuviera que contarlo, te avisaría antes.",
+      "Cuánto quieres saber. Hay gente que lo quiere todo y gente que prefiere solo lo importante. Las dos cosas están bien.",
+      "Qué es lo que más te preocupa ahora mismo.",
+      "Qué te gustaría poder hacer esta semana que ahora no puedes.",
+      "Hay algo que no te atreves a preguntar delante de tus padres.",
+      "Esta decisión es tuya. Yo te doy mi opinión, pero decides tú.",
+      "No tienes que protegerlos a ellos. Ese no es tu trabajo."
+    ],
+    "frasesQueEvitar": [
+      "Eres muy joven para pensar en eso.",
+      "Mejor que lo hablen tus padres.",
+      "Tienes que ser positivo.",
+      "Otros lo llevan peor.",
+      "A tu edad no deberías preocuparte de estas cosas.",
+      "No te pongas así.",
+      "Ya te lo explicarán tus padres."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Voy a morir", "respuesta": "No esquivarlo. El adolescente suele saber la respuesta y lo que está comprobando es si se le dice la verdad: Puede ser que sí. La enfermedad está avanzando y ya no tenemos tratamiento que la pare. Qué has pensado tú sobre esto. Y después escuchar mucho más de lo que se habla." },
+      { "pregunta": "No quiero seguir con el tratamiento", "respuesta": "No responder ni con alarma ni con presión. Explorar: Cuéntame qué es lo que peor llevas. Muchas veces no quiere abandonar el tratamiento, sino que se le quite un efecto adverso concreto o que se le respete un horario. Cuando el rechazo es real y razonado, hay que tomarlo en serio, hablarlo con los padres y buscar apoyo del equipo." },
+      { "pregunta": "No quiero que mis padres se enteren de esto", "respuesta": "Respetar la confidencialidad dentro de los límites que se hayan explicado antes, y trabajar para tender el puente: Eso queda entre nosotros. Y déjame preguntarte por qué no quieres que lo sepan, porque a lo mejor podemos encontrar la forma de contárselo que a ti te sirva." }
+    ],
+    "porEdad": [
+      { "edad": "De 12 a 14 años", "como": "Empieza a necesitar espacio propio pero aún se apoya mucho en los padres. Se introduce el tiempo a solas de forma progresiva, primero unos minutos al final de la consulta." },
+      { "edad": "De 15 a 18 años", "como": "Capacidad de juicio a menudo equiparable a la del adulto para su propio tratamiento. Debe participar plenamente en las decisiones, y su disidencia razonada pesa. La confidencialidad se vuelve central." }
+    ],
+    "errores": [
+      "Hablar con los padres delante de él como si no estuviera",
+      "No ofrecer nunca tiempo a solas",
+      "No explicar los límites de la confidencialidad antes de que hable",
+      "Interpretar el silencio o la aparente indiferencia como que no quiere saber",
+      "Ignorar lo que le importa de verdad: El aspecto, los amigos, la autonomía, la sexualidad",
+      "Excluirlo de las decisiones sobre su propio tratamiento"
+    ],
+    "perla": "El adolescente que parece no querer hablar muchas veces está protegiendo a sus padres: Ha aprendido que cuando saca el tema, su madre llora. Ofrecerle un espacio a solas resuelve eso de golpe, y a menudo el que no quería hablar habla durante media hora.",
+    "etiquetas": ["adolescente", "confidencialidad", "autonomía", "a solas"]
+  },
+  {
+    "codigo": "desacuerdo-entre-los-padres",
+    "titulo": "Cuando los padres no están de acuerdo entre ellos",
+    "interlocutor": "Padres",
+    "dominio": "Familia y entorno",
+    "momento": "Ante una decisión difícil",
+    "cuando": "Cuando el padre y la madre defienden posiciones incompatibles sobre el tratamiento o sobre lo que se le cuenta al niño. Es frecuente, desgasta mucho al equipo y tiene mala solución si se aborda como un arbitraje.",
+    "objetivo": "Que la decisión no rompa a la pareja ni deje a uno de los dos con la carga de haber decidido en contra del otro, y que el niño no quede en medio del conflicto.",
+    "pasos": [
+      "No tomar partido ni buscar un aliado dentro de la pareja. Es la tentación más fuerte y la que más daño hace.",
+      "Ver a cada uno por separado al menos una vez, para entender la posición de cada cual sin la presión del otro delante.",
+      "Buscar el miedo que hay debajo de cada postura. Casi siempre son miedos distintos y no opiniones distintas: Uno teme que sufra y el otro teme no haber hecho bastante.",
+      "Devolver en conjunto lo que ambos comparten, que suele ser mucho más de lo que creen: Los dos quieren lo mismo para su hijo y difieren en el camino.",
+      "Nombrar en voz alta que es normal que no coincidan y que no significa que uno quiera menos al niño que el otro. Este permiso explícito desactiva buena parte de la tensión.",
+      "Trasladar el peso de la decisión al equipo, para que ninguno de los dos cargue con haber decidido: La recomendación es nuestra, ustedes nos dicen si les parece bien.",
+      "Buscar acuerdos parciales y aplazables cuando el desacuerdo persiste: Decidir solo lo urgente y dejar plazo para el resto.",
+      "Si el conflicto bloquea una decisión necesaria, recurrir al comité de ética asistencial y decirlo de forma que no suene a amenaza."
+    ],
+    "frasesUtiles": [
+      "Me gustaría hablar un momento con cada uno por separado, y después los tres juntos.",
+      "Qué es lo que más teme cada uno.",
+      "Los dos quieren exactamente lo mismo para él. En lo que no coinciden es en cómo llegar.",
+      "Es completamente normal que no lo vean igual. No significa que uno lo quiera más que el otro.",
+      "La recomendación la hacemos nosotros. Así ninguno de los dos carga con haber decidido.",
+      "Hoy solo tenemos que decidir esto. Lo demás lo podemos dejar para más adelante.",
+      "Lo que decidan hoy no es para siempre: Lo revisamos cuando quieran."
+    ],
+    "frasesQueEvitar": [
+      "Tienen que ponerse de acuerdo.",
+      "Su marido lo ve de otra manera.",
+      "Usted tiene razón.",
+      "Alguien tiene que decidir.",
+      "Así no podemos trabajar.",
+      "Esto lo tienen que resolver ustedes en casa."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Usted qué haría en nuestro lugar", "respuesta": "No escurrir la pregunta, que es una petición legítima de ayuda, pero responder sin desautorizar a ninguno: Le voy a decir lo que recomendamos y por qué, que no es exactamente lo mismo que lo que yo haría. Y da la recomendación con sus razones, dirigiéndose a los dos." },
+      { "pregunta": "Si él no firma, qué pasa", "respuesta": "Explicar el marco sin convertirlo en una amenaza: Lo que buscamos es un acuerdo, no una firma. Si no lo alcanzamos y hay que tomar una decisión que no puede esperar, existe el comité de ética del hospital, que es un grupo que ayuda a deliberar en casos difíciles. No es un tribunal ni decide en contra de nadie." },
+      { "pregunta": "Nos vamos a separar por esto", "respuesta": "Reconocerlo y ofrecer ayuda concreta: Es un riesgo real y a muchas parejas les pasa, sobre todo cuando cada uno lo lleva de una forma distinta. Podemos ponerles en contacto con alguien que les acompañe en esto, que no es un lujo sino parte del cuidado." }
+    ],
+    "porEdad": [
+      { "edad": "Cualquier edad", "como": "Hay que proteger activamente al niño de quedar en medio del conflicto, y evitar que se le pregunte a él para desempatar entre sus padres." }
+    ],
+    "errores": [
+      "Aliarse con el progenitor cuya postura coincide con la del equipo",
+      "Hablar siempre con el mismo de los dos, que suele ser quien está más presente",
+      "Presionar hacia un acuerdo rápido",
+      "Dejar que ellos carguen solos con la decisión",
+      "Usar el comité de ética como amenaza",
+      "Mencionar el desacuerdo delante del niño"
+    ],
+    "perla": "Detrás de dos posturas opuestas suele haber dos miedos distintos, no dos opiniones. Cuando cada uno oye el miedo del otro por primera vez, formulado en voz alta y sin reproche, el desacuerdo se reduce mucho sin que nadie tenga que ceder.",
+    "etiquetas": ["conflicto", "pareja", "deliberación", "por separado"]
+  },
+  {
+    "codigo": "hablar-con-la-escuela",
+    "titulo": "Hablar con la escuela y con los compañeros",
+    "interlocutor": "Escuela",
+    "dominio": "Familia y entorno",
+    "momento": "Durante la enfermedad y tras la muerte",
+    "cuando": "Cuando el niño se ausenta de forma prolongada, cuando vuelve con cambios visibles, y cuando muere. La escuela es la vida social del niño y de sus hermanos, y suele quedar completamente fuera del circuito de información.",
+    "objetivo": "Que la escuela pueda seguir siendo un lugar normal para el niño y para sus hermanos, y que no reaccione con silencio, con lástima o con exclusión por no saber qué hacer.",
+    "pasos": [
+      "Pedir permiso a la familia y acordar con ellos exactamente qué información se comparte y qué no. La escuela recibe lo que la familia autoriza, ni más ni menos.",
+      "Identificar un interlocutor único en el centro, habitualmente el tutor o el orientador, para que la información no circule de forma difusa.",
+      "Explicar lo práctico y concreto: Qué puede y qué no puede hacer, qué señales de alarma vigilar, qué hacer si tiene una crisis, a quién llamar.",
+      "Ayudar a preparar la vuelta cuando hay cambios visibles, como la caída del pelo o el uso de silla de ruedas, hablándolo antes con el niño y decidiendo con él qué quiere que se cuente.",
+      "Ofrecer una sesión con los compañeros de clase si el niño lo acepta, con lenguaje adaptado y respondiendo a sus preguntas, que suelen ser directas y muy sanas.",
+      "Insistir en mantener el vínculo cuando el niño ya no puede acudir: Vídeos, mensajes, dibujos, visitas si es posible. El aislamiento social es una de las pérdidas que más pesan.",
+      "No olvidar a los hermanos: Sus profesores deben saber lo que está pasando en casa para interpretar bien un cambio de conducta o una caída del rendimiento.",
+      "Tras la muerte, acompañar al centro para que puedan hablarlo con la clase en lugar de vaciar el pupitre en silencio."
+    ],
+    "frasesUtiles": [
+      "Con permiso de la familia, me gustaría contarles lo que está pasando y lo que necesitan saber.",
+      "Lo más importante es que siga siendo un alumno más en todo lo que pueda.",
+      "Ha decidido él qué quiere que se cuente y qué no.",
+      "Si no pueden venir a clase, mantener el contacto por vídeo o por mensajes vale muchísimo.",
+      "Su hermano también está en este centro y necesita que lo tengan en cuenta.",
+      "No hace falta tratarlo de forma especial. Hace falta no dejar de contar con él.",
+      "Cuando muera, hablarlo con la clase ayuda mucho más que no decir nada.",
+      "Pueden llamarme siempre que tengan una duda."
+    ],
+    "frasesQueEvitar": [
+      "No hace falta que se lo cuenten a los demás niños.",
+      "Es mejor que no vengan a verlo.",
+      "Mejor no hablar del tema en clase.",
+      "Ya se les olvidará.",
+      "No preocupen a los otros padres.",
+      "Es un tema privado de la familia, así que mejor no tocarlo."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Qué le decimos a los otros niños", "respuesta": "La verdad adaptada a su edad, con acuerdo previo de la familia: Su compañero tiene una enfermedad muy seria. No se contagia. Los médicos le están cuidando. Y sobre todo, dejar espacio para sus preguntas, que suelen ser muy concretas y muy sanas, y responderlas sin evasivas." },
+      { "pregunta": "Y si los niños preguntan si se va a morir", "respuesta": "No mentir. Se responde con honestidad y sin dramatismo: Está muy enfermo y puede que sí. Los médicos están haciendo todo para que no le duela nada. Y a continuación se les dice qué pueden hacer ellos, porque los niños necesitan una acción concreta: Escribirle, mandarle dibujos, guardarle su sitio." },
+      { "pregunta": "Qué hacemos con su pupitre y sus cosas", "respuesta": "No hacerlo desaparecer de un día para otro, que es la reacción habitual y la que peor sienta a los compañeros. Hablarlo con la clase, hacer algo juntos para despedirse y decidir con ellos qué se conserva. Y comprobar antes con la familia si quieren recuperar sus cosas." }
+    ],
+    "porEdad": [
+      { "edad": "Educación infantil", "como": "Explicaciones muy concretas y breves, con desmentido explícito del contagio y de la culpa. Los niños de esta edad preguntan lo mismo muchas veces y hay que responder igual cada vez." },
+      { "edad": "Primaria", "como": "Preguntas biológicas directas que conviene responder con veracidad. Funcionan muy bien las actividades concretas: Cartas, vídeos, un mural." },
+      { "edad": "Secundaria", "como": "Los compañeros suelen querer visitar y no saben cómo. Ayudarles a preparar la visita y avisarles de lo que van a ver evita que dejen de ir por miedo a hacerlo mal." }
+    ],
+    "errores": [
+      "Compartir información sin permiso explícito de la familia",
+      "Dejar a la escuela sin ninguna información y esperar que reaccione bien",
+      "No preparar la vuelta cuando hay cambios físicos visibles",
+      "No decidir con el propio niño qué se cuenta de él",
+      "Olvidar avisar a los profesores de los hermanos",
+      "Tras la muerte, hacer desaparecer sus cosas sin hablarlo con la clase"
+    ],
+    "perla": "Para un niño con enfermedad avanzada, seguir siendo alumno es seguir siendo niño. La escuela es lo último que debería perderse y suele ser lo primero que se abandona, muchas veces sin que nadie lo haya decidido de forma consciente.",
+    "etiquetas": ["escuela", "compañeros", "normalidad", "vínculo"]
+  },
+  {
+    "codigo": "comunicacion-telefonica",
+    "titulo": "La conversación telefónica y a distancia",
+    "interlocutor": "Padres",
+    "dominio": "Familia y entorno",
+    "momento": "En el seguimiento domiciliario",
+    "cuando": "En el seguimiento domiciliario, en las llamadas nocturnas y cuando la familia consulta a distancia. El teléfono sostiene la atención en casa y es también donde más malentendidos se producen, porque falta todo lo que no es la voz.",
+    "objetivo": "Resolver el problema concreto, evitar un traslado innecesario y dejar a la familia con una instrucción clara y con la seguridad de que puede volver a llamar.",
+    "pasos": [
+      "Identificarse siempre con nombre y equipo, aunque se haya hablado el día anterior, porque en una urgencia la familia no reconoce las voces.",
+      "Confirmar con quién se habla y dónde está el niño en ese momento.",
+      "Preguntar de entrada qué es lo que más les preocupa ahora mismo, en lugar de empezar por un interrogatorio clínico ordenado.",
+      "Dejar hablar sin interrumpir el primer minuto completo. Al teléfono el impulso de interrumpir es mucho mayor y la información se pierde.",
+      "Compensar la falta de imagen preguntando por lo observable: Cómo respira, cuántas veces, cómo tiene el color, está despierto, se queja, cuándo fue la última medicación.",
+      "Verbalizar los silencios propios, porque al teléfono un silencio se interpreta como que se ha cortado o como mala noticia: Estoy pensando, deme un segundo.",
+      "Dar una sola instrucción por vez y pedir que la repitan. Nunca dar tres cosas seguidas.",
+      "Cerrar siempre con un plan explícito: Qué hacer ahora, qué vigilar, cuándo volver a llamar sin dudarlo y qué señales obligan a llamar de inmediato."
+    ],
+    "frasesUtiles": [
+      "Soy tal, del equipo de cuidados paliativos. Con quién hablo.",
+      "Cuénteme qué es lo que más le preocupa ahora mismo.",
+      "Estoy aquí, siga.",
+      "Deme un segundo que estoy pensando.",
+      "Le voy a pedir una sola cosa ahora: Dele la dosis de rescate que tiene preparada.",
+      "Me lo repite para asegurarme de que me he explicado bien.",
+      "Voy a llamarles dentro de treinta minutos para ver cómo va.",
+      "Ha hecho muy bien en llamar. Llame otra vez las veces que haga falta."
+    ],
+    "frasesQueEvitar": [
+      "Eso es normal, no se preocupe, sin haber preguntado nada.",
+      "Vaya a urgencias, como respuesta por defecto.",
+      "Ahora no puedo, llame mañana.",
+      "Eso ya se lo explicamos.",
+      "No debería haber llamado por esto.",
+      "Tranquilícese."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Creo que se está muriendo, qué hago", "respuesta": "Bajar el ritmo de la voz y dar estructura: Estoy con usted. Dígame cómo respira y si parece que tiene dolor o está tranquilo. Después, instrucciones muy simples de una en una, recordar que no hay que llamar a la ambulancia si esa era la decisión acordada, y anunciar quién va a ir y cuándo. Mantener la llamada abierta si es posible." },
+      { "pregunta": "Le doy el rescate o espero", "respuesta": "Responder con claridad y sin ambigüedad, que es lo que necesitan en ese momento: Déselo ahora. Está pautado precisamente para esto y no le va a hacer daño. Y añadir lo que casi siempre está detrás de la duda: No se está pasando de dosis, ni le está haciendo adicto, ni le está adelantando nada." },
+      { "pregunta": "Perdone que le moleste otra vez", "respuesta": "Desactivar la culpa de forma explícita cada vez que aparezca, porque si no dejan de llamar: No molesta en absoluto. Este teléfono está exactamente para esto, y prefiero mil veces que llame de más a que aguante en casa preocupado." }
+    ],
+    "porEdad": [
+      { "edad": "Cualquier edad", "como": "Si el niño está consciente y puede hablar, merece la pena pedir hablar unos segundos con él. Cambia por completo la calidad de la información y le confirma que también cuenta para el equipo." }
+    ],
+    "errores": [
+      "No identificarse al empezar la llamada",
+      "Interrumpir en los primeros segundos",
+      "Dar varias instrucciones seguidas sin comprobar que se han entendido",
+      "Derivar a urgencias por defecto en lugar de resolver por teléfono lo resoluble",
+      "No cerrar con un plan y con criterios claros para volver a llamar",
+      "No devolver la llamada cuando se ha prometido"
+    ],
+    "perla": "Al teléfono desaparece todo lo que no es la voz, así que hay que compensar de forma consciente: Nombrar lo que se está haciendo, verbalizar los silencios y pedir que repitan las instrucciones. Y la última frase de la llamada debería ser siempre una invitación explícita a volver a llamar.",
+    "etiquetas": ["teléfono", "domicilio", "urgencia", "instrucciones"]
+  },
+  {
+    "codigo": "desacuerdo-en-el-equipo",
+    "titulo": "Cuando el equipo no está de acuerdo",
+    "interlocutor": "Equipo",
+    "dominio": "Espiritual",
+    "momento": "Ante una decisión difícil",
+    "cuando": "Cuando hay posiciones enfrentadas dentro del equipo sobre hasta dónde llegar con un niño. Se resuelve mal con frecuencia porque no existe un espacio previsto para hacerlo, y el precio lo paga la familia, que recibe mensajes contradictorios.",
+    "objetivo": "Llegar a una posición común antes de hablar con la familia, y que quien discrepe pueda decirlo sin coste. El sufrimiento moral de un equipo nace justo de no tener este espacio.",
+    "pasos": [
+      "Convocar un espacio específico y no resolverlo en el pasillo ni en el pase de guardia entre dos pacientes.",
+      "Incluir a todos los que participan en el cuidado, en particular a enfermería, que es quien pasa más horas con el niño y quien primero detecta el sufrimiento.",
+      "Separar los hechos de los juicios: Primero establecer qué se sabe con certeza sobre la situación clínica y el pronóstico, y solo después qué opina cada uno.",
+      "Pedir explícitamente la posición de los que no la han expresado, empezando por los que tienen menos jerarquía, porque de lo contrario no hablarán.",
+      "Buscar el valor que hay detrás de cada postura, que casi siempre es legítimo: Evitar el sufrimiento, no abandonar, respetar a la familia, no hacer daño.",
+      "Decidir sobre lo que se puede decidir hoy y aplazar de forma explícita lo que puede esperar.",
+      "Fijar quién habla con la familia, qué mensaje se transmite y con qué palabras, para que sea el mismo mensaje venga de quien venga.",
+      "Dejar cauce a la discrepancia: Registrar que existe, permitir la objeción individual y recurrir al comité de ética cuando la discrepancia sea de fondo."
+    ],
+    "frasesUtiles": [
+      "Antes de hablar con la familia necesitamos estar de acuerdo en lo que les vamos a decir.",
+      "Vamos a separar lo que sabemos de lo que opinamos.",
+      "Tú que lo ves todos los turnos, qué observas.",
+      "Todavía no te he oído. Qué piensas tú.",
+      "Los dos estamos intentando evitar que sufra, solo que valoramos distinto el riesgo.",
+      "Hoy solo tenemos que decidir esto. Lo demás lo dejamos para el lunes.",
+      "Puedo estar equivocado. Convéncedme.",
+      "Si alguien sigue sin verlo, lo dejamos registrado y lo llevamos al comité."
+    ],
+    "frasesQueEvitar": [
+      "Esto lo decido yo.",
+      "No es tu competencia.",
+      "Llevo veinte años haciendo esto.",
+      "Si no estás de acuerdo, cámbiate de servicio.",
+      "No vamos a discutirlo otra vez.",
+      "Los de paliativos siempre quieren lo mismo."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Y si me niego a hacerlo", "respuesta": "Reconocer la objeción como legítima y darle cauce: Tienes derecho a no participar en algo que consideras que hace daño. Vamos a registrarlo, a organizar el cuidado de forma que no recaiga en ti y a llevarlo al comité si el desacuerdo es de fondo. Lo que no podemos es transmitirle a la familia dos mensajes distintos." },
+      { "pregunta": "La familia me ha preguntado a mí y no sabía qué decir", "respuesta": "Dar una salida practicable y no reprochar: Es normal, pasa continuamente. Lo que siempre puedes decir es lo que sí sabes: Que no va a tener dolor, que no va a estar solo, y que vas a avisar a quien pueda responder a esa pregunta. Y después avisar de verdad." },
+      { "pregunta": "Por qué siempre acabamos alargando", "respuesta": "Tomarlo en serio en lugar de defender al equipo. Suele ser una señal de sufrimiento moral acumulado y merece un espacio propio: Es una pregunta importante y creo que no es solo por este caso. Merece que lo hablemos con calma, no ahora entre dos pacientes." }
+    ],
+    "porEdad": [
+      { "edad": "No aplica", "como": "Esta conversación es entre profesionales. Lo que sí aplica es que ninguna discrepancia interna debe llegar a la familia ni al niño en forma de mensajes contradictorios." }
+    ],
+    "errores": [
+      "Resolverlo en el pasillo o entre dos pacientes",
+      "Excluir a enfermería y al personal auxiliar de la deliberación",
+      "Suponer que el silencio de los más jóvenes es acuerdo",
+      "Ir a hablar con la familia sin una posición común",
+      "Interpretar la discrepancia como deslealtad",
+      "No usar nunca el comité de ética, o usarlo solo cuando la relación ya está rota"
+    ],
+    "perla": "El sufrimiento moral, que es saber qué es lo correcto y no poder hacerlo, es la principal causa de desgaste en cuidados intensivos y paliativos. No se combate con talleres de bienestar sino con espacios reales donde las decisiones se deliberen y donde discrepar no cueste nada.",
+    "etiquetas": ["equipo", "deliberación", "sufrimiento moral", "objeción"]
+  },
+  {
+    "codigo": "hablar-de-reanimacion",
+    "titulo": "Hablar de reanimación y de límites",
+    "interlocutor": "Padres",
+    "dominio": "Últimos días",
+    "momento": "En fase estable, anticipando",
+    "cuando": "Cuando hay que decidir si se realizarán maniobras de reanimación en caso de parada. Es una de las conversaciones más temidas y sale mucho mejor si se plantea con antelación y en términos de qué se va a hacer, no de qué se va a dejar de hacer.",
+    "objetivo": "Que exista una decisión documentada, comprendida y comunicada a todos los que puedan atender al niño, y que la familia no se sienta responsable de haber firmado la muerte de su hijo.",
+    "pasos": [
+      "Plantearla en fase estable y como parte de la planificación anticipada, nunca en el momento del deterioro.",
+      "Empezar por el pronóstico y por los objetivos, y solo después por la maniobra concreta.",
+      "Explicar en qué consiste realmente la reanimación en su caso concreto, sin eufemismos ni tecnicismos, y qué probabilidad realista tiene de conseguir algo.",
+      "Formularlo como una recomendación del equipo, no como una pregunta abierta a la familia. Preguntar quiere usted que reanimemos a su hijo pone sobre ellos una carga que no les corresponde.",
+      "Enumerar lo que sí se hará, que es siempre mucho más: Tratar el dolor, la fiebre, la dificultad para respirar, las convulsiones, y acompañarlos.",
+      "Comprobar la comprensión pidiéndoles que lo expliquen con sus palabras.",
+      "Documentarlo de forma accesible y comunicarlo al servicio de urgencias, a la ambulancia de la zona y al equipo de guardia. Una decisión que solo está en la historia no sirve de nada a las tres de la mañana.",
+      "Revisarla periódicamente y dejar claro que se puede cambiar en cualquier momento."
+    ],
+    "frasesUtiles": [
+      "Quiero hablarles de qué haremos y qué no haremos si su hijo empeora de repente.",
+      "En su situación, lo que recomendamos es no hacer maniobras de reanimación, y les explico por qué.",
+      "Esto no significa no tratar. Significa no hacer una maniobra concreta que no conseguiría nada.",
+      "Si tiene dolor, se lo quitaremos. Si tiene fiebre, la trataremos. Si le cuesta respirar, lo aliviaremos. Nada de eso cambia.",
+      "No les estoy pidiendo que decidan la muerte de su hijo. Su enfermedad decide eso, no ustedes ni nosotros.",
+      "La decisión es del equipo y quiero saber si ustedes están de acuerdo.",
+      "Voy a asegurarme de que urgencias y la ambulancia lo tengan por escrito.",
+      "Esto se puede cambiar en cualquier momento si ustedes lo piden."
+    ],
+    "frasesQueEvitar": [
+      "Quieren que hagamos todo lo posible.",
+      "Firman ustedes la orden de no reanimar.",
+      "Si el corazón se para, lo dejamos ir.",
+      "Ya no vale la pena.",
+      "Es una decisión suya.",
+      "No vamos a hacer nada."
+    ],
+    "siPreguntan": [
+      { "pregunta": "Entonces lo dejarán morir sin hacer nada", "respuesta": "Es exactamente el malentendido que hay que deshacer: No. Haremos muchísimas cosas. Le quitaremos el dolor, le aliviaremos la respiración, le pondremos la medicación que necesite y ustedes estarán con él. Lo único que no haremos es una maniobra que en su caso no conseguiría revertir nada y que además le haría daño en sus últimos minutos." },
+      { "pregunta": "Y si es un atragantamiento y se podría salvar", "respuesta": "Distinguir con claridad las situaciones, porque es una preocupación razonable: Si es algo reversible y puntual, actuaremos. La decisión se refiere a la parada por progresión de su enfermedad, no a cualquier cosa que le pase. Podemos dejarlo escrito así de concreto." },
+      { "pregunta": "Tenemos que firmarlo nosotros", "respuesta": "Aclarar dónde recae la responsabilidad, porque este punto alivia enormemente: La indicación es del equipo médico. Lo que buscamos es su acuerdo y que entiendan por qué. No están firmando la muerte de su hijo: Están de acuerdo en no hacerle algo que le haría daño sin beneficio." }
+    ],
+    "porEdad": [
+      { "edad": "Adolescente", "como": "Si tiene capacidad, debe participar en la conversación sobre su propia reanimación. Muchos adolescentes con enfermedad de larga evolución tienen las ideas mucho más claras que los adultos que los rodean." }
+    ],
+    "errores": [
+      "Plantearla en el momento del deterioro y de madrugada",
+      "Preguntar a la familia qué quiere que se haga, en lugar de recomendar",
+      "Usar la expresión orden de no reanimar delante de la familia sin explicarla",
+      "No enumerar todo lo que sí se va a hacer",
+      "No comunicarla a urgencias ni a la ambulancia",
+      "No revisarla nunca"
+    ],
+    "perla": "La pregunta quiere usted que hagamos todo lo posible tiene una sola respuesta posible para un padre, y por eso no debe hacerse nunca. La formulación correcta es una recomendación del equipo acompañada de la lista completa de lo que sí se seguirá haciendo.",
+    "etiquetas": ["reanimación", "documentar", "recomendación", "urgencias"]
+  }
+]

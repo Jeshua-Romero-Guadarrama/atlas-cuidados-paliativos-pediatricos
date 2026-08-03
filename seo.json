@@ -1,0 +1,250 @@
+{
+  "url": "https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos",
+  "titulo": "Atlas de Cuidados Paliativos Pediátricos",
+  "tituloCorto": "Atlas CPP",
+  "tituloLargo": "Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida: síntomas, fármacos, escalas y comunicación",
+  "descripcion": "Atlas de consulta sobre cuidados paliativos pediátricos. Control de síntomas, fármacos con sus dosis y vías, escalas de valoración, calculadoras de dosis, guías de comunicación con la familia y casos clínicos.",
+  "idioma": "es-MX",
+  "autor": "Jeshua Romero Guadarrama",
+  "color": "#6a4bab",
+  "colorSecundario": "#8b5cf6",
+  "colorFondo": "#f7f5fb",
+  "materia": "Cuidados paliativos pediátricos",
+  "nivelEducativo": "Licenciatura y posgrado en ciencias de la salud",
+  "licencia": "https://opensource.org/licenses/MIT",
+  "categorias": [
+    "education",
+    "medical",
+    "books"
+  ],
+  "temas": [
+    "Control de síntomas en pediatría",
+    "Dosificación de fármacos paliativos",
+    "Escalas de valoración",
+    "Comunicación con el paciente y la familia"
+  ],
+  "palabras": [
+    "cuidados paliativos pediatricos",
+    "control de sintomas pediatria",
+    "dosis morfina pediatrica",
+    "escalas de dolor infantil",
+    "calidad de vida pediatrica",
+    "comunicacion malas noticias",
+    "sedacion paliativa",
+    "atencion domiciliaria pediatrica",
+    "fin de vida pediatria",
+    "manejo del dolor en ninos",
+    "escala flacc",
+    "acompanamiento familiar",
+    "medicina paliativa"
+  ],
+  "colecciones": [
+    {
+      "archivo": "sintomas",
+      "ruta": "sintomas",
+      "titulo": "titulo",
+      "descripcion": "descripcion",
+      "etiqueta": "Ficha de síntoma",
+      "etiquetaPlural": "Control de síntomas",
+      "descripcionSeccion": "Fichas de control de síntomas con su valoración, su manejo no farmacológico y farmacológico, y los signos de alarma.",
+      "datos": [
+        "dominio",
+        "nivel",
+        "edades"
+      ],
+      "etiquetas": {
+        "dominio": "Dominio",
+        "nivel": "Nivel",
+        "edades": "Edades",
+        "porQueOcurre": "Por qué ocurre",
+        "causas": "Causas",
+        "evaluar": "Qué evaluar",
+        "noFarmacologico": "Manejo no farmacológico",
+        "farmacologico": "Manejo farmacológico",
+        "escalar": "Cuándo escalar",
+        "queDecirALaFamilia": "Qué decir a la familia",
+        "evitar": "Qué evitar",
+        "perla": "Perla clínica",
+        "esquema": "Esquema",
+        "etiquetas": "Etiquetas"
+      },
+      "ocultos": [
+        "codigo",
+        "titulo",
+        "descripcion",
+        "urgencia",
+        "esquemaPie",
+        "temaRelacionado"
+      ]
+    },
+    {
+      "archivo": "farmacos",
+      "ruta": "farmacos",
+      "titulo": "nombre",
+      "descripcion": "descripcion",
+      "etiqueta": "Ficha de fármaco",
+      "etiquetaPlural": "Fármacos",
+      "descripcionSeccion": "Fármacos de uso paliativo pediátrico con sus indicaciones, sus dosis por peso, sus vías de administración y sus efectos adversos.",
+      "datos": [
+        "grupo",
+        "vias"
+      ],
+      "etiquetas": {
+        "grupo": "Grupo",
+        "vias": "Vías",
+        "indicaciones": "Indicaciones",
+        "dosis": "Dosis",
+        "presentaciones": "Presentaciones",
+        "inicioDuracion": "Inicio y duración",
+        "adversos": "Efectos adversos",
+        "precauciones": "Precauciones",
+        "practico": "Consejo práctico",
+        "etiquetas": "Etiquetas"
+      },
+      "ocultos": [
+        "codigo",
+        "nombre",
+        "descripcion",
+        "controlado"
+      ]
+    },
+    {
+      "archivo": "escalas",
+      "ruta": "escalas",
+      "titulo": "nombre",
+      "descripcion": "paraQue",
+      "etiqueta": "Escala de valoración",
+      "etiquetaPlural": "Escalas de valoración",
+      "descripcionSeccion": "Escalas de valoración del dolor, del sufrimiento y de la calidad de vida, con sus criterios y su interpretación.",
+      "datos": [
+        "dominio",
+        "edadDeUso",
+        "rango"
+      ],
+      "etiquetas": {
+        "dominio": "Dominio",
+        "edadDeUso": "Edad de uso",
+        "rango": "Rango",
+        "items": "Ítems que valora",
+        "tramos": "Interpretación por tramos",
+        "comoUsarla": "Cómo usarla",
+        "limitaciones": "Limitaciones",
+        "etiquetas": "Etiquetas"
+      },
+      "ocultos": [
+        "codigo",
+        "nombre",
+        "paraQue",
+        "calculadora"
+      ]
+    },
+    {
+      "archivo": "calculadoras",
+      "ruta": "calculadoras",
+      "titulo": "nombre",
+      "descripcion": "descripcion",
+      "etiqueta": "Calculadora",
+      "etiquetaPlural": "Calculadoras",
+      "descripcionSeccion": "Cálculo de dosis, de equivalencias y de puntuaciones, con su interpretación automática.",
+      "datos": [
+        "categoria"
+      ],
+      "etiquetas": {
+        "categoria": "Categoría",
+        "campos": "Variables que utiliza",
+        "preguntas": "Qué puntúa",
+        "resultados": "Qué calcula",
+        "interpretacion": "Interpretación",
+        "formulaTexto": "Fórmula",
+        "notas": "Notas"
+      },
+      "ocultos": [
+        "codigo",
+        "nombre",
+        "descripcion",
+        "tipo",
+        "ejemplo",
+        "base"
+      ]
+    },
+    {
+      "archivo": "comunicacion",
+      "ruta": "comunicacion",
+      "titulo": "titulo",
+      "descripcion": "objetivo",
+      "etiqueta": "Guía de comunicación",
+      "etiquetaPlural": "Comunicación",
+      "descripcionSeccion": "Guías para las conversaciones difíciles con el paciente, con la familia y con el equipo.",
+      "datos": [
+        "interlocutor",
+        "dominio",
+        "momento"
+      ],
+      "etiquetas": {
+        "interlocutor": "Interlocutor",
+        "dominio": "Dominio",
+        "momento": "Momento",
+        "cuando": "Cuándo usarla",
+        "pasos": "Pasos",
+        "frasesUtiles": "Frases útiles",
+        "frasesQueEvitar": "Frases que evitar",
+        "siPreguntan": "Si preguntan",
+        "porEdad": "Por edad",
+        "errores": "Errores frecuentes",
+        "perla": "Perla clínica",
+        "etiquetas": "Etiquetas"
+      },
+      "ocultos": [
+        "codigo",
+        "titulo",
+        "objetivo"
+      ]
+    },
+    {
+      "archivo": "temas",
+      "ruta": "temas",
+      "titulo": "titulo",
+      "descripcion": "resumen",
+      "etiqueta": "Tema de estudio",
+      "etiquetaPlural": "Temas de estudio",
+      "descripcionSeccion": "Artículos en profundidad sobre los fundamentos, la ética y la organización de los cuidados paliativos pediátricos.",
+      "datos": [
+        "area"
+      ],
+      "etiquetas": {
+        "area": "Área",
+        "secciones": "Secciones",
+        "puntosClave": "Puntos clave"
+      },
+      "ocultos": [
+        "codigo",
+        "titulo",
+        "resumen"
+      ]
+    },
+    {
+      "archivo": "casos",
+      "ruta": "casos",
+      "titulo": "titulo",
+      "descripcion": "vineta",
+      "etiqueta": "Caso clínico",
+      "etiquetaPlural": "Casos clínicos",
+      "descripcionSeccion": "Casos clínicos comentados, con su razonamiento y sus puntos de aprendizaje.",
+      "rutaApp": "estudio",
+      "datos": [
+        "dominio"
+      ],
+      "etiquetas": {
+        "dominio": "Dominio",
+        "pregunta": "Pregunta",
+        "opciones": "Opciones",
+        "aprendizaje": "Aprendizaje"
+      },
+      "ocultos": [
+        "codigo",
+        "titulo",
+        "vineta"
+      ]
+    }
+  ]
+}

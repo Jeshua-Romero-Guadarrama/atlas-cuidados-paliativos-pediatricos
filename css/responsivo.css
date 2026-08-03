@@ -1,0 +1,33 @@
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   6. Responsivo
+   ------------------------------------------------------------
+   Ajustes por tamaño de pantalla. Va en último lugar para que
+   sus reglas prevalezcan sobre las de las hojas anteriores.
+   ============================================================ */
+
+/* ============================================================
+   Responsivo
+   ============================================================ */
+@media (max-width: 720px) {
+  .guion-columnas { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .cabecera-superior { padding: 0.7rem 1rem; }
+  .marca-texto small { display: none; }
+  .marca-texto strong { font-size: 0.96rem; white-space: normal; }
+  .vista { padding: 1.25rem 1rem 3.5rem; }
+  .rejilla, .rejilla-ancha, .glosario { grid-template-columns: 1fr; }
+  .etiqueta-filtro { min-width: 100%; margin-bottom: -0.2rem; }
+  .modal { padding: 0; align-items: flex-end; }
+  .modal-tarjeta { max-height: 94vh; border-radius: var(--r-xl) var(--r-xl) 0 0; }
+  .modal-cuerpo { padding: 1.35rem 1.25rem 2rem; }
+  .quiz-panel { padding: 1.85rem 1.25rem; }
+  .dosis-fila { grid-template-columns: 1fr; gap: 0.45rem; }
+  .dosis-via { justify-self: start; padding: 0.2rem 0.7rem; }
+  .ir-arriba { bottom: 1rem; right: 1rem; }
+  .paginacion { justify-content: center; }
+  .pag-info { width: 100%; text-align: center; order: 2; }
+  .pag-botones { margin: 0 auto; }
+  .pag-btn { min-width: 34px; height: 34px; }
+}

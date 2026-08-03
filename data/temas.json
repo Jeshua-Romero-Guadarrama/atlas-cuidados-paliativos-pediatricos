@@ -1,0 +1,676 @@
+[
+  {
+    "codigo": "que-son-los-cuidados-paliativos-pediatricos",
+    "titulo": "Qué son los cuidados paliativos pediátricos y qué no son",
+    "area": "Fundamentos",
+    "resumen": "La definición, en qué se diferencian de los cuidados paliativos del adulto y por qué empiezan mucho antes de lo que casi todo el mundo cree.",
+    "secciones": [
+      {
+        "encabezado": "La definición y lo que esconde",
+        "parrafos": [
+          "La Organización Mundial de la Salud define los cuidados paliativos pediátricos como el cuidado activo y total del cuerpo, la mente y el espíritu del niño, que incluye además el apoyo a la familia. Comienzan cuando se diagnostica la enfermedad y continúan al margen de que el niño reciba o no tratamiento dirigido a la enfermedad de base.",
+          "Esa última frase es la más importante de toda la definición y la que más se incumple. Los cuidados paliativos no son lo que se hace cuando ya no queda nada más: Son lo que se hace desde el principio, en paralelo con la quimioterapia, con la cirugía o con la ventilación, para que el niño viva lo mejor posible el tiempo que viva. Un niño con atrofia muscular espinal puede recibir cuidados paliativos durante quince años y morir de adulto.",
+          "El objeto de atención no es el niño solo, sino la unidad formada por el niño y su familia. Esto no es retórica: Significa que la madre agotada que lleva tres meses sin dormir es también paciente, que el hermano de ocho años que ha dejado de hablar es también paciente, y que atenderlos forma parte del trabajo y no es un extra amable."
+        ]
+      },
+      {
+        "encabezado": "En qué se diferencian de los del adulto",
+        "parrafos": [
+          "La primera diferencia es la duración. En el adulto, el paciente paliativo típico tiene un cáncer avanzado y una supervivencia de semanas o meses. En el niño, más de la mitad de los pacientes no tienen cáncer, sino enfermedades neurológicas, metabólicas, genéticas o malformativas, y la relación puede durar años o décadas. El equipo acompaña un crecimiento, no solo un final.",
+          "La segunda es la rareza. Muchas de estas enfermedades tienen prevalencias de uno entre cientos de miles, sin historia natural bien descrita y sin guía de manejo. El equipo tiene que razonar desde los principios, no desde el protocolo.",
+          "La tercera es la farmacología. Casi todos los fármacos que se usan carecen de indicación autorizada en niños o en esa indicación concreta, y hay que dosificar por kilogramo, con presentaciones pensadas para adultos que obligan a fraccionar, diluir y formular.",
+          "La cuarta es el desarrollo. Un niño de tres años, uno de nueve y uno de quince entienden cosas radicalmente distintas de su enfermedad y de la muerte, y expresan el dolor y el miedo de formas distintas. La comunicación y la valoración tienen que reajustarse continuamente porque el paciente cambia mientras se le atiende.",
+          "La quinta, y la que más pesa sobre el equipo, es que la muerte de un niño se vive como un fallo del orden natural. Eso condiciona a la familia, al equipo y a la sociedad entera, y explica buena parte de la obstinación terapéutica que se ve en pediatría."
+        ]
+      },
+      {
+        "encabezado": "Qué no son",
+        "parrafos": [
+          "No son sedación. La sedación paliativa es una intervención concreta, con indicación y procedimiento propios, que se usa en una minoría de pacientes y al final del proceso. Confundir ambas cosas hace que las familias rechacen los cuidados paliativos por miedo a que le duerman al niño.",
+          "No son eutanasia. Los cuidados paliativos no adelantan la muerte, ni la retrasan artificialmente. Aceptan que la enfermedad siga su curso mientras se controla el sufrimiento que produce.",
+          "No son renunciar. Retirar una medida que ya no aporta beneficio no es abandonar: Es dejar de hacer daño. Un niño al que se le retira la nutrición parenteral porque ya no la tolera sigue recibiendo cuidado de la boca, analgesia, compañía y todo lo demás.",
+          "No son solo el final de la vida. Los cuidados al final de la vida son una parte de los cuidados paliativos, la última, y suelen ocupar poco tiempo comparados con los años previos de control de síntomas y acompañamiento."
+        ]
+      },
+      {
+        "encabezado": "Los niveles de atención",
+        "parrafos": [
+          "El enfoque paliativo es lo que todo profesional que atiende niños debería saber hacer: Controlar el dolor con lo básico, comunicar con honestidad, reconocer cuándo un tratamiento ya no aporta. No requiere un equipo especial.",
+          "Los cuidados paliativos generales los proporcionan pediatras, oncólogos, neurólogos o intensivistas con formación adicional, dentro de su propia especialidad.",
+          "Los cuidados paliativos especializados los presta un equipo específico, interdisciplinario, para los casos de mayor complejidad: Síntomas refractarios, conflictos éticos, situaciones familiares difíciles o necesidad de atención domiciliaria continuada.",
+          "En la práctica, la mayoría de los niños que necesitan cuidados paliativos en el mundo nunca llegan a un equipo especializado, así que la calidad de lo que reciben depende de lo que sepa hacer el profesional que ya los atiende. De ahí que aprender esto no sea materia de subespecialista."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "Empiezan en el diagnóstico y conviven con el tratamiento curativo, no lo sustituyen.",
+      "El paciente es el niño y su familia, incluidos los hermanos.",
+      "Más de la mitad de los niños atendidos no tienen cáncer.",
+      "No son sedación, no son eutanasia y no son abandono.",
+      "El enfoque paliativo básico es competencia de cualquiera que atienda niños."
+    ]
+  },
+  {
+    "codigo": "grupos-act",
+    "titulo": "A quién van dirigidos: Los cuatro grupos ACT",
+    "area": "Fundamentos",
+    "resumen": "La clasificación que permite identificar qué niños necesitan cuidados paliativos y por qué la trayectoria de cada grupo cambia por completo el plan de cuidados.",
+    "secciones": [
+      {
+        "encabezado": "Por qué hace falta una clasificación",
+        "parrafos": [
+          "Preguntarse si un niño es paliativo lleva a callejones sin salida, porque la pregunta sugiere una etiqueta que se pone o no se pone. La pregunta útil es otra: Qué necesita este niño y en qué momento de su trayectoria está. La clasificación de la Association for Children with Life-threatening Conditions, hoy Together for Short Lives, responde a eso agrupando las enfermedades por la forma que tiene la curva, no por el diagnóstico.",
+          "Es la herramienta más práctica que existe para decidir a quién derivar y para explicarle a una familia y a un equipo qué se puede esperar."
+        ]
+      },
+      {
+        "encabezado": "Grupo 1: Amenaza para la vida, con tratamiento curativo posible",
+        "parrafos": [
+          "Enfermedades en las que existe un tratamiento que puede curar, pero que puede fracasar. El ejemplo típico es el cáncer infantil, y también la insuficiencia orgánica irreversible que espera un trasplante o la cardiopatía congénita compleja.",
+          "La trayectoria es de mesetas con caídas bruscas. El niño puede estar bien durante meses y descompensarse en días. Los cuidados paliativos entran en paralelo al tratamiento curativo, para el control de síntomas y el apoyo, y pasan a primer plano si el tratamiento fracasa.",
+          "La dificultad característica de este grupo es la ambivalencia: Hay que sostener a la vez la esperanza de curación y la preparación por si no ocurre. Hacer solo una de las dos cosas es un error."
+        ]
+      },
+      {
+        "encabezado": "Grupo 2: Muerte prematura inevitable, con largos periodos de tratamiento intensivo",
+        "parrafos": [
+          "Enfermedades en las que la muerte prematura es segura, pero el tratamiento intensivo prolonga la vida y permite una actividad normal durante años. El ejemplo clásico es la fibrosis quística, y también la distrofia muscular de Duchenne o la infección por VIH sin control.",
+          "La trayectoria es un declive lento con exacerbaciones agudas, cada una de las cuales puede ser la última. La familia convive con la conciencia del final durante toda la infancia y la adolescencia del niño.",
+          "Aquí la planificación anticipada es especialmente valiosa, porque hay tiempo y hay lucidez para hacerla, y porque cada ingreso por exacerbación plantea de nuevo la pregunta de hasta dónde llegar."
+        ]
+      },
+      {
+        "encabezado": "Grupo 3: Progresivas sin opción curativa",
+        "parrafos": [
+          "Enfermedades progresivas desde el diagnóstico, en las que el tratamiento es exclusivamente paliativo y puede extenderse durante años. Enfermedades metabólicas y neurodegenerativas, mucopolisacaridosis, atrofia muscular espinal tipo 1, leucodistrofias.",
+          "La trayectoria es un declive continuo y previsible, con pérdida progresiva de funciones que el niño ya había adquirido. Esa pérdida es un duelo que la familia hace a plazos, y que hay que reconocer y acompañar cada vez.",
+          "El control de síntomas neurológicos, la espasticidad, las convulsiones, la disfagia y las secreciones dominan el cuadro, y las decisiones sobre alimentación por sonda y sobre ventilación aparecen antes o después en todos los casos."
+        ]
+      },
+      {
+        "encabezado": "Grupo 4: Discapacidad grave no progresiva con vulnerabilidad",
+        "parrafos": [
+          "Situaciones no progresivas pero con secuelas graves que hacen al niño muy vulnerable a complicaciones y a un deterioro imprevisible. Parálisis cerebral grave, secuelas de lesión cerebral o medular, encefalopatía hipóxico isquémica.",
+          "La trayectoria es plana con caídas bruscas por complicaciones: Neumonía por aspiración, crisis convulsivas, sepsis de origen urinario. Cada una puede resolverse o puede ser la definitiva, y esa incertidumbre se prolonga durante años.",
+          "Es el grupo más numeroso, el peor identificado y el que menos llega a los equipos de paliativos, en parte porque la enfermedad no progresa y eso hace pensar que no hay nada paliativo que ofrecer. Es justo al revés: Son niños con dolor mal reconocido, con síntomas crónicos y con familias exhaustas."
+        ]
+      },
+      {
+        "encabezado": "Cómo se usa en la práctica",
+        "parrafos": [
+          "Situar al niño en un grupo orienta tres cosas: Qué síntomas esperar, cuándo plantear las conversaciones difíciles y qué recursos organizar. En el grupo 1 el equipo debe estar listo para un giro rápido. En el 2 conviene aprovechar los periodos estables para planificar. En el 3 hay que anticipar las decisiones sobre alimentación y ventilación antes de que lleguen en urgencias. En el 4 hay que buscar activamente el dolor y sostener al cuidador.",
+          "Una pregunta complementaria y muy útil es la pregunta sorpresa adaptada: Le sorprendería que este niño muriera en los próximos doce meses. Si la respuesta es no, hay trabajo paliativo que hacer hoy."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "La clasificación agrupa por forma de la trayectoria, no por diagnóstico.",
+      "Grupo 1: Curación posible pero incierta, como el cáncer.",
+      "Grupo 2: Muerte prematura segura con años de tratamiento intensivo, como la fibrosis quística.",
+      "Grupo 3: Progresiva sin cura desde el inicio, como las enfermedades neurodegenerativas.",
+      "Grupo 4: Discapacidad grave no progresiva con complicaciones imprevisibles, el grupo más numeroso y peor atendido.",
+      "La pregunta sorpresa a doce meses identifica bien a quién derivar."
+    ]
+  },
+  {
+    "codigo": "comprension-de-la-muerte-por-edad",
+    "titulo": "Cómo entiende la muerte un niño según su edad",
+    "area": "Desarrollo y comunicación",
+    "resumen": "Los cuatro componentes del concepto de muerte, cuándo se adquiere cada uno y cómo cambia eso lo que se le puede decir y lo que se le debe preguntar.",
+    "secciones": [
+      {
+        "encabezado": "Los cuatro componentes",
+        "parrafos": [
+          "Entender la muerte no es una idea única, sino cuatro ideas que se adquieren por separado y en momentos distintos. La irreversibilidad, es decir que el muerto no vuelve. La no funcionalidad, que el cuerpo muerto ya no siente, ni come, ni tiene frío. La universalidad, que le pasa a todos los seres vivos, incluido uno mismo. Y la causalidad, que existen causas concretas por las que se muere.",
+          "Un niño puede tener uno de estos componentes y no los otros, y ahí nacen la mayoría de los malentendidos. El niño de cinco años que sabe que el abuelo no va a volver puede seguir preguntando si en la tumba pasa frío, porque tiene irreversibilidad pero no no funcionalidad."
+        ]
+      },
+      {
+        "encabezado": "Menos de dos años",
+        "parrafos": [
+          "No hay concepto de muerte, pero sí hay percepción aguda de la separación, del dolor y de la ansiedad de los adultos que lo rodean. El lactante lee el estado emocional de su madre con enorme precisión.",
+          "Lo que ayuda: Presencia física constante, contacto piel con piel, voz conocida, rutinas estables y control eficaz del dolor. Lo que hace daño: Separaciones evitables y ambientes ruidosos e imprevisibles."
+        ]
+      },
+      {
+        "encabezado": "De dos a seis años",
+        "parrafos": [
+          "El pensamiento es mágico y concreto. La muerte se entiende como algo reversible y temporal, parecido al sueño o a un viaje. Es la edad del pensamiento causal mágico: El niño puede creer que la enfermedad es un castigo por haberse portado mal, o que él la provocó al enfadarse con alguien.",
+          "Por eso en esta edad hay que decir explícitamente y más de una vez que nadie tiene la culpa y que la enfermedad no es un castigo, aunque el niño no lo haya preguntado.",
+          "Hay que evitar sistemáticamente los eufemismos de sueño y de viaje. Decir que alguien se durmió para siempre produce miedo a dormirse; decir que se fue produce sensación de abandono y espera. Se usa la palabra murió, con calma y con explicación concreta de qué significa: Su cuerpo dejó de funcionar, ya no respira, ya no siente dolor."
+        ]
+      },
+      {
+        "encabezado": "De seis a doce años",
+        "parrafos": [
+          "Aparecen la irreversibilidad y la universalidad, y hacia los nueve o diez años el concepto ya es sustancialmente el del adulto. Es la edad de la curiosidad biológica concreta: Qué pasa con el cuerpo, qué es un ataúd, qué es incinerar, qué siente el que se muere.",
+          "Estas preguntas suelen escandalizar a los adultos y son perfectamente sanas. Responderlas con información concreta y veraz reduce la ansiedad; esquivarlas la aumenta, porque el niño concluye que la realidad debe de ser aún peor de lo que imagina.",
+          "También es la edad en la que aparece el miedo al dolor y a lo que pasará con los padres, más que el miedo a la muerte en abstracto. Merece la pena preguntar directamente qué es lo que más le preocupa."
+        ]
+      },
+      {
+        "encabezado": "Adolescencia",
+        "parrafos": [
+          "El concepto es completo y se le añade la dimensión existencial: El sentido, la injusticia, lo que se pierde, el futuro que no habrá. El adolescente entiende su pronóstico aunque nadie se lo haya dicho, y muy a menudo lo sabe antes que los adultos crean.",
+          "El conflicto característico es entre la autonomía que está construyendo y la dependencia que le impone la enfermedad. Cuando se le excluye de las decisiones, la reacción suele ser la retirada o el incumplimiento del tratamiento, no la protesta abierta.",
+          "Es esencial ofrecerle tiempo a solas, sin los padres, y preguntarle explícitamente cuánto quiere saber y cuánto quiere decidir. También es la edad en la que las herramientas de planificación anticipada escritas para adolescentes, del tipo Voicing My Choices, tienen más sentido."
+        ]
+      },
+      {
+        "encabezado": "La regla que atraviesa todas las edades",
+        "parrafos": [
+          "El niño enfermo tiene un concepto de muerte más maduro que el que le corresponde por edad. La experiencia de hospitalizaciones, de procedimientos y de otros niños que ya no vuelven adelanta la comprensión varios años.",
+          "Por eso nunca se decide lo que un niño puede entender a partir de su edad en el calendario, sino a partir de lo que él mismo dice y pregunta. La técnica más segura es devolver la pregunta antes de responderla: Qué has pensado tú sobre eso. La respuesta indica el nivel exacto en el que hay que situarse."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "La muerte se entiende en cuatro componentes que se adquieren por separado: Irreversibilidad, no funcionalidad, universalidad y causalidad.",
+      "Antes de los seis años el pensamiento es mágico y hay riesgo de culpa: Hay que desmentirla aunque no la exprese.",
+      "Nunca usar eufemismos de sueño ni de viaje.",
+      "Entre los seis y los doce las preguntas biológicas concretas son sanas y hay que responderlas.",
+      "El adolescente casi siempre sabe su pronóstico: Hay que ofrecerle tiempo a solas.",
+      "El niño enfermo entiende más de lo que corresponde a su edad: Preguntar antes de responder."
+    ]
+  },
+  {
+    "codigo": "calidad-de-vida",
+    "titulo": "Calidad de vida: Qué es, cómo se mide y para qué sirve medirla",
+    "area": "Fundamentos",
+    "resumen": "El concepto que da nombre y sentido a todo lo demás, los instrumentos que existen para medirlo en niños y la trampa de medirlo desde fuera.",
+    "secciones": [
+      {
+        "encabezado": "Un concepto incómodo y necesario",
+        "parrafos": [
+          "La calidad de vida relacionada con la salud es la percepción que tiene la persona de su bienestar físico, emocional, social y funcional. La palabra clave es percepción: Es subjetiva por definición, y por tanto solo la puede juzgar quien la vive.",
+          "En cuidados paliativos pediátricos es el objetivo declarado del tratamiento, lo que la convierte en la variable que hay que medir para saber si se está haciendo bien el trabajo. Sin medirla, el equipo tiende a evaluar su éxito por lo que sabe medir, que son las constantes y los ingresos evitados, y eso no es lo mismo."
+        ]
+      },
+      {
+        "encabezado": "La paradoja de la discapacidad",
+        "parrafos": [
+          "El hallazgo más consistente y más incómodo de la investigación en este campo es que los profesionales sistemáticamente puntúan la calidad de vida de los niños con enfermedad grave o discapacidad por debajo de lo que la puntúan los propios niños y sus familias.",
+          "Se llama paradoja de la discapacidad y tiene una explicación razonable: El observador proyecta lo que él sentiría si de pronto perdiera esas capacidades, mientras que quien vive con ellas ha reajustado sus expectativas y encuentra valor en dimensiones que el observador no ve.",
+          "La consecuencia práctica es seria, porque las decisiones sobre limitar o continuar tratamientos se toman muchas veces sobre juicios de calidad de vida. Si esos juicios los hace el equipo desde fuera, están sesgados hacia abajo de forma previsible. De ahí la regla: Quien puntúa es el niño; si no puede, los padres; el equipo solo como último recurso y sabiendo que su puntuación es la menos fiable de las tres."
+        ]
+      },
+      {
+        "encabezado": "Los instrumentos",
+        "parrafos": [
+          "El PedsQL 4.0 genérico es el más usado. Tiene versiones de autoinforme desde los cinco años y versiones para los padres desde los dos, con cuatro dimensiones: Física, emocional, social y escolar. Está validado en español y sirve para comparar entre poblaciones y a lo largo del tiempo.",
+          "El PedsQL 3.0 módulo de cuidados paliativos añade lo que el genérico no captura: Dolor, náusea, preocupación, actividades del día a día, comunicación con el equipo y con la familia. Es el instrumento específico de referencia.",
+          "El KIDSCREEN y el PROMIS pediátrico sirven para poblaciones más amplias y tienen bancos de ítems flexibles. El QUALIN cubre el tramo de cero a tres años, donde casi ningún instrumento llega.",
+          "Para niños con discapacidad grave sin lenguaje, ningún cuestionario estándar funciona bien, y se recurre a medidas indirectas centradas en lo que se observa: Frecuencia de episodios de malestar, calidad del sueño, tiempo de vigilia tranquila, participación en actividades que antes disfrutaba."
+        ]
+      },
+      {
+        "encabezado": "La medida que de verdad se usa a diario",
+        "parrafos": [
+          "En la práctica clínica, los cuestionarios largos se aplican poco. Lo que sí funciona es preguntar de forma sistemática y sencilla en cada visita por lo que la familia y el niño identifican como importante.",
+          "Una pregunta muy productiva es qué le gustaría poder hacer esta semana que ahora no puede. Convierte la calidad de vida en un objetivo concreto y comprobable: Dormir la noche entera, ir al cumpleaños, aguantar sentado para jugar en la consola, que no le duela al moverlo para el baño.",
+          "Ese objetivo se apunta, se trabaja y se revisa en la visita siguiente. Es la forma más honesta de medir calidad de vida, porque la define el paciente y no el instrumento."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "La calidad de vida es subjetiva: Solo la puede juzgar quien la vive.",
+      "Los profesionales la infraestiman de forma sistemática respecto de los propios pacientes.",
+      "El orden de preferencia para puntuar es niño, padres y equipo, en ese orden.",
+      "PedsQL 4.0 genérico y PedsQL 3.0 de cuidados paliativos son los instrumentos de referencia.",
+      "En consulta funciona mejor fijar un objetivo concreto que el niño quiera recuperar esta semana."
+    ]
+  },
+  {
+    "codigo": "escalera-analgesica",
+    "titulo": "Bases del control del dolor: La escalera de dos escalones",
+    "area": "Control de síntomas",
+    "resumen": "Por qué la OMS eliminó el escalón intermedio en niños, los cinco principios que no han cambiado y cómo se titula un opioide sin miedo.",
+    "secciones": [
+      {
+        "encabezado": "De tres escalones a dos",
+        "parrafos": [
+          "La escalera analgésica clásica de la OMS tenía tres escalones: No opioides, opioides débiles y opioides potentes. En 2012 la OMS publicó unas directrices pediátricas que eliminaron el escalón intermedio, y en la revisión de 2020 mantuvo esa estructura de dos escalones.",
+          "El motivo es que los opioides débiles en niños son un problema. La codeína es un profármaco que necesita del CYP2D6 para convertirse en morfina, y ese enzima tiene un polimorfismo enorme: Hay metabolizadores lentos, en los que no hace nada, y ultrarrápidos, en los que produce concentraciones tóxicas de morfina. Se han descrito muertes de niños por codeína tras amigdalectomía, y hoy está contraindicada por debajo de los doce años. El tramadol comparte el mismo mecanismo y las mismas dudas.",
+          "Además, el escalón intermedio no aportaba nada que no se consiguiera con dosis bajas de morfina, que sí es predecible y sí se puede titular con precisión. De modo que la escalera pediátrica actual es: Primer escalón, analgésicos no opioides para el dolor leve. Segundo escalón, opioide potente a dosis baja para el dolor moderado o intenso, subiendo hasta donde haga falta."
+        ]
+      },
+      {
+        "encabezado": "Los cinco principios",
+        "parrafos": [
+          "Por la escalera adecuada: Elegir el escalón por la intensidad del dolor que el niño tiene ahora, no empezar siempre por abajo. Un dolor intenso empieza directamente por opioide.",
+          "Por reloj: La analgesia del dolor persistente se pauta a horas fijas, no a demanda. Esperar a que el dolor vuelva para dar la siguiente dosis obliga a remontar desde más arriba y genera ansiedad anticipatoria en el niño.",
+          "Por la vía adecuada: La vía oral es la de elección siempre que sea posible, por ser la menos invasiva. Cuando no se puede usar, la alternativa en paliativos pediátricos es la subcutánea, no la intramuscular. La vía intramuscular está proscrita porque duele, y hacer daño para tratar el dolor no tiene defensa.",
+          "Por el niño: Toda dosis se calcula por kilogramo de peso y se ajusta a la respuesta individual. No existe la dosis correcta de morfina; existe la dosis que controla el dolor de este niño sin efectos adversos intolerables.",
+          "Con atención al detalle: Prever y tratar de entrada el estreñimiento, explicar a la familia qué esperar, y dejar siempre pautada una dosis de rescate."
+        ]
+      },
+      {
+        "encabezado": "Cómo se titula un opioide",
+        "parrafos": [
+          "Se empieza con morfina de liberación inmediata por vía oral, a la dosis inicial que corresponda por peso, cada cuatro horas. Se deja pautada una dosis de rescate del diez al quince por ciento de la dosis diaria total, disponible cada una hora si hace falta.",
+          "A las veinticuatro horas se suman todos los rescates que el niño ha necesitado y se reparte esa cantidad entre las dosis fijas. Si ha necesitado tres rescates de 2 mg, se añaden 6 mg al total diario y se recalcula la pauta y el rescate sobre la nueva dosis diaria.",
+          "Ese ciclo se repite cada veinticuatro o cuarenta y ocho horas hasta que el dolor está controlado con dos rescates diarios o menos. Cuando se estabiliza, se puede pasar a una presentación de liberación prolongada cada doce horas, manteniendo siempre el rescate con la de liberación inmediata.",
+          "No hay dosis techo para la morfina. La dosis correcta es la que controla el dolor. El único límite lo ponen los efectos adversos, y cuando aparecen antes de controlar el dolor lo que procede no es resignarse, sino rotar a otro opioide o añadir un coadyuvante."
+        ]
+      },
+      {
+        "encabezado": "Los tres miedos que hay que desmontar",
+        "parrafos": [
+          "El miedo a la adicción. La adicción es un trastorno psiquiátrico de búsqueda compulsiva pese al daño, y no es lo que ocurre cuando se trata un dolor real con opioides. Lo que sí ocurre es dependencia física, que significa que si se retira bruscamente hay síndrome de abstinencia, y se previene retirando de forma gradual. Son cosas distintas y conviene nombrarlas por separado delante de la familia.",
+          "El miedo a la depresión respiratoria. Es rarísima cuando se titula por escalones sobre un dolor real, porque el dolor es el antagonista fisiológico de la depresión respiratoria. El signo que precede siempre a la depresión respiratoria es la sedación progresiva: Si el niño está despierto, no va a dejar de respirar. Vigilar el nivel de conciencia es más útil que contar respiraciones.",
+          "El miedo a que empezar morfina signifique que el final está cerca. Es la creencia más extendida entre las familias y hay que desmontarla explícitamente la primera vez que se prescribe, porque si no la familia interpretará la prescripción como una sentencia y puede que no le dé el fármaco al niño."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "La escalera pediátrica tiene dos escalones: La OMS eliminó los opioides débiles.",
+      "La codeína está contraindicada por debajo de los doce años por el polimorfismo del CYP2D6.",
+      "Cinco principios: Por la escalera adecuada, por reloj, por la vía adecuada, por el niño y con atención al detalle.",
+      "La vía intramuscular está proscrita: Si no se puede usar la oral, se usa la subcutánea.",
+      "Titular sumando los rescates de las últimas veinticuatro horas a la dosis fija.",
+      "La morfina no tiene dosis techo; la sedación siempre precede a la depresión respiratoria."
+    ]
+  },
+  {
+    "codigo": "via-subcutanea",
+    "titulo": "La vía subcutánea en el niño",
+    "area": "Control de síntomas",
+    "resumen": "La vía que hace posible la atención domiciliaria: Cuándo usarla, cómo se coloca, qué fármacos admite y cómo se calculan las mezclas.",
+    "secciones": [
+      {
+        "encabezado": "Por qué es la vía de los cuidados paliativos",
+        "parrafos": [
+          "Cuando un niño deja de tolerar la vía oral, por vómitos, por disfagia, por obstrucción intestinal o simplemente porque está en los últimos días y ya no traga, hay que elegir una alternativa. La intravenosa exige un acceso que puede no existir, se pierde, se infecta y ata al niño al hospital. La intramuscular duele y está descartada. La rectal es incómoda y su absorción es errática.",
+          "La subcutánea permite administrar la mayor parte de los fármacos que se necesitan, se coloca sin dolor con una aguja fina o un catéter de teflón, la mantiene la familia en casa, dura entre cinco y siete días en el mismo punto y no requiere hospital. Por eso es la vía que sostiene la atención domiciliaria."
+        ]
+      },
+      {
+        "encabezado": "Cómo se coloca y se cuida",
+        "parrafos": [
+          "Se usa un catéter de teflón fino o una palomilla de calibre 25 o 27. Los puntos habituales son la cara anterior o lateral del muslo, el abdomen fuera de la zona periumbilical, la región deltoidea y la zona escapular, que es útil en niños que se manipulan el catéter.",
+          "Se evitan las zonas edematosas, irradiadas, infectadas, con tumor infiltrante o sobre prominencias óseas. Se aplica anestésico tópico antes de la punción si el niño está consciente.",
+          "El punto se revisa a diario buscando enrojecimiento, induración, dolor o fuga. Se cambia cuando aparece cualquiera de esos signos, y de forma sistemática cada cinco a siete días. Un punto que se inflama repetidamente en pocos días suele indicar que el volumen infundido es excesivo o que la mezcla es irritante."
+        ]
+      },
+      {
+        "encabezado": "Fármacos que admite y cuáles no",
+        "parrafos": [
+          "Se administran sin problema por vía subcutánea la morfina, la hidromorfona, el fentanilo, el midazolam, la butilhioscina, la escopolamina, el glicopirronio, el haloperidol, la levomepromazina, la metoclopramida, el ondansetrón, la dexametasona, la ketamina, el octreótido y la furosemida.",
+          "No se deben administrar por esta vía el diazepam, la clorpromazina, la proclorperazina ni las soluciones muy irritantes, porque producen necrosis o dolor intenso en el punto.",
+          "Sobre compatibilidad de mezclas, la regla práctica es que la morfina se combina bien con midazolam, con butilhioscina y con haloperidol, que son las tres combinaciones que más se usan. Al aumentar el número de fármacos en la misma jeringa crece el riesgo de precipitación, así que por encima de tres conviene consultar tablas de compatibilidad específicas o poner una segunda línea.",
+          "La mezcla se revisa visualmente cada vez que se pasa por delante: Si aparece turbidez, cristales o cambio de color, se descarta y se prepara de nuevo."
+        ]
+      },
+      {
+        "encabezado": "Bolos o infusión continua",
+        "parrafos": [
+          "Los bolos subcutáneos intermitentes sirven para dosis puntuales y para rescates, y no necesitan bomba. Se administran por el mismo catéter, lavando después con un mínimo de suero.",
+          "La infusión continua se usa cuando hacen falta niveles estables, típicamente en los últimos días o cuando el número de bolos diarios se vuelve incómodo. Se calcula la dosis total de veinticuatro horas de cada fármaco, se suman los volúmenes, se completa con suero fisiológico hasta el volumen que admita el infusor y se programa la velocidad.",
+          "El volumen tolerado en el tejido subcutáneo es limitado, sobre todo en lactantes. Como orientación, se procura no superar entre 1 y 2 mL por hora en un punto único, y si hacen falta más se reparte en dos puntos. Las concentraciones se ajustan para que el volumen quepa, no al revés.",
+          "Aunque se ponga infusión continua, siempre se deja pautado el rescate, que se administra en bolo por la misma vía."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "Es la vía de elección cuando falla la oral, por delante de la intravenosa en domicilio.",
+      "Catéter de teflón o palomilla de calibre 25 a 27, cambio cada cinco a siete días.",
+      "Admite morfina, midazolam, butilhioscina, haloperidol, levomepromazina, metoclopramida y muchos más.",
+      "No admite diazepam ni clorpromazina: Producen necrosis.",
+      "Con más de tres fármacos en la misma jeringa hay que comprobar compatibilidad.",
+      "Limitar el volumen a 1 o 2 mL por hora en un punto y repartir si hace falta más."
+    ]
+  },
+  {
+    "codigo": "sedacion-paliativa",
+    "titulo": "Sedación paliativa: Qué es, qué no es y cómo se hace",
+    "area": "Bioética",
+    "resumen": "La intervención peor entendida de todos los cuidados paliativos: Su indicación, el requisito de refractariedad, el principio de doble efecto y por qué no acorta la vida.",
+    "secciones": [
+      {
+        "encabezado": "Definición y requisitos",
+        "parrafos": [
+          "La sedación paliativa es la disminución deliberada del nivel de conciencia, mediante fármacos y en la dosis mínima necesaria, para aliviar un sufrimiento intolerable causado por uno o más síntomas refractarios, con el consentimiento del paciente o de sus representantes.",
+          "Cada elemento de esa definición es un requisito. La dosis mínima necesaria: No se busca la inconsciencia profunda si con somnolencia basta. El síntoma refractario: No basta con que sea intenso. El consentimiento: Es una decisión compartida, no una prescripción unilateral.",
+          "Un síntoma refractario es el que no ha respondido al tratamiento adecuado aplicado por profesionales expertos, en un plazo razonable, sin comprometer la conciencia. Es distinto de un síntoma difícil, que es el que aún tiene opciones sin explorar. Antes de llamar refractario a un síntoma hay que poder decir qué se ha probado y por qué no queda nada más, y en la mayoría de los casos conviene consultar con un equipo especializado antes de dar ese paso."
+        ]
+      },
+      {
+        "encabezado": "Las indicaciones reales",
+        "parrafos": [
+          "En la práctica pediátrica los síntomas que con más frecuencia llevan a sedación son la disnea refractaria, el delirium hiperactivo que no cede, el dolor refractario, las convulsiones incoercibles y la hemorragia masiva.",
+          "El sufrimiento psicológico o existencial refractario es una indicación admitida pero muy controvertida, y exige una evaluación psicológica y espiritual completa, tiempo, y la participación de más de un profesional en la decisión. Nunca se decide en una guardia.",
+          "La sedación puede ser intermitente, y esa opción se olvida con frecuencia. Sedar por la noche para que el niño descanse, y despertarlo por la mañana para que interactúe con su familia, es a menudo mejor solución que la sedación continua, y permite reevaluar si sigue haciendo falta."
+        ]
+      },
+      {
+        "encabezado": "Qué la separa de la eutanasia",
+        "parrafos": [
+          "Se distinguen en tres cosas y hay que saber decirlas de memoria, porque la pregunta llega siempre. La intención: En la sedación se busca aliviar el síntoma, no producir la muerte. El proceso: Se usan fármacos sedantes a dosis tituladas hasta el alivio, no fármacos letales a dosis letales. El resultado: En la sedación el paciente muere de su enfermedad, en el tiempo que le corresponde, mientras que en la eutanasia muere del fármaco.",
+          "El principio de doble efecto sostiene esta distinción: Una acción con un efecto bueno buscado y uno malo previsto pero no buscado es lícita si la acción en sí no es mala, si el efecto bueno no se obtiene a través del malo, si el efecto bueno buscado es la razón de la acción y si hay proporción entre ambos.",
+          "Conviene además saber que la evidencia disponible no muestra que la sedación paliativa correctamente indicada y titulada acorte la supervivencia. Los estudios comparativos entre pacientes sedados y no sedados en situación equivalente no encuentran diferencias. Esto tranquiliza a familias y a equipos y es un dato que merece la pena tener a mano."
+        ]
+      },
+      {
+        "encabezado": "Cómo se hace",
+        "parrafos": [
+          "El fármaco de primera línea es el midazolam, por vía subcutánea o intravenosa. Se administra una dosis de inducción, se espera, y se repite hasta alcanzar el nivel de sedación que alivia el síntoma. Después se establece una infusión continua con una dosis diaria basada en lo que ha hecho falta para la inducción, y se deja pautado un rescate.",
+          "Si el midazolam no basta, se añade levomepromazina, que además tiene efecto antipsicótico y es especialmente útil si hay delirium. La tercera línea es el fenobarbital, y el propofol queda para el ámbito hospitalario con supervisión experta.",
+          "La analgesia previa nunca se retira ni se reduce: El niño sedado sigue teniendo dolor aunque no pueda expresarlo. Este es uno de los errores más graves y más frecuentes.",
+          "Se monitoriza el nivel de sedación con una escala, habitualmente Ramsay o RASS, y el objetivo se fija de antemano: El mínimo que alivia. Se registra en la historia la indicación, la refractariedad, quién ha consentido, los fármacos y las dosis, y la reevaluación. Ese registro es una obligación clínica y también la mejor protección del equipo.",
+          "Se explica a la familia qué va a ver: Que el niño se dormirá progresivamente, que dejará de responder, que puede seguir respirando de forma irregular, y que puede acompañarlo, hablarle y tocarlo durante todo el proceso."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "Requiere síntoma refractario, dosis mínima necesaria y consentimiento.",
+      "Refractario no es lo mismo que intenso: Hay que poder decir qué se ha probado.",
+      "Se diferencia de la eutanasia en la intención, el proceso y el resultado.",
+      "Correctamente titulada no acorta la supervivencia.",
+      "Midazolam de primera línea, levomepromazina de segunda, fenobarbital de tercera.",
+      "La analgesia nunca se retira al sedar.",
+      "Considerar siempre la sedación intermitente antes que la continua."
+    ]
+  },
+  {
+    "codigo": "adecuacion-del-esfuerzo-terapeutico",
+    "titulo": "Adecuación del esfuerzo terapéutico y decisiones al final de la vida",
+    "area": "Bioética",
+    "resumen": "Cómo se decide dejar de hacer algo, por qué retirar y no iniciar son éticamente equivalentes, y qué papel tiene el niño en su propia decisión.",
+    "secciones": [
+      {
+        "encabezado": "El nombre importa",
+        "parrafos": [
+          "Se ha llamado durante años limitación del esfuerzo terapéutico, y esa expresión hace daño porque sugiere que se limita el esfuerzo, es decir que se va a hacer menos por el niño. Lo que ocurre es lo contrario: Se ajusta el tipo de esfuerzo al objetivo que sigue siendo alcanzable.",
+          "Por eso se prefiere adecuación del esfuerzo terapéutico, o simplemente adecuación de las medidas. Cuando se retira una ventilación que ya no puede revertir nada, el esfuerzo no disminuye: Se redirige hacia el control del dolor, la presencia de la familia y el cuidado de la boca y de la piel. Decirlo así delante de una familia cambia por completo cómo lo reciben.",
+          "El concepto opuesto es la obstinación terapéutica, antes llamada encarnizamiento: Mantener o iniciar medidas desproporcionadas que ya no ofrecen beneficio razonable y que prolongan el proceso de morir. La obstinación es mala praxis, no exceso de celo."
+        ]
+      },
+      {
+        "encabezado": "Retirar e iniciar son lo mismo",
+        "parrafos": [
+          "Desde el punto de vista ético y jurídico, no iniciar un tratamiento y retirarlo una vez iniciado son equivalentes: Si no está indicado, no está indicado, y el momento en que se toma la decisión no cambia su naturaleza.",
+          "Desde el punto de vista emocional no lo son en absoluto, y hay que reconocerlo. Retirar se vive como causar; no iniciar se vive como dejar. Los equipos tienden por eso a no iniciar, lo que produce el efecto perverso de negar a un niño una prueba terapéutica razonable por miedo a no poder retirarla después.",
+          "La consecuencia práctica es útil: Se puede ofrecer un tratamiento a prueba, con un plazo y unos criterios de éxito acordados de antemano. Vamos a probar esta ventilación no invasiva durante setenta y dos horas; si al cabo de ese tiempo el niño no ha mejorado en estos aspectos concretos, la retiraremos. Eso permite intentar sin quedar atrapado."
+        ]
+      },
+      {
+        "encabezado": "Cómo se decide",
+        "parrafos": [
+          "El criterio no es la calidad de vida juzgada desde fuera, que ya se sabe que está sesgada, sino la proporcionalidad: Qué beneficio razonable puede aportar esta medida, con qué cargas para el niño, y con qué probabilidad.",
+          "El proceso es deliberativo, no una votación ni una decisión unilateral. Participan el equipo, que aporta el juicio clínico sobre indicación y pronóstico, la familia, que aporta los valores y el conocimiento del niño, y el propio niño en la medida de su madurez.",
+          "Cuando hay desacuerdo persistente, o el caso es especialmente complejo, se recurre al comité de ética asistencial. Recurrir a él no es un fracaso ni una desconfianza: Es el mecanismo previsto y protege tanto al niño como al equipo.",
+          "Lo que nunca se retira, se decida lo que se decida: Analgesia y sedación cuando hacen falta, cuidado de la boca y de la piel, higiene, calor, presencia de la familia y comunicación honesta. Esto se dice explícitamente a los padres cuando se plantea retirar algo, porque su miedo real casi nunca es la medida concreta, sino que se deje de cuidar al niño."
+        ]
+      },
+      {
+        "encabezado": "El lugar del niño",
+        "parrafos": [
+          "El consentimiento informado en pediatría lo dan los titulares de la patria potestad, pero eso no agota el asunto. Existe el asentimiento del menor, que es su acuerdo obtenido tras informarle de forma adaptada a su capacidad de comprensión, y que debe buscarse siempre que el niño pueda darlo.",
+          "La capacidad de decidir no depende de la edad en el calendario sino de la madurez concreta para esa decisión concreta. Un adolescente de catorce años con años de enfermedad puede tener mucha más capacidad de juicio sobre su propio tratamiento que un adulto sano ante la misma disyuntiva.",
+          "La disidencia del menor maduro pesa. Cuando un adolescente rechaza de forma persistente y razonada un tratamiento gravoso de beneficio incierto, imponérselo por la fuerza rara vez es la decisión correcta y casi nunca funciona, porque el cumplimiento depende de él.",
+          "En México, la Ley General de Salud regula en su artículo 166 bis los cuidados paliativos y el derecho del paciente en situación terminal a rechazar tratamientos que prolonguen innecesariamente la agonía. Conviene conocer el marco vigente y la normativa institucional aplicable, porque las conversaciones difíciles se sostienen mejor cuando el equipo sabe en qué terreno pisa."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "Adecuación, no limitación: El esfuerzo no baja, se redirige.",
+      "La obstinación terapéutica es mala praxis, no exceso de celo.",
+      "Retirar e iniciar son éticamente equivalentes, lo que permite ofrecer tratamientos a prueba con plazo.",
+      "El criterio es la proporcionalidad entre beneficio y carga, no la calidad de vida juzgada desde fuera.",
+      "Nunca se retiran analgesia, cuidados básicos, presencia y comunicación.",
+      "El asentimiento del menor debe buscarse siempre que pueda darlo, y la disidencia del menor maduro pesa."
+    ]
+  },
+  {
+    "codigo": "ultimos-dias",
+    "titulo": "Los últimos días: Reconocerlos y acompañarlos",
+    "area": "Control de síntomas",
+    "resumen": "Los signos que anuncian que la muerte está próxima, qué se retira y qué se añade, y cómo preparar a la familia para lo que van a ver.",
+    "secciones": [
+      {
+        "encabezado": "Reconocer la fase",
+        "parrafos": [
+          "Identificar que un niño ha entrado en los últimos días de vida es una de las decisiones clínicas más útiles que existen, porque cambia todo el plan: Los objetivos, los fármacos, las pruebas, el lugar y las conversaciones. No reconocerlo lleva a que el niño muera con una vía puesta esperando un resultado de laboratorio que ya no importa.",
+          "Los signos que orientan son la disminución progresiva del nivel de conciencia, la debilidad extrema con incapacidad para moverse en la cama, el desinterés por comer y beber, la dificultad para tragar incluso la medicación, los cambios en el patrón respiratorio con pausas y respiración irregular, la aparición de estertores, la frialdad y el moteado de las extremidades, y la disminución de la diuresis.",
+          "Ninguno es definitivo aislado, pero cuando varios aparecen juntos y progresan en días, la probabilidad es alta. Conviene decirlo con honestidad y sin precisión falsa: Creemos que quedan días, quizá horas. Puede que nos equivoquemos en el tiempo, pero no en la dirección."
+        ]
+      },
+      {
+        "encabezado": "Qué se retira y qué se añade",
+        "parrafos": [
+          "Se retira todo lo que no aporte confort. Analíticas de rutina, constantes cada cuatro horas, monitorización que solo sirve para producir alarmas, antibióticos que no alivian, sueroterapia que aumenta las secreciones y los edemas, y toda la medicación crónica que no tenga efecto sintomático inmediato: Antihipertensivos, estatinas, suplementos, hierro.",
+          "Se mantiene y se convierte a vía subcutánea lo que sí alivia: Analgesia, sedante si hace falta, antiemético, anticonvulsivo y antisecretor.",
+          "Se añade el cuidado intensivo de la boca, que pasa a ser una de las intervenciones más importantes y la que más agradecen las familias porque pueden hacerla ellas. Humedecer los labios y la mucosa cada quince o treinta minutos con gasas empapadas, torundas o pulverizador. Un niño con la boca hidratada no tiene sensación de sed aunque no reciba líquidos.",
+          "Se prescriben de antemano, en forma de prescripción anticipada, los fármacos para las cuatro situaciones que pueden aparecer de madrugada: Dolor, disnea, agitación y estertores. Tenerlos ya pautados y disponibles en el domicilio evita una llamada a urgencias y un traslado que nadie quería."
+        ]
+      },
+      {
+        "encabezado": "Preparar a la familia para lo que van a ver",
+        "parrafos": [
+          "Casi todo el sufrimiento evitable de las últimas horas viene de que la familia no sabía que lo que estaba pasando era normal. Anticiparlo cambia radicalmente la experiencia.",
+          "Se explica que dejará de comer y de beber, y que eso es consecuencia del proceso y no su causa: No se muere por no comer, se deja de comer porque se está muriendo. Que forzar la alimentación en esta fase produce vómitos y aspiración y no prolonga nada.",
+          "Se explica que la respiración se volverá irregular, con pausas que pueden durar largos segundos, y que eso no significa que esté sufriendo. Que pueden aparecer ruidos al respirar por secreciones que el niño ya no traga, y que esos estertores molestan mucho a quien los oye y no al niño, que está inconsciente.",
+          "Se explica que las manos y los pies se enfriarán y se pondrán morados, que puede haber un momento de aparente mejoría y lucidez, y que muchos niños mueren en el instante en que el familiar que llevaba días sin moverse ha salido un momento de la habitación. Esto último hay que decirlo antes, porque si ocurre y no se ha dicho, la culpa por no haber estado puede durar años.",
+          "Se dice de forma explícita que el oído es el último sentido que se pierde, que pueden seguir hablándole, tocándolo y acostándose a su lado, y que no hay nada que estropear."
+        ]
+      },
+      {
+        "encabezado": "Después",
+        "parrafos": [
+          "Se confirma la muerte sin prisa y se dice con palabras claras: Ha muerto. No se usan rodeos que dejen dudas.",
+          "Se ofrece tiempo a solas con el cuerpo, sin límite estricto, y se pregunta si quieren participar en el aseo y en vestirlo, porque para muchas familias es un último acto de cuidado que ayuda. Se ofrece la posibilidad de recuerdos si encaja con sus valores: Un mechón de pelo, la huella de la mano, una fotografía.",
+          "Se pregunta por los hermanos y por si quieren ver el cuerpo; a los niños se les debe ofrecer la opción, explicándoles antes lo que van a ver, y nunca obligarles ni impedírselo.",
+          "Se acompaña en los trámites, que en ese momento resultan abrumadores, y se acuerda un contacto posterior. Una llamada del equipo a las pocas semanas y otra en el primer aniversario tienen un valor enorme y cuestan muy poco."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "Reconocer la fase de últimos días cambia todo el plan de cuidados.",
+      "Se retira lo que no da confort y se convierte la medicación esencial a vía subcutánea.",
+      "El cuidado de la boca sustituye a la hidratación y lo puede hacer la familia.",
+      "Prescripción anticipada para dolor, disnea, agitación y estertores.",
+      "Anticipar a la familia la respiración irregular, los estertores y la frialdad evita casi todo el sufrimiento añadido.",
+      "Avisar de que muchos niños mueren cuando el familiar sale un momento.",
+      "El oído es el último sentido que se pierde."
+    ]
+  },
+  {
+    "codigo": "duelo",
+    "titulo": "El duelo de la familia y de los hermanos",
+    "area": "Familia y duelo",
+    "resumen": "El duelo anticipado, lo que distingue un duelo normal de uno complicado, y por qué los hermanos son los dolientes olvidados.",
+    "secciones": [
+      {
+        "encabezado": "El duelo empieza antes",
+        "parrafos": [
+          "La familia de un niño con una enfermedad que limita la vida empieza a elaborar pérdidas mucho antes de la muerte. Se llora el niño sano que se esperaba, cada función que se pierde, cada expectativa que se cae, cada cumpleaños que se sabe que puede ser el último. Es el duelo anticipado, y no es patológico.",
+          "Reconocerlo y nombrarlo delante de los padres alivia, porque muchos sienten culpa por estar llorando a alguien que aún está vivo, o por haber imaginado ya cómo será después. Decirles que eso le pasa a casi todo el mundo y que no significa que estén rindiéndose es terapéutico.",
+          "El duelo anticipado no reduce el duelo posterior, aunque durante años se creyó que sí. Haber tenido tiempo para prepararse ayuda en la organización práctica y en poder despedirse, pero no ahorra el dolor de después."
+        ]
+      },
+      {
+        "encabezado": "El duelo de los padres",
+        "parrafos": [
+          "La muerte de un hijo es, por consenso de la investigación, la pérdida con mayor intensidad y mayor duración de todas las estudiadas, con un riesgo aumentado de depresión, de problemas de salud física y de mortalidad en los años siguientes.",
+          "Los padres no lloran igual, y esa diferencia es una fuente enorme de conflicto. Hay quien necesita hablar y quien necesita hacer cosas, quien llora en público y quien se encierra, quien quiere conservar la habitación intacta y quien necesita cambiarla. Ninguna forma es la correcta, y advertirlo de antemano previene rupturas.",
+          "El duelo no tiene etapas ordenadas que se superen una tras otra: Es un vaivén, con oleadas que reaparecen en aniversarios, en cumpleaños, al ver a un niño de la misma edad. Explicar que las recaídas son normales evita que interpreten un mal día como un retroceso.",
+          "El objetivo tampoco es la superación ni el olvido. Es reconstruir un vínculo con el hijo que ya no está, que ocupa un lugar distinto y permanente, y poder volver a vivir sin que eso se sienta como una traición."
+        ]
+      },
+      {
+        "encabezado": "Los hermanos, los dolientes olvidados",
+        "parrafos": [
+          "Durante la enfermedad, los hermanos pierden atención, rutina y muchas veces su casa, porque van y vienen entre familiares. Después de la muerte, se encuentran con unos padres que están rotos y a menudo asumen el papel de no dar más problemas, que los vuelve invisibles.",
+          "Suelen cargar con culpa por haber tenido celos, por haber deseado alguna vez que el hermano enfermo desapareciera, por seguir vivos o por divertirse. Esa culpa casi nunca se expresa espontáneamente y hay que preguntarla.",
+          "Su duelo se manifiesta según la edad y muchas veces no parece duelo: Regresión, pesadillas, dolores abdominales o de cabeza sin causa, caída del rendimiento escolar, problemas de conducta, o al contrario, una madurez y una obediencia excesivas que suelen alarmar menos y significar más.",
+          "Lo que ayuda: Información veraz y adaptada desde el principio, mantener las rutinas y la escuela, incluirlos en la despedida ofreciéndoles la opción de ver al hermano y de participar en los rituales, y darles un adulto de referencia que no sean los padres, porque los padres en ese momento no tienen disponibilidad emocional aunque quieran tenerla. Una tía, un abuelo, un maestro."
+        ]
+      },
+      {
+        "encabezado": "Cuándo el duelo se complica",
+        "parrafos": [
+          "El duelo complicado o prolongado se caracteriza por un anhelo intenso y persistente, incapacidad para aceptar la muerte, evitación masiva de todo lo que la recuerde o al contrario búsqueda compulsiva de recuerdos, incapacidad de retomar la vida cotidiana y deterioro funcional marcado, todo ello mantenido más allá de los seis a doce meses.",
+          "Aumentan el riesgo la muerte inesperada o traumática, el mal control de síntomas en las últimas horas, que los padres presenciaran sufrimiento sin alivio, los conflictos no resueltos con el equipo, el aislamiento social, la ausencia de apoyo en la pareja, los antecedentes psiquiátricos y la culpa por decisiones tomadas.",
+          "Este es un motivo clínico de peso para hacer bien las últimas horas: La calidad de la muerte de un niño predice la salud mental de sus padres durante años.",
+          "El seguimiento de duelo debería ser proactivo. Una llamada a las dos o tres semanas, una a los tres meses y otra en el primer aniversario detectan la mayoría de los casos que necesitan derivación, y transmiten a la familia que su hijo importó y que no ha sido olvidado."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "El duelo anticipado es normal y no reduce el duelo posterior.",
+      "La muerte de un hijo es la pérdida más intensa y duradera estudiada.",
+      "Los padres no lloran igual y advertirlo previene conflictos de pareja.",
+      "Los hermanos cargan culpa que no expresan y necesitan un adulto de referencia que no sean los padres.",
+      "El duelo complicado se sospecha más allá de los seis a doce meses con deterioro funcional.",
+      "La calidad de las últimas horas predice la salud mental de los padres durante años."
+    ]
+  },
+  {
+    "codigo": "cuidado-del-equipo",
+    "titulo": "Cuidar al que cuida: Fatiga por compasión y desgaste del equipo",
+    "area": "Familia y duelo",
+    "resumen": "Por qué el desgaste en paliativos pediátricos no es debilidad personal sino riesgo laboral, cómo se distingue del burnout y qué protege de verdad.",
+    "secciones": [
+      {
+        "encabezado": "Tres cosas distintas que se confunden",
+        "parrafos": [
+          "La fatiga por compasión es el agotamiento que produce la exposición repetida al sufrimiento ajeno. Aparece rápido, a veces tras un solo caso especialmente duro, y su síntoma característico es el embotamiento emocional: Dejar de sentir para poder seguir.",
+          "El burnout es el desgaste que produce el entorno de trabajo, no el paciente: Sobrecarga, falta de control, falta de reconocimiento, valores en conflicto con los de la institución. Se instala lentamente y se manifiesta como cinismo, ineficacia percibida y agotamiento.",
+          "El sufrimiento moral es distinto de ambos y es el más específico de este campo: Es lo que se siente cuando se sabe qué es lo correcto y no se puede hacer. Continuar un tratamiento que uno considera desproporcionado porque la familia o el jefe lo exigen. Es acumulativo, deja residuo y es la causa más frecuente de abandono de la profesión en cuidados intensivos y paliativos.",
+          "Distinguirlas importa porque la solución de cada una es distinta. Contra la fatiga por compasión sirve el apoyo emocional; contra el burnout, cambiar las condiciones de trabajo; contra el sufrimiento moral, espacios donde las decisiones se puedan deliberar de verdad y donde la objeción tenga cauce."
+        ]
+      },
+      {
+        "encabezado": "Lo que no funciona",
+        "parrafos": [
+          "No funciona el consejo de no implicarse. La implicación es la herramienta de trabajo en este campo y renunciar a ella significa hacerlo peor. Lo que hay que aprender no es a no implicarse, sino a sostener la implicación sin quedar destruido, que es otra cosa y se entrena.",
+          "No funciona el modelo de resistencia individual, según el cual el profesional fuerte aguanta y el débil se rompe. La evidencia apunta al contrario: Los factores organizativos explican más varianza que los personales.",
+          "No funcionan las iniciativas de bienestar que dejan intactas la carga de trabajo y la falta de autonomía. Un taller de mindfulness en un servicio con plantilla insuficiente se percibe, con razón, como una forma de trasladar al trabajador la responsabilidad de un problema estructural."
+        ]
+      },
+      {
+        "encabezado": "Lo que sí funciona",
+        "parrafos": [
+          "Los espacios estructurados de reflexión sobre casos, con periodicidad fija y no solo cuando algo ha salido mal. Sesiones de duelo del equipo tras la muerte de un paciente, donde se puede decir lo que se sintió sin que se interprete como falta de profesionalidad.",
+          "Trabajar en equipo real e interdisciplinario, con la carga y la decisión repartidas. La soledad en la decisión es uno de los mayores factores de riesgo, y explica por qué el profesional aislado que lleva estos casos por su cuenta se quema mucho antes.",
+          "La formación específica, porque buena parte de la angustia viene de no saber qué hacer. Saber controlar una disnea refractaria reduce el sufrimiento del profesional tanto como el del paciente.",
+          "Los rituales de cierre, que pueden ser tan sencillos como un minuto de silencio, escribir el nombre del niño en un libro del servicio o asistir al funeral cuando la familia lo agradece. Marcan un final y evitan que las muertes se acumulen sin procesar.",
+          "Y, de forma nada menor, los límites reales: Turnos que terminan, guardias que se compensan, vacaciones que se toman y permiso explícito para decir hoy no puedo llevar este caso."
+        ]
+      },
+      {
+        "encabezado": "Señales de alarma personales",
+        "parrafos": [
+          "Merece la pena vigilar en uno mismo y en los compañeros: Soñar con los pacientes de forma repetida, irritabilidad creciente en casa, evitar entrar en una habitación concreta, hablar de los pacientes por su patología y no por su nombre, cinismo nuevo, aumento del consumo de alcohol o de hipnóticos, y la sensación de que ya no se siente nada.",
+          "Esa última es la más engañosa, porque se vive como profesionalidad adquirida y en realidad es el núcleo de la fatiga por compasión.",
+          "Pedir ayuda en este contexto no es un signo de debilidad sino de competencia profesional, del mismo modo que consultar un caso difícil lo es. Conviene decirlo en voz alta dentro de los equipos, porque la cultura del aguante silencioso sigue siendo la norma."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "Fatiga por compasión, burnout y sufrimiento moral son tres cosas distintas con soluciones distintas.",
+      "El sufrimiento moral, saber lo correcto y no poder hacerlo, es el más específico de este campo.",
+      "No implicarse no es la solución: Se entrena a sostener la implicación.",
+      "Los factores organizativos pesan más que los personales.",
+      "Funcionan los espacios de reflexión, el equipo real, la formación y los rituales de cierre.",
+      "Dejar de sentir no es profesionalidad: Es el núcleo de la fatiga por compasión."
+    ]
+  },
+  {
+    "codigo": "atencion-domiciliaria",
+    "titulo": "Atención en el domicilio y el kit de urgencias en casa",
+    "area": "Organización",
+    "resumen": "Qué hace falta para que un niño pueda estar y morir en casa si esa es la voluntad de la familia, y cómo se prepara para que no acabe en urgencias por algo previsible.",
+    "secciones": [
+      {
+        "encabezado": "El lugar de la atención",
+        "parrafos": [
+          "La mayoría de los niños y de las familias prefieren el domicilio, y el domicilio suele asociarse a mejor control de síntomas percibido y a mejor duelo posterior. Pero eso no lo convierte en la opción correcta para todas las familias, y ofrecerlo como el ideal moral genera culpa en quienes no pueden sostenerlo.",
+          "Hay familias para las que la casa se vuelve un lugar imposible: Vivienda inadecuada, cuidador único, otros hijos pequeños, miedo insuperable a estar solos en el momento de la muerte, o el simple hecho de que después tendrán que seguir viviendo en esa habitación.",
+          "La pregunta correcta no es dónde es mejor, sino dónde quieren ustedes que esté, sabiendo que pueden cambiar de opinión en cualquier momento y que no habrá reproche. Esa reversibilidad hay que decirla explícitamente, porque muchas familias eligen hospital por miedo a no poder volver atrás."
+        ]
+      },
+      {
+        "encabezado": "Lo que hace falta para que funcione",
+        "parrafos": [
+          "Un teléfono que responda las veinticuatro horas y que atienda alguien que conozca el caso. Es la condición imprescindible; sin ella, la primera crisis termina en el servicio de urgencias.",
+          "Un plan escrito en la casa, en lenguaje llano, que diga qué puede pasar, qué hacer en cada caso, qué fármaco dar, a qué dosis y a quién llamar. Colocado en un lugar visible y conocido por todos los que cuidan.",
+          "Los fármacos ya en el domicilio y ya prescritos, no una receta que haya que ir a surtir de madrugada. Esto incluye anticipar los trámites de los opioides, que son la causa más frecuente de que un plan bien pensado falle en la práctica.",
+          "El material básico: Jeringas, agujas y catéteres subcutáneos, apósitos, gasas, guantes, contenedor de punzantes, y si se usa, el infusor. Y formación real al cuidador, con demostración y práctica, no solo explicación.",
+          "Coordinación explícita con el servicio de urgencias y con la ambulancia de la zona, para que si acuden sepan que hay un plan y cuál es, y que no reanimen a un niño con una decisión documentada en sentido contrario."
+        ]
+      },
+      {
+        "encabezado": "El kit de urgencias",
+        "parrafos": [
+          "Es el conjunto de fármacos prescritos por adelantado para las situaciones que pueden aparecer de madrugada y que, si no están previstas, terminan en traslado. Cada uno con su indicación, su dosis calculada para ese niño concreto en miligramos y en mililitros, y su vía.",
+          "Para el dolor o la disnea: Morfina, con la dosis de rescate ya calculada, por vía oral, bucal o subcutánea.",
+          "Para la agitación, la ansiedad extrema o la convulsión: Midazolam, por vía bucal, nasal o subcutánea.",
+          "Para los estertores: Butilhioscina o escopolamina por vía subcutánea.",
+          "Para la náusea y el vómito: El antiemético que corresponda al mecanismo, habitualmente haloperidol o metoclopramida por vía subcutánea.",
+          "Y en casos concretos de riesgo, lo específico: Toallas de color oscuro y midazolam preparado si hay riesgo de hemorragia masiva, o diazepam rectal si no hay acceso a midazolam bucal."
+        ]
+      },
+      {
+        "encabezado": "Preparar el momento de la muerte en casa",
+        "parrafos": [
+          "Hay que decirle a la familia, antes y con claridad, qué hacer cuando el niño muera, porque en ese momento nadie recuerda instrucciones nuevas. Y lo primero que hay que decir es lo que no hay que hacer: No hay que llamar a una ambulancia y no hay prisa ninguna.",
+          "Se explica que pueden quedarse con el niño el tiempo que necesiten, que no hay un plazo, y que pueden lavarlo y vestirlo si quieren.",
+          "Se deja por escrito a quién llamar y en qué orden, y quién va a acudir a certificar la muerte, con el teléfono. La incertidumbre sobre este punto concreto es lo que empuja a llamar al servicio de emergencias, y una reanimación no deseada sobre un niño que acaba de morir en paz en su casa es un daño difícil de reparar.",
+          "Conviene revisar también los trámites posteriores por adelantado, con delicadeza pero con concreción, porque hacerlo después, entre el aturdimiento y las prisas, es mucho peor."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "El domicilio es la preferencia mayoritaria pero no es un deber: Hay que ofrecer reversibilidad sin reproche.",
+      "Un teléfono veinticuatro horas atendido por quien conoce el caso es la condición imprescindible.",
+      "El plan escrito en la casa, en lenguaje llano y en lugar visible.",
+      "El kit de urgencias cubre dolor, disnea, agitación, convulsión, estertores y náusea, con dosis ya calculadas.",
+      "Anticipar los trámites de los opioides evita el fallo más frecuente del plan.",
+      "Decir antes qué hacer al morir, y sobre todo que no hay que llamar a una ambulancia ni hay prisa."
+    ]
+  },
+  {
+    "codigo": "transicion-a-adultos",
+    "titulo": "La transición del adolescente a los servicios de adultos",
+    "area": "Organización",
+    "resumen": "Un problema nuevo creado por un éxito: Cada vez más niños con enfermedades limitantes llegan a la edad adulta y el sistema no está preparado para recibirlos.",
+    "secciones": [
+      {
+        "encabezado": "Por qué existe este problema",
+        "parrafos": [
+          "Enfermedades que hace treinta años eran mortales en la infancia hoy permiten llegar a los veinte, a los treinta o más: Fibrosis quística, cardiopatías congénitas complejas, atrofia muscular espinal, distrofia muscular de Duchenne, secuelas de prematuridad extrema.",
+          "El resultado es una población de adultos jóvenes con enfermedades pediátricas, atendidos por servicios de adultos que no las conocen, tras dejar servicios pediátricos que los conocían desde recién nacidos.",
+          "El momento de la transición coincide además con la etapa de mayor inestabilidad vital: Fin de la escolarización, independencia, sexualidad, identidad. Es el peor momento posible para romper el vínculo asistencial, y sin embargo es cuando el sistema lo hace, por criterio de edad administrativa."
+        ]
+      },
+      {
+        "encabezado": "Lo que sale mal",
+        "parrafos": [
+          "La pérdida de seguimiento es el problema principal. Un porcentaje sustancial de pacientes desaparece del sistema entre el alta de pediatría y la primera cita en adultos, y reaparece meses después en urgencias con un deterioro evitable.",
+          "El choque de culturas asistenciales desconcierta a familias y pacientes. Pediatría trabaja con la familia como interlocutor y con un vínculo largo; adultos trabaja con el paciente individual, en consultas más breves y con menor continuidad. Sin preparación, esto se vive como abandono.",
+          "El conocimiento se pierde. Años de matices sobre qué funciona y qué no en ese paciente concreto se resumen en un informe de dos páginas.",
+          "Y los padres pierden su papel de golpe: Han sido durante veinte años los expertos en su hijo y los interlocutores del equipo, y de pronto quedan fuera de la consulta. Sin anticiparlo, la reacción es de conflicto."
+        ]
+      },
+      {
+        "encabezado": "Cómo se hace bien",
+        "parrafos": [
+          "Se empieza pronto, entre los doce y los catorce años, y se plantea como un proceso de años, no como un acto administrativo. La transición se prepara; el traspaso es solo el momento final.",
+          "Se trabaja la autonomía progresiva del adolescente: Que sepa el nombre de su enfermedad y de sus fármacos, que pida sus propias citas, que hable a solas con el profesional una parte de la consulta desde los trece o catorce años. Sin esto, la transición fracasa aunque la parte administrativa sea impecable.",
+          "Se identifica un profesional responsable del proceso, se hacen consultas conjuntas entre el equipo pediátrico y el de adultos antes del traspaso, y se entrega un documento de transición completo, no un informe de alta: Historia, tratamientos probados y fallidos, preferencias, decisiones previas documentadas, contactos.",
+          "Se prepara explícitamente a los padres para el cambio de papel, y se les reconoce lo que han hecho durante veinte años. Ese reconocimiento explícito evita buena parte del conflicto posterior.",
+          "Y se confirma que la primera cita en adultos se ha producido. Un simple registro de que el paciente llegó al otro lado resuelve el problema más grave, que es la desaparición silenciosa."
+        ]
+      }
+    ],
+    "puntosClave": [
+      "Es un problema creado por un éxito: Cada vez más niños con enfermedades limitantes llegan a la vida adulta.",
+      "La pérdida de seguimiento entre pediatría y adultos es el riesgo principal.",
+      "Empezar a los doce o catorce años y entender la transición como un proceso de años.",
+      "Trabajar la autonomía: Consulta a solas con el adolescente desde los trece o catorce.",
+      "Documento de transición completo y consultas conjuntas antes del traspaso.",
+      "Preparar a los padres para su cambio de papel y confirmar que la primera cita en adultos se ha producido."
+    ]
+  }
+]

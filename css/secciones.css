@@ -1,0 +1,335 @@
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   4. Secciones
+   ------------------------------------------------------------
+   Estilos propios de una sola sección: filas de dosis de
+   fármacos, guiones de comunicación, temas, glosario, casos
+   clínicos y calculadoras.
+   ============================================================ */
+
+/* ============================================================
+   Fármacos: lista de dosis por vía
+   ============================================================ */
+.dosis-lista { display: grid; gap: 0.6rem; margin-top: 0.5rem; }
+.dosis-fila {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.7rem 0.9rem;
+  background: var(--superficie-2);
+  border: 1px solid var(--borde);
+  border-radius: var(--r-md);
+}
+.dosis-via {
+  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+  text-align: center;
+  padding: 0.25rem 0.35rem;
+  border-radius: 8px;
+}
+.dosis-via.via-vo { background: var(--via-vo-suave); color: var(--via-vo); }
+.dosis-via.via-sc { background: var(--via-sc-suave); color: var(--via-sc); }
+.dosis-via.via-iv { background: var(--via-iv-suave); color: var(--via-iv); }
+.dosis-via.via-otra { background: var(--via-otra-suave); color: var(--via-otra); }
+.dosis-detalle strong { display: block; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.dosis-detalle span { font-size: 0.84rem; color: var(--tinta-2); }
+.dosis-techo {
+  display: inline-block; margin-top: 0.25rem;
+  font-size: 0.74rem; font-weight: 700;
+  color: var(--peligro); background: var(--peligro-suave);
+  padding: 0.1rem 0.5rem; border-radius: 6px;
+}
+
+/* ============================================================
+   Comunicación: columnas de qué decir y qué evitar
+   ============================================================ */
+.guion-columnas { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; margin-top: 0.6rem; }
+.guion-caja { border-radius: var(--r-md); padding: 0.95rem 1.1rem; }
+.guion-caja h4 {
+  font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 800;
+  margin-bottom: 0.55rem; display: flex; align-items: center; gap: 0.4rem;
+}
+.guion-caja ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.55rem; }
+.guion-caja li { font-size: 0.92rem; line-height: 1.45; font-family: var(--serif); font-style: italic; }
+.guion-si { background: var(--exito-suave); border-left: 3px solid var(--exito); }
+.guion-si h4 { color: var(--exito); }
+.guion-no { background: var(--peligro-suave); border-left: 3px solid var(--peligro); }
+.guion-no h4 { color: var(--peligro); }
+
+/* Preguntas difíciles: pregunta del niño y respuesta sugerida */
+.preguntas-lista { display: grid; gap: 0.75rem; margin-top: 0.5rem; }
+.pregunta-par { border: 1px solid var(--borde); border-radius: var(--r-md); overflow: hidden; }
+.pregunta-par dt {
+  background: var(--superficie-3);
+  padding: 0.62rem 0.95rem;
+  font-weight: 700; font-size: 0.94rem;
+  font-family: var(--serif); font-style: italic;
+}
+.pregunta-par dd { margin: 0; padding: 0.72rem 0.95rem; font-size: 0.92rem; color: var(--tinta-2); }
+
+/* Pasos numerados de un guion */
+.pasos { list-style: none; padding: 0 !important; margin-top: 0.5rem; display: grid; gap: 0.65rem; counter-reset: paso; }
+.pasos li {
+  counter-increment: paso;
+  display: grid; grid-template-columns: 28px 1fr; gap: 0.75rem;
+  align-items: start;
+  font-size: 0.93rem;
+  margin-bottom: 0;
+}
+.pasos li::before {
+  content: counter(paso);
+  width: 28px; height: 28px;
+  display: grid; place-items: center;
+  background: var(--marca-grad);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.8rem; font-weight: 800;
+}
+
+/* ============================================================
+   Temas
+   ------------------------------------------------------------
+   La sección usa la tarjeta común de Seccion, de modo que aquí
+   solo queda lo propio: la línea de metadatos y la ficha.
+   ============================================================ */
+.tema-meta { font-size: 0.76rem; color: var(--tinta-3); font-weight: 600; }
+.tema-resumen { font-family: var(--serif); font-style: italic; color: var(--tinta-2); font-size: 1.05rem; }
+.tema-seccion { margin-top: 1.5rem; }
+.tema-seccion h3 { color: var(--marca-tinta); font-size: 1.08rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+.tema-seccion p { margin-bottom: 0.7rem; font-size: 0.97rem; color: var(--tinta); }
+
+/* ============================================================
+   Glosario
+   ============================================================ */
+.glosario { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 0.85rem; }
+.termino {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--r-md);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--sombra-sm);
+  /* El borde toma el acento de la familia funcional de la categoría; un
+     término sin categoría reconocida degrada al lavanda de la marca. */
+  border-left: 3px solid var(--acento, var(--marca-400));
+  transition: transform 0.2s var(--paso), box-shadow 0.2s;
+  animation: aparecer 0.4s var(--paso) both;
+}
+.termino:hover { transform: translateY(-3px); box-shadow: var(--sombra-md); }
+.termino h3 { font-size: 1.02rem; color: var(--tinta); font-weight: 700; margin-top: 0.35rem; }
+.termino p { font-size: 0.9rem; color: var(--tinta-2); margin-top: 0.3rem; }
+
+/* ============================================================
+   Modo estudio: casos clínicos en texto
+   ============================================================ */
+.quiz-panel {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: var(--r-xl);
+  box-shadow: var(--sombra-md);
+  padding: 2.5rem 1.85rem;
+  max-width: 720px;
+  margin: 1rem auto;
+  text-align: center;
+}
+.quiz-hero-icono {
+  width: 90px; height: 90px;
+  margin: 0 auto 1rem;
+  display: grid; place-items: center;
+  background: color-mix(in srgb, var(--marca-500) 12%, transparent);
+  border-radius: 50%;
+}
+.quiz-hero-icono .ico { width: 42px; height: 42px; color: var(--marca-tinta); stroke-width: 1.6; }
+.quiz-panel h2 { font-family: var(--serif); font-size: 1.65rem; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 0.5rem; }
+.quiz-panel > div > p { color: var(--tinta-2); max-width: 480px; margin: 0 auto; }
+
+.boton-primario {
+  background: var(--marca-grad);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 2.2rem;
+  font-size: 1.02rem;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 1.4rem;
+  box-shadow: var(--sombra-marca);
+  transition: transform 0.2s var(--paso), box-shadow 0.2s, filter 0.2s;
+}
+.boton-primario:hover { transform: translateY(-2px); filter: brightness(1.06); box-shadow: 0 12px 30px rgba(109, 74, 168, 0.42); }
+.boton-primario:active { transform: translateY(0); }
+
+.quiz-cabecera { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; }
+.quiz-numero { font-size: 0.85rem; color: var(--tinta-3); font-weight: 600; }
+.quiz-marcador { font-size: 0.85rem; color: var(--tinta-2); }
+.quiz-marcador strong { color: var(--marca-tinta); font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+.quiz-barra { height: 6px; background: var(--superficie-3); border-radius: 99px; overflow: hidden; margin-bottom: 1.3rem; }
+.quiz-barra-relleno { height: 100%; width: 0; background: var(--marca-grad); border-radius: 99px; transition: width 0.4s var(--paso); }
+
+/* La viñeta clínica sustituye a la imagen del atlas de radiología */
+.quiz-vineta {
+  text-align: left;
+  background: var(--superficie-2);
+  border: 1px solid var(--borde);
+  border-left: 4px solid var(--marca-400);
+  border-radius: var(--r-md);
+  padding: 1.15rem 1.35rem;
+}
+.quiz-vineta-etiqueta {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--marca-tinta);
+  margin-bottom: 0.5rem;
+}
+.quiz-vineta p { font-family: var(--serif); font-size: 1.02rem; line-height: 1.6; color: var(--tinta); }
+.quiz-instruccion { font-weight: 700; font-size: 1.05rem; margin: 1.2rem 0 0.85rem; text-align: left; }
+.quiz-opciones { display: flex; flex-direction: column; gap: 0.6rem; }
+.quiz-opcion {
+  border: 1.5px solid var(--borde);
+  background: var(--superficie-2);
+  color: var(--tinta);
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--r-md);
+  font-size: 0.95rem; font-weight: 500; font-family: inherit;
+  cursor: pointer; text-align: left;
+  transition: all 0.18s var(--paso);
+}
+.quiz-opcion:hover:not(:disabled) { border-color: var(--marca-400); background: color-mix(in srgb, var(--marca-400) 9%, var(--superficie-2)); transform: translateX(4px); }
+.quiz-opcion:disabled { cursor: default; }
+.quiz-opcion.correcta { border-color: var(--exito); background: var(--exito-suave); color: var(--exito); font-weight: 700; }
+.quiz-opcion.incorrecta { border-color: var(--peligro); background: var(--peligro-suave); color: var(--peligro); }
+.quiz-retro {
+  margin-top: 1rem; padding: 0.9rem 1.15rem; border-radius: var(--r-md);
+  font-size: 0.93rem; text-align: left;
+  display: flex; align-items: flex-start; gap: 0.6rem;
+  animation: aparecer 0.3s var(--paso);
+}
+.quiz-retro .ico { width: 20px; height: 20px; margin-top: 0.1rem; }
+.quiz-retro.bien { background: var(--exito-suave); color: var(--exito); }
+.quiz-retro.mal { background: var(--peligro-suave); color: var(--peligro); }
+.quiz-resultado { font-size: 1.2rem; margin-top: 0.5rem; color: var(--tinta); }
+
+/* ============================================================
+   Calculadoras
+   ============================================================ */
+.calc-formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9rem;
+  margin: 0.7rem 0 0.4rem;
+}
+.calc-grupo { display: flex; flex-direction: column; gap: 0.3rem; }
+.calc-etiqueta { font-size: 0.8rem; font-weight: 600; color: var(--tinta-2); }
+.calc-input, .calc-select {
+  padding: 0.68rem 0.85rem;
+  font-size: 0.98rem; font-family: inherit;
+  color: var(--tinta);
+  border: 1.5px solid var(--borde);
+  border-radius: var(--r-sm);
+  background: var(--superficie-2);
+  outline: none; width: 100%;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+.calc-input:focus, .calc-select:focus { border-color: var(--marca-400); box-shadow: 0 0 0 3px var(--anillo); }
+.calc-referencia { font-size: 0.72rem; line-height: 1.35; color: var(--tinta-3); }
+
+.calc-acciones { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.calc-ejemplo {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--superficie);
+  color: var(--tinta-2);
+  border: 1.5px solid var(--borde);
+  padding: 0.5rem 1rem;
+  border-radius: var(--r-sm);
+  font-size: 0.88rem; font-weight: 600; font-family: inherit;
+  cursor: pointer;
+  transition: all 0.18s var(--paso);
+}
+.calc-ejemplo .ico { width: 16px; height: 16px; }
+.calc-ejemplo:hover { border-color: var(--marca-400); color: var(--marca-tinta); transform: translateY(-1px); }
+.calc-ejemplo.cargado { border-color: var(--exito); color: var(--exito); background: var(--exito-suave); }
+
+.calc-salida {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--marca-500) 10%, var(--superficie-2)), var(--superficie-2));
+  border: 1px solid color-mix(in srgb, var(--marca-400) 30%, var(--borde));
+  border-radius: var(--r-md);
+  padding: 1.1rem 1.3rem;
+  margin-top: 0.7rem;
+  animation: aparecer 0.3s var(--paso);
+}
+.calc-resultado {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  padding: 0.42rem 0; border-bottom: 1px solid var(--borde-2);
+}
+.calc-resultado:last-child { border-bottom: none; }
+.calc-resultado-etiqueta { font-size: 0.9rem; color: var(--tinta-2); }
+.calc-resultado-valor { font-size: 1.5rem; font-weight: 800; color: var(--marca-tinta); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.calc-resultado-valor small { font-size: 0.78rem; font-weight: 600; opacity: 0.7; }
+
+.calc-copiar {
+  margin-top: 0.9rem;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--superficie);
+  color: var(--marca-tinta);
+  border: 1.5px solid color-mix(in srgb, var(--marca-500) 35%, transparent);
+  padding: 0.5rem 1rem;
+  border-radius: var(--r-sm);
+  font-size: 0.88rem; font-weight: 600; font-family: inherit;
+  cursor: pointer;
+  transition: all 0.18s var(--paso);
+}
+.calc-copiar .ico { width: 16px; height: 16px; }
+.calc-copiar:hover { background: var(--marca-grad); color: #fff; border-color: transparent; transform: translateY(-1px); }
+.calc-copiar.copiado { background: var(--exito-suave); color: var(--exito); border-color: var(--exito); }
+
+/* Escala visual de referencia */
+.calc-escala { margin-top: 1rem; }
+.calc-escala-titulo {
+  display: block;
+  font-size: 0.71rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--tinta-3);
+  margin-bottom: 0.45rem;
+}
+.calc-escala-titulo small { text-transform: none; letter-spacing: 0; font-weight: 600; color: var(--tinta-2); }
+.calc-escala-barra { position: relative; }
+.calc-escala-pista {
+  position: relative;
+  height: 12px;
+  border-radius: 99px;
+  overflow: hidden;
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+}
+.calc-escala-zona { position: absolute; top: 0; bottom: 0; }
+.calc-escala-zona.nivel-normal { background: color-mix(in srgb, var(--exito) 55%, transparent); }
+.calc-escala-zona.nivel-medio { background: color-mix(in srgb, var(--alerta) 55%, transparent); }
+.calc-escala-zona.nivel-alto { background: color-mix(in srgb, var(--peligro) 55%, transparent); }
+.calc-escala-marca {
+  position: absolute;
+  top: -4px; height: 22px; width: 3px;
+  border-radius: 2px;
+  background: var(--tinta);
+  box-shadow: 0 0 0 2px var(--superficie-2);
+  transform: translateX(-50%);
+  transition: left 0.25s var(--paso);
+}
+.calc-escala-cifras { position: relative; height: 1.1rem; margin-top: 0.5rem; }
+.calc-escala-cifra {
+  position: absolute; top: 0;
+  transform: translateX(-50%);
+  font-size: 0.7rem; font-weight: 600;
+  color: var(--tinta-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) { .calc-escala-marca { transition: none; } }
+
+.calc-interpretacion { margin-top: 0.9rem; padding: 0.75rem 1rem; border-radius: var(--r-sm); font-size: 0.94rem; font-weight: 600; }
+.calc-interpretacion.nivel-normal { background: var(--exito-suave); color: var(--exito); }
+.calc-interpretacion.nivel-medio { background: var(--alerta-suave); color: var(--alerta); }
+.calc-interpretacion.nivel-alto { background: var(--peligro-suave); color: var(--peligro); }
+
+.calc-formula { background: var(--superficie-2); border: 1px solid var(--borde); border-radius: var(--r-md); padding: 0.9rem 1.15rem; margin-top: 1rem; }
+.calc-formula h3 { color: var(--tinta-3); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem; }
+.calc-formula p { font-family: "SF Mono", "Consolas", "Courier New", monospace; font-size: 0.85rem; color: var(--tinta); }

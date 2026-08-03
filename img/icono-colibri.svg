@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512" role="img"
+     aria-label="Colibri, simbolo del Atlas de Cuidados Paliativos Pediatricos">
+  <title>Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida</title>
+  <desc>Marca propia. Autor: Jeshua Romero Guadarrama.</desc>
+  <defs>
+    <linearGradient id="lav" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5a3d95"/>
+      <stop offset="0.55" stop-color="#7c5cd6"/>
+      <stop offset="1" stop-color="#a86fc4"/>
+    </linearGradient>
+  </defs>
+  <rect width="24" height="24" rx="6" fill="url(#lav)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3.4 7.3 8 8.9"/>
+    <path d="M8 8.9 Q12 6.4 14.8 10.1 Q17.3 13.4 17.1 16.9"/>
+    <path d="M8 8.9 Q6.9 12.1 9.6 14.1 Q12.9 16.5 17.1 16.9"/>
+    <path d="M11.6 9.7 Q15 4.2 19.8 3.9 Q18.9 9 14.5 11.8 Z"/>
+    <path d="M17.1 16.9 20.6 19M17.1 16.9 16.6 20.6"/>
+    <path d="M9.6 8.2h.01"/>
+  </g>
+</svg>

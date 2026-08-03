@@ -1,0 +1,537 @@
+[
+  {
+    "codigo": "flacc",
+    "nombre": "FLACC",
+    "dominio": "Dolor",
+    "edadDeUso": "2 meses a 7 años",
+    "rango": "0 a 10",
+    "paraQue": "Escala observacional de dolor para el niño que todavía no puede autoinformar. Valora cinco conductas y asigna de 0 a 2 puntos a cada una, con un total de 0 a 10 que resulta directamente comparable con la escala numérica del niño mayor. Es la escala observacional más usada del mundo y la referencia con la que se comparan las demás.",
+    "items": [
+      "Face, la cara: Desde expresión neutra hasta mueca mantenida o mentón tembloroso",
+      "Legs, las piernas: Desde relajadas hasta pataleo o piernas encogidas",
+      "Activity, la actividad: Desde tumbado tranquilo hasta rigidez o movimiento de sacudida",
+      "Cry, el llanto: Desde ausencia de llanto hasta llanto mantenido, grito o sollozo",
+      "Consolability, la consolabilidad: Desde tranquilo hasta imposible de consolar"
+    ],
+    "tramos": [
+      { "puntuacion": "0", "significa": "Sin dolor ni malestar", "queHacer": "Mantener la pauta actual" },
+      { "puntuacion": "1 a 3", "significa": "Molestia leve", "queHacer": "Medidas no farmacológicas y revaloración. Valorar analgésico del primer escalón" },
+      { "puntuacion": "4 a 6", "significa": "Dolor moderado", "queHacer": "Analgesia pautada, considerar opioide a dosis baja. Revalorar en 30 a 60 minutos" },
+      { "puntuacion": "7 a 10", "significa": "Dolor intenso", "queHacer": "Opioide, dosis de rescate y revaloración a los 30 minutos. Buscar causa tratable" }
+    ],
+    "comoUsarla": "Se observa al niño durante 1 a 5 minutos, con las piernas y el cuerpo descubiertos, preferiblemente antes de tocarlo. Si está dormido, se observa 5 minutos o más. Se puntúa cada categoría de 0 a 2 y se suman. Lo importante no es la cifra aislada sino la tendencia: Se puntúa antes y 30 a 60 minutos después de una intervención analgésica para comprobar si ha funcionado.",
+    "limitaciones": "No distingue el dolor de otras causas de malestar como el hambre, el miedo o la incomodidad postural, así que una puntuación alta obliga a buscar la causa y no solo a dar analgesia. Pierde fiabilidad en el niño con parálisis cerebral o con discapacidad intelectual, en el que hay que usar la versión revisada. Tampoco sirve bien en el niño sedado o con bloqueo neuromuscular, en el que la ausencia de conducta no significa ausencia de dolor.",
+    "calculadora": "flacc",
+    "etiquetas": ["observacional", "preverbal", "referencia", "cinco categorías"]
+  },
+  {
+    "codigo": "r-flacc",
+    "nombre": "FLACC revisada (r-FLACC)",
+    "dominio": "Dolor",
+    "edadDeUso": "Niño con discapacidad, a cualquier edad",
+    "rango": "0 a 10",
+    "paraQue": "Adaptación de la FLACC para el niño con parálisis cerebral o con discapacidad intelectual, que es la población en la que peor se reconoce el dolor y en la que más se infratrata. Mantiene las cinco categorías y el rango de 0 a 10, pero añade descriptores específicos de esa población y, sobre todo, permite que los padres añadan las conductas de dolor propias de su hijo.",
+    "items": [
+      "Las mismas cinco categorías de la FLACC, con descriptores ampliados",
+      "Cara: Se añaden temblor del mentón, mandíbula apretada y expresión de angustia o de pánico",
+      "Piernas: Se añaden aumento de la espasticidad, sacudidas y temblor mantenido",
+      "Actividad: Se añaden movimientos de cabeza de lado a lado, frotarse una parte del cuerpo y contener la respiración",
+      "Llanto: Se añaden estallidos verbales, gruñidos y aumento de la frecuencia de las vocalizaciones habituales",
+      "Consolabilidad: Se añade rechazo del contacto o del consuelo que normalmente acepta",
+      "Espacio libre para las conductas individuales que la familia identifique como señal de dolor en ese niño concreto"
+    ],
+    "tramos": [
+      { "puntuacion": "0", "significa": "Sin dolor aparente", "queHacer": "Mantener la pauta" },
+      { "puntuacion": "1 a 3", "significa": "Molestia leve", "queHacer": "Revisar causas de incomodidad: Postura, ropa, temperatura, distensión vesical" },
+      { "puntuacion": "4 a 6", "significa": "Dolor moderado", "queHacer": "Buscar causa tratable y pautar analgesia. Considerar reflujo, estreñimiento y espasticidad" },
+      { "puntuacion": "7 a 10", "significa": "Dolor intenso", "queHacer": "Analgesia inmediata y búsqueda sistemática de causa. Considerar fractura oculta, luxación de cadera y abdomen agudo" }
+    ],
+    "comoUsarla": "Antes de usarla por primera vez se entrevista a la familia y se rellena la parte individualizada preguntando cómo saben ellos que a su hijo le duele algo. Esa información es la más valiosa de toda la escala, porque los padres detectan cambios sutiles que ningún profesional reconocería. Después se aplica como la FLACC estándar, comparando siempre con la puntuación basal del niño cuando está bien, que en muchos de estos niños no es cero.",
+    "limitaciones": "El niño con discapacidad grave puede tener una puntuación basal elevada por su propia condición, así que la cifra absoluta importa menos que el cambio respecto de su estado habitual. Requiere conocer al niño o disponer de la información de la familia. En un servicio de urgencias, sin esa información, la escala pierde buena parte de su valor.",
+    "calculadora": "r-flacc",
+    "etiquetas": ["discapacidad", "parálisis cerebral", "individualizada", "infratratamiento"]
+  },
+  {
+    "codigo": "pipp-r",
+    "nombre": "PIPP-R",
+    "dominio": "Dolor",
+    "edadDeUso": "Neonato prematuro y a término",
+    "rango": "0 a 21",
+    "paraQue": "Perfil de dolor del prematuro en su versión revisada. Es la escala de referencia para valorar el dolor agudo por procedimiento en el recién nacido, y su particularidad es que corrige la puntuación según la edad gestacional y el estado de comportamiento previo, porque el prematuro más inmaduro y el que está dormido expresan menos, no sienten menos.",
+    "items": [
+      "Frecuencia cardiaca máxima durante el procedimiento",
+      "Saturación de oxígeno mínima durante el procedimiento",
+      "Ceño fruncido",
+      "Ojos apretados",
+      "Surco nasolabial marcado",
+      "Edad gestacional, que suma puntos a menor edad",
+      "Estado de comportamiento previo, que suma puntos si estaba dormido y quieto"
+    ],
+    "tramos": [
+      { "puntuacion": "6 o menos", "significa": "Sin dolor o dolor mínimo", "queHacer": "No requiere intervención analgésica adicional" },
+      { "puntuacion": "7 a 12", "significa": "Dolor leve a moderado", "queHacer": "Medidas no farmacológicas: Sacarosa oral, succión no nutritiva, contención y contacto piel con piel" },
+      { "puntuacion": "13 o más", "significa": "Dolor moderado a intenso", "queHacer": "Analgesia farmacológica además de las medidas no farmacológicas" }
+    ],
+    "comoUsarla": "Se registra el estado basal durante 15 segundos antes del procedimiento, anotando frecuencia cardiaca, saturación y estado de comportamiento. Después se observa 30 segundos durante el procedimiento y se anotan los valores extremos y las tres expresiones faciales. Finalmente se suman los puntos de edad gestacional y de estado basal.",
+    "limitaciones": "Está validada para dolor agudo por procedimiento, no para dolor persistente ni para dolor postoperatorio prolongado. Requiere monitorización de frecuencia cardiaca y saturación, lo que la hace inaplicable fuera del hospital. Los indicadores fisiológicos se alteran por muchas causas distintas del dolor.",
+    "calculadora": "pipp-r",
+    "etiquetas": ["neonato", "prematuro", "procedimiento", "edad gestacional"]
+  },
+  {
+    "codigo": "cries",
+    "nombre": "CRIES",
+    "dominio": "Dolor",
+    "edadDeUso": "Neonato hasta los 6 meses",
+    "rango": "0 a 10",
+    "paraQue": "Escala de dolor postoperatorio neonatal, más sencilla que la PIPP-R y por tanto más fácil de aplicar de forma repetida. Su nombre es el acrónimo de sus cinco componentes en inglés y evalúa a la vez signos fisiológicos y de comportamiento.",
+    "items": [
+      "Crying, el llanto: Ausente, agudo pero consolable, o agudo e inconsolable",
+      "Requires oxygen, necesidad de oxígeno para mantener la saturación por encima del 95 por ciento",
+      "Increased vital signs, aumento de la frecuencia cardiaca y de la tensión arterial respecto del basal",
+      "Expression, expresión facial: Neutra, mueca, o mueca con gruñido",
+      "Sleepless, alteración del sueño en la última hora"
+    ],
+    "tramos": [
+      { "puntuacion": "0 a 3", "significa": "Dolor ausente o leve", "queHacer": "Medidas de confort y revaloración" },
+      { "puntuacion": "4 a 6", "significa": "Dolor moderado", "queHacer": "Analgesia pautada y revaloración a los 30 minutos" },
+      { "puntuacion": "7 a 10", "significa": "Dolor intenso", "queHacer": "Analgesia inmediata, considerar opioide" }
+    ],
+    "comoUsarla": "Se puntúa cada componente de 0 a 2 y se suman. Se aplica cada 1 a 2 h en el postoperatorio inmediato y después con menor frecuencia. Se considera que una puntuación de 4 o más requiere intervención.",
+    "limitaciones": "Los signos vitales son poco específicos y se alteran por hipovolemia, fiebre, ansiedad o simplemente por manipulación. El componente de oxígeno pierde valor en el neonato con patología respiratoria de base. No está validada para dolor crónico.",
+    "calculadora": "cries",
+    "etiquetas": ["neonato", "postoperatorio", "sencilla", "signos vitales"]
+  },
+  {
+    "codigo": "wong-baker",
+    "nombre": "Escala de caras de Wong-Baker",
+    "dominio": "Dolor",
+    "edadDeUso": "3 años en adelante",
+    "rango": "0 a 10",
+    "paraQue": "Escala de autoinforme con seis caras dibujadas, desde una sonriente hasta una que llora, que el niño señala para indicar cuánto le duele. Es el primer instrumento de autoinforme que un niño puede usar de forma fiable y marca el paso de la valoración observacional a la valoración por el propio paciente, que siempre es preferible.",
+    "items": [
+      "Cara 0: Sin dolor, sonriente",
+      "Cara 2: Duele un poco",
+      "Cara 4: Duele un poco más",
+      "Cara 6: Duele bastante",
+      "Cara 8: Duele mucho",
+      "Cara 10: Duele todo lo que se puede imaginar"
+    ],
+    "tramos": [
+      { "puntuacion": "0", "significa": "Sin dolor", "queHacer": "Mantener la pauta" },
+      { "puntuacion": "2 a 4", "significa": "Dolor leve", "queHacer": "Analgésico del primer escalón y medidas no farmacológicas" },
+      { "puntuacion": "6", "significa": "Dolor moderado", "queHacer": "Opioide a dosis baja además del no opioide" },
+      { "puntuacion": "8 a 10", "significa": "Dolor intenso", "queHacer": "Opioide y rescate. Revalorar a los 30 minutos" }
+    ],
+    "comoUsarla": "Se le explica al niño que las caras muestran a alguien que no tiene nada de dolor y a alguien que tiene todo el dolor que se puede tener, y se le pide que señale la que se parece a cómo se siente él ahora. Es fundamental aclararle que las caras hablan de dolor y no de si está contento o triste, porque si no muchos niños señalan por su estado de ánimo.",
+    "limitaciones": "La cara que llora puede llevar a que niños que no lloran no la señalen aunque tengan mucho dolor, y las versiones que empiezan con una cara sonriente introducen un sesgo hacia el ánimo. Por debajo de los 4 o 5 años la fiabilidad es menor, y el niño puede señalar los extremos por preferencia visual y no por su dolor.",
+    "etiquetas": ["autoinforme", "caras", "preescolar", "primera línea"]
+  },
+  {
+    "codigo": "escala-numerica",
+    "nombre": "Escala numérica y escala visual analógica",
+    "dominio": "Dolor",
+    "edadDeUso": "8 años en adelante",
+    "rango": "0 a 10",
+    "paraQue": "El patrón de referencia para el autoinforme del dolor en el niño mayor y en el adolescente. El paciente asigna un número entre 0 y 10 a la intensidad de su dolor, o marca un punto en una línea de 10 centímetros. Es rápido, se puede repetir cuantas veces haga falta y permite seguir la evolución con una sola cifra.",
+    "items": [
+      "0 significa ningún dolor",
+      "10 significa el peor dolor imaginable",
+      "El paciente elige el número que corresponde a su dolor en ese momento",
+      "Conviene registrar también el dolor mínimo y máximo de las últimas 24 h"
+    ],
+    "tramos": [
+      { "puntuacion": "0", "significa": "Sin dolor", "queHacer": "Mantener la pauta" },
+      { "puntuacion": "1 a 3", "significa": "Dolor leve", "queHacer": "Analgésico no opioide y medidas no farmacológicas" },
+      { "puntuacion": "4 a 6", "significa": "Dolor moderado", "queHacer": "Opioide a dosis baja asociado al no opioide" },
+      { "puntuacion": "7 a 10", "significa": "Dolor intenso", "queHacer": "Opioide con rescate y revaloración a los 30 minutos. Considerar urgencia analgésica" }
+    ],
+    "comoUsarla": "Se pregunta siempre por el dolor actual, y además por el peor y el mejor momento del último día, porque un niño con dolor irruptivo puede estar en 2 en el momento de la consulta y haber estado en 9 tres veces esa noche. Preguntar solo por el momento presente es el error más frecuente y hace que se infratrate el dolor irruptivo.",
+    "limitaciones": "Requiere capacidad de abstracción numérica, que no es fiable por debajo de los 8 años. No capta la dimensión afectiva ni la interferencia del dolor con la vida del niño, que muchas veces importan más que la cifra. Un mismo número significa cosas distintas en niños distintos, así que sirve para seguir a un paciente en el tiempo, no para comparar entre pacientes.",
+    "etiquetas": ["autoinforme", "adolescente", "patrón de referencia", "irruptivo"]
+  },
+  {
+    "codigo": "nccpc-pv",
+    "nombre": "Lista de dolor del niño sin comunicación (NCCPC-PV)",
+    "dominio": "Dolor",
+    "edadDeUso": "3 a 18 años con discapacidad intelectual grave",
+    "rango": "0 a 90",
+    "paraQue": "Instrumento diseñado específicamente para el niño con discapacidad intelectual grave que no puede comunicarse. Recoge treinta ítems de conducta agrupados en siete categorías, observados a lo largo de un periodo de dos horas, lo que le da más sensibilidad que las escalas breves en una población en la que el dolor pasa desapercibido con mucha frecuencia.",
+    "items": [
+      "Vocal: Gemidos, llanto, gritos, sonidos específicos de malestar",
+      "Social: Ausencia de cooperación, irritabilidad, búsqueda de consuelo, retraimiento",
+      "Facial: Ceño, cambios en los ojos, boca, mandíbula apretada",
+      "Actividad: Quietud anormal, agitación, saltos",
+      "Cuerpo y extremidades: Rigidez, espasticidad aumentada, protección de una zona, alejamiento del contacto",
+      "Fisiológico: Escalofríos, cambio de color, sudoración, lágrimas, contención de la respiración",
+      "Alimentación y sueño: Come menos, duerme más o menos de lo habitual"
+    ],
+    "tramos": [
+      { "puntuacion": "0 a 6", "significa": "Probablemente sin dolor", "queHacer": "Mantener la observación" },
+      { "puntuacion": "7 a 10", "significa": "Zona dudosa", "queHacer": "Revalorar, revisar causas de incomodidad y considerar una prueba analgésica" },
+      { "puntuacion": "11 o más", "significa": "Dolor probable", "queHacer": "Buscar causa de forma sistemática y pautar analgesia con revaloración" }
+    ],
+    "comoUsarla": "Se observa al niño durante 2 h y se puntúa cada ítem según la frecuencia con la que aparece, de 0 si nunca a 3 si muy a menudo. Es más laboriosa que la r-FLACC, así que suele reservarse para situaciones en las que hay duda diagnóstica real sobre si el niño tiene dolor, más que para el seguimiento rutinario.",
+    "limitaciones": "El periodo de observación de 2 h la hace poco práctica para la valoración inmediata. Requiere que quien observa conozca al niño o disponga de información sobre su conducta habitual. Los ítems fisiológicos son poco específicos.",
+    "etiquetas": ["discapacidad grave", "sin lenguaje", "treinta ítems", "dos horas"]
+  },
+  {
+    "codigo": "esas-r",
+    "nombre": "ESAS-r",
+    "dominio": "Síntomas",
+    "edadDeUso": "Adolescente y adulto joven, o versión para el cuidador",
+    "rango": "0 a 90",
+    "paraQue": "Sistema de valoración de síntomas de Edmonton en su versión revisada. Mide la intensidad de nueve síntomas con una escala de 0 a 10 cada uno, lo que ofrece un perfil completo del paciente en un solo minuto. Es el instrumento de cribado de síntomas más usado en cuidados paliativos y su valor está en que detecta lo que nadie preguntó.",
+    "items": [
+      "Dolor",
+      "Cansancio",
+      "Somnolencia",
+      "Náusea",
+      "Falta de apetito",
+      "Dificultad para respirar",
+      "Tristeza o depresión",
+      "Ansiedad o nerviosismo",
+      "Sensación de bienestar general"
+    ],
+    "tramos": [
+      { "puntuacion": "0 a 3 en un síntoma", "significa": "Intensidad leve", "queHacer": "Registrar y vigilar" },
+      { "puntuacion": "4 a 6 en un síntoma", "significa": "Intensidad moderada", "queHacer": "Requiere intervención específica sobre ese síntoma" },
+      { "puntuacion": "7 a 10 en un síntoma", "significa": "Intensidad grave", "queHacer": "Intervención prioritaria y revaloración en 24 h" },
+      { "puntuacion": "Total elevado", "significa": "Carga sintomática global alta", "queHacer": "Revisar el plan completo, no solo el síntoma peor puntuado" }
+    ],
+    "comoUsarla": "Lo rellena el propio paciente siempre que pueda. Si no puede, lo rellena el cuidador, anotando explícitamente que la fuente es el cuidador porque las puntuaciones difieren. Se repite en cada visita y se representan gráficamente los resultados a lo largo del tiempo, que es donde se ve mejor el efecto de las intervenciones.",
+    "limitaciones": "Está validado en adultos y en adolescentes, pero no en niños pequeños, y las adaptaciones pediátricas no están tan asentadas. Mide intensidad pero no el grado en que el síntoma molesta, que no siempre coinciden: Un síntoma de intensidad 4 puede resultar más incapacitante que otro de 7. Y una puntuación baja en tristeza no descarta depresión.",
+    "calculadora": "esas-r",
+    "etiquetas": ["nueve síntomas", "cribado", "Edmonton", "seguimiento"]
+  },
+  {
+    "codigo": "lansky",
+    "nombre": "Escala de juego de Lansky",
+    "dominio": "Función",
+    "edadDeUso": "Menores de 16 años",
+    "rango": "0 a 100",
+    "paraQue": "Medida de estado funcional diseñada específicamente para niños, en la que la unidad de medida es el juego y no el trabajo. Puntúa de 0 a 100 en tramos de 10 y permite seguir el deterioro funcional a lo largo del tiempo con un solo número comprensible para todo el equipo.",
+    "items": [
+      "100: Plenamente activo, normal",
+      "90: Restricciones menores en la actividad física intensa",
+      "80: Activo, pero se cansa más rápido",
+      "70: Menos juego y menos tiempo de juego",
+      "60: Se levanta, pero juega poco y de forma tranquila",
+      "50: Se viste, pero no juega activamente; participa en actividades tranquilas",
+      "40: Casi todo el tiempo en la cama, con juegos tranquilos",
+      "30: Necesita ayuda incluso para el juego tranquilo",
+      "20: Muy somnoliento, actividad muy limitada, ve televisión",
+      "10: No juega, no se levanta de la cama",
+      "0: No responde"
+    ],
+    "tramos": [
+      { "puntuacion": "80 a 100", "significa": "Función conservada", "queHacer": "Seguimiento habitual. El niño puede mantener escolarización y actividad" },
+      { "puntuacion": "50 a 70", "significa": "Deterioro moderado", "queHacer": "Adaptar actividades y objetivos. Revisar carga de tratamiento y desplazamientos" },
+      { "puntuacion": "30 a 40", "significa": "Deterioro importante", "queHacer": "Reforzar apoyo domiciliario. Momento de revisar la planificación anticipada" },
+      { "puntuacion": "0 a 20", "significa": "Deterioro grave", "queHacer": "Reconsiderar todo tratamiento que no dé confort. Preparar los últimos días" }
+    ],
+    "comoUsarla": "La puntúa un profesional a partir de la información de los padres sobre lo que el niño hace en un día normal de la última semana. Conviene puntuarla en cada visita para tener una serie temporal, porque una caída de dos escalones en pocas semanas es una señal pronóstica más útil que el valor aislado.",
+    "limitaciones": "No es aplicable al niño con discapacidad grave de base, cuyo estado funcional basal ya es bajo sin que eso indique deterioro. Es una medida de función, no de calidad de vida ni de bienestar: Un niño con 40 puede estar tranquilo y contento y otro con 70 puede estar sufriendo mucho.",
+    "calculadora": "lansky",
+    "etiquetas": ["función", "juego", "pediátrica", "pronóstico"]
+  },
+  {
+    "codigo": "karnofsky",
+    "nombre": "Índice de Karnofsky",
+    "dominio": "Función",
+    "edadDeUso": "16 años en adelante",
+    "rango": "0 a 100",
+    "paraQue": "La escala funcional clásica, referencia en oncología desde hace décadas, que puntúa de 0 a 100 en tramos de 10 según la capacidad de trabajar, de cuidarse a sí mismo y de necesitar asistencia. En pediatría se usa a partir de los 16 años, mientras que por debajo de esa edad se prefiere la de Lansky.",
+    "items": [
+      "100 a 80: Capaz de actividad normal, sin necesidad de cuidados especiales",
+      "70 a 50: Incapaz de trabajar, vive en casa, requiere asistencia variable",
+      "40 a 10: Incapaz de cuidarse, requiere cuidados institucionales o equivalentes, enfermedad en progresión rápida",
+      "0: Fallecido"
+    ],
+    "tramos": [
+      { "puntuacion": "80 a 100", "significa": "Actividad normal o casi normal", "queHacer": "Seguimiento habitual" },
+      { "puntuacion": "50 a 70", "significa": "Incapaz de trabajar, autónomo en el domicilio", "queHacer": "Apoyo domiciliario y adaptación de objetivos" },
+      { "puntuacion": "30 a 40", "significa": "Dependiente, requiere asistencia importante", "queHacer": "Reforzar apoyo. Revisar planificación anticipada" },
+      { "puntuacion": "10 a 20", "significa": "Muy grave, encamado", "queHacer": "Objetivo exclusivo de confort" }
+    ],
+    "comoUsarla": "Se asigna la puntuación que mejor describe la situación funcional de la última semana. En adolescentes conviene sustituir mentalmente trabajo por estudio y actividad social, porque la escala se redactó pensando en adultos y aplicada literalmente subestima al adolescente.",
+    "limitaciones": "Redactada en términos de trabajo, lo que la hace poco natural en adolescentes. Baja concordancia entre observadores en los tramos intermedios. Como toda escala funcional, no dice nada sobre bienestar ni sobre sufrimiento.",
+    "etiquetas": ["función", "oncología", "adolescente", "clásica"]
+  },
+  {
+    "codigo": "pps",
+    "nombre": "Escala de rendimiento paliativo (PPS)",
+    "dominio": "Pronóstico",
+    "edadDeUso": "Adolescente y adulto joven",
+    "rango": "0 a 100",
+    "paraQue": "Modificación del índice de Karnofsky específica para cuidados paliativos, que añade a la valoración funcional la ingesta oral y el nivel de conciencia, dos variables que cambian mucho en las últimas semanas. Se usa como referencia común entre equipos y tiene valor pronóstico razonable en los tramos bajos.",
+    "items": [
+      "Deambulación: Completa, reducida, principalmente sentado o encamado",
+      "Actividad y evidencia de enfermedad: Normal, con alguna limitación, incapaz de hacer trabajo o de hacer nada",
+      "Autocuidado: Completo, requiere asistencia ocasional, considerable o total",
+      "Ingesta oral: Normal, reducida, mínima o solo cuidados de la boca",
+      "Nivel de conciencia: Alerta, somnolencia o confusión, coma"
+    ],
+    "tramos": [
+      { "puntuacion": "70 a 100", "significa": "Estado funcional conservado", "queHacer": "Seguimiento habitual. Aprovechar para la planificación anticipada" },
+      { "puntuacion": "40 a 60", "significa": "Dependencia creciente, ingesta reducida", "queHacer": "Reforzar apoyo domiciliario y revisar objetivos de tratamiento" },
+      { "puntuacion": "20 a 30", "significa": "Encamado, ingesta mínima, conciencia fluctuante", "queHacer": "Preparar los últimos días, convertir la medicación a vía subcutánea y prescribir el kit de urgencias" },
+      { "puntuacion": "10", "significa": "Situación de últimos días u horas", "queHacer": "Cuidados de confort exclusivos y acompañamiento a la familia" }
+    ],
+    "comoUsarla": "Se lee de izquierda a derecha empezando por la deambulación, y se asigna el nivel en el que encajan la mayoría de las columnas. Cuando el niño no encaja limpiamente en un nivel, se elige el más bajo de los que se ajustan. Se registra en cada visita para ver la pendiente del descenso, que es lo que más informa.",
+    "limitaciones": "Validada en adultos, con poca evidencia pediátrica. Como todo instrumento pronóstico, informa sobre grupos y no sobre individuos: Nunca debe usarse para dar una cifra de tiempo restante a una familia. Es poco útil en el niño con discapacidad grave basal.",
+    "calculadora": "pps",
+    "etiquetas": ["pronóstico", "funcional", "ingesta", "conciencia"]
+  },
+  {
+    "codigo": "grupos-act-escala",
+    "nombre": "Clasificación ACT de Together for Short Lives",
+    "dominio": "Pronóstico",
+    "edadDeUso": "Cualquier edad pediátrica",
+    "rango": "Grupos 1 a 4",
+    "paraQue": "Clasificación de las enfermedades que limitan o amenazan la vida en cuatro grupos según la forma de su trayectoria, no según el diagnóstico. Es la herramienta de referencia para identificar a qué niños ofrecer cuidados paliativos y para anticipar qué va a necesitar cada uno.",
+    "items": [
+      "Grupo 1: Amenaza para la vida con tratamiento curativo posible pero que puede fracasar",
+      "Grupo 2: Muerte prematura inevitable con largos periodos de tratamiento intensivo que prolongan la vida",
+      "Grupo 3: Progresivas sin opción curativa, con tratamiento exclusivamente paliativo desde el diagnóstico",
+      "Grupo 4: Discapacidad grave no progresiva con vulnerabilidad a complicaciones y deterioro imprevisible"
+    ],
+    "tramos": [
+      { "puntuacion": "Grupo 1", "significa": "Cáncer, insuficiencia orgánica en espera de trasplante, cardiopatía compleja", "queHacer": "Cuidados paliativos en paralelo al tratamiento curativo. Estar preparado para un giro rápido" },
+      { "puntuacion": "Grupo 2", "significa": "Fibrosis quística, distrofia muscular de Duchenne", "queHacer": "Aprovechar los periodos estables para la planificación anticipada" },
+      { "puntuacion": "Grupo 3", "significa": "Enfermedades metabólicas y neurodegenerativas, atrofia muscular espinal tipo 1", "queHacer": "Anticipar decisiones sobre alimentación y ventilación antes de que lleguen en urgencias" },
+      { "puntuacion": "Grupo 4", "significa": "Parálisis cerebral grave, secuelas de lesión cerebral o medular", "queHacer": "Buscar activamente el dolor, que se infratrata, y sostener al cuidador" }
+    ],
+    "comoUsarla": "Se asigna el grupo por la forma de la trayectoria esperada, no por el nombre de la enfermedad. Un mismo diagnóstico puede caer en grupos distintos según el estadio. Se complementa con la pregunta sorpresa: Le sorprendería que este niño muriera en los próximos doce meses. Si la respuesta es no, hay trabajo paliativo pendiente.",
+    "limitaciones": "Los límites entre grupos no son nítidos y algunos niños se mueven de uno a otro con el tiempo. La clasificación orienta sobre necesidades, no sobre pronóstico individual, y no debe usarse para estimar supervivencia.",
+    "etiquetas": ["ACT", "trayectoria", "identificación", "cuatro grupos"]
+  },
+  {
+    "codigo": "pedsql-generico",
+    "nombre": "PedsQL 4.0 genérico",
+    "dominio": "Calidad de vida",
+    "edadDeUso": "2 a 18 años, con versiones por tramo de edad",
+    "rango": "0 a 100",
+    "paraQue": "El instrumento de calidad de vida relacionada con la salud más usado en pediatría. Veintitrés ítems agrupados en cuatro dimensiones, con versiones paralelas de autoinforme desde los cinco años y de informe por los padres desde los dos, lo que permite comparar ambas perspectivas. Está validado en español.",
+    "items": [
+      "Funcionamiento físico: 8 ítems sobre actividad, movilidad y energía",
+      "Funcionamiento emocional: 5 ítems sobre miedo, tristeza, enfado y preocupación",
+      "Funcionamiento social: 5 ítems sobre relación con otros niños y participación",
+      "Funcionamiento escolar: 5 ítems sobre atención, rendimiento y ausencias"
+    ],
+    "tramos": [
+      { "puntuacion": "80 a 100", "significa": "Calidad de vida alta", "queHacer": "Mantener el plan actual" },
+      { "puntuacion": "60 a 79", "significa": "Afectación moderada", "queHacer": "Identificar la dimensión más baja y actuar sobre ella" },
+      { "puntuacion": "Menos de 60", "significa": "Afectación importante", "queHacer": "Revisar el plan completo y buscar síntomas no controlados o barreras sociales" }
+    ],
+    "comoUsarla": "Cada ítem se puntúa de 0 a 4 según la frecuencia con la que ha sido un problema en el último mes, y las puntuaciones se transforman de modo que 100 sea la mejor calidad de vida posible. Se administra al niño siempre que pueda responder, y a los padres además, comparando ambas puntuaciones. Un desfase grande entre las dos es en sí mismo un dato clínico.",
+    "limitaciones": "Es genérico, así que no captura los síntomas específicos de la enfermedad avanzada, para lo que hace falta el módulo de cuidados paliativos. La dimensión escolar pierde sentido en el niño que ya no acude a la escuela. No es aplicable al niño con discapacidad intelectual grave.",
+    "etiquetas": ["calidad de vida", "cuatro dimensiones", "validado en español", "autoinforme"]
+  },
+  {
+    "codigo": "pedsql-paliativos",
+    "nombre": "PedsQL 3.0 módulo de cuidados paliativos",
+    "dominio": "Calidad de vida",
+    "edadDeUso": "2 a 18 años",
+    "rango": "0 a 100",
+    "paraQue": "Módulo específico que añade al PedsQL genérico las dimensiones que importan en la enfermedad avanzada y que el instrumento general no recoge. Es el instrumento de referencia para medir calidad de vida en cuidados paliativos pediátricos.",
+    "items": [
+      "Dolor y molestias",
+      "Náusea",
+      "Preocupación",
+      "Náusea anticipatoria",
+      "Actividades de la vida diaria",
+      "Comunicación con el equipo sanitario",
+      "Relación con la familia y apoyo percibido"
+    ],
+    "tramos": [
+      { "puntuacion": "80 a 100", "significa": "Buen control global", "queHacer": "Mantener el plan" },
+      { "puntuacion": "60 a 79", "significa": "Afectación moderada", "queHacer": "Actuar sobre la dimensión peor puntuada" },
+      { "puntuacion": "Menos de 60", "significa": "Afectación importante", "queHacer": "Revisión completa del plan de cuidados y del apoyo psicosocial" }
+    ],
+    "comoUsarla": "Se administra junto con el módulo genérico y con la misma metodología de puntuación. Se aplica en momentos clave más que de forma rutinaria: Al iniciar el seguimiento, tras un cambio importante del tratamiento y cuando el equipo percibe que algo no va bien pero no logra identificar qué.",
+    "limitaciones": "La aplicación completa lleva tiempo y en la práctica clínica diaria se usa poco. En el niño en situación de últimos días deja de ser aplicable y no tiene sentido intentarlo. La dimensión de comunicación con el equipo puede verse condicionada si la administra el propio equipo.",
+    "etiquetas": ["calidad de vida", "específico", "paliativos", "referencia"]
+  },
+  {
+    "codigo": "borg-modificada",
+    "nombre": "Escala de Borg modificada para disnea",
+    "dominio": "Síntomas",
+    "edadDeUso": "8 años en adelante",
+    "rango": "0 a 10",
+    "paraQue": "Escala de autoinforme de la sensación de falta de aire, que es lo que define la disnea. Su valor está en que mide lo que siente el paciente y no lo que mide el pulsioxímetro, y esos dos datos se disocian con mucha frecuencia en cuidados paliativos.",
+    "items": [
+      "0: Nada de falta de aire",
+      "0.5: Muy muy leve, apenas perceptible",
+      "1: Muy leve",
+      "2: Leve",
+      "3: Moderada",
+      "4: Algo intensa",
+      "5 a 6: Intensa",
+      "7 a 9: Muy intensa",
+      "10: Máxima, insoportable"
+    ],
+    "tramos": [
+      { "puntuacion": "0 a 2", "significa": "Disnea ausente o leve", "queHacer": "Medidas ambientales y posturales" },
+      { "puntuacion": "3 a 5", "significa": "Disnea moderada", "queHacer": "Opioide a dosis de disnea, ventilador de aire en la cara y trabajo de la respiración" },
+      { "puntuacion": "6 a 10", "significa": "Disnea intensa", "queHacer": "Opioide de rescate inmediato, considerar benzodiacepina si hay pánico asociado. Revalorar a los 20 minutos" }
+    ],
+    "comoUsarla": "Se pregunta directamente por la sensación de falta de aire en este momento, y se repite tras cada intervención. En el niño que no puede autoinformar se recurre a signos observacionales, como el uso de músculos accesorios, el aleteo nasal, la incapacidad de completar frases y la expresión de angustia.",
+    "limitaciones": "Requiere autoinforme, así que no sirve por debajo de los 8 años ni en el niño con deterioro cognitivo. No se correlaciona con la saturación de oxígeno ni con la frecuencia respiratoria, lo que desconcierta a los equipos acostumbrados a tratar cifras.",
+    "calculadora": "borg",
+    "etiquetas": ["disnea", "autoinforme", "subjetiva", "saturación"]
+  },
+  {
+    "codigo": "rass-paliativa",
+    "nombre": "Escala de sedación RASS",
+    "dominio": "Sedación",
+    "edadDeUso": "Cualquier edad, con adaptación pediátrica",
+    "rango": "-5 a +4",
+    "paraQue": "Escala de agitación y sedación de Richmond, que permite fijar y monitorizar de forma objetiva el nivel de sedación durante una sedación paliativa. Su valor es que convierte la sedación en un objetivo explícito y comprobable, en lugar de dejarla a la impresión de quien pasa por la habitación.",
+    "items": [
+      "+4 Combativo: Violento, peligro inmediato para el personal",
+      "+3 Muy agitado: Se retira tubos o catéteres, agresivo",
+      "+2 Agitado: Movimientos frecuentes sin propósito",
+      "+1 Inquieto: Ansioso pero sin movimientos agresivos",
+      "0 Alerta y tranquilo",
+      "-1 Somnoliento: Despierta a la voz y mantiene los ojos abiertos más de 10 segundos",
+      "-2 Sedación ligera: Despierta brevemente a la voz, menos de 10 segundos",
+      "-3 Sedación moderada: Movimiento o apertura de ojos a la voz, sin contacto visual",
+      "-4 Sedación profunda: Sin respuesta a la voz, movimiento a la estimulación física",
+      "-5 No despertable: Sin respuesta a la voz ni a la estimulación física"
+    ],
+    "tramos": [
+      { "puntuacion": "+1 a +4", "significa": "Agitación", "queHacer": "Buscar causa reversible antes de sedar: Dolor, globo vesical, fecaloma, hipoxia, fármacos" },
+      { "puntuacion": "0", "significa": "Alerta y tranquilo", "queHacer": "Situación ideal fuera de la sedación paliativa" },
+      { "puntuacion": "-1 a -3", "significa": "Sedación ligera a moderada", "queHacer": "Es el objetivo habitual de la sedación paliativa: El mínimo que alivia el síntoma" },
+      { "puntuacion": "-4 a -5", "significa": "Sedación profunda", "queHacer": "Solo si el síntoma refractario no cede con niveles menores. Revalorar si sigue siendo necesaria" }
+    ],
+    "comoUsarla": "Antes de iniciar una sedación paliativa se fija por escrito el nivel objetivo, que casi siempre está entre -1 y -3, y se registra la puntuación con cada ajuste de dosis y al menos cada turno. El objetivo es el nivel mínimo que alivia el síntoma, no la inconsciencia.",
+    "limitaciones": "Validada en adultos en cuidados intensivos y adaptada a pediatría con menos evidencia. No mide el confort ni el dolor: Un niño con RASS -4 puede tener dolor sin poder expresarlo, por lo que la analgesia se mantiene siempre y se valora con una escala observacional en paralelo.",
+    "etiquetas": ["sedación paliativa", "objetivo", "monitorización", "agitación"]
+  },
+  {
+    "codigo": "bristol",
+    "nombre": "Escala de heces de Bristol",
+    "dominio": "Síntomas",
+    "edadDeUso": "Cualquier edad",
+    "rango": "Tipos 1 a 7",
+    "paraQue": "Clasificación visual de la consistencia de las heces en siete tipos, que convierte una pregunta imprecisa en un dato objetivo. En cuidados paliativos es la herramienta que permite ajustar el laxante con precisión en el niño que recibe opioides, y es lo bastante sencilla como para que la use la familia en casa.",
+    "items": [
+      "Tipo 1: Trozos duros separados, como nueces, difíciles de expulsar",
+      "Tipo 2: Con forma de salchicha pero grumosa",
+      "Tipo 3: Con forma de salchicha con grietas en la superficie",
+      "Tipo 4: Con forma de salchicha o serpiente, lisa y blanda",
+      "Tipo 5: Trozos blandos con bordes definidos",
+      "Tipo 6: Trozos blandos y esponjosos con bordes irregulares, pastosa",
+      "Tipo 7: Líquida, sin trozos sólidos"
+    ],
+    "tramos": [
+      { "puntuacion": "Tipos 1 y 2", "significa": "Estreñimiento", "queHacer": "Aumentar el laxante osmótico y valorar añadir un estimulante" },
+      { "puntuacion": "Tipos 3 y 4", "significa": "Consistencia normal, el objetivo del tratamiento", "queHacer": "Mantener la dosis de laxante actual" },
+      { "puntuacion": "Tipo 5", "significa": "Tendencia a heces blandas", "queHacer": "Vigilar y considerar bajar ligeramente la dosis" },
+      { "puntuacion": "Tipos 6 y 7", "significa": "Diarrea o exceso de laxante", "queHacer": "Reducir la dosis. Descartar diarrea por rebosamiento sobre una impactación fecal" }
+    ],
+    "comoUsarla": "Se entrega a la familia la lámina con los dibujos y se les pide que anoten el tipo y la fecha de cada deposición. El objetivo terapéutico se fija de forma explícita en tipo 3 o 4, y la dosis de laxante se ajusta hasta conseguirlo. Es una de las intervenciones educativas más rentables en el niño que recibe opioides.",
+    "limitaciones": "No informa sobre el volumen ni sobre la dificultad de la expulsión, que a veces importan más que la consistencia. La diarrea por rebosamiento sobre una impactación fecal aparece como tipo 7 y puede llevar al error de retirar el laxante, que es justo lo contrario de lo que hace falta.",
+    "etiquetas": ["estreñimiento", "opioides", "objetivo", "familia"]
+  },
+  {
+    "codigo": "braden-q",
+    "nombre": "Escala Braden Q",
+    "dominio": "Piel",
+    "edadDeUso": "21 días a 8 años, con extensión a niños mayores",
+    "rango": "7 a 28",
+    "paraQue": "Adaptación pediátrica de la escala de Braden para valorar el riesgo de úlceras por presión. Puntúa siete factores y permite identificar de antemano al niño que va a necesitar medidas preventivas intensivas, lo que importa mucho en el niño encamado de larga evolución.",
+    "items": [
+      "Movilidad: Capacidad de cambiar y controlar la posición del cuerpo",
+      "Actividad: Grado de actividad física",
+      "Percepción sensorial: Capacidad de responder al malestar por la presión",
+      "Humedad: Grado de exposición de la piel a la humedad",
+      "Fricción y cizallamiento",
+      "Nutrición: Patrón habitual de ingesta",
+      "Perfusión tisular y oxigenación"
+    ],
+    "tramos": [
+      { "puntuacion": "23 a 28", "significa": "Riesgo bajo", "queHacer": "Medidas básicas: Inspección diaria de la piel e hidratación" },
+      { "puntuacion": "17 a 22", "significa": "Riesgo moderado", "queHacer": "Cambios posturales programados y superficie de redistribución de presión" },
+      { "puntuacion": "16 o menos", "significa": "Riesgo alto", "queHacer": "Plan preventivo intensivo: Cambios posturales frecuentes, superficie especial, apósitos protectores en prominencias y valoración nutricional" }
+    ],
+    "comoUsarla": "Se puntúa al ingreso o al inicio del seguimiento domiciliario y se repite periódicamente o ante cualquier cambio de situación. En el niño con enfermedad avanzada, la puntuación empeora de forma previsible al perder movilidad, así que sirve para anticipar las medidas antes de que aparezca la lesión.",
+    "limitaciones": "En la fase de últimos días la prevención estricta puede entrar en conflicto con el confort: Movilizar cada 2 h a un niño que tiene dolor con cada movimiento no siempre es lo correcto. En ese momento el objetivo pasa de prevenir la úlcera a evitar el dolor, y hay que decirlo explícitamente al equipo y a la familia para que no se viva como una negligencia.",
+    "etiquetas": ["úlceras por presión", "prevención", "encamado", "riesgo"]
+  },
+  {
+    "codigo": "zarit",
+    "nombre": "Escala de sobrecarga del cuidador de Zarit, versión breve",
+    "dominio": "Familia",
+    "edadDeUso": "Se aplica al cuidador, no al niño",
+    "rango": "7 a 35",
+    "paraQue": "Instrumento para medir la sobrecarga del cuidador principal, que en cuidados paliativos pediátricos es casi siempre la madre. Es la forma de convertir en un dato objetivo algo que el equipo intuye pero no registra, y de justificar la intervención de apoyo antes de que se produzca el colapso.",
+    "items": [
+      "Siente que por el cuidado no tiene tiempo suficiente para usted",
+      "Se siente estresado entre el cuidado y sus otras responsabilidades",
+      "Siente enfado cuando está cerca de la persona a la que cuida",
+      "Siente que el cuidado afecta negativamente a su relación con otros familiares",
+      "Se siente agotado cuando tiene que estar junto a la persona a la que cuida",
+      "Siente que su salud se ha resentido por cuidar",
+      "Siente que ha perdido el control de su vida desde que cuida"
+    ],
+    "tramos": [
+      { "puntuacion": "7 a 16", "significa": "Sobrecarga ausente o leve", "queHacer": "Reforzar los apoyos existentes y revalorar en cada visita" },
+      { "puntuacion": "17 a 21", "significa": "Sobrecarga moderada", "queHacer": "Intervención activa: Redistribuir tareas, gestionar respiro y valorar apoyo psicológico" },
+      { "puntuacion": "22 o más", "significa": "Sobrecarga intensa", "queHacer": "Prioridad clínica. Riesgo de claudicación familiar: Organizar respiro, evaluar salud del cuidador y considerar ingreso de descarga" }
+    ],
+    "comoUsarla": "Se administra al cuidador principal a solas, no delante del niño ni del resto de la familia, explicando que sirve para saber cómo está él y que no hay respuestas que le hagan quedar mal. La pregunta sobre el enfado es la que más cuesta responder con sinceridad y suele ser la más informativa.",
+    "limitaciones": "Diseñada originalmente para cuidadores de personas con demencia, y su adaptación al ámbito pediátrico no está completamente validada. Depende de la sinceridad, y muchos padres minimizan por miedo a ser juzgados como malos padres o a que les retiren al niño. Una puntuación baja en un cuidador visiblemente agotado debe hacer pensar en minimización, no en ausencia de problema.",
+    "calculadora": "zarit",
+    "etiquetas": ["cuidador", "sobrecarga", "claudicación", "respiro"]
+  },
+  {
+    "codigo": "riesgo-duelo-complicado",
+    "nombre": "Valoración del riesgo de duelo complicado",
+    "dominio": "Familia",
+    "edadDeUso": "Se aplica a la familia",
+    "rango": "0 a 10 factores",
+    "paraQue": "Identificación de los factores que aumentan la probabilidad de que el duelo de la familia se complique, para poder ofrecer seguimiento reforzado desde antes de la muerte. No es una escala validada de puntuación, sino una lista de comprobación que estructura algo que de otro modo se deja al azar.",
+    "items": [
+      "Muerte inesperada, brusca o traumática",
+      "Mal control de síntomas en las últimas horas, o sufrimiento presenciado sin alivio",
+      "Conflicto no resuelto con el equipo asistencial o sensación de decisiones mal tomadas",
+      "Antecedentes psiquiátricos en el doliente, en especial depresión",
+      "Duelos previos no elaborados o pérdidas múltiples recientes",
+      "Aislamiento social o red de apoyo escasa",
+      "Conflicto de pareja previo o falta de apoyo mutuo",
+      "Dependencia extrema o relación muy ambivalente con el niño fallecido",
+      "Dificultades económicas graves derivadas del cuidado",
+      "Hermanos pequeños sin adulto de referencia disponible"
+    ],
+    "tramos": [
+      { "puntuacion": "0 a 1 factores", "significa": "Riesgo bajo", "queHacer": "Seguimiento de duelo estándar: Llamada a las semanas y en el primer aniversario" },
+      { "puntuacion": "2 a 3 factores", "significa": "Riesgo moderado", "queHacer": "Seguimiento reforzado y ofrecimiento explícito de apoyo psicológico" },
+      { "puntuacion": "4 o más factores", "significa": "Riesgo alto", "queHacer": "Derivación proactiva a salud mental y seguimiento estructurado. Valorar apoyo específico para los hermanos" }
+    ],
+    "comoUsarla": "Se revisa antes de la muerte, no después, porque varios de los factores son modificables: El control de síntomas en las últimas horas, la resolución de conflictos con el equipo y la disponibilidad de un adulto de referencia para los hermanos dependen de lo que haga el equipo. Se registra en la historia y se comunica al profesional que hará el seguimiento de duelo.",
+    "limitaciones": "No es un instrumento validado con puntos de corte establecidos, sino una guía de valoración. La presencia de factores de riesgo no predice el resultado en un caso concreto, y hay familias con muchos factores que elaboran bien el duelo y al revés.",
+    "etiquetas": ["duelo", "riesgo", "prevención", "seguimiento"]
+  },
+  {
+    "codigo": "escala-sialorrea",
+    "nombre": "Escala de frecuencia y gravedad de la sialorrea",
+    "dominio": "Síntomas",
+    "edadDeUso": "Niño con enfermedad neurológica",
+    "rango": "2 a 9",
+    "paraQue": "Escala sencilla que combina la gravedad y la frecuencia del babeo en dos subescalas, y que permite objetivar la respuesta al tratamiento anticolinérgico. Sin ella, la valoración de la sialorrea se basa en impresiones que no permiten decidir si hay que subir o bajar la dosis.",
+    "items": [
+      "Gravedad, de 1 a 5: Sin babeo; babeo leve que solo moja los labios; moderado que llega al labio y al mentón; grave que moja la ropa; muy grave que moja objetos y muebles",
+      "Frecuencia, de 1 a 4: Nunca babea; babea ocasionalmente; babea con frecuencia; babea de forma constante"
+    ],
+    "tramos": [
+      { "puntuacion": "2 a 3", "significa": "Sialorrea mínima", "queHacer": "Medidas posturales y de posición de la cabeza" },
+      { "puntuacion": "4 a 6", "significa": "Sialorrea moderada", "queHacer": "Iniciar anticolinérgico y titular. Valorar logopedia si es viable" },
+      { "puntuacion": "7 a 9", "significa": "Sialorrea intensa con impacto en la piel y en la vida social", "queHacer": "Anticolinérgico a dosis plena, protección cutánea del mentón y valoración de toxina botulínica en glándulas salivales" }
+    ],
+    "comoUsarla": "Se puntúa antes de iniciar el tratamiento y en cada revisión de dosis, preguntando a la familia por un día habitual. El objetivo no es llegar a 2, porque la boca completamente seca es incómoda y empeora la higiene oral, sino bajar hasta que la ropa no se empape y la piel del mentón esté sana.",
+    "limitaciones": "Es una escala de impresión familiar, con la variabilidad que eso conlleva. No distingue entre hipersecreción real y dificultad de deglución, que son cosas distintas y con abordajes distintos: En la mayoría de los niños con parálisis cerebral el problema no es que produzcan más saliva, sino que no la tragan.",
+    "etiquetas": ["sialorrea", "neurológico", "anticolinérgico", "titulación"]
+  }
+]

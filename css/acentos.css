@@ -1,0 +1,158 @@
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   5. Acentos de color
+   ------------------------------------------------------------
+   La clase la genera claseDominio() en el JavaScript, con el
+   patrón dom-<slug>.
+
+   El problema: Este atlas reparte más de treinta acentos entre
+   dominios de cuidado, grupos de fármacos, escalas, calculadoras
+   e interlocutores. Con tantos tonos a la vez hay pares que
+   quedan a una distancia perceptual mínima, y con daltonismo
+   varios resultan indistinguibles.
+
+   La solución es no codificar la categoría con el color, sino la
+   FAMILIA FUNCIONAL, que además es lo que se quiere enseñar:
+
+     verde azulado  lo que se trata      síntomas, situaciones y urgencias
+     granate        lo que se dosifica   fármacos y cálculo de dosis
+     azul           lo que se mide       escalas y calculadoras de puntuación
+     ámbar          lo que acompaña      comunicación, familia y espiritualidad
+
+   Dentro de cada familia, la insignia lleva siempre el nombre de
+   su categoría escrito, de modo que el color agrupa pero nunca es
+   el único portador de la identidad.
+
+   Los cuatro tonos están comprobados a todos los pares y en los
+   dos temas con la revisión paleta del arnés, que también lee
+   paleta.config.json de la raíz:
+
+     node revisiones/paleta.js "#0b8060, #3556bd, #8c0e4c, #a25417" --fondo "#ffffff"
+     node revisiones/paleta.js "#5ad9c4, #7f93f2, #ed4f8b, #e8a23e" --fondo "#1e1930"
+
+   Peor separación con visión normal 17.3 en claro (granate contra
+   ámbar) y 21.3 en oscuro (verde azulado contra ámbar), y con
+   daltonismo 9.6 en claro (verde azulado contra ámbar, en
+   deuteranopia) y 14.2 en oscuro. Contraste como texto sobre la
+   superficie: 4.92, 6.53, 9.20 y 5.50 a 1 en claro; 9.83, 5.95,
+   4.93 y 7.82 a 1 en oscuro. Los umbrales exigidos quedan en
+   paleta.config.json; si un tono se ajusta hay que volver a medir.
+   ============================================================ */
+
+:root {
+  --fam-trata: #0b8060;
+  --fam-mide: #3556bd;
+  --fam-dosifica: #8c0e4c;
+  --fam-acompana: #a25417;
+}
+
+/* Los mismos pasos claros por los dos caminos del tema oscuro: la
+   preferencia del sistema cuando no hay data-tema, y la elección
+   manual cuando lo hay. El :where deja ganar a data-tema="claro". */
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-tema="claro"])) {
+    --fam-trata: #5ad9c4;
+    --fam-mide: #7f93f2;
+    --fam-dosifica: #ed4f8b;
+    --fam-acompana: #e8a23e;
+  }
+}
+
+:root[data-tema="oscuro"] {
+  --fam-trata: #5ad9c4;
+  --fam-mide: #7f93f2;
+  --fam-dosifica: #ed4f8b;
+  --fam-acompana: #e8a23e;
+}
+
+/* ============================================================
+   Dominios de cuidado
+   ------------------------------------------------------------
+   El cuerpo y lo urgente se tratan; la persona, la familia y el
+   final de la vida se acompañan. La urgencia no necesita un rojo
+   propio porque ya lleva su insignia llena de peligro.
+   ============================================================ */
+.dom-dolor { --acento: var(--fam-trata); }
+.dom-urgencias { --acento: var(--fam-trata); }
+.dom-respiratorio { --acento: var(--fam-trata); }
+.dom-digestivo { --acento: var(--fam-trata); }
+.dom-neurologico { --acento: var(--fam-trata); }
+.dom-piel-y-mucosas { --acento: var(--fam-trata); }
+.dom-general { --acento: var(--fam-trata); }
+.dom-emocional { --acento: var(--fam-acompana); }
+.dom-espiritual { --acento: var(--fam-acompana); }
+.dom-familia-y-entorno { --acento: var(--fam-acompana); }
+.dom-ultimos-dias { --acento: var(--fam-acompana); }
+
+/* ============================================================
+   Grupos de fármacos: Todo lo que se prescribe y se dosifica
+   ============================================================ */
+.dom-analgesico-no-opioide { --acento: var(--fam-dosifica); }
+.dom-opioide { --acento: var(--fam-dosifica); }
+.dom-coadyuvante { --acento: var(--fam-dosifica); }
+.dom-sedante { --acento: var(--fam-dosifica); }
+.dom-anticonvulsivo { --acento: var(--fam-dosifica); }
+.dom-antiemetico { --acento: var(--fam-dosifica); }
+.dom-antisecretor { --acento: var(--fam-dosifica); }
+.dom-laxante { --acento: var(--fam-dosifica); }
+.dom-corticoide { --acento: var(--fam-dosifica); }
+.dom-otros { --acento: var(--fam-dosifica); }
+
+/* ============================================================
+   Lo que miden las escalas
+   ------------------------------------------------------------
+   La carga del cuidador pertenece a la familia que acompaña,
+   aunque se mida con una escala.
+   ============================================================ */
+.dom-sintomas { --acento: var(--fam-mide); }
+.dom-funcion { --acento: var(--fam-mide); }
+.dom-calidad-de-vida { --acento: var(--fam-mide); }
+.dom-sedacion { --acento: var(--fam-mide); }
+.dom-pronostico { --acento: var(--fam-mide); }
+.dom-piel { --acento: var(--fam-mide); }
+.dom-familia { --acento: var(--fam-acompana); }
+
+/* ============================================================
+   Categorías de calculadora
+   ------------------------------------------------------------
+   Las de dosis van con los fármacos y las de puntuación con las
+   escalas, que es la distinción que importa al usarlas.
+   ============================================================ */
+.dom-dosis-de-opioide { --acento: var(--fam-dosifica); }
+.dom-rotacion-de-opioide { --acento: var(--fam-dosifica); }
+.dom-dosis-pediatrica { --acento: var(--fam-dosifica); }
+.dom-infusion-subcutanea { --acento: var(--fam-dosifica); }
+.dom-sedacion-paliativa { --acento: var(--fam-dosifica); }
+.dom-antropometria { --acento: var(--fam-mide); }
+.dom-escala-de-dolor { --acento: var(--fam-mide); }
+.dom-escala-de-sintomas { --acento: var(--fam-mide); }
+.dom-escala-funcional { --acento: var(--fam-mide); }
+
+/* ============================================================
+   Interlocutor de los guiones de comunicación
+   ============================================================ */
+.dom-nino { --acento: var(--fam-acompana); }
+.dom-adolescente { --acento: var(--fam-acompana); }
+.dom-padres { --acento: var(--fam-acompana); }
+.dom-hermanos { --acento: var(--fam-acompana); }
+.dom-equipo { --acento: var(--fam-acompana); }
+.dom-escuela { --acento: var(--fam-acompana); }
+
+/* ============================================================
+   Áreas de los temas de estudio
+   ============================================================ */
+/* Categorías del glosario que no aparecen en las demás secciones. Comparten
+   el reparto por familias: lo farmacológico dosifica, lo relacional acompaña
+   y las escalas miden. */
+.dom-farmacos { --acento: var(--fam-dosifica); }
+.dom-vias-y-tecnicas { --acento: var(--fam-dosifica); }
+.dom-comunicacion { --acento: var(--fam-acompana); }
+.dom-duelo { --acento: var(--fam-acompana); }
+.dom-escalas { --acento: var(--fam-mide); }
+
+.dom-fundamentos { --acento: var(--fam-mide); }
+.dom-bioetica { --acento: var(--fam-mide); }
+.dom-organizacion { --acento: var(--fam-mide); }
+.dom-control-de-sintomas { --acento: var(--fam-trata); }
+.dom-desarrollo-y-comunicacion { --acento: var(--fam-acompana); }
+.dom-familia-y-duelo { --acento: var(--fam-acompana); }

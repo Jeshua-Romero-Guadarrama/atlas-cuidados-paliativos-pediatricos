@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Doble theme-color con media para que el primer pintado del navegador
+       lleve el color correcto también en modo oscuro del sistema. -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#6a4bab">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#14111f">
+  <title>Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida: síntomas, fármacos, escalas y comunicación</title>
+<!-- SEO: generado, no editar a mano -->
+  <meta name="description" content="Atlas de consulta sobre cuidados paliativos pediátricos. Control de síntomas, fármacos con sus dosis y vías, escalas de valoración, calculadoras de dosis, guías de comunicación con la familia y casos clínicos.">
+  <meta name="keywords" content="cuidados paliativos pediatricos, control de sintomas pediatria, dosis morfina pediatrica, escalas de dolor infantil, calidad de vida pediatrica, comunicacion malas noticias, sedacion paliativa, atencion domiciliaria pediatrica, fin de vida pediatria, manejo del dolor en ninos, escala flacc, acompanamiento familiar, medicina paliativa">
+  <meta name="author" content="Jeshua Romero Guadarrama">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Atlas de Cuidados Paliativos Pediátricos">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida: síntomas, fármacos, escalas y comunicación">
+  <meta property="og:description" content="Atlas de consulta sobre cuidados paliativos pediátricos. Control de síntomas, fármacos con sus dosis y vías, escalas de valoración, calculadoras de dosis, guías de comunicación con la familia y casos clínicos.">
+  <meta property="og:url" content="https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/">
+  <meta property="og:image" content="https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/portada.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida: síntomas, fármacos, escalas y comunicación">
+  <meta name="twitter:description" content="Atlas de consulta sobre cuidados paliativos pediátricos. Control de síntomas, fármacos con sus dosis y vías, escalas de valoración, calculadoras de dosis, guías de comunicación con la familia y casos clínicos.">
+  <meta name="twitter:image" content="https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/portada.svg">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Atlas de Cuidados Paliativos Pediátricos","alternateName":"Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida: síntomas, fármacos, escalas y comunicación","description":"Atlas de consulta sobre cuidados paliativos pediátricos. Control de síntomas, fármacos con sus dosis y vías, escalas de valoración, calculadoras de dosis, guías de comunicación con la familia y casos clínicos.","url":"https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/","inLanguage":"es-MX","author":{"@type":"Person","name":"Jeshua Romero Guadarrama"},"publisher":{"@type":"Person","name":"Jeshua Romero Guadarrama"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida: síntomas, fármacos, escalas y comunicación","description":"Atlas de consulta sobre cuidados paliativos pediátricos. Control de síntomas, fármacos con sus dosis y vías, escalas de valoración, calculadoras de dosis, guías de comunicación con la familia y casos clínicos.","url":"https://jeshua-romero-guadarrama.github.io/atlas-cuidados-paliativos-pediatricos/","inLanguage":"es-MX","educationalLevel":"Licenciatura y posgrado en ciencias de la salud","about":"Cuidados paliativos pediátricos","teaches":["Control de síntomas en pediatría","Dosificación de fármacos paliativos","Escalas de valoración","Comunicación con el paciente y la familia"],"audience":{"@type":"EducationalAudience","educationalRole":"student"},"isAccessibleForFree":true,"author":{"@type":"Person","name":"Jeshua Romero Guadarrama"},"license":"https://opensource.org/licenses/MIT"}</script>
+<!-- SEO: fin -->
+  <!-- Hojas por responsabilidad. El orden importa: los tokens primero
+       y los ajustes responsivos al final. -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/secciones.css">
+  <link rel="stylesheet" href="css/acentos.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <link rel="stylesheet" href="css/impresion.css" media="print">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%236a4bab'/><g fill='none' stroke='white' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'><path d='M3.2 7.1 8 8.8'/><path d='M8 8.8 Q12.2 6.3 15 10.1 Q17.6 13.5 17.5 17.1'/><path d='M8 8.8 Q6.9 12.1 9.6 14.2 Q13 16.7 17.5 17.1'/><path d='M11.7 9.7 Q15.2 4 20.1 3.7 Q19.1 9 14.6 11.9 Z'/><path d='M17.5 17.1 20.9 19.2M17.5 17.1 17 20.8'/></g></svg>">
+  <script>
+    // Aplica el tema guardado antes de pintar, para evitar el parpadeo inicial.
+    // Sin valor guardado no se fija data-tema: los tokens siguen entonces la
+    // preferencia del sistema y el estado "sistema" queda representado por la
+    // ausencia del atributo.
+    (function () {
+      try {
+        var t = localStorage.getItem("tema");
+        if (t === "claro" || t === "oscuro") document.documentElement.dataset.tema = t;
+      } catch (e) { /* sin almacenamiento se sigue el sistema */ }
+    })();
+  </script>
+</head>
+<body>
+
+  <a class="saltar-al-contenido" id="saltar-al-contenido" href="#">Saltar al contenido</a>
+
+  <div class="barra-progreso" id="barra-scroll"></div>
+
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora-blob b1"></span>
+    <span class="aurora-blob b2"></span>
+    <span class="aurora-blob b3"></span>
+  </div>
+
+  <!-- Biblioteca de íconos (SVG de línea, sin dependencias externas) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <!-- Colibrí: el ave que sostiene el vuelo quieto para alimentarse de
+         lo poco que hay. Pico largo, cuerpo en gota, ala batida y cola
+         abierta, en el mismo trazo de línea que el resto de los íconos. -->
+    <symbol id="ico-logo" viewBox="0 0 24 24">
+      <path d="M2.3 6.9 7.6 8.9"/>
+      <path d="M7.6 8.9 Q12 6.2 15 10.2 Q17.7 13.6 17.5 17.4"/>
+      <path d="M7.6 8.9 Q6.4 12.4 9.3 14.6 Q12.9 17.4 17.5 17.4"/>
+      <path d="M11.5 9.6 Q15.2 3.6 20.4 3.3 Q19.4 8.9 14.6 11.9 Z"/>
+      <path d="M17.5 17.4 21.4 19.6M17.5 17.4 16.9 21.5"/>
+      <path d="M9.5 8.1h.01"/>
+    </symbol>
+
+    <!-- Pestañas -->
+    <symbol id="ico-sintomas" viewBox="0 0 24 24"><path d="M3 12h3l2.5-6 3 12 2.5-9 2 3h5"/></symbol>
+    <symbol id="ico-farmacos" viewBox="0 0 24 24"><rect x="2" y="9.5" width="14" height="9" rx="4.5" transform="rotate(-45 9 14)"/><path d="m8.5 9.5 6 6"/><path d="M18 3v4M16 5h4"/></symbol>
+    <symbol id="ico-escalas" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 8h14"/><path d="m5 8-2.5 5a3 3 0 0 0 5 0Z"/><path d="m19 8-2.5 5a3 3 0 0 0 5 0Z"/><path d="M9 21h6"/></symbol>
+    <symbol id="ico-calculadoras" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="3"/><line x1="8" y1="6.5" x2="16" y2="6.5"/><line x1="8.5" y1="11" x2="8.51" y2="11"/><line x1="12" y1="11" x2="12.01" y2="11"/><line x1="15.5" y1="11" x2="15.51" y2="11"/><line x1="8.5" y1="14.5" x2="8.51" y2="14.5"/><line x1="12" y1="14.5" x2="12.01" y2="14.5"/><line x1="15.5" y1="14.5" x2="15.51" y2="14.5"/><line x1="8.5" y1="18" x2="12" y2="18"/></symbol>
+    <symbol id="ico-comunicacion" viewBox="0 0 24 24"><path d="M8 13.5H5.5A2.5 2.5 0 0 1 3 11V5.5A2.5 2.5 0 0 1 5.5 3h9A2.5 2.5 0 0 1 17 5.5V7"/><path d="M18.5 10h-8A2.5 2.5 0 0 0 8 12.5V17a2.5 2.5 0 0 0 2.5 2.5H13l4 3v-3h1.5A2.5 2.5 0 0 0 21 17v-4.5a2.5 2.5 0 0 0-2.5-2.5Z"/></symbol>
+    <symbol id="ico-temas" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></symbol>
+    <symbol id="ico-glosario" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3H3Z"/></symbol>
+    <symbol id="ico-casos" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4"/><path d="M14 3h7v7"/><path d="M21 3 12.5 11.5"/><circle cx="8" cy="16" r="1.5"/></symbol>
+
+    <!-- Dominios de cuidado -->
+    <symbol id="ico-dolor" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-2 8 9-12h-7l2-8Z"/></symbol>
+    <symbol id="ico-respiratorio" viewBox="0 0 24 24"><path d="M12 3v9"/><path d="M8.5 12c0-2 1.5-3.5 3.5-3.5s3.5 1.5 3.5 3.5"/><path d="M6 8c-2 2-3 5-3 8a3 3 0 0 0 6 0c0-3-1-6-3-8Z"/><path d="M18 8c2 2 3 5 3 8a3 3 0 0 1-6 0c0-3 1-6 3-8Z"/></symbol>
+    <symbol id="ico-digestivo" viewBox="0 0 24 24"><path d="M8 3v5a4 4 0 0 0 4 4 4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4"/><path d="M8 3H5.5"/></symbol>
+    <symbol id="ico-neurologico" viewBox="0 0 24 24"><path d="M9.5 3a3 3 0 0 0-3 3 3 3 0 0 0-2 5.2A3 3 0 0 0 6 16.5 3 3 0 0 0 9.5 21c1.4 0 2.5-1 2.5-2.4V5.4C12 4 10.9 3 9.5 3Z"/><path d="M14.5 3a3 3 0 0 1 3 3 3 3 0 0 1 2 5.2A3 3 0 0 1 18 16.5 3 3 0 0 1 14.5 21c-1.4 0-2.5-1-2.5-2.4V5.4C12 4 13.1 3 14.5 3Z"/></symbol>
+    <symbol id="ico-piel" viewBox="0 0 24 24"><path d="M12 2c-3 3-6 5.5-6 9.5a6 6 0 0 0 12 0C18 7.5 15 5 12 2Z"/><path d="M9.5 12.5c.8 1 1.6 1.5 2.5 1.5s1.7-.5 2.5-1.5"/></symbol>
+    <symbol id="ico-general" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="ico-emocional" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5s1.3 1.5 3.5 1.5 3.5-1.5 3.5-1.5"/><line x1="9" y1="9.5" x2="9.01" y2="9.5"/><line x1="15" y1="9.5" x2="15.01" y2="9.5"/></symbol>
+    <symbol id="ico-familia" viewBox="0 0 24 24"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="8.5" r="2.5"/><path d="M2.5 21v-2a4 4 0 0 1 4-4h3a4 4 0 0 1 4 4v2"/><path d="M16 21v-1.5a3.5 3.5 0 0 1 3.5-3.5h.5a1.5 1.5 0 0 1 1.5 1.5V21"/></symbol>
+    <symbol id="ico-espiritual" viewBox="0 0 24 24"><path d="M12 21s-7-4.7-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.3-7 10-7 10Z"/></symbol>
+    <symbol id="ico-ultimos-dias" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/><path d="M17 4.5v-2M16 3.5h2"/></symbol>
+    <symbol id="ico-urgencias" viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+
+    <!-- Secciones de contenido -->
+    <symbol id="ico-buscar" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="ico-porque" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="ico-evaluar" viewBox="0 0 24 24"><path d="M9 3h6a1 1 0 0 1 1 1v1H8V4a1 1 0 0 1 1-1Z"/><path d="M16 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="ico-cuidado" viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21.5l8.8-8.8a5 5 0 0 0 0-7.1Z"/></symbol>
+    <symbol id="ico-receta" viewBox="0 0 24 24"><path d="M7 21V3h6l4 4v14"/><path d="M13 3v4h4"/><path d="M10 11h4M10 15h4"/></symbol>
+    <symbol id="ico-evitar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></symbol>
+    <symbol id="ico-escalar" viewBox="0 0 24 24"><path d="M4 20v-5h4v-4h4V7h4V3h4"/><path d="M17 3h4v4"/></symbol>
+    <symbol id="ico-perla" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5.76.76 1.23 1.52 1.41 2.5"/></symbol>
+    <symbol id="ico-clave" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+    <symbol id="ico-decir" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/><path d="M8 9h8M8 12.5h5"/></symbol>
+    <symbol id="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="ico-equis" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="ico-formula" viewBox="0 0 24 24"><path d="M5 3h14l-6 9 6 9H5l6-9-6-9Z"/></symbol>
+    <symbol id="ico-ejemplo" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5 16 12l-6 3.5Z"/></symbol>
+    <symbol id="ico-copiar" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2"/></symbol>
+    <symbol id="ico-bandera" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1Z"/><line x1="4" y1="22" x2="4" y2="15"/></symbol>
+    <symbol id="ico-presentacion" viewBox="0 0 24 24"><path d="M8 2h8l-1 4h-6L8 2Z"/><path d="M9 6h6l2.5 12a2 2 0 0 1-2 2.4h-7A2 2 0 0 1 6.5 18L9 6Z"/><path d="M7.5 13h9"/></symbol>
+    <symbol id="ico-precaucion" viewBox="0 0 24 24"><path d="M12 22a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M12 8v5M12 16.5v.01"/></symbol>
+    <symbol id="ico-medir" viewBox="0 0 24 24"><rect x="2" y="8" width="20" height="8" rx="2"/><path d="M6 8v3M10 8v5M14 8v3M18 8v5"/></symbol>
+    <symbol id="ico-flecha-arriba" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+    <symbol id="ico-anterior" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="ico-siguiente" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  </svg>
+
+  <header class="cabecera">
+    <div class="cabecera-superior">
+      <a class="marca" href="#" aria-label="Inicio">
+        <span class="marca-icono"><svg class="ico-logo"><use href="#ico-logo"/></svg></span>
+        <span class="marca-texto">
+          <strong>Atlas de Cuidados Paliativos Pediátricos</strong>
+          <small>Control de síntomas, acompañamiento y calidad de vida</small>
+        </span>
+      </a>
+      <button id="conmutar-tema" class="boton-tema" aria-label="Cambiar tema" title="Cambiar tema claro/oscuro">
+        <svg class="ico icono-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="ico icono-luna" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </div>
+    <nav class="pestanas" id="pestanas" aria-label="Secciones">
+      <button class="pestana activa" data-vista="sintomas"><svg class="ico"><use href="#ico-sintomas"/></svg>Síntomas</button>
+      <button class="pestana" data-vista="farmacos"><svg class="ico"><use href="#ico-farmacos"/></svg>Fármacos</button>
+      <button class="pestana" data-vista="escalas"><svg class="ico"><use href="#ico-escalas"/></svg>Escalas</button>
+      <button class="pestana" data-vista="calculadoras"><svg class="ico"><use href="#ico-calculadoras"/></svg>Calculadoras</button>
+      <button class="pestana" data-vista="comunicacion"><svg class="ico"><use href="#ico-comunicacion"/></svg>Comunicación</button>
+      <button class="pestana" data-vista="temas"><svg class="ico"><use href="#ico-temas"/></svg>Temas</button>
+      <button class="pestana" data-vista="glosario"><svg class="ico"><use href="#ico-glosario"/></svg>Glosario</button>
+      <button class="pestana" data-vista="estudio"><svg class="ico"><use href="#ico-casos"/></svg>Casos</button>
+    </nav>
+  </header>
+
+  <!-- ============ VISTA: SÍNTOMAS Y SITUACIONES ============ -->
+  <main id="vista-sintomas" class="vista">
+    <section class="portada">
+      <h1 class="portada-titulo">Cuidar cuando ya no se puede curar</h1>
+      <p class="portada-lema">Control de síntomas, acompañamiento a la familia y decisiones difíciles en el niño con una enfermedad que limita o amenaza la vida. Busca un síntoma o una situación y encuentra cómo evaluarla y cómo tratarla.</p>
+      <div id="metricas" class="metricas"></div>
+    </section>
+    <section class="buscador" role="search">
+      <div class="campo-busqueda-envoltorio">
+        <span class="icono-busqueda" aria-hidden="true"><svg class="ico"><use href="#ico-buscar"/></svg></span>
+        <input type="search" id="busqueda-sintomas" class="campo-busqueda" aria-label="Buscar síntoma o situación" placeholder="Buscar síntoma o situación… (ej. disnea, estertores, convulsión, agitación)" autocomplete="off">
+      </div>
+      <div class="filtros">
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-sintomas-dominio">Dominio</span>
+          <div id="filtros-sintomas-dominio" class="chips" role="group" aria-labelledby="etiqueta-sintomas-dominio"></div>
+        </div>
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-sintomas-nivel">Nivel</span>
+          <div id="filtros-sintomas-nivel" class="chips" role="group" aria-labelledby="etiqueta-sintomas-nivel"></div>
+        </div>
+      </div>
+      <p id="contador-sintomas" class="contador" aria-live="polite"></p>
+    </section>
+    <section id="lista-sintomas" class="rejilla"></section>
+    <nav id="pag-sintomas" class="paginacion" aria-label="Paginación"></nav>
+  </main>
+
+  <!-- ============ VISTA: FÁRMACOS ============ -->
+  <main id="vista-farmacos" class="vista oculta" hidden>
+    <section class="encabezado-vista">
+      <h1><svg class="ico"><use href="#ico-farmacos"/></svg> Fármacos</h1>
+      <p>Vademécum de los medicamentos que más se usan en cuidados paliativos pediátricos, con la dosis por kilogramo, las vías posibles, las presentaciones y las precauciones.</p>
+      <p class="nota-aviso">
+        <svg class="ico"><use href="#ico-urgencias"/></svg>
+        <span>Las dosis son de referencia para el estudio y siempre se expresan por kilogramo de peso, con su techo. Antes de prescribir hay que verificarlas en la ficha técnica del producto y ajustarlas al niño concreto, a su función renal y hepática y a lo que ya está tomando. Muchos de estos usos son fuera de indicación autorizada en pediatría, algo habitual y aceptado en paliativos, pero que conviene saber y documentar.</span>
+      </p>
+    </section>
+    <section class="buscador" role="search">
+      <div class="campo-busqueda-envoltorio">
+        <span class="icono-busqueda" aria-hidden="true"><svg class="ico"><use href="#ico-buscar"/></svg></span>
+        <input type="search" id="busqueda-farmacos" class="campo-busqueda" aria-label="Buscar fármaco" placeholder="Buscar fármaco… (ej. morfina, midazolam, hioscina, gabapentina)" autocomplete="off">
+      </div>
+      <div class="filtros">
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-farmacos-grupo">Grupo</span>
+          <div id="filtros-farmacos-grupo" class="chips" role="group" aria-labelledby="etiqueta-farmacos-grupo"></div>
+        </div>
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-farmacos-via">Vía</span>
+          <div id="filtros-farmacos-via" class="chips" role="group" aria-labelledby="etiqueta-farmacos-via"></div>
+        </div>
+      </div>
+      <p id="contador-farmacos" class="contador" aria-live="polite"></p>
+    </section>
+    <section id="lista-farmacos" class="rejilla"></section>
+    <nav id="pag-farmacos" class="paginacion" aria-label="Paginación"></nav>
+  </main>
+
+  <!-- ============ VISTA: ESCALAS ============ -->
+  <main id="vista-escalas" class="vista oculta" hidden>
+    <section class="encabezado-vista">
+      <h1><svg class="ico"><use href="#ico-escalas"/></svg> Escalas de valoración</h1>
+      <p>Instrumentos para medir el dolor, los síntomas, la funcionalidad y la calidad de vida del niño, con sus tramos y su lectura clínica. Elegir bien la escala según la edad y según si el niño puede o no comunicarse es la mitad del trabajo.</p>
+    </section>
+    <section class="buscador" role="search">
+      <div class="campo-busqueda-envoltorio">
+        <span class="icono-busqueda" aria-hidden="true"><svg class="ico"><use href="#ico-buscar"/></svg></span>
+        <input type="search" id="busqueda-escalas" class="campo-busqueda" aria-label="Buscar escala" placeholder="Buscar escala… (ej. FLACC, PIPP, Lansky, PedsQL, Zarit)" autocomplete="off">
+      </div>
+      <div class="filtros">
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-escalas-dominio">Mide</span>
+          <div id="filtros-escalas-dominio" class="chips" role="group" aria-labelledby="etiqueta-escalas-dominio"></div>
+        </div>
+      </div>
+      <p id="contador-escalas" class="contador" aria-live="polite"></p>
+    </section>
+    <section id="lista-escalas" class="rejilla"></section>
+    <nav id="pag-escalas" class="paginacion" aria-label="Paginación"></nav>
+  </main>
+
+  <!-- ============ VISTA: CALCULADORAS ============ -->
+  <main id="vista-calculadoras" class="vista oculta" hidden>
+    <section class="encabezado-vista">
+      <h1><svg class="ico"><use href="#ico-calculadoras"/></svg> Calculadoras</h1>
+      <p>Dosis por peso, dosis de rescate, rotación de opioides, infusión subcutánea continua, superficie corporal y escalas puntuables. Escribe los datos y obtén el resultado con su interpretación y una frase lista para copiar a la nota clínica.</p>
+      <p class="nota-aviso">
+        <svg class="ico"><use href="#ico-urgencias"/></svg>
+        <span>Ninguna calculadora sustituye la doble verificación. En pediatría el error de dosis más frecuente es de un factor de diez, así que conviene comprobar siempre que el resultado tenga sentido para el tamaño del niño y contrastarlo con una segunda persona antes de administrar.</span>
+      </p>
+    </section>
+    <section class="buscador" role="search">
+      <div class="campo-busqueda-envoltorio">
+        <span class="icono-busqueda" aria-hidden="true"><svg class="ico"><use href="#ico-buscar"/></svg></span>
+        <input type="search" id="busqueda-calculadoras" class="campo-busqueda" aria-label="Buscar calculadora" placeholder="Buscar calculadora… (ej. morfina, rescate, rotación, superficie, FLACC)" autocomplete="off">
+      </div>
+      <div class="filtros">
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-calculadoras-categoria">Categoría</span>
+          <div id="filtros-calculadoras-categoria" class="chips" role="group" aria-labelledby="etiqueta-calculadoras-categoria"></div>
+        </div>
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-calculadoras-tipo">Tipo</span>
+          <div id="filtros-calculadoras-tipo" class="chips" role="group" aria-labelledby="etiqueta-calculadoras-tipo"></div>
+        </div>
+      </div>
+      <p id="contador-calculadoras" class="contador" aria-live="polite"></p>
+    </section>
+    <section id="lista-calculadoras" class="rejilla"></section>
+    <nav id="pag-calculadoras" class="paginacion" aria-label="Paginación"></nav>
+  </main>
+
+  <!-- ============ VISTA: COMUNICACIÓN ============ -->
+  <main id="vista-comunicacion" class="vista oculta" hidden>
+    <section class="encabezado-vista">
+      <h1><svg class="ico"><use href="#ico-comunicacion"/></svg> Comunicación</h1>
+      <p>Las conversaciones difíciles también se preparan. Cada situación trae los pasos, las frases que ayudan, las que hacen daño aunque se digan con buena intención, y cómo responder a las preguntas que más cuesta oír.</p>
+    </section>
+    <section class="buscador" role="search">
+      <div class="campo-busqueda-envoltorio">
+        <span class="icono-busqueda" aria-hidden="true"><svg class="ico"><use href="#ico-buscar"/></svg></span>
+        <input type="search" id="busqueda-comunicacion" class="campo-busqueda" aria-label="Buscar situación de comunicación" placeholder="Buscar situación… (ej. mala noticia, hermanos, me voy a morir)" autocomplete="off">
+      </div>
+      <div class="filtros">
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-comunicacion-interlocutor">Con quién</span>
+          <div id="filtros-comunicacion-interlocutor" class="chips" role="group" aria-labelledby="etiqueta-comunicacion-interlocutor"></div>
+        </div>
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-comunicacion-dominio">Dominio</span>
+          <div id="filtros-comunicacion-dominio" class="chips" role="group" aria-labelledby="etiqueta-comunicacion-dominio"></div>
+        </div>
+      </div>
+      <p id="contador-comunicacion" class="contador" aria-live="polite"></p>
+    </section>
+    <section id="lista-comunicacion" class="rejilla-ancha"></section>
+    <nav id="pag-comunicacion" class="paginacion" aria-label="Paginación"></nav>
+  </main>
+
+  <!-- ============ VISTA: TEMAS ============ -->
+  <main id="vista-temas" class="vista oculta" hidden>
+    <section class="encabezado-vista">
+      <h1><svg class="ico"><use href="#ico-temas"/></svg> Temas de estudio</h1>
+      <p>Artículos en profundidad sobre los fundamentos: qué son los cuidados paliativos pediátricos, cómo entiende la muerte un niño según su edad, bioética, duelo, marco legal en México y cuidado del equipo.</p>
+    </section>
+    <section class="buscador" role="search">
+      <div class="campo-busqueda-envoltorio">
+        <span class="icono-busqueda" aria-hidden="true"><svg class="ico"><use href="#ico-buscar"/></svg></span>
+        <input type="search" id="busqueda-temas" class="campo-busqueda" aria-label="Buscar tema de estudio" placeholder="Buscar tema… (ej. duelo, bioética, sedación, marco legal)" autocomplete="off">
+      </div>
+      <div class="filtros">
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-temas-area">Área</span>
+          <div id="filtros-temas-area" class="chips" role="group" aria-labelledby="etiqueta-temas-area"></div>
+        </div>
+      </div>
+      <p id="contador-temas" class="contador" aria-live="polite"></p>
+    </section>
+    <section id="lista-temas" class="rejilla"></section>
+    <nav id="pag-temas" class="paginacion" aria-label="Paginación"></nav>
+  </main>
+
+  <!-- ============ VISTA: GLOSARIO ============ -->
+  <main id="vista-glosario" class="vista oculta" hidden>
+    <section class="encabezado-vista">
+      <h1><svg class="ico"><use href="#ico-glosario"/></svg> Glosario</h1>
+      <p>Terminología esencial, organizada por categoría. Incluye los términos que se confunden con más frecuencia y que conviene usar con precisión delante de una familia.</p>
+    </section>
+    <section class="buscador" role="search">
+      <div class="campo-busqueda-envoltorio">
+        <span class="icono-busqueda" aria-hidden="true"><svg class="ico"><use href="#ico-buscar"/></svg></span>
+        <input type="search" id="busqueda-glosario" class="campo-busqueda" aria-label="Buscar término del glosario" placeholder="Buscar término… (ej. sedación paliativa, obstinación, equianalgesia, ACT)" autocomplete="off">
+      </div>
+      <div class="filtros">
+        <div class="grupo-filtro">
+          <span class="etiqueta-filtro" id="etiqueta-glosario-categoria">Categoría</span>
+          <div id="filtros-glosario-categoria" class="chips" role="group" aria-labelledby="etiqueta-glosario-categoria"></div>
+        </div>
+      </div>
+      <p id="contador-glosario" class="contador" aria-live="polite"></p>
+    </section>
+    <section id="lista-glosario" class="glosario"></section>
+    <nav id="pag-glosario" class="paginacion" aria-label="Paginación"></nav>
+  </main>
+
+  <!-- ============ VISTA: MODO ESTUDIO (CASOS CLÍNICOS) ============ -->
+  <main id="vista-estudio" class="vista oculta" hidden>
+    <section class="quiz-panel">
+      <div id="quiz-inicio">
+        <div class="quiz-hero-icono"><svg class="ico"><use href="#ico-casos"/></svg></div>
+        <h2>Casos clínicos</h2>
+        <p>Te presento una situación real de la consulta o de la casa del paciente y tienes que decidir qué harías. Cada respuesta viene con su explicación, porque en paliativos casi nunca hay una sola opción razonable, pero sí opciones que hacen daño.</p>
+        <button id="boton-empezar" class="boton-primario">Empezar</button>
+      </div>
+      <div id="quiz-pregunta" class="oculta">
+        <div class="quiz-cabecera">
+          <span id="quiz-numero" class="quiz-numero"></span>
+          <span class="quiz-marcador">Aciertos <strong id="quiz-puntos">0</strong></span>
+        </div>
+        <div class="quiz-barra"><div id="quiz-barra-relleno" class="quiz-barra-relleno"></div></div>
+        <div class="quiz-vineta">
+          <span class="quiz-vineta-etiqueta"><svg class="ico"><use href="#ico-casos"/></svg> Caso</span>
+          <p id="quiz-vineta-texto"></p>
+        </div>
+        <p id="quiz-instruccion" class="quiz-instruccion"></p>
+        <div id="quiz-opciones" class="quiz-opciones"></div>
+        <div id="quiz-retro" aria-live="polite" class="quiz-retro"></div>
+        <button id="boton-siguiente" class="boton-primario oculta">Siguiente</button>
+      </div>
+      <div id="quiz-final" class="oculta">
+        <div class="quiz-hero-icono"><svg class="ico"><use href="#ico-bandera"/></svg></div>
+        <h2>Terminaste</h2>
+        <p id="quiz-resultado-final" aria-live="polite" class="quiz-resultado"></p>
+        <button id="boton-reiniciar" class="boton-primario">Jugar otra vez</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ MODAL: SÍNTOMA O SITUACIÓN ============ -->
+  <div id="modal-sintoma" class="modal oculta">
+    <div class="modal-fondo" data-cierra="sintoma"></div>
+    <article class="modal-tarjeta">
+      <button class="cerrar" data-cierra="sintoma" aria-label="Cerrar">✕</button>
+      <div class="modal-cuerpo">
+        <div id="sin-insignias" class="insignias modal-insignias"></div>
+        <h2 id="sin-titulo"></h2>
+        <p id="sin-descripcion"></p>
+
+        <figure id="sin-esquema-seccion" class="modal-esquema oculta">
+          <img id="sin-esquema" alt="">
+          <figcaption id="sin-esquema-pie"></figcaption>
+        </figure>
+
+        <div id="sin-porque-seccion">
+          <h3><svg class="ico"><use href="#ico-porque"/></svg> Por qué ocurre</h3>
+          <p id="sin-porque"></p>
+        </div>
+        <div id="sin-causas-seccion">
+          <h3><svg class="ico"><use href="#ico-buscar"/></svg> Causas que hay que buscar</h3>
+          <ul id="sin-causas"></ul>
+        </div>
+        <div id="sin-evaluar-seccion">
+          <h3><svg class="ico"><use href="#ico-evaluar"/></svg> Cómo evaluarlo</h3>
+          <ul id="sin-evaluar"></ul>
+        </div>
+        <div id="sin-nofarma-seccion">
+          <h3><svg class="ico"><use href="#ico-cuidado"/></svg> Medidas no farmacológicas</h3>
+          <ul id="sin-nofarma"></ul>
+        </div>
+        <div id="sin-farma-seccion">
+          <h3><svg class="ico"><use href="#ico-receta"/></svg> Tratamiento farmacológico</h3>
+          <div class="tabla-envoltorio"><table class="tabla">
+            <thead><tr><th>Fármaco</th><th>Dosis y vía</th><th>Cuándo elegirlo</th></tr></thead>
+            <tbody id="sin-farma"></tbody>
+          </table></div>
+        </div>
+        <div id="sin-escalar-seccion">
+          <h3><svg class="ico"><use href="#ico-escalar"/></svg> Cuándo escalar o reconsultar</h3>
+          <p id="sin-escalar"></p>
+        </div>
+        <div id="sin-familia-seccion" class="bloque-calido">
+          <h3><svg class="ico"><use href="#ico-decir"/></svg> Qué explicarle a la familia</h3>
+          <p id="sin-familia" class="frase-cita"></p>
+        </div>
+        <div id="sin-evitar-seccion" class="bloque-error">
+          <h3><svg class="ico"><use href="#ico-evitar"/></svg> Qué evitar</h3>
+          <ul id="sin-evitar"></ul>
+        </div>
+        <div id="sin-perla-seccion" class="bloque-perla">
+          <h3><svg class="ico"><use href="#ico-perla"/></svg> Perla</h3>
+          <p id="sin-perla"></p>
+        </div>
+        <div id="sin-tema-seccion">
+          <h3><svg class="ico"><use href="#ico-temas"/></svg> Tema relacionado</h3>
+          <button id="sin-tema-boton" class="boton-enlace" type="button" aria-label="Abrir el tema de estudio relacionado"></button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ MODAL: FÁRMACO ============ -->
+  <div id="modal-farmaco" class="modal oculta">
+    <div class="modal-fondo" data-cierra="farmaco"></div>
+    <article class="modal-tarjeta">
+      <button class="cerrar" data-cierra="farmaco" aria-label="Cerrar">✕</button>
+      <div class="modal-cuerpo">
+        <div id="far-insignias" class="insignias modal-insignias"></div>
+        <h2 id="far-nombre"></h2>
+        <p id="far-descripcion"></p>
+        <div id="far-indicaciones-seccion">
+          <h3><svg class="ico"><use href="#ico-check"/></svg> Para qué se usa</h3>
+          <ul id="far-indicaciones"></ul>
+        </div>
+        <div id="far-dosis-seccion">
+          <h3><svg class="ico"><use href="#ico-medir"/></svg> Dosis por vía</h3>
+          <div id="far-dosis" class="dosis-lista"></div>
+        </div>
+        <div id="far-presentaciones-seccion">
+          <h3><svg class="ico"><use href="#ico-presentacion"/></svg> Presentaciones</h3>
+          <p id="far-presentaciones"></p>
+        </div>
+        <div id="far-inicio-seccion">
+          <h3><svg class="ico"><use href="#ico-general"/></svg> Inicio y duración del efecto</h3>
+          <p id="far-inicio"></p>
+        </div>
+        <div id="far-adversos-seccion">
+          <h3><svg class="ico"><use href="#ico-precaucion"/></svg> Efectos adversos</h3>
+          <ul id="far-adversos"></ul>
+        </div>
+        <div id="far-precauciones-seccion" class="bloque-error">
+          <h3><svg class="ico"><use href="#ico-urgencias"/></svg> Precauciones</h3>
+          <ul id="far-precauciones"></ul>
+        </div>
+        <div id="far-practico-seccion" class="bloque-perla">
+          <h3><svg class="ico"><use href="#ico-perla"/></svg> En la práctica</h3>
+          <p id="far-practico"></p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ MODAL: ESCALA ============ -->
+  <div id="modal-escala" class="modal oculta">
+    <div class="modal-fondo" data-cierra="escala"></div>
+    <article class="modal-tarjeta">
+      <button class="cerrar" data-cierra="escala" aria-label="Cerrar">✕</button>
+      <div class="modal-cuerpo">
+        <div id="esc-insignias" class="insignias modal-insignias"></div>
+        <h2 id="esc-nombre"></h2>
+        <h3><svg class="ico"><use href="#ico-evaluar"/></svg> Para qué sirve</h3>
+        <p id="esc-paraque"></p>
+        <div id="esc-items-seccion">
+          <h3><svg class="ico"><use href="#ico-medir"/></svg> Qué se valora</h3>
+          <ul id="esc-items"></ul>
+        </div>
+        <h3><svg class="ico"><use href="#ico-escalas"/></svg> Tramos e interpretación</h3>
+        <div class="tabla-envoltorio"><table class="tabla">
+          <thead><tr><th>Puntuación</th><th>Significa</th><th>Qué hacer</th></tr></thead>
+          <tbody id="esc-tramos"></tbody>
+        </table></div>
+        <h3><svg class="ico"><use href="#ico-cuidado"/></svg> Cómo se aplica</h3>
+        <p id="esc-comousarla"></p>
+        <div id="esc-lim-seccion" class="bloque-error">
+          <h3><svg class="ico"><use href="#ico-precaucion"/></svg> Limitaciones</h3>
+          <p id="esc-limitaciones"></p>
+        </div>
+        <div id="esc-calc-seccion">
+          <h3><svg class="ico"><use href="#ico-calculadoras"/></svg> Calcularla aquí</h3>
+          <button id="esc-calc-boton" class="boton-enlace" type="button" aria-label="Abrir la calculadora relacionada"></button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ MODAL: CALCULADORA ============ -->
+  <div id="modal-calculadora" class="modal oculta">
+    <div class="modal-fondo" data-cierra="calculadora"></div>
+    <article class="modal-tarjeta">
+      <button class="cerrar" data-cierra="calculadora" aria-label="Cerrar">✕</button>
+      <div class="modal-cuerpo">
+        <div id="calc-insignias" class="insignias modal-insignias"></div>
+        <h2 id="calc-nombre"></h2>
+        <p id="calc-descripcion"></p>
+        <form id="calc-formulario" class="calc-formulario"></form>
+        <div class="calc-acciones">
+          <button id="calc-ejemplo" class="calc-ejemplo oculta" type="button">
+            <svg class="ico"><use href="#ico-ejemplo"/></svg>
+            <span>Ver ejemplo</span>
+          </button>
+        </div>
+        <div id="calc-salida" aria-live="polite" class="calc-salida">
+          <div id="calc-resultados"></div>
+          <div id="calc-escala" class="calc-escala oculta"></div>
+          <p id="calc-interpretacion" class="calc-interpretacion"></p>
+          <button id="calc-copiar" class="calc-copiar" type="button">
+            <svg class="ico"><use href="#ico-copiar"/></svg>
+            <span>Copiar para la nota</span>
+          </button>
+        </div>
+        <div id="calc-formula-seccion" class="calc-formula">
+          <h3><svg class="ico"><use href="#ico-formula"/></svg> Fórmula</h3>
+          <p id="calc-formula"></p>
+        </div>
+        <div id="calc-notas-seccion" class="bloque-error">
+          <h3><svg class="ico"><use href="#ico-urgencias"/></svg> Ten en cuenta</h3>
+          <p id="calc-notas"></p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ MODAL: COMUNICACIÓN ============ -->
+  <div id="modal-comunicacion" class="modal oculta">
+    <div class="modal-fondo" data-cierra="comunicacion"></div>
+    <article class="modal-tarjeta">
+      <button class="cerrar" data-cierra="comunicacion" aria-label="Cerrar">✕</button>
+      <div class="modal-cuerpo">
+        <div id="com-insignias" class="insignias modal-insignias"></div>
+        <h2 id="com-titulo"></h2>
+        <p id="com-cuando"></p>
+        <div id="com-objetivo-seccion" class="bloque-clave">
+          <h3><svg class="ico"><use href="#ico-clave"/></svg> Qué se busca en esta conversación</h3>
+          <p id="com-objetivo"></p>
+        </div>
+        <div id="com-pasos-seccion">
+          <h3><svg class="ico"><use href="#ico-escalar"/></svg> Cómo prepararla y conducirla</h3>
+          <ol id="com-pasos" class="pasos"></ol>
+        </div>
+        <div id="com-frases-seccion">
+          <h3><svg class="ico"><use href="#ico-decir"/></svg> Frases</h3>
+          <div class="guion-columnas">
+            <div class="guion-caja guion-si">
+              <h4><svg class="ico"><use href="#ico-check"/></svg> Ayudan</h4>
+              <ul id="com-frases-si"></ul>
+            </div>
+            <div class="guion-caja guion-no">
+              <h4><svg class="ico"><use href="#ico-equis"/></svg> Mejor evitarlas</h4>
+              <ul id="com-frases-no"></ul>
+            </div>
+          </div>
+        </div>
+        <div id="com-preguntas-seccion">
+          <h3><svg class="ico"><use href="#ico-comunicacion"/></svg> Si preguntan esto</h3>
+          <div id="com-preguntas" class="preguntas-lista"></div>
+        </div>
+        <div id="com-edad-seccion">
+          <h3><svg class="ico"><use href="#ico-familia"/></svg> Según la edad del niño</h3>
+          <div class="tabla-envoltorio"><table class="tabla">
+            <thead><tr><th>Edad</th><th>Cómo adaptarlo</th></tr></thead>
+            <tbody id="com-edad"></tbody>
+          </table></div>
+        </div>
+        <div id="com-errores-seccion" class="bloque-error">
+          <h3><svg class="ico"><use href="#ico-evitar"/></svg> Errores frecuentes</h3>
+          <ul id="com-errores"></ul>
+        </div>
+        <div id="com-perla-seccion" class="bloque-perla">
+          <h3><svg class="ico"><use href="#ico-perla"/></svg> Perla</h3>
+          <p id="com-perla"></p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ MODAL: TEMA ============ -->
+  <div id="modal-tema" class="modal oculta">
+    <div class="modal-fondo" data-cierra="tema"></div>
+    <article class="modal-tarjeta">
+      <button class="cerrar" data-cierra="tema" aria-label="Cerrar">✕</button>
+      <div class="modal-cuerpo">
+        <div class="insignias modal-insignias"><span id="tema-area" class="insignia dominio"></span></div>
+        <h2 id="tema-titulo"></h2>
+        <p id="tema-resumen" class="tema-resumen"></p>
+        <div id="tema-secciones"></div>
+        <div class="bloque-clave">
+          <h3><svg class="ico"><use href="#ico-clave"/></svg> Puntos clave</h3>
+          <ul id="tema-puntos"></ul>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Región de estado permanente: nace vacía y visible para el árbol de
+       accesibilidad, de modo que ningún anuncio se pierda por nacer oculta. -->
+  <div id="region-estado" class="solo-lector" role="status"></div>
+
+  <footer class="pie">
+    <p class="pie-aviso">Material de estudio y de consulta rápida. No sustituye los libros de texto, la formación supervisada, el juicio clínico ni la valoración directa de un profesional de la salud.</p>
+    <p>Todo el contenido y los esquemas son propios y se almacenan localmente: la aplicación funciona completa sin conexión a internet y no enlaza a servicios de terceros.</p>
+    <p id="estado-origen" class="estado-origen"></p>
+  </footer>
+
+  <button id="ir-arriba" class="ir-arriba" aria-label="Volver arriba" title="Volver arriba">
+    <svg class="ico"><use href="#ico-flecha-arriba"/></svg>
+  </button>
+
+  <!-- Menú lateral: Sustituye a la cabecera cuando esta se retira durante la lectura. El panel se rellena leyendo las pestañas reales del documento. -->
+  <button id="boton-menu-lateral" class="boton-menu-lateral" aria-label="Abrir el menú de secciones" title="Menú de secciones" aria-expanded="false" aria-controls="menu-lateral">
+    <svg class="ico" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+  </button>
+  <div id="menu-lateral-fondo" class="menu-lateral-fondo"></div>
+  <nav id="menu-lateral" class="menu-lateral" aria-label="Menú de secciones">
+    <div class="menu-lateral-cabecera">
+      <p class="menu-lateral-titulo">Secciones</p>
+      <button id="cerrar-menu-lateral" class="menu-lateral-cerrar" aria-label="Cerrar el menú">✕</button>
+    </div>
+    <div id="menu-lateral-lista" class="menu-lateral-lista"></div>
+  </nav>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

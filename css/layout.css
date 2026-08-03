@@ -1,0 +1,435 @@
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   2. Estructura
+   ------------------------------------------------------------
+   Cabecera, pestañas, contenedor de vista, portada, encabezados
+   de sección, pie de página, botón de volver arriba y paginación.
+   ============================================================ */
+
+/* ============================================================
+   Cabecera
+   ============================================================ */
+.cabecera {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--superficie) 84%, transparent);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  border-bottom: 1px solid var(--borde);
+  transition: transform 0.35s var(--paso);
+}
+/* Retirada durante la lectura: El menú lateral aparta la cabecera con una transformación
+   y no con display, porque así la animación es suave y reversible al volver arriba. */
+.cabecera.retirada { transform: translateY(-100%); }
+.cabecera-superior {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.marca { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; color: inherit; }
+.marca-icono {
+  width: 46px; height: 46px;
+  display: grid; place-items: center;
+  background: var(--marca-grad);
+  border-radius: 16px;
+  box-shadow: var(--sombra-marca);
+}
+.marca-icono .ico-logo { width: 25px; height: 25px; stroke: #fff; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- Íconos SVG ---------- */
+.ico {
+  width: 1.15em; height: 1.15em;
+  stroke: currentColor; fill: none;
+  stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round;
+  flex: none; vertical-align: -0.22em;
+}
+.marca-texto { display: flex; flex-direction: column; justify-content: center; line-height: 1.2; }
+.marca-texto strong { font-size: clamp(0.9rem, 3.2vw, 1.06rem); font-weight: 700; letter-spacing: -0.015em; white-space: nowrap; }
+.marca-texto small { font-size: 0.74rem; color: var(--tinta-3); font-weight: 500; white-space: nowrap; }
+
+.boton-tema {
+  border: 1px solid var(--borde);
+  background: var(--superficie-2);
+  width: 42px; height: 42px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: var(--tinta-2);
+  display: grid; place-items: center;
+  transition: transform 0.2s var(--paso), border-color 0.2s, background 0.2s, color 0.2s;
+}
+.boton-tema:hover { transform: translateY(-1px) rotate(-8deg); border-color: var(--marca-400); color: var(--marca-tinta); }
+.boton-tema .ico { width: 20px; height: 20px; }
+/* El ícono refleja el tema en pantalla, no el modo elegido: Sol en claro y
+   luna en oscuro. Por eso el intercambio se declara por los dos caminos del
+   tema oscuro, igual que los tokens de base.css. */
+.boton-tema .icono-luna { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-tema="claro"])) .boton-tema .icono-sol { display: none; }
+  :root:where(:not([data-tema="claro"])) .boton-tema .icono-luna { display: block; }
+}
+:root[data-tema="oscuro"] .boton-tema .icono-sol { display: none; }
+:root[data-tema="oscuro"] .boton-tema .icono-luna { display: block; }
+.pestana .ico { width: 17px; height: 17px; }
+
+/* Navegación en pestañas */
+.pestanas {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 0.75rem 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.pestanas::-webkit-scrollbar { display: none; }
+.pestana {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  color: var(--tinta-2);
+  border: none;
+  padding: 0.55rem 0.95rem;
+  border-radius: 12px;
+  font-size: 0.89rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+}
+.pestana:hover { color: var(--tinta); background: var(--superficie-2); }
+.pestana:active { background: color-mix(in srgb, var(--marca-500) 16%, transparent); }
+.pestana.activa { color: var(--marca-tinta); background: color-mix(in srgb, var(--marca-500) 12%, transparent); }
+.pestana.activa::after {
+  content: "";
+  position: absolute;
+  left: 22%; right: 22%; bottom: -0.5rem;
+  height: 3px; border-radius: 3px 3px 0 0;
+  background: var(--marca-grad);
+}
+
+/* ============================================================
+   Contenido
+   ============================================================ */
+.vista {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.75rem 1.25rem 4rem;
+  flex: 1;
+  animation: aparecer 0.45s var(--paso);
+}
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Portada */
+.portada { text-align: center; padding: 1.5rem 0 2rem; }
+.portada-titulo {
+  font-family: var(--serif);
+  font-size: clamp(1.75rem, 4.2vw, 2.7rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  /* El degradado recortado al texto corta por la caja de línea y amputaba
+     los descendentes de la serif. El respiro inferior los deja dentro del
+     recorte y el margen negativo devuelve el espacio al diseño. */
+  line-height: 1.15;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+  background: linear-gradient(120deg, var(--tinta), var(--marca-tinta));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.portada-lema { color: var(--tinta-2); max-width: 640px; margin: 0.8rem auto 0; font-size: 1.02rem; }
+
+.metricas { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin-top: 1.4rem; }
+.metrica {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  font-size: 0.82rem;
+  color: var(--tinta-2);
+  box-shadow: var(--sombra-sm);
+  display: inline-flex; align-items: center; gap: 0.4rem;
+}
+.metrica strong { color: var(--marca-tinta); font-weight: 700; font-variant-numeric: tabular-nums; }
+.metrica .ico { width: 15px; height: 15px; color: var(--marca-tinta); }
+
+/* Encabezado de vistas secundarias */
+.encabezado-vista { padding: 0.5rem 0 1.5rem; }
+.encabezado-vista h1 {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3.5vw, 2.05rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.encabezado-vista h1 .ico { width: 0.85em; height: 0.85em; color: var(--marca-tinta); }
+.encabezado-vista p { color: var(--tinta-2); margin-top: 0.35rem; max-width: 700px; }
+
+/* Aviso destacado dentro de un encabezado de vista */
+.nota-aviso {
+  display: flex; align-items: flex-start; gap: 0.55rem;
+  margin-top: 0.9rem !important;
+  padding: 0.7rem 1rem;
+  background: var(--alerta-suave);
+  border-left: 3px solid #f59e0b;
+  border-radius: var(--r-sm);
+  font-size: 0.86rem;
+  color: var(--tinta);
+}
+.nota-aviso .ico { color: var(--alerta); flex: none; margin-top: 0.15rem; }
+
+/* ---------- Buscador ---------- */
+.buscador { margin-bottom: 1.75rem; }
+.campo-busqueda-envoltorio { position: relative; }
+.icono-busqueda {
+  position: absolute;
+  left: 1.05rem; top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.campo-busqueda {
+  width: 100%;
+  padding: 0.95rem 1.1rem 0.95rem 2.85rem;
+  font-size: 1.02rem;
+  font-family: inherit;
+  color: var(--tinta);
+  border: 1.5px solid var(--borde);
+  border-radius: var(--r-lg);
+  background: var(--superficie);
+  outline: none;
+  box-shadow: var(--sombra-sm);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.campo-busqueda::placeholder { color: var(--tinta-3); }
+.campo-busqueda:focus { border-color: var(--marca-400); box-shadow: 0 0 0 4px var(--anillo); }
+
+.filtros { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.65rem; }
+.grupo-filtro { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
+.etiqueta-filtro {
+  font-size: 0.71rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--tinta-3); min-width: 76px;
+}
+.chips { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.chip {
+  border: 1.5px solid var(--borde);
+  background: var(--superficie);
+  color: var(--tinta-2);
+  padding: 0.32rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.83rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.18s var(--paso);
+}
+.chip:hover { border-color: var(--marca-400); color: var(--marca-tinta); transform: translateY(-1px); }
+.chip:active { transform: translateY(0) scale(0.97); }
+.chip.activo { background: var(--marca-grad); border-color: transparent; color: #fff; box-shadow: var(--sombra-marca); }
+
+/* Con puntero grueso el blanco táctil sube al mínimo de 44 px sin engordar
+   la interfaz de escritorio. */
+@media (pointer: coarse) {
+  .chip { min-height: 44px; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .pag-btn { min-width: 44px; min-height: 44px; }
+}
+
+.contador { margin-top: 0.9rem; font-size: 0.83rem; color: var(--tinta-3); font-weight: 500; }
+
+/* ============================================================
+   Pie y utilidades flotantes
+   ============================================================ */
+.pie {
+  text-align: center;
+  padding: 1.85rem 1.25rem;
+  font-size: 0.8rem;
+  color: var(--tinta-3);
+  border-top: 1px solid var(--borde);
+  background: var(--superficie);
+}
+.pie p { max-width: 780px; margin: 0 auto; }
+.pie-aviso { color: var(--tinta-2); font-weight: 600; }
+.estado-origen { margin-top: 0.5rem; opacity: 0.7; font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+
+.ir-arriba {
+  position: fixed;
+  bottom: 1.5rem; right: 1.5rem;
+  z-index: 90;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+  color: var(--marca-tinta);
+  cursor: pointer;
+  display: grid; place-items: center;
+  box-shadow: var(--sombra-md);
+  opacity: 0; visibility: hidden; transform: translateY(12px);
+  transition: all 0.3s var(--paso);
+}
+.ir-arriba .ico { width: 20px; height: 20px; stroke-width: 2.2; }
+.ir-arriba.visible { opacity: 1; visibility: visible; transform: none; }
+.ir-arriba:hover { background: var(--marca-grad); color: #fff; border-color: transparent; transform: translateY(-3px); box-shadow: var(--sombra-marca); }
+
+/* ============================================================
+   Paginación
+   ============================================================ */
+.paginacion { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+.paginacion:empty { display: none; }
+.pag-info { font-size: 0.82rem; color: var(--tinta-3); font-variant-numeric: tabular-nums; }
+.pag-botones { display: flex; align-items: center; gap: 0.3rem; margin-left: auto; }
+.pag-btn {
+  min-width: 38px; height: 38px;
+  padding: 0 0.6rem;
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+  color: var(--tinta-2);
+  border-radius: 12px;
+  font-size: 0.9rem; font-weight: 600; font-family: inherit;
+  cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: all 0.18s var(--paso);
+}
+.pag-btn:hover:not(:disabled):not(.activo) { border-color: var(--marca-400); color: var(--marca-tinta); transform: translateY(-1px); }
+.pag-btn:active:not(:disabled):not(.activo) { transform: translateY(0) scale(0.95); }
+.pag-btn.activo { background: var(--marca-grad); border-color: transparent; color: #fff; box-shadow: var(--sombra-marca); cursor: default; }
+/* Deshabilitado con tinta atenuada pero legible, en lugar de una opacidad
+   que dejaba la flecha por debajo del contraste mínimo. */
+.pag-btn:disabled { color: var(--tinta-3); background: var(--superficie-2); border-color: var(--borde-2); cursor: not-allowed; }
+.pag-flecha .ico { width: 18px; height: 18px; }
+.pag-elipsis { color: var(--tinta-3); padding: 0 0.2rem; align-self: flex-end; }
+
+
+/* ============================================================
+   Menú lateral
+   ============================================================ */
+/* Botón flotante y panel que sustituyen a la cabecera cuando esta se retira durante la
+   lectura. El botón vive en el borde izquierdo a media altura para no chocar con el botón
+   de volver arriba, que ocupa la esquina inferior derecha, ni con la barra de progreso,
+   que corre pegada al borde superior. Todos los colores salen de tokens, de modo que los
+   tres caminos del tema quedan cubiertos sin reglas propias, y la regla global de menos
+   movimiento vuelve instantáneas estas transiciones. */
+.boton-menu-lateral {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translate(-110%, -50%);
+  z-index: 110;
+  min-width: 46px;
+  min-height: 46px;
+  border: 1px solid var(--borde);
+  border-left: none;
+  border-radius: 0 14px 14px 0;
+  background: var(--superficie);
+  color: var(--marca-tinta);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--sombra-md);
+  visibility: hidden;
+  transition: transform 0.3s var(--paso), visibility 0.3s, background 0.2s, color 0.2s;
+}
+.boton-menu-lateral.visible { visibility: visible; transform: translate(0, -50%); }
+.boton-menu-lateral:hover { background: var(--marca-grad); color: #fff; border-color: transparent; }
+.boton-menu-lateral .ico { width: 20px; height: 20px; }
+
+/* El fondo atenuado recoge el clic fuera del panel, para que cerrar no active por
+   accidente lo que quede debajo. */
+.menu-lateral-fondo {
+  position: fixed;
+  inset: 0;
+  z-index: 115;
+  background: color-mix(in srgb, var(--tinta) 25%, transparent);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.menu-lateral-fondo.abierto { opacity: 1; visibility: visible; }
+
+/* El ancho del panel se limita para que en escritorio nunca cubra todo el contenido,
+   mientras que en pantallas estrechas puede tomar casi todo el ancho. */
+.menu-lateral {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 120;
+  width: min(320px, 86vw);
+  background: var(--superficie);
+  border-right: 1px solid var(--borde);
+  box-shadow: var(--sombra-lg);
+  padding: 1rem 0.85rem 1.25rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-105%);
+  visibility: hidden;
+  transition: transform 0.3s var(--paso), visibility 0.3s;
+}
+.menu-lateral.abierto { transform: none; visibility: visible; }
+
+.menu-lateral-cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0 0.35rem 0.6rem;
+  border-bottom: 1px solid var(--borde);
+  margin-bottom: 0.5rem;
+}
+.menu-lateral-titulo {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tinta-3);
+}
+.menu-lateral-cerrar {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--borde);
+  background: var(--superficie-2);
+  color: var(--tinta-2);
+  border-radius: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+.menu-lateral-cerrar:hover { border-color: var(--marca-400); color: var(--marca-tinta); }
+
+.menu-lateral-lista { display: flex; flex-direction: column; gap: 0.25rem; }
+/* Las opciones repiten el lenguaje visual de las pestañas y garantizan un blanco táctil
+   de al menos 44 píxeles de alto. */
+.menu-lateral-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.55rem 0.8rem;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--tinta-2);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+}
+.menu-lateral-item .ico { width: 18px; height: 18px; }
+.menu-lateral-item:hover { color: var(--tinta); background: var(--superficie-2); }
+.menu-lateral-item.activa { color: var(--marca-tinta); background: color-mix(in srgb, var(--marca-500) 12%, transparent); }

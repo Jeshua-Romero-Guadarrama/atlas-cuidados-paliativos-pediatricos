@@ -1,0 +1,107 @@
+/* ============================================================
+   Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida
+   7. Impresión
+   ------------------------------------------------------------
+   En atención domiciliaria el papel sigue siendo el soporte más
+   fiable: no se queda sin batería y lo puede leer cualquiera que
+   entre en la casa. Al imprimir con una ficha abierta se obtiene
+   solo esa ficha, en tinta negra sobre blanco y sin los elementos
+   de navegación.
+   ============================================================ */
+
+@media print {
+  /* Fondo blanco y tinta negra, sea cual sea el tema en pantalla */
+  :root, :root[data-tema="oscuro"] {
+    --fondo: #ffffff;
+    --fondo-2: #ffffff;
+    --superficie: #ffffff;
+    --superficie-2: #ffffff;
+    --superficie-3: #f2f2f2;
+    --tinta: #000000;
+    --tinta-2: #222222;
+    --tinta-3: #444444;
+    --borde: #bbbbbb;
+    --borde-2: #dddddd;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  /* Fuera todo lo que no es contenido */
+  .aurora,
+  .barra-progreso,
+  .cabecera,
+  .buscador,
+  .paginacion,
+  .ir-arriba,
+  .saltar-al-contenido,
+  .portada,
+  .metricas,
+  .cerrar,
+  .boton-enlace,
+  .boton-primario,
+  .calc-copiar,
+  .calc-ejemplo,
+  .estado-origen { display: none !important; }
+
+  /* Con una ficha abierta se imprime solo la ficha */
+  body:has(.modal:not(.oculta)) .vista { display: none !important; }
+  body:has(.modal:not(.oculta)) .pie { display: none !important; }
+
+  .modal {
+    position: static !important;
+    display: block !important;
+    padding: 0 !important;
+  }
+  .modal-fondo { display: none !important; }
+  .modal-tarjeta {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+    animation: none;
+  }
+  .modal-cuerpo { padding: 0; gap: 0.3rem; }
+
+  /* Sin modal abierto se imprime el listado de la vista activa */
+  .vista.oculta { display: none !important; }
+
+  /* Los bloques destacados conservan su jerarquía con un filete lateral */
+  .bloque-perla, .bloque-error, .bloque-clave, .bloque-calido,
+  .guion-si, .guion-no, .quiz-vineta {
+    background: none !important;
+    border-left: 3px solid #000 !important;
+    padding-left: 0.8rem;
+  }
+
+  /* Que no se parta una fila de dosis ni una tarjeta entre dos páginas */
+  .dosis-fila, .pregunta-par, .tarjeta, .termino,
+  .tema-seccion, .tabla tr { break-inside: avoid; page-break-inside: avoid; }
+
+  h2, h3 { break-after: avoid; page-break-after: avoid; }
+
+  .tabla-envoltorio { overflow: visible; border-color: #bbb; }
+  .tabla { min-width: 0; }
+
+  img, svg { max-width: 100% !important; }
+
+  /* Aviso legal al pie de todo lo impreso */
+  .modal-cuerpo::after {
+    content: "Material de estudio y de consulta. Las dosis son de referencia y deben verificarse antes de prescribir. Atlas de Cuidados Paliativos Pediátricos y Calidad de Vida.";
+    display: block;
+    margin-top: 1.2rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid #bbb;
+    font-size: 8.5pt;
+    color: #444;
+  }
+
+  @page { margin: 1.6cm; }
+}

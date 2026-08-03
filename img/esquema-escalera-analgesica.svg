@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img"
+     aria-label="Escalera analgesica pediatrica de dos escalones de la OMS">
+  <title>Escalera analgésica pediátrica de dos escalones</title>
+  <style>
+    .fondo { fill: #faf8fd; }
+    .txt   { fill: #1e1830; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt2  { fill: #55496b; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt3  { fill: #837792; font-family: "Segoe UI", system-ui, sans-serif; }
+    .e1    { fill: #ede9fe; stroke: #9b7ede; }
+    .e2    { fill: #e4dcfa; stroke: #6d4aa8; }
+    .base  { stroke: #b6a9cd; }
+    .tacha { stroke: #be123c; }
+    @media (prefers-color-scheme: dark) {
+      .fondo { fill: #231c3b; }
+      .txt   { fill: #efe9f8; }
+      .txt2  { fill: #b6a9cd; }
+      .txt3  { fill: #8b7da3; }
+      .e1    { fill: #2f2550; stroke: #9b7ede; }
+      .e2    { fill: #3b2d63; stroke: #b79bf0; }
+      .base  { stroke: #55496b; }
+    }
+  </style>
+
+  <rect class="fondo" width="640" height="380" rx="12"/>
+
+  <!-- Eje -->
+  <line class="base" x1="56" y1="330" x2="600" y2="330" stroke-width="2"/>
+  <text class="txt3" x="56" y="356" font-size="13">Intensidad del dolor</text>
+  <text class="txt3" x="600" y="356" font-size="13" text-anchor="end">Mayor</text>
+
+  <!-- Escalon 1 -->
+  <rect class="e1" x="80" y="212" width="228" height="112" rx="10" stroke-width="2"/>
+  <text class="txt" x="100" y="242" font-size="17" font-weight="700">Escalón 1</text>
+  <text class="txt2" x="100" y="266" font-size="14">Dolor leve</text>
+  <text class="txt" x="100" y="290" font-size="14" font-weight="600">Paracetamol</text>
+  <text class="txt" x="100" y="310" font-size="14" font-weight="600">Ibuprofeno</text>
+
+  <!-- Escalon 2 -->
+  <rect class="e2" x="332" y="112" width="228" height="212" rx="10" stroke-width="2"/>
+  <text class="txt" x="352" y="142" font-size="17" font-weight="700">Escalón 2</text>
+  <text class="txt2" x="352" y="166" font-size="14">Dolor moderado o intenso</text>
+  <text class="txt" x="352" y="192" font-size="14" font-weight="600">Morfina</text>
+  <text class="txt2" x="352" y="212" font-size="13">y otros opioides potentes</text>
+  <text class="txt2" x="352" y="240" font-size="13">Sin dosis techo:</text>
+  <text class="txt2" x="352" y="258" font-size="13">se titula hasta controlar</text>
+  <text class="txt3" x="352" y="286" font-size="13">Se mantiene el escalón 1</text>
+  <text class="txt3" x="352" y="304" font-size="13">y se añaden coadyuvantes</text>
+
+  <!-- Escalon intermedio eliminado -->
+  <g opacity="0.75">
+    <text class="txt3" x="320" y="52" font-size="13" text-anchor="middle">La OMS eliminó el escalón intermedio en pediatría</text>
+    <text class="txt3" x="320" y="72" font-size="13" text-anchor="middle" font-style="italic">codeína y tramadol dependen del CYP2D6 y son impredecibles</text>
+    <line class="tacha" x1="196" y1="62" x2="228" y2="62" stroke-width="2"/>
+    <line class="tacha" x1="412" y1="62" x2="444" y2="62" stroke-width="2"/>
+  </g>
+
+  <!-- Flecha de ascenso -->
+  <path class="base" d="M300 200 L326 200" stroke-width="2" fill="none"
+        marker-end="url(#punta)"/>
+  <defs>
+    <marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9b7ede"/>
+    </marker>
+  </defs>
+</svg>

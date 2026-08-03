@@ -1,0 +1,21 @@
+{
+  "name": "atlas-cuidados-paliativos-pediatricos",
+  "version": "1.0.0",
+  "description": "Atlas de estudio y consulta sobre control de sintomas, farmacos, escalas, calculadoras y comunicacion en cuidados paliativos pediatricos",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node seed.js",
+    "validar": "node validar.js",
+    "probar": "node pruebas.js",
+    "seo": "node generar-seo.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0"
+  }
+}

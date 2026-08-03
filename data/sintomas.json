@@ -1,0 +1,3023 @@
+[
+  {
+    "codigo": "dolor-valoracion",
+    "titulo": "Valoración del dolor en el niño",
+    "dominio": "Dolor",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "El dolor es el síntoma más frecuente y más temido en cuidados paliativos pediátricos, y el que peor se mide. Valorarlo bien es la condición previa a tratarlo bien: Sin una medida repetible no se puede saber si una intervención ha funcionado, y sin eso la analgesia se ajusta por impresiones.",
+    "porQueOcurre": "El dolor es una experiencia sensorial y emocional, no solo una señal nerviosa. Eso significa que la misma lesión duele distinto según el miedo, el cansancio, el significado que el niño le da y el estado de sus padres. Por eso una valoración que solo mide intensidad se queda corta.",
+    "causas": [
+      "Enfermedad de base: Infiltración tumoral, isquemia, inflamación, distensión visceral",
+      "Complicaciones: Fractura patológica, úlcera por presión, mucositis, estreñimiento",
+      "Procedimientos: Punciones, curas, movilizaciones, aspiración de secreciones",
+      "Espasticidad y distonía en el niño con daño neurológico",
+      "Causas no evidentes y muy frecuentes: Reflujo gastroesofágico, retención urinaria, fecaloma, otitis, caries"
+    ],
+    "evaluar": [
+      "Elegir la escala por la capacidad del niño, no por su edad: Autoinforme siempre que sea posible, y solo si no lo es, observacional",
+      "Menos de 3 años o sin lenguaje: FLACC. Niño con discapacidad: Escala r-FLACC individualizada con la familia. Neonato: PIPP-R o CRIES",
+      "De 3 a 7 años: Escala de caras de Wong-Baker, aclarando que hablan de dolor y no de estado de ánimo",
+      "Más de 8 años: Escala numérica de 0 a 10",
+      "Preguntar siempre por el dolor actual y además por el peor y el mejor momento de las últimas 24 h, porque preguntar solo por el presente hace que se pase por alto el dolor irruptivo",
+      "Caracterizar: Dónde, desde cuándo, cómo es, qué lo empeora, qué lo alivia, si despierta por la noche",
+      "Preguntar a los padres cómo saben ellos que a su hijo le duele: Detectan cambios sutiles que ningún profesional reconocería",
+      "Volver a puntuar entre 30 y 60 minutos después de cada intervención: Ese es el dato que dice si funcionó"
+    ],
+    "noFarmacologico": [
+      "Presencia de los padres, contacto físico y contención, que en el lactante es tan eficaz como un analgésico menor",
+      "Sacarosa oral y succión no nutritiva en el neonato antes de un procedimiento",
+      "Distracción activa adaptada a la edad: Burbujas, cuentos, música, pantalla, respiración",
+      "Calor o frío local, masaje, cambios posturales",
+      "Explicar al niño qué va a pasar y darle algún control sobre ello, aunque sea mínimo",
+      "Cuidar el entorno: Luz, ruido, temperatura, interrupciones del sueño"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Paracetamol",
+        "dosis": "15 mg/kg VO cada 4 a 6 h, techo de 60 a 75 mg/kg/día",
+        "cuando": "Primer escalón, y siempre asociado al opioide porque permite reducir su dosis"
+      },
+      {
+        "farmaco": "Ibuprofeno",
+        "dosis": "5 a 10 mg/kg VO cada 6 a 8 h, techo de 40 mg/kg/día",
+        "cuando": "Dolor con componente inflamatorio y dolor óseo, si no hay trombopenia ni nefropatía"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "0.2 mg/kg VO cada 4 h, máximo 5 mg en la dosis inicial",
+        "cuando": "Segundo escalón, directamente si el dolor es moderado o intenso"
+      }
+    ],
+    "escalar": "Si el dolor no baja tras dos ajustes de dosis bien hechos, si aparece un dolor nuevo o de características distintas, si hay signos neurológicos acompañantes, o si aparecen efectos adversos que impiden subir la dosis. En esos tres casos hay que replantear el diagnóstico del dolor antes de seguir escalando, y consultar con un equipo especializado.",
+    "queDecirALaFamilia": "El dolor no hay que aguantarlo ni ganárselo. Tenemos medicinas buenas y las vamos a ajustar hasta que esté bien, así que avísennos siempre que lo vean con dolor aunque les parezca poco.",
+    "evitar": [
+      "Decidir que un niño no tiene dolor porque está quieto o dormido: El niño con dolor crónico deja de protestar",
+      "Usar una escala observacional cuando el niño puede autoinformar",
+      "Preguntar solo por el dolor de este momento y pasar por alto el irruptivo",
+      "Pautar analgesia a demanda en un dolor persistente en lugar de a horas fijas",
+      "Usar la vía intramuscular, que duele y está proscrita en pediatría",
+      "Atribuir todo el dolor a la enfermedad de base sin descartar estreñimiento, retención urinaria o una caries"
+    ],
+    "perla": "La pregunta más rentable de toda la valoración es qué le gustaría poder hacer que ahora no puede por el dolor. Convierte una cifra en un objetivo comprobable: Dormir la noche entera, aguantar sentado, que no le duela al cambiarlo.",
+    "esquema": "img/esquema-escalera-analgesica.svg",
+    "esquemaPie": "Escalera analgésica pediátrica de dos escalones de la OMS",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "valoración",
+      "escalas",
+      "FLACC",
+      "autoinforme",
+      "primera línea"
+    ]
+  },
+  {
+    "codigo": "dolor-nociceptivo",
+    "titulo": "Dolor nociceptivo somático y visceral",
+    "dominio": "Dolor",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es el dolor que nace de la estimulación de receptores en tejidos íntegros, y el más frecuente. Se divide en somático, bien localizado y sordo o punzante, y visceral, difuso, profundo, referido a otra zona y a menudo acompañado de náusea y sudoración. La distinción importa porque cada uno responde a cosas distintas.",
+    "porQueOcurre": "Los nociceptores de piel, músculo, hueso y periostio generan un dolor preciso que el niño puede señalar con un dedo. Los nociceptores viscerales son escasos y de campo amplio, así que el dolor visceral es mal localizado, se percibe en un dermatoma alejado y activa respuestas vegetativas.",
+    "causas": [
+      "Somático: Infiltración de partes blandas, metástasis óseas, úlceras por presión, mucositis, fracturas patológicas, dolor postoperatorio",
+      "Visceral: Distensión de la cápsula hepática, obstrucción intestinal, distensión vesical, estreñimiento, ascitis, cólico biliar o renal",
+      "Espasmo de músculo liso en la vejiga y el intestino"
+    ],
+    "evaluar": [
+      "Pedirle al niño que señale dónde duele con un dedo: Si puede hacerlo con precisión, orienta a somático",
+      "Preguntar por el carácter: Punzante y constante orienta a somático; retortijón, opresión o profundo orienta a visceral",
+      "Buscar el patrón de dolor referido en el visceral: Hombro derecho en la cápsula hepática, ingle en el cólico renal",
+      "Registrar qué lo empeora y qué lo alivia: El somático suele empeorar con el movimiento, el visceral con la ingesta o el llenado",
+      "Explorar el abdomen y descartar globo vesical y fecaloma antes de subir un opioide"
+    ],
+    "noFarmacologico": [
+      "Inmovilización o descarga de la zona en el dolor óseo",
+      "Calor local en el dolor visceral de tipo cólico",
+      "Posición antiálgica y cambios posturales suaves",
+      "Prevención del estreñimiento, que es causa y agravante de dolor visceral"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Paracetamol",
+        "dosis": "15 mg/kg VO cada 4 a 6 h",
+        "cuando": "Base del tratamiento en ambos tipos, asociado a lo demás"
+      },
+      {
+        "farmaco": "Ibuprofeno",
+        "dosis": "5 a 10 mg/kg VO cada 6 a 8 h",
+        "cuando": "Dolor somático, sobre todo óseo, si no hay contraindicación"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "0.2 mg/kg VO cada 4 h, titulando por rescates",
+        "cuando": "Dolor moderado o intenso de cualquiera de los dos tipos"
+      },
+      {
+        "farmaco": "Butilhioscina",
+        "dosis": "0.3 a 0.5 mg/kg SC cada 6 a 8 h, techo de 100 mg/día",
+        "cuando": "Dolor visceral de tipo cólico, por su acción espasmolítica"
+      },
+      {
+        "farmaco": "Metamizol",
+        "dosis": "10 a 20 mg/kg VO o IV cada 6 a 8 h",
+        "cuando": "Dolor cólico visceral, donde suele rendir más que el paracetamol"
+      }
+    ],
+    "escalar": "Si el dolor visceral se acompaña de vómito fecaloideo, distensión progresiva o ausencia de deposición y ventoseo, hay que descartar obstrucción intestinal antes de tratarlo solo con analgésicos. Si el dolor óseo es de aparición brusca y con impotencia funcional, descartar fractura patológica.",
+    "queDecirALaFamilia": "Este dolor viene de la enfermedad y responde bien a las medicinas. Vamos a empezar por una pauta fija y a ajustarla en un par de días según cómo vaya, no de golpe.",
+    "evitar": [
+      "Tratar un dolor visceral de tipo cólico solo con opioides, que enlentecen el intestino y pueden empeorarlo",
+      "Usar antiinflamatorios en un niño con trombopenia o con función renal comprometida",
+      "Olvidar descartar globo vesical y fecaloma, que son causas frecuentes y reversibles en minutos",
+      "Dar la analgesia solo a demanda en un dolor que es continuo"
+    ],
+    "perla": "Un dolor visceral que aparece de novo en un niño ya tratado obliga a explorar el abdomen y a comprobar la vejiga antes de subir la morfina. La retención urinaria por opioides produce un dolor intenso que se resuelve con una sonda, no con más opioide.",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "nociceptivo",
+      "somático",
+      "visceral",
+      "cólico",
+      "referido"
+    ]
+  },
+  {
+    "codigo": "dolor-neuropatico",
+    "titulo": "Dolor neuropático",
+    "dominio": "Dolor",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es el dolor causado por una lesión o una enfermedad del propio sistema nervioso. Responde mal a los analgésicos habituales y bien a los coadyuvantes, así que reconocerlo cambia por completo el tratamiento. Se infradiagnostica mucho en pediatría porque el niño pequeño no puede describir las sensaciones que lo caracterizan.",
+    "porQueOcurre": "La lesión del nervio produce descargas espontáneas y sensibilización central, de modo que el sistema genera señal de dolor sin que haya estímulo. Por eso aparecen fenómenos que no existen en el dolor nociceptivo: Alodinia, que es dolor ante un estímulo que no debería doler, e hiperalgesia, que es dolor desproporcionado.",
+    "causas": [
+      "Compresión o infiltración tumoral de un nervio, de un plexo o de la médula",
+      "Neuropatía por quimioterapia, en particular por alcaloides de la vinca y por platinos",
+      "Radioterapia sobre un trayecto nervioso",
+      "Cirugía con sección nerviosa, incluida la amputación y el dolor de miembro fantasma",
+      "Enfermedades neurodegenerativas y mielopatías",
+      "Herpes zóster y sus secuelas"
+    ],
+    "evaluar": [
+      "Buscar los descriptores característicos en el niño que puede hablar: Quema, hormiguea, da calambres, es como una corriente",
+      "Explorar la alodinia pasando suavemente una gasa o un algodón por la zona: El dolor ante ese roce es casi diagnóstico",
+      "Comprobar si el dolor sigue un territorio nervioso o dermatoma",
+      "Buscar déficit sensitivo o motor en la misma zona",
+      "En el niño sin lenguaje, sospecharlo cuando rechaza que le toquen una zona concreta, se retira ante el contacto suave o llora al vestirlo",
+      "Sospecharlo siempre que un dolor no responda a dosis crecientes de opioide"
+    ],
+    "noFarmacologico": [
+      "Proteger la zona del roce: Ropa holgada, retirar costuras y etiquetas, arco de cama para que la sábana no toque",
+      "Estimulación táctil suave y progresiva para desensibilizar, cuando el niño la tolera",
+      "Fisioterapia y terapia de espejo en el dolor de miembro fantasma",
+      "Técnicas de relajación y distracción, que aquí rinden especialmente porque hay un fuerte componente de anticipación"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Gabapentina",
+        "dosis": "Inicio 5 mg/kg VO en dosis nocturna, subiendo a 10 a 20 mg/kg cada 8 h, techo 60 mg/kg/día",
+        "cuando": "Primera línea. Requiere titulación lenta y de 1 a 2 semanas para juzgar la eficacia"
+      },
+      {
+        "farmaco": "Amitriptilina",
+        "dosis": "0.2 a 0.5 mg/kg VO por la noche, hasta 1 mg/kg",
+        "cuando": "Dolor continuo y quemante, sobre todo si además impide dormir"
+      },
+      {
+        "farmaco": "Pregabalina",
+        "dosis": "1 mg/kg/día VO en 2 tomas, subiendo a 3 a 6 mg/kg/día",
+        "cuando": "Alternativa a la gabapentina o cuando conviene reducir el número de tomas"
+      },
+      {
+        "farmaco": "Lidocaína tópica al 5 por ciento",
+        "dosis": "Parche 12 h puesto y 12 h retirado, recortado a la zona",
+        "cuando": "Dolor neuropático localizado y superficial con alodinia"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.1 a 0.3 mg/kg/día VO en dosis matutina",
+        "cuando": "Compresión nerviosa por tumor, por su efecto sobre el edema"
+      },
+      {
+        "farmaco": "Ketamina",
+        "dosis": "0.1 a 0.3 mg/kg SC en bolo o 0.1 a 0.3 mg/kg/h en infusión",
+        "cuando": "Refractario a lo anterior, bajo indicación de equipo con experiencia"
+      },
+      {
+        "farmaco": "Metadona",
+        "dosis": "0.1 a 0.2 mg/kg VO, con ajuste no antes de 5 a 7 días",
+        "cuando": "Refractario, por su acción sobre el receptor NMDA. Solo con experiencia en el fármaco"
+      }
+    ],
+    "escalar": "Si hay déficit motor nuevo, alteración de esfínteres o dolor en cinturón, hay que descartar compresión medular como urgencia. Si el dolor sigue sin control tras gabapentina bien titulada y un segundo coadyuvante, consultar con un equipo especializado para valorar ketamina, metadona o una técnica intervencionista.",
+    "queDecirALaFamilia": "Este dolor viene del propio nervio, no del sitio donde le duele, y por eso no se quita con los analgésicos de siempre. Las medicinas que vamos a usar tardan una o dos semanas en hacer efecto, así que no las dejen antes de tiempo aunque parezca que no sirven.",
+    "evitar": [
+      "Seguir subiendo el opioide sin añadir un coadyuvante: Es la respuesta refleja y la que menos funciona",
+      "Titular la gabapentina demasiado rápido, que produce sedación y hace que se abandone un fármaco que habría funcionado",
+      "No advertir del retraso de 1 a 2 semanas en el efecto, que es la causa principal de abandono",
+      "Descartar el diagnóstico porque el niño no sabe describir el dolor como quemante",
+      "Olvidar la exploración de la alodinia, que se hace en diez segundos con una gasa"
+    ],
+    "perla": "Un dolor que no cede pese a dosis crecientes de opioide y que solo añade somnolencia es neuropático hasta que se demuestre lo contrario, o bien es hiperalgesia inducida por el propio opioide. En ambos casos la solución no es subir más, sino cambiar de estrategia.",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "neuropático",
+      "alodinia",
+      "gabapentina",
+      "coadyuvante",
+      "refractario"
+    ]
+  },
+  {
+    "codigo": "dolor-irruptivo",
+    "titulo": "Dolor irruptivo y dosis de rescate",
+    "dominio": "Dolor",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es la exacerbación transitoria de dolor que aparece sobre un dolor de fondo ya controlado. Se trata con una dosis de rescate, no subiendo la pauta fija, y su registro es la herramienta con la que se titula el opioide. Es el concepto que más veces se aplica mal en la práctica.",
+    "porQueOcurre": "Se distinguen tres tipos. El incidental, desencadenado por algo previsible como moverse, toser o una cura. El idiopático, que aparece sin causa identificable. Y el de final de dosis, que ocurre justo antes de la siguiente toma y que en realidad no es dolor irruptivo sino una pauta insuficiente o un intervalo demasiado largo.",
+    "causas": [
+      "Movilización, higiene, cambio de pañal, transferencias",
+      "Curas de heridas y procedimientos",
+      "Tos, vómito, deposición",
+      "Progresión de la enfermedad, cuando la frecuencia aumenta de forma sostenida",
+      "Pauta de fondo insuficiente, que se manifiesta como dolor de final de dosis"
+    ],
+    "evaluar": [
+      "Registrar cada episodio: Hora, intensidad, desencadenante, dosis administrada y respuesta",
+      "Contar cuántos rescates necesita al día: Tres o más de forma mantenida significa que la dosis de fondo se ha quedado corta",
+      "Identificar si son siempre a la misma hora, justo antes de la toma siguiente, porque eso indica dolor de final de dosis y se corrige acortando el intervalo o subiendo la dosis fija",
+      "Comprobar que la dosis de rescate está bien calculada: Del 10 al 15 por ciento de la dosis diaria total, no un porcentaje de la dosis por toma",
+      "Comprobar que la familia sabe que puede usarla y que no está esperando permiso"
+    ],
+    "noFarmacologico": [
+      "Anticipar el rescate 30 minutos antes de una movilización o de una cura previsible, que es lo que más rendimiento da",
+      "Reorganizar los cuidados para agrupar las manipulaciones y reducir su número",
+      "Técnicas de distracción y de respiración durante el episodio",
+      "Ajustar la técnica de movilización y usar sábana de traslado"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Morfina de liberación inmediata",
+        "dosis": "Del 10 al 15 por ciento de la dosis diaria total, VO, repetible cada hora",
+        "cuando": "Rescate estándar por vía oral"
+      },
+      {
+        "farmaco": "Morfina subcutánea",
+        "dosis": "Del 10 al 15 por ciento de la dosis diaria total SC, repetible cada 20 a 30 minutos",
+        "cuando": "Cuando no hay vía oral o se necesita rapidez"
+      },
+      {
+        "farmaco": "Fentanilo sublingual o nasal",
+        "dosis": "1 a 2 microgramos/kg",
+        "cuando": "Dolor irruptivo de instauración muy rápida, por su inicio en 5 a 10 minutos"
+      }
+    ],
+    "escalar": "Si el niño necesita más de cuatro rescates diarios pese a haber reajustado la pauta fija dos veces, o si la intensidad de los episodios no cede con el rescate, hay que replantear el mecanismo del dolor y consultar con un equipo especializado.",
+    "queDecirALaFamilia": "Esta dosis extra está pautada precisamente para esto y no le va a hacer daño. Pueden dársela sin llamar antes, y lo único que les pido es que apunten la hora, porque con esos apuntes ajustamos la dosis de fondo.",
+    "evitar": [
+      "Calcular el rescate sobre la dosis por toma en lugar de sobre la dosis diaria total",
+      "No recalcular el rescate al subir la pauta fija, que deja al niño con un rescate que se ha quedado corto",
+      "Usar un opioide de liberación prolongada como rescate: Tarda horas en actuar",
+      "Confundir el dolor de final de dosis con dolor irruptivo y rescatarlo en lugar de corregir la pauta",
+      "Que la familia no use el rescate por miedo a la adicción o a hacer algo mal"
+    ],
+    "perla": "El rescate no es solo un tratamiento: Es el instrumento de medida. La suma de los rescates de las últimas 24 h es exactamente lo que hay que añadir a la dosis diaria para calcular la nueva pauta, y sin ese registro la titulación se convierte en adivinar.",
+    "esquema": "img/esquema-titulacion-rescate.svg",
+    "esquemaPie": "Ciclo de titulación: Dosis fija, rescates registrados y nueva dosis diaria",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "rescate",
+      "titulación",
+      "irruptivo",
+      "final de dosis",
+      "registro"
+    ]
+  },
+  {
+    "codigo": "dolor-oseo",
+    "titulo": "Dolor óseo por infiltración tumoral",
+    "dominio": "Dolor",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es uno de los dolores más intensos y más incapacitantes del niño oncológico. Tiene un componente inflamatorio marcado que lo hace especialmente sensible a los antiinflamatorios y a los corticoides, y un componente incidental que obliga a planificar los rescates alrededor del movimiento.",
+    "porQueOcurre": "La infiltración tumoral activa osteoclastos y libera prostaglandinas y citocinas que sensibilizan los nociceptores del periostio, que es una de las estructuras más densamente inervadas del cuerpo. Además la lesión debilita el hueso y genera microfracturas que duelen con la carga.",
+    "causas": [
+      "Metástasis óseas de neuroblastoma, sarcoma de Ewing, osteosarcoma o rabdomiosarcoma",
+      "Infiltración medular por leucemia, que produce dolor óseo difuso y a menudo es el síntoma de presentación",
+      "Fractura patológica sobre una lesión lítica",
+      "Necrosis avascular por corticoides prolongados",
+      "Osteoporosis y fracturas vertebrales por inmovilidad o por tratamiento"
+    ],
+    "evaluar": [
+      "Localizar el punto de dolor y buscar dolor a la percusión sobre la apófisis espinosa, que orienta a lesión vertebral",
+      "Preguntar si duele en reposo, con el movimiento o con la carga: El dolor con la carga sugiere riesgo de fractura",
+      "Registrar el dolor incidental por separado del basal, porque el tratamiento es distinto",
+      "Descartar signos de compresión medular: Déficit motor, alteración de esfínteres, dolor en cinturón",
+      "Valorar si una prueba de imagen va a cambiar la conducta antes de pedirla"
+    ],
+    "noFarmacologico": [
+      "Descarga de la extremidad afectada y ayudas técnicas: Bastón, silla, corsé si procede",
+      "Rescate anticipado 30 minutos antes de cualquier movilización",
+      "Técnica de movilización cuidadosa con sábana de traslado y con dos personas",
+      "Calor local en la musculatura contracturada de alrededor",
+      "Radioterapia paliativa, que es muy eficaz en el dolor óseo localizado y merece valorarse siempre"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Ibuprofeno",
+        "dosis": "5 a 10 mg/kg VO cada 6 a 8 h, techo de 40 mg/kg/día",
+        "cuando": "Primera línea específica del dolor óseo, si no hay trombopenia ni nefropatía"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "0.2 mg/kg VO cada 4 h, titulando por rescates",
+        "cuando": "Dolor moderado o intenso, asociado al antiinflamatorio"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.1 a 0.3 mg/kg/día VO en dosis matutina",
+        "cuando": "Componente inflamatorio importante o compresión asociada"
+      },
+      {
+        "farmaco": "Ketorolaco",
+        "dosis": "0.5 mg/kg IV cada 6 a 8 h, no más de 5 días",
+        "cuando": "Crisis de dolor óseo intenso, como medida temporal"
+      },
+      {
+        "farmaco": "Bisfosfonatos",
+        "dosis": "Según protocolo de la unidad",
+        "cuando": "Dolor óseo difuso por metástasis, bajo indicación de oncología"
+      }
+    ],
+    "escalar": "Ante déficit motor, alteración de esfínteres o dolor en cinturón, sospechar compresión medular y actuar como urgencia. Ante dolor brusco con impotencia funcional, descartar fractura patológica. Valorar siempre con oncología y radioterapia si hay opción de radioterapia paliativa.",
+    "queDecirALaFamilia": "El dolor del hueso responde muy bien a un antiinflamatorio además de la morfina, así que vamos a usar los dos. Y le vamos a dar la dosis extra antes de moverlo, no después, para que el cambio no le duela.",
+    "evitar": [
+      "Tratarlo solo con opioide, cuando el antiinflamatorio suele aportar más que subir la dosis",
+      "Prescribir un antiinflamatorio sin comprobar antes la cifra de plaquetas en el niño oncológico",
+      "Movilizar sin haber dado el rescate con antelación suficiente",
+      "No plantear la radioterapia paliativa por considerar que el niño ya no está para tratamientos",
+      "Pasar por alto los signos de compresión medular en un niño que ya tenía dolor de espalda"
+    ],
+    "perla": "En el dolor óseo, un antiinflamatorio bien pautado puede aportar más que duplicar la dosis de opioide, y con muchos menos efectos adversos. Conviene probarlo antes de escalar, siempre que las plaquetas y el riñón lo permitan.",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "óseo",
+      "metástasis",
+      "antiinflamatorio",
+      "incidental",
+      "radioterapia"
+    ]
+  },
+  {
+    "codigo": "dolor-procedimientos",
+    "titulo": "Dolor por procedimientos",
+    "dominio": "Dolor",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es el dolor que provoca el propio sistema sanitario: Punciones, curas, aspiraciones, movilizaciones. Es completamente previsible y por tanto completamente prevenible, y es también el que más recuerdo deja, porque genera ansiedad anticipatoria que empeora cada procedimiento siguiente.",
+    "porQueOcurre": "Además del componente nociceptivo directo, hay un componente aprendido muy potente: La memoria de un procedimiento mal manejado hace que el siguiente duela más de verdad, no solo que dé más miedo. La primera vez condiciona todas las demás, así que la prevención empieza en la primera punción.",
+    "causas": [
+      "Punción venosa, punción lumbar, aspirado de médula ósea",
+      "Curas de heridas y de úlceras por presión",
+      "Aspiración de secreciones",
+      "Cambios de sonda, sondaje vesical",
+      "Movilizaciones, transferencias y cambios posturales",
+      "Retirada de apósitos adheridos"
+    ],
+    "evaluar": [
+      "Preguntar al niño y a los padres cómo fue la última vez y qué es lo que peor llevó",
+      "Identificar los procedimientos que se pueden agrupar, espaciar o suprimir",
+      "Valorar el grado de ansiedad anticipatoria: Si empieza al salir de casa, hace falta un ansiolítico con antelación",
+      "Puntuar el dolor durante y después del procedimiento para ajustar la próxima vez"
+    ],
+    "noFarmacologico": [
+      "Explicar antes qué va a pasar, con lenguaje concreto y sin mentir sobre si va a doler",
+      "Dar control al niño en lo que se pueda: Qué brazo, contar hasta tres, decir cuándo empezar",
+      "Presencia de los padres siempre que el niño lo quiera, con un papel concreto asignado",
+      "Distracción activa adaptada a la edad: Burbujas, cuentos, música, pantalla, respiración soplando",
+      "Sacarosa oral y succión no nutritiva en el neonato y el lactante pequeño, con contacto piel con piel",
+      "Posición de confort sentado en el regazo en lugar de tumbado y sujetado",
+      "Evitar la habitación del niño para los procedimientos dolorosos: Su cama debe seguir siendo un lugar seguro"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Crema anestésica tópica",
+        "dosis": "Aplicar 30 a 60 minutos antes bajo apósito oclusivo",
+        "cuando": "Toda punción programada. Es la medida más sencilla y la más olvidada"
+      },
+      {
+        "farmaco": "Morfina o el opioide de base",
+        "dosis": "Dosis de rescate 30 minutos antes por vía oral, o 15 minutos antes por vía subcutánea",
+        "cuando": "Procedimientos previsiblemente dolorosos en el niño ya tratado"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.5 mg/kg VO, máximo 20 mg, 30 minutos antes",
+        "cuando": "Ansiólisis para procedimientos, si hay ansiedad anticipatoria marcada"
+      },
+      {
+        "farmaco": "Fentanilo intranasal",
+        "dosis": "1 a 2 microgramos/kg",
+        "cuando": "Procedimiento doloroso sin acceso venoso, por su inicio rápido"
+      },
+      {
+        "farmaco": "Ketamina",
+        "dosis": "0.5 a 1 mg/kg intranasal, o 0.5 mg/kg IV",
+        "cuando": "Curas muy dolorosas, bajo supervisión con experiencia"
+      }
+    ],
+    "escalar": "Si el niño desarrolla ansiedad anticipatoria intensa, con vómitos o rechazo antes de salir de casa, hay que reevaluar todo el plan de procedimientos con el equipo y considerar sedación programada o suprimir lo prescindible.",
+    "queDecirALaFamilia": "Esto lo podemos preparar para que le duela mucho menos, pero necesitamos avisar con tiempo, porque la crema tarda una hora en hacer efecto. Y no le vamos a decir que no duele si va a doler.",
+    "evitar": [
+      "Decir que no va a doler cuando va a doler: Se pierde la confianza y no se recupera",
+      "Sujetar al niño por la fuerza, que aumenta el dolor y el trauma y suele hacer el procedimiento más difícil",
+      "Hacer los procedimientos en la cama del niño",
+      "Reunir a varias personas alrededor sin que ninguna se ocupe de acompañarlo",
+      "No usar crema anestésica por falta de previsión",
+      "Repetir un intento de punción más de dos veces con la misma persona"
+    ],
+    "perla": "La primera punción de un niño condiciona todas las siguientes. Invertir tiempo y anestésico tópico en la primera es la intervención con mejor relación entre coste y beneficio de toda la asistencia pediátrica.",
+    "etiquetas": [
+      "procedimientos",
+      "anticipatorio",
+      "crema anestésica",
+      "distracción",
+      "prevención"
+    ]
+  },
+  {
+    "codigo": "dolor-nino-no-verbal",
+    "titulo": "Dolor en el niño sin lenguaje",
+    "dominio": "Dolor",
+    "nivel": "Avanzado",
+    "urgencia": false,
+    "edades": "Niño con discapacidad grave",
+    "descripcion": "El niño con parálisis cerebral grave o con discapacidad intelectual profunda es el paciente que más dolor tiene y menos analgesia recibe de toda la pediatría. No puede decirlo, sus señales se atribuyen a su condición de base y su dolor tiene causas que no son las que se buscan primero.",
+    "porQueOcurre": "El dolor existe igual, pero la vía de expresión está alterada. Además la puntuación basal de cualquier escala observacional ya es alta cuando el niño está bien, así que solo el cambio respecto de su estado habitual informa. Y muchas de sus causas de dolor son crónicas y silentes: Reflujo, estreñimiento, luxación de cadera.",
+    "causas": [
+      "Reflujo gastroesofágico y esofagitis, que es la causa más frecuente e infradiagnosticada",
+      "Estreñimiento y fecaloma",
+      "Espasticidad, distonía y espasmos musculares",
+      "Luxación o subluxación de cadera, muy frecuente y muy dolorosa",
+      "Fractura patológica por osteoporosis, a veces sin traumatismo aparente",
+      "Retención urinaria e infección del tracto urinario",
+      "Dolor dental y caries, que casi nunca se explora",
+      "Úlceras por presión y dermatitis del pañal",
+      "Dolor central o tormenta neurovegetativa, un diagnóstico de exclusión"
+    ],
+    "evaluar": [
+      "Empezar siempre por la familia: Cómo saben ustedes que le duele algo. Esa información es la más fiable de todas",
+      "Usar la r-FLACC individualizada con las conductas propias del niño anotadas por sus padres",
+      "Establecer y registrar la puntuación basal cuando el niño está bien, porque casi nunca es cero",
+      "Recorrer una lista sistemática de causas de la cabeza a los pies, sin saltarse la boca ni el pañal",
+      "Explorar caderas, buscar dolor a la movilización pasiva y asimetría",
+      "Considerar una prueba terapéutica secuencial cuando el estudio es negativo: Primero antirreflujo, después laxante, después analgesia, y valorar cada una durante 2 semanas"
+    ],
+    "noFarmacologico": [
+      "Revisar la postura y el sistema de sedestación, que es causa frecuente de dolor y de úlceras",
+      "Ajustar férulas, corsés y ortesis, y comprobar que no rozan",
+      "Movilizaciones lentas y anunciadas, nunca bruscas",
+      "Cuidado sistemático de la boca y revisión odontológica periódica",
+      "Regular el ambiente: Ruido, luz y temperatura, que en muchos de estos niños desencadenan crisis"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Omeprazol",
+        "dosis": "0.7 a 1.4 mg/kg/día VO en ayunas",
+        "cuando": "Prueba terapéutica de 2 a 4 semanas ante irritabilidad sin causa clara"
+      },
+      {
+        "farmaco": "Polietilenglicol",
+        "dosis": "0.4 a 0.8 g/kg/día VO, ajustando a heces de tipo 3 o 4",
+        "cuando": "Estreñimiento, que es causa y agravante constante"
+      },
+      {
+        "farmaco": "Gabapentina",
+        "dosis": "Inicio 5 mg/kg VO nocturno, subiendo a 10 a 20 mg/kg cada 8 h",
+        "cuando": "Irritabilidad y dolor central persistente. Es la intervención con mejor rendimiento en esta población"
+      },
+      {
+        "farmaco": "Baclofeno o diazepam",
+        "dosis": "Según pauta de neurología",
+        "cuando": "Componente de espasticidad o de espasmo doloroso"
+      },
+      {
+        "farmaco": "Paracetamol y morfina",
+        "dosis": "Dosis habituales por peso",
+        "cuando": "Dolor confirmado o prueba analgésica estructurada"
+      }
+    ],
+    "escalar": "Ante un cambio brusco e inexplicable del patrón habitual, hay que buscar una causa aguda: Fractura, abdomen agudo, torsión testicular, cuerpo extraño corneal. Si tras un estudio sistemático y tres pruebas terapéuticas no hay control, consultar con un equipo especializado.",
+    "queDecirALaFamilia": "Ustedes son quienes mejor lo conocen y quienes primero notan que algo le pasa. Cuéntennos qué hace distinto cuando le duele, porque eso nos sirve más que cualquier prueba.",
+    "evitar": [
+      "Atribuir la irritabilidad a su condición de base sin haber buscado una causa",
+      "Usar la FLACC estándar en lugar de la versión revisada e individualizada",
+      "Comparar con una puntuación de cero en lugar de con su basal",
+      "No explorar la boca, las caderas y el pañal",
+      "Descartar el dolor porque el niño no llora: Muchos de estos niños expresan el dolor con quietud y no con agitación",
+      "Sedar la conducta sin haber buscado la causa del malestar"
+    ],
+    "perla": "Antes de concluir que un niño con encefalopatía llora por su enfermedad, hay que haber descartado reflujo, estreñimiento, cadera y boca. Esas cuatro causas explican la mayoría de los casos y las cuatro tienen tratamiento.",
+    "esquema": "img/esquema-dolor-no-verbal.svg",
+    "esquemaPie": "Búsqueda sistemática de causas de dolor en el niño sin lenguaje",
+    "temaRelacionado": "grupos-act",
+    "etiquetas": [
+      "discapacidad",
+      "r-FLACC",
+      "reflujo",
+      "infratratamiento",
+      "prueba terapéutica"
+    ]
+  },
+  {
+    "codigo": "disnea",
+    "titulo": "Disnea",
+    "dominio": "Respiratorio",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es la sensación subjetiva de falta de aire, y uno de los síntomas que más angustia genera, tanto al niño como a quien lo acompaña. Su tratamiento de primera línea es la morfina, y el mayor obstáculo para usarla bien es un miedo infundado a la depresión respiratoria.",
+    "porQueOcurre": "La sensación nace del desajuste entre lo que el centro respiratorio ordena y lo que el sistema consigue ejecutar. Por eso no depende de la oxigenación: Un niño puede estar al 96 por ciento de saturación y ahogarse, y estar al 88 por ciento y encontrarse tranquilo. La ansiedad amplifica la sensación y cierra un círculo que hay que romper por los dos lados.",
+    "causas": [
+      "Enfermedad pulmonar: Infiltración tumoral, neumonía, atelectasia, fibrosis, derrame pleural",
+      "Debilidad muscular respiratoria en enfermedades neuromusculares",
+      "Insuficiencia cardiaca y congestión pulmonar",
+      "Anemia grave",
+      "Ascitis o masa abdominal que limita el descenso del diafragma",
+      "Obstrucción de la vía aérea superior",
+      "Ansiedad y pánico, que casi siempre acompañan y a veces dominan",
+      "Dolor torácico que impide respirar con normalidad"
+    ],
+    "evaluar": [
+      "Preguntar directamente por la sensación de falta de aire y usar la escala de Borg modificada si el niño puede autoinformar",
+      "En el niño que no puede, valorar signos observacionales: Uso de músculos accesorios, aleteo nasal, tiraje, incapacidad de completar frases, expresión de angustia",
+      "Registrar qué la desencadena y qué la alivia, y si aparece en reposo o solo con el esfuerzo",
+      "Identificar el componente de pánico, que requiere tratamiento propio",
+      "Valorar si una causa reversible merece estudio: Derrame drenable, anemia corregible, infección tratable",
+      "No usar la saturación como medida de la disnea: Se mide lo que el niño siente, no lo que marca el aparato"
+    ],
+    "noFarmacologico": [
+      "Aire fresco dirigido a la cara con un ventilador de mano o una ventana abierta: Es la medida más eficaz, la más barata y la más olvidada",
+      "Posición incorporada a 45 grados o inclinado hacia delante con apoyo en una mesa",
+      "Ambiente fresco, sin humo, con ropa holgada y sin aglomeración de gente alrededor",
+      "Acompañamiento tranquilo y voz pausada: La calma del adulto reduce objetivamente la disnea del niño",
+      "Técnicas de respiración con labios fruncidos y ritmo marcado por el acompañante",
+      "Agrupar las actividades y planificar descansos para reducir el esfuerzo",
+      "Oxígeno solo si el niño está hipoxémico y solo si mejora su sensación: Si no mejora, se retira"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Morfina",
+        "dosis": "Sin opioide previo: 0.1 mg/kg VO o 0.05 mg/kg SC cada 4 h. Con opioide previo: Aumentar la dosis diaria entre un 25 y un 50 por ciento",
+        "cuando": "Primera línea en toda disnea. La dosis para disnea es aproximadamente la mitad de la analgésica"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.05 a 0.1 mg/kg SC, o 0.2 a 0.3 mg/kg por vía bucal o nasal en crisis",
+        "cuando": "Componente de ansiedad o de pánico asociado, siempre junto al opioide y no en su lugar"
+      },
+      {
+        "farmaco": "Lorazepam",
+        "dosis": "0.02 a 0.05 mg/kg sublingual, máximo 2 mg",
+        "cuando": "Ansiedad de fondo en el niño mayor que puede tragar"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.25 a 0.5 mg/kg/día VO o SC",
+        "cuando": "Obstrucción de la vía aérea, linfangitis carcinomatosa o componente inflamatorio"
+      },
+      {
+        "farmaco": "Furosemida",
+        "dosis": "0.5 a 1 mg/kg VO, IV o SC",
+        "cuando": "Disnea por congestión pulmonar o sobrecarga de volumen"
+      }
+    ],
+    "escalar": "Si la disnea es de instauración brusca, hay que descartar neumotórax, tromboembolismo, obstrucción de la vía aérea o derrame masivo, valorando siempre si el estudio va a cambiar la conducta. Si es refractaria pese a opioide bien titulado y benzodiacepina, consultar con un equipo especializado y valorar sedación paliativa.",
+    "queDecirALaFamilia": "La morfina en esta dosis no le va a parar la respiración: Lo que hace es quitarle la sensación de ahogo. Y lo primero que pueden hacer ustedes, antes que ninguna medicina, es ponerle aire en la cara con un abanico o un ventilador pequeño.",
+    "evitar": [
+      "No usar morfina por miedo a la depresión respiratoria, que es el error más frecuente y el que más sufrimiento produce",
+      "Poner oxígeno de forma automática sin comprobar si mejora la sensación del niño",
+      "Tratar la disnea solo con benzodiacepinas: La primera línea es el opioide",
+      "Guiar el tratamiento por la saturación en lugar de por lo que el niño siente",
+      "Llenar la habitación de gente y de aparatos, que aumenta la sensación de ahogo",
+      "No dejar prescrito un rescate para la crisis de disnea en el domicilio"
+    ],
+    "perla": "El ventilador de mano dirigido a la cara actúa sobre los receptores del trigémino y reduce la sensación de disnea de forma medible. Es lo primero que hay que enseñar a la familia, funciona en segundos y no tiene ningún efecto adverso.",
+    "esquema": "img/esquema-algoritmo-disnea.svg",
+    "esquemaPie": "Secuencia de actuación ante la disnea, del aire en la cara al opioide",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "disnea",
+      "morfina",
+      "ventilador",
+      "pánico",
+      "saturación"
+    ]
+  },
+  {
+    "codigo": "estertores",
+    "titulo": "Estertores de los últimos días",
+    "dominio": "Respiratorio",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es el ruido húmedo que produce el aire al pasar por las secreciones acumuladas en la vía aérea alta del niño que ya no puede tragar. Molesta enormemente a quien lo oye y no al niño, que está inconsciente, y esa es la clave de todo su manejo.",
+    "porQueOcurre": "En los últimos días se pierde el reflejo de deglución y el de tos, de modo que la saliva y las secreciones bronquiales se acumulan en la faringe y en la tráquea. El movimiento del aire sobre ese líquido produce el ruido. No hay obstrucción real ni hipoxia añadida.",
+    "causas": [
+      "Pérdida del reflejo de deglución por disminución del nivel de conciencia",
+      "Acumulación de secreciones salivales, que es el tipo más frecuente y el que mejor responde",
+      "Secreciones bronquiales por infección o por edema pulmonar, que responden peor",
+      "Aporte excesivo de líquidos por vía parenteral, que es una causa yatrógena evitable"
+    ],
+    "evaluar": [
+      "Comprobar el nivel de conciencia: Si el niño está inconsciente, no percibe el ruido",
+      "Distinguir entre secreciones salivales altas, que responden bien a los antisecretores, y secreciones bronquiales bajas, que responden mal",
+      "Buscar signos de distrés real, que casi siempre están ausentes: Si el niño está tranquilo, el problema es del acompañante",
+      "Revisar el aporte de líquidos y reducirlo si es excesivo",
+      "Valorar el impacto sobre la familia, que es el objetivo terapéutico real"
+    ],
+    "noFarmacologico": [
+      "Explicar a la familia qué está ocurriendo y que el niño no se está ahogando: Esta es la intervención principal, por delante de cualquier fármaco",
+      "Colocar en decúbito lateral o semiprono, que favorece el drenaje por gravedad",
+      "Elevar ligeramente la cabecera",
+      "Reducir o suspender la sueroterapia",
+      "Cuidado de la boca con gasas húmedas, que además alivia la sequedad",
+      "No aspirar secreciones salvo que sean accesibles en la boca: La aspiración profunda es traumática, produce sangrado y estimula más secreción"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Butilhioscina",
+        "dosis": "0.3 a 0.5 mg/kg SC cada 6 a 8 h, o en infusión continua, techo de 100 mg/día",
+        "cuando": "Primera línea si se quiere evitar sedación añadida, porque no atraviesa la barrera hematoencefálica"
+      },
+      {
+        "farmaco": "Escopolamina",
+        "dosis": "10 microgramos/kg SC cada 4 a 8 h, o parche de 1 mg cada 72 h",
+        "cuando": "Cuando además interesa cierta sedación. Puede producir confusión si el niño está consciente"
+      },
+      {
+        "farmaco": "Glicopirronio",
+        "dosis": "4 a 10 microgramos/kg SC cada 6 a 8 h, máximo 200 microgramos por dosis",
+        "cuando": "Alternativa potente que tampoco seda ni confunde"
+      }
+    ],
+    "escalar": "Si hay signos de distrés respiratorio real, con taquipnea, tiraje y expresión de angustia, no se trata de estertores sino de disnea, y hay que tratarla como tal con un opioide. Si los estertores producen sufrimiento evidente en el niño, revalorar el diagnóstico.",
+    "queDecirALaFamilia": "Ese ruido lo hace el aire al pasar por la saliva que ya no puede tragar. Suena muy mal y a ustedes les angustia mucho, pero él no lo nota y no se está ahogando. Vamos a ponerle una medicina para que se produzca menos y a colocarlo de lado.",
+    "evitar": [
+      "Aspirar secreciones de forma repetida, que es traumático, produce sangrado y aumenta la producción",
+      "Empezar el antisecretor tarde, cuando las secreciones ya están acumuladas: Estos fármacos previenen pero no eliminan lo que ya hay",
+      "Mantener la sueroterapia a volumen completo",
+      "Tratar el ruido como si fuera una infección y empezar antibióticos que no alivian",
+      "No explicar a la familia lo que ocurre, que es lo que de verdad les hace sufrir"
+    ],
+    "perla": "La regla de oro es administrar el antisecretor en cuanto se oye el primer estertor, no cuando ya es intenso, porque estos fármacos impiden que se produzcan nuevas secreciones pero no secan las que ya están. Y la segunda regla es que el tratamiento va dirigido a la familia tanto como al niño.",
+    "temaRelacionado": "ultimos-dias",
+    "etiquetas": [
+      "estertores",
+      "butilhioscina",
+      "últimos días",
+      "familia",
+      "no aspirar"
+    ]
+  },
+  {
+    "codigo": "tos",
+    "titulo": "Tos",
+    "dominio": "Respiratorio",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "La tos agota, impide dormir, provoca vómitos, desencadena dolor incidental y puede llegar a fracturar costillas. Antes de suprimirla hay que decidir si es útil, porque en el niño con secreciones y tos eficaz suprimirla puede ser contraproducente.",
+    "porQueOcurre": "Es un reflejo protector que se dispara desde receptores de la vía aérea, de la pleura, del pericardio, del diafragma y del conducto auditivo externo. En la enfermedad avanzada suele perder su utilidad porque el niño no tiene fuerza para movilizar lo que la tos intenta expulsar.",
+    "causas": [
+      "Infiltración tumoral de la vía aérea o del mediastino",
+      "Infección respiratoria",
+      "Aspiración por disfagia, que es muy frecuente en el niño neurológico",
+      "Reflujo gastroesofágico",
+      "Derrame pleural o pericárdico",
+      "Insuficiencia cardiaca",
+      "Fármacos, en particular los inhibidores de la enzima convertidora de angiotensina",
+      "Tos seca irritativa por sequedad de la mucosa"
+    ],
+    "evaluar": [
+      "Distinguir tos seca de tos productiva, porque el tratamiento es opuesto",
+      "Valorar si la tos es eficaz: Si el niño moviliza y expectora, conviene ayudarla, no suprimirla",
+      "Buscar el patrón horario: Nocturna sugiere reflujo o insuficiencia cardiaca; con la ingesta sugiere aspiración",
+      "Registrar el impacto real: Sueño, alimentación, dolor, agotamiento",
+      "Revisar la lista de fármacos"
+    ],
+    "noFarmacologico": [
+      "Humidificar el ambiente y mantener una buena hidratación de la mucosa",
+      "Posición incorporada, sobre todo por la noche",
+      "Espesar líquidos y ajustar la textura si hay aspiración por disfagia",
+      "Fisioterapia respiratoria y asistencia mecánica a la tos si la tos es útil pero débil",
+      "Evitar irritantes: Humo, olores fuertes, aire muy seco",
+      "Miel en mayores de un año, que tiene evidencia razonable en la tos irritativa"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Morfina",
+        "dosis": "0.1 mg/kg VO cada 4 h, o la dosis de disnea",
+        "cuando": "Tos seca rebelde. Es el antitusígeno más eficaz de que se dispone"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.1 a 0.3 mg/kg/día VO",
+        "cuando": "Componente inflamatorio, obstrucción o infiltración tumoral"
+      },
+      {
+        "farmaco": "Butilhioscina o glicopirronio",
+        "dosis": "Dosis habituales por peso",
+        "cuando": "Tos por secreciones abundantes que el niño no puede expulsar"
+      },
+      {
+        "farmaco": "Salbutamol",
+        "dosis": "Según pauta habitual",
+        "cuando": "Componente de broncoespasmo demostrado"
+      },
+      {
+        "farmaco": "Omeprazol",
+        "dosis": "0.7 a 1.4 mg/kg/día VO",
+        "cuando": "Sospecha de tos por reflujo, como prueba terapéutica"
+      }
+    ],
+    "escalar": "Si aparece hemoptisis, estridor o tos con cianosis, hay que valorar de forma urgente obstrucción de la vía aérea o sangrado. Si la tos impide por completo el descanso pese al tratamiento, consultar con un equipo especializado.",
+    "queDecirALaFamilia": "La tos que no sirve para nada y solo lo agota se puede quitar, y la mejor medicina para eso es la misma morfina que usamos para el dolor, a dosis pequeña. Si la tos le está ayudando a sacar secreciones, entonces mejor la acompañamos que la quitamos.",
+    "evitar": [
+      "Suprimir una tos productiva y eficaz en un niño que aún puede expectorar",
+      "Usar jarabes con codeína, que está contraindicada por debajo de los 12 años",
+      "Prescribir mucolíticos, que carecen de evidencia en este contexto y aumentan el volumen de secreciones",
+      "No revisar la lista de fármacos como posible causa",
+      "Pasar por alto la aspiración silente como causa de tos en el niño neurológico"
+    ],
+    "perla": "Antes de tratar la tos hay que preguntarse si sirve para algo. En el niño con secreciones y tos débil, lo que hace falta es asistirla; en el niño con tos seca que no expulsa nada y no le deja dormir, lo que hace falta es suprimirla con morfina.",
+    "etiquetas": [
+      "tos",
+      "morfina",
+      "productiva",
+      "aspiración",
+      "reflujo"
+    ]
+  },
+  {
+    "codigo": "secreciones-respiratorias",
+    "titulo": "Secreciones abundantes y tos ineficaz",
+    "dominio": "Respiratorio",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Niño con enfermedad neuromuscular",
+    "descripcion": "Es la situación característica del niño con enfermedad neuromuscular o con daño neurológico grave: Produce secreciones normales o aumentadas pero no tiene fuerza para expulsarlas. El resultado son atelectasias, infecciones repetidas y un deterioro respiratorio progresivo y en parte evitable.",
+    "porQueOcurre": "Una tos eficaz necesita inspirar profundo, cerrar la glotis y espirar con fuerza. La debilidad muscular rompe una o varias de esas fases, y la disfunción bulbar añade aspiración de saliva y de alimento. Las secreciones que no se expulsan obstruyen, colapsan segmentos pulmonares y se infectan.",
+    "causas": [
+      "Debilidad de la musculatura inspiratoria y espiratoria en atrofia muscular espinal y distrofias",
+      "Disfunción bulbar con aspiración de saliva y de alimento",
+      "Sialorrea por dificultad de deglución",
+      "Reflujo gastroesofágico con aspiración",
+      "Infección respiratoria intercurrente",
+      "Escoliosis con restricción de la mecánica ventilatoria"
+    ],
+    "evaluar": [
+      "Valorar la eficacia de la tos y, en el niño colaborador, medir el pico flujo de tos si se dispone",
+      "Buscar signos de aspiración: Tos o cambio de voz durante la ingesta, atragantamientos, neumonías de repetición",
+      "Auscultar buscando ruidos de transmisión y zonas hipoventiladas",
+      "Registrar la frecuencia de infecciones respiratorias y de ingresos",
+      "Valorar la sialorrea de forma específica con una escala de frecuencia y gravedad",
+      "Comprobar si la familia dispone de aspirador y sabe usarlo, y si tiene indicación de asistente de tos"
+    ],
+    "noFarmacologico": [
+      "Fisioterapia respiratoria adaptada, con técnicas de aumento de flujo espiratorio",
+      "Asistente mecánico de tos, que es la intervención con mayor impacto en esta población",
+      "Aspiración suave y solo de la cavidad oral cuando hace falta, evitando la aspiración profunda repetida",
+      "Cambios posturales y drenaje postural",
+      "Ajuste de textura de los alimentos y de la posición durante la ingesta",
+      "Ventilación no invasiva si está indicada, que mejora la mecánica y reduce las atelectasias",
+      "Vacunación y prevención de infecciones respiratorias"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Glicopirronio",
+        "dosis": "20 microgramos/kg VO cada 8 h, subiendo cada 5 a 7 días hasta 100 microgramos/kg",
+        "cuando": "Sialorrea y secreciones salivales abundantes. Es el de elección por eficacia y por no sedar"
+      },
+      {
+        "farmaco": "Escopolamina en parche",
+        "dosis": "1 mg cada 72 h, medio parche en niños pequeños",
+        "cuando": "Sialorrea crónica, alternativa cómoda al glicopirronio"
+      },
+      {
+        "farmaco": "Butilhioscina",
+        "dosis": "0.3 a 0.5 mg/kg SC cada 6 a 8 h",
+        "cuando": "Secreciones abundantes en fase aguda o en últimos días"
+      },
+      {
+        "farmaco": "Salino hipertónico nebulizado",
+        "dosis": "Según protocolo local",
+        "cuando": "Secreciones espesas y difíciles de movilizar, con asistente de tos disponible"
+      },
+      {
+        "farmaco": "Toxina botulínica en glándulas salivales",
+        "dosis": "Según protocolo de la unidad",
+        "cuando": "Sialorrea refractaria a anticolinérgicos"
+      }
+    ],
+    "escalar": "Ante un aumento brusco del trabajo respiratorio, desaturación mantenida o fiebre con hipoventilación localizada, valorar neumonía o atelectasia. Si las infecciones respiratorias se repiten, es el momento de replantear con la familia la ventilación no invasiva, la gastrostomía y los objetivos de tratamiento.",
+    "queDecirALaFamilia": "El problema no es que produzca más flemas de lo normal, es que no tiene fuerza para sacarlas. Por eso la máquina de asistencia a la tos ayuda más que aspirarlo una y otra vez, que además le hace daño.",
+    "evitar": [
+      "Aspirar de forma profunda y repetida, que produce sangrado, dolor y más secreción",
+      "Secar demasiado con anticolinérgicos, que espesa las secreciones y empeora los tapones",
+      "No plantear el asistente de tos por considerarlo un recurso hospitalario",
+      "Ignorar la aspiración silente por reflujo o por disfagia",
+      "Tratar cada infección de forma aislada sin replantear el plan de fondo"
+    ],
+    "perla": "En este perfil de niño, el objetivo no es una boca seca sino unas secreciones que se puedan movilizar. Pasarse con los anticolinérgicos convierte un problema de volumen en un problema de tapones, que es peor.",
+    "temaRelacionado": "grupos-act",
+    "etiquetas": [
+      "neuromuscular",
+      "asistente de tos",
+      "sialorrea",
+      "aspiración",
+      "glicopirronio"
+    ]
+  },
+  {
+    "codigo": "nauseas-vomito",
+    "titulo": "Náusea y vómito",
+    "dominio": "Digestivo",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es uno de los síntomas que más deteriora la calidad de vida y que peor se trata, porque se prescribe casi siempre el mismo antiemético sin preguntarse cuál es el mecanismo. Acertar con el mecanismo es lo que separa un tratamiento que funciona de uno que solo añade un fármaco más.",
+    "porQueOcurre": "El centro del vómito recibe señales de cuatro fuentes distintas y cada una responde a receptores diferentes. La zona gatillo quimiorreceptora, que es dopaminérgica y detecta tóxicos y fármacos en sangre. El aparato vestibular, histaminérgico y colinérgico. El tubo digestivo, serotoninérgico. Y la corteza, donde nacen la ansiedad y la náusea anticipatoria.",
+    "causas": [
+      "Fármacos, sobre todo opioides al inicio del tratamiento: Zona gatillo quimiorreceptora",
+      "Alteraciones metabólicas: Uremia, hipercalcemia, insuficiencia hepática",
+      "Hipertensión intracraneal: Vómito en escopetazo, sin náusea previa y con cefalea matutina",
+      "Estasis gástrica y retraso del vaciamiento: Saciedad precoz y plenitud",
+      "Estreñimiento y obstrucción intestinal",
+      "Quimioterapia y radioterapia: Mecanismo serotoninérgico",
+      "Movimiento y afectación vestibular",
+      "Ansiedad y náusea anticipatoria, con componente aprendido",
+      "Candidiasis oral y esofagitis"
+    ],
+    "evaluar": [
+      "Preguntar por el patrón: Vómito en escopetazo sin náusea previa orienta a hipertensión intracraneal",
+      "Preguntar si se asocia a la comida y si hay saciedad precoz, que orienta a estasis gástrica",
+      "Preguntar si empeora con el movimiento, que orienta a componente vestibular",
+      "Revisar la lista completa de fármacos y desde cuándo se toma cada uno",
+      "Palpar el abdomen, comprobar el ritmo intestinal y descartar fecaloma",
+      "Explorar la boca buscando candidiasis, que es causa frecuente y fácil de tratar",
+      "Valorar si una analítica va a cambiar la conducta antes de pedirla"
+    ],
+    "noFarmacologico": [
+      "Comidas pequeñas y frecuentes, frías o a temperatura ambiente, que huelen menos",
+      "Retirar de la habitación los olores de comida y los aromas fuertes",
+      "Que no sea la familia quien insista en que coma: La presión para comer aumenta la náusea",
+      "Cuidado de la boca antes y después de comer",
+      "Aire fresco y ambiente ventilado",
+      "Técnicas de relajación y distracción si hay componente anticipatorio",
+      "Jengibre, que tiene evidencia razonable y buena aceptación"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Haloperidol",
+        "dosis": "0.01 a 0.02 mg/kg VO o SC cada 8 a 12 h",
+        "cuando": "Náusea de origen central: Por opioides, metabólica, urémica o por hipercalcemia. Es el más olvidado y el que más rinde en paliativos"
+      },
+      {
+        "farmaco": "Metoclopramida",
+        "dosis": "0.1 a 0.15 mg/kg VO, IV o SC cada 8 h, no más de 5 días",
+        "cuando": "Estasis gástrica y saciedad precoz, por su efecto procinético. Contraindicada si hay obstrucción completa"
+      },
+      {
+        "farmaco": "Ondansetrón",
+        "dosis": "0.1 a 0.15 mg/kg cada 8 h, máximo 8 mg por toma",
+        "cuando": "Quimioterapia, radioterapia y postoperatorio. Fuera de eso rinde menos de lo que se cree"
+      },
+      {
+        "farmaco": "Dimenhidrinato",
+        "dosis": "1 a 1.5 mg/kg VO, IV o rectal cada 6 a 8 h",
+        "cuando": "Componente vestibular o náusea por hipertensión intracraneal"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.1 a 0.2 mg/kg/día VO o SC en dosis matutina",
+        "cuando": "Coadyuvante de cualquier mecanismo, y de elección si hay hipertensión intracraneal"
+      },
+      {
+        "farmaco": "Levomepromazina",
+        "dosis": "0.05 a 0.1 mg/kg VO o SC cada 12 a 24 h",
+        "cuando": "Náusea refractaria o de mecanismo múltiple, porque cubre varios receptores a la vez"
+      },
+      {
+        "farmaco": "Lorazepam",
+        "dosis": "0.02 a 0.05 mg/kg sublingual, máximo 2 mg",
+        "cuando": "Náusea anticipatoria, administrado con antelación suficiente"
+      }
+    ],
+    "escalar": "Si hay vómito fecaloideo, distensión progresiva, ausencia de deposición y ventoseo o dolor cólico intenso, hay que valorar obstrucción intestinal. Si hay cefalea matutina, vómito en escopetazo o signos neurológicos, valorar hipertensión intracraneal como urgencia. Si no cede tras dos antieméticos de mecanismos distintos bien pautados, consultar con un equipo especializado.",
+    "queDecirALaFamilia": "No todos los vómitos son iguales, y por eso vamos a usar la medicina que corresponde a la causa de los suyos y no la que se usa siempre. Y por favor, no le insistan en que coma: La presión para comer suele empeorar la náusea.",
+    "evitar": [
+      "Prescribir ondansetrón por defecto sin preguntarse cuál es el mecanismo",
+      "Usar metoclopramida si hay sospecha de obstrucción intestinal completa",
+      "Combinar dos antidopaminérgicos, como metoclopramida y haloperidol, que suman riesgo extrapiramidal",
+      "Olvidar el estreñimiento y la candidiasis oral como causas",
+      "Mantener la vía oral cuando el niño vomita todo lo que traga: Hay que pasar a subcutánea",
+      "No revisar la lista de fármacos, que es la causa más frecuente y la más fácil de corregir"
+    ],
+    "perla": "La náusea por opioides aparece al inicio del tratamiento, cede en 3 a 5 días y responde muy bien a dosis pequeñas de haloperidol. Avisar de que va a ocurrir y cubrirla desde el primer día evita que la familia abandone la morfina en la primera semana.",
+    "esquema": "img/esquema-mecanismos-nausea.svg",
+    "esquemaPie": "Las cuatro vías de la náusea y el antiemético que corresponde a cada una",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "náusea",
+      "vómito",
+      "haloperidol",
+      "mecanismo",
+      "opioides"
+    ]
+  },
+  {
+    "codigo": "estrenimiento",
+    "titulo": "Estreñimiento",
+    "dominio": "Digestivo",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es el efecto adverso más constante de los opioides y el único que no desarrolla tolerancia: Dura todo el tratamiento. Produce dolor abdominal, náusea, anorexia, agitación y retención urinaria, y con frecuencia se trata todo eso por separado sin ver que la causa es una sola.",
+    "porQueOcurre": "Los opioides actúan sobre los receptores del plexo mientérico y reducen el peristaltismo, aumentan el tono de los esfínteres y aumentan la absorción de agua en el colon. A eso se suman la inmovilidad, la escasa ingesta, la deshidratación y otros fármacos con efecto anticolinérgico.",
+    "causas": [
+      "Opioides, en todos los casos y desde la primera dosis",
+      "Anticolinérgicos: Butilhioscina, escopolamina, amitriptilina, antihistamínicos",
+      "Ondansetrón, que se olvida con frecuencia",
+      "Inmovilidad y encamamiento",
+      "Ingesta escasa de líquidos y de fibra",
+      "Hipercalcemia e hipopotasemia",
+      "Miedo a defecar por dolor anal, fisura o hemorroides",
+      "Compresión medular o afectación neurológica"
+    ],
+    "evaluar": [
+      "Preguntar por la última deposición y por su consistencia usando la escala de Bristol, no por si va bien",
+      "Palpar el abdomen y valorar tacto rectal si se sospecha impactación, con mucho cuidado en el niño neutropénico o trombopénico",
+      "Descartar diarrea por rebosamiento, que se confunde con diarrea verdadera y lleva a retirar el laxante justo cuando más hace falta",
+      "Revisar la lista completa de fármacos con efecto sobre la motilidad",
+      "Descartar obstrucción antes de administrar un laxante estimulante"
+    ],
+    "noFarmacologico": [
+      "Aumentar líquidos en la medida en que el niño los tolere",
+      "Movilización y sedestación cuando sea posible",
+      "Respetar el reflejo gastrocólico: Ofrecer el orinal o el baño después de las comidas",
+      "Postura adecuada, con apoyo de los pies, que en niños pequeños marca mucha diferencia",
+      "Intimidad y tiempo sin prisa, que en el hospital casi nunca se dan",
+      "Masaje abdominal en el sentido del marco cólico"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Polietilenglicol",
+        "dosis": "0.4 a 0.8 g/kg/día VO, ajustando hasta heces de tipo 3 o 4",
+        "cuando": "Primera línea. Se pauta desde la primera dosis del opioide, no cuando aparece el problema"
+      },
+      {
+        "farmaco": "Senósidos",
+        "dosis": "1 a 2 mg/kg VO en dosis nocturna",
+        "cuando": "Se añade al osmótico porque el problema de fondo es de motilidad y hace falta un estimulante"
+      },
+      {
+        "farmaco": "Lactulosa",
+        "dosis": "0.5 a 1 mL/kg VO cada 12 a 24 h",
+        "cuando": "Alternativa al polietilenglicol si no se dispone de él o el niño rechaza el sabor"
+      },
+      {
+        "farmaco": "Bisacodilo",
+        "dosis": "5 a 10 mg VO por la noche en mayores de 4 años, o supositorio",
+        "cuando": "Rescate cuando el tratamiento de fondo no basta"
+      },
+      {
+        "farmaco": "Enema",
+        "dosis": "Según preparado y edad",
+        "cuando": "Impactación fecal establecida, después de valorar el estado de plaquetas y neutrófilos"
+      },
+      {
+        "farmaco": "Polietilenglicol a dosis de desimpactación",
+        "dosis": "1 a 1.5 g/kg/día VO durante 3 a 6 días",
+        "cuando": "Impactación, como alternativa menos invasiva al enema"
+      }
+    ],
+    "escalar": "Si hay dolor abdominal intenso, distensión, vómito fecaloideo y ausencia de ventoseo, hay que descartar obstrucción intestinal antes de dar nada. Si aparece estreñimiento de novo con alteración de esfínteres o déficit motor, descartar compresión medular.",
+    "queDecirALaFamilia": "La morfina estriñe siempre y eso no mejora con el tiempo, así que el laxante no es opcional ni se toma solo cuando hace falta: Va todos los días mientras dure el tratamiento. Y les voy a pedir que anoten cómo son las heces con estos dibujos, porque con eso ajustamos la dosis.",
+    "evitar": [
+      "Prescribir un opioide sin pautar a la vez un laxante, que es el error más frecuente de todos",
+      "Usar solo un osmótico: Ablanda las heces pero no las mueve, y el niño sigue sin poder expulsarlas",
+      "Retirar el laxante ante una diarrea que en realidad es rebosamiento sobre una impactación",
+      "Administrar un estimulante ante sospecha de obstrucción",
+      "Preguntar si va bien del vientre en lugar de preguntar por la consistencia con la escala de Bristol",
+      "Hacer tacto rectal o enema en un niño neutropénico o trombopénico sin valorar el riesgo"
+    ],
+    "perla": "La combinación que funciona es un osmótico que ablande más un estimulante que empuje. Usar solo el osmótico deja heces blandas que el niño no consigue expulsar, y es la causa más frecuente de que el tratamiento del estreñimiento parezca fracasar.",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "opioides",
+      "laxante",
+      "Bristol",
+      "prevención",
+      "rebosamiento"
+    ]
+  },
+  {
+    "codigo": "anorexia-caquexia",
+    "titulo": "Anorexia y caquexia",
+    "dominio": "Digestivo",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "La pérdida de apetito y de peso es uno de los síntomas que más angustia produce en la familia, muy por encima de lo que molesta al niño. Buena parte del trabajo consiste en tratar el sufrimiento que genera en los padres, porque alimentar es cuidar y no poder hacerlo se vive como un fracaso.",
+    "porQueOcurre": "En la caquexia de la enfermedad avanzada hay un componente metabólico irreversible, mediado por citocinas inflamatorias, que produce catabolismo muscular y pérdida de peso aunque se aumente el aporte calórico. Es distinto de la desnutrición por ingesta insuficiente, que sí responde a comer más. Distinguir ambas evita intervenciones inútiles y dañinas.",
+    "causas": [
+      "Síndrome de anorexia y caquexia de la enfermedad avanzada, de origen metabólico",
+      "Causas reversibles de anorexia: Náusea, dolor, estreñimiento, candidiasis oral, mucositis",
+      "Sequedad de boca y alteración del gusto por fármacos",
+      "Saciedad precoz por estasis gástrica, hepatomegalia o ascitis",
+      "Depresión y ansiedad",
+      "Fármacos: Quimioterapia, opioides, antibióticos",
+      "Disfagia, que hace que comer sea trabajoso o angustioso"
+    ],
+    "evaluar": [
+      "Distinguir si el problema es que no quiere comer o que no puede comer, porque el abordaje es opuesto",
+      "Buscar y tratar todas las causas reversibles antes de aceptar que es caquexia",
+      "Explorar la boca de forma sistemática buscando candidiasis y mucositis",
+      "Valorar el impacto real en el niño, que suele ser mucho menor que el impacto en la familia",
+      "Preguntar directamente a los padres qué significa para ellos que no coma",
+      "Pesar solo si el dato va a cambiar la conducta: En fase avanzada, pesar cada semana solo añade angustia"
+    ],
+    "noFarmacologico": [
+      "Cambiar el objetivo de nutrir a disfrutar: Lo que le apetezca, cuando le apetezca, en la cantidad que quiera",
+      "Platos pequeños en vajilla pequeña, porque un plato lleno desanima antes de empezar",
+      "Comidas frías o a temperatura ambiente, que huelen menos y se toleran mejor",
+      "Enriquecer en lugar de aumentar el volumen: Más calorías en menos cantidad",
+      "Retirar la presión de la mesa y no convertir cada comida en una negociación",
+      "Cuidado de la boca antes de comer, que mejora el gusto de forma inmediata",
+      "Dar a la familia otras formas de cuidar que sustituyan a la comida: Hidratar los labios, dar masaje, poner música"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.1 a 0.2 mg/kg/día VO en dosis matutina",
+        "cuando": "Estimulante del apetito. El efecto es real pero dura pocas semanas, así que se reserva para cuando aporte algo concreto"
+      },
+      {
+        "farmaco": "Metoclopramida",
+        "dosis": "0.1 a 0.15 mg/kg VO cada 8 h antes de las comidas, no más de 5 días",
+        "cuando": "Saciedad precoz por retraso del vaciamiento gástrico"
+      },
+      {
+        "farmaco": "Nistatina o fluconazol",
+        "dosis": "Según pauta habitual",
+        "cuando": "Candidiasis oral, que es causa reversible muy frecuente y se pasa por alto"
+      },
+      {
+        "farmaco": "Suplementos nutricionales orales",
+        "dosis": "Según tolerancia",
+        "cuando": "Cuando el niño quiere comer y no llega, no cuando ya no quiere comer"
+      }
+    ],
+    "escalar": "Si la pérdida de peso es rápida y hay causa reversible no filiada, revalorar. Si se plantea nutrición artificial, la decisión debe tomarse de forma deliberada con la familia y el equipo, valorando beneficio y carga, y no por inercia ni por presión.",
+    "queDecirALaFamilia": "No se está muriendo porque no come: Ha dejado de comer porque el cuerpo está entrando en otra fase. Forzarlo le produce vómitos y malestar y no le alarga la vida. Lo que sí le ayuda es que le cuidemos la boca y que coma lo que le apetezca, cuando le apetezca.",
+    "evitar": [
+      "Insistir en que coma y convertir cada comida en un conflicto",
+      "Pesar de forma rutinaria en la fase avanzada, lo que solo produce angustia semanal",
+      "Colocar una sonda o iniciar nutrición parenteral por inercia, sin deliberación",
+      "No buscar candidiasis oral, que es reversible y frecuentísima",
+      "Culpabilizar a los padres o dejar que se culpabilicen ellos",
+      "Presentar la nutrición artificial como la única forma de seguir cuidándolo"
+    ],
+    "perla": "Cuando la familia sufre por la comida, la intervención más eficaz no es un estimulante del apetito sino darles otra forma de cuidar. Hidratar los labios cada media hora es un gesto de amor tan real como dar de comer, y además el niño lo agradece de verdad.",
+    "temaRelacionado": "ultimos-dias",
+    "etiquetas": [
+      "caquexia",
+      "apetito",
+      "familia",
+      "nutrición artificial",
+      "candidiasis"
+    ]
+  },
+  {
+    "codigo": "obstruccion-intestinal",
+    "titulo": "Obstrucción intestinal maligna",
+    "dominio": "Digestivo",
+    "nivel": "Avanzado",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es una de las situaciones más difíciles de manejar y una en la que el tratamiento médico bien hecho puede evitar una cirugía inútil y una sonda nasogástrica permanente. El objetivo no es desobstruir, sino romper el círculo de distensión, secreción y vómito.",
+    "porQueOcurre": "El obstáculo produce distensión proximal, y la distensión estimula la secreción intestinal, que aumenta la distensión. Ese círculo genera dolor cólico, vómito y más secreción. Los fármacos actúan sobre las tres patas: Reducen la secreción, reducen el edema de la pared y controlan el dolor y el vómito.",
+    "causas": [
+      "Infiltración tumoral de la pared intestinal o del mesenterio",
+      "Carcinomatosis peritoneal",
+      "Compresión extrínseca por masa abdominal",
+      "Bridas por cirugía previa",
+      "Impactación fecal, que es reversible y hay que descartar siempre",
+      "Íleo por fármacos, sobre todo opioides y anticolinérgicos"
+    ],
+    "evaluar": [
+      "Distinguir obstrucción completa de incompleta, porque el tratamiento es distinto: La incompleta admite procinéticos y la completa no",
+      "Preguntar por ventoseo y deposición, que son los datos que mejor orientan",
+      "Caracterizar el vómito: Fecaloideo indica obstrucción baja y establecida",
+      "Descartar impactación fecal, que es reversible",
+      "Valorar si una prueba de imagen va a cambiar la conducta: Si no se va a operar, muchas veces no",
+      "Valorar con cirugía solo si hay obstrucción única, buen estado general y expectativa razonable"
+    ],
+    "noFarmacologico": [
+      "Permitir la ingesta oral de pequeñas cantidades de lo que le apetezca, porque prohibirla no cambia nada y quita mucho",
+      "Cuidado intensivo de la boca, que sustituye a la hidratación en la sensación de sed",
+      "Retirar la sonda nasogástrica en cuanto el tratamiento médico controle el vómito",
+      "Comidas de pequeño volumen y sin residuo",
+      "Explicar a la familia que el objetivo es el confort y no desobstruir"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Butilhioscina",
+        "dosis": "0.3 a 0.5 mg/kg SC cada 6 a 8 h o en infusión continua",
+        "cuando": "Reduce la secreción y el espasmo. Es la base del tratamiento"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.25 a 0.5 mg/kg/día SC o IV",
+        "cuando": "Reduce el edema de la pared intestinal y a veces resuelve una obstrucción incompleta"
+      },
+      {
+        "farmaco": "Haloperidol",
+        "dosis": "0.01 a 0.02 mg/kg SC cada 8 a 12 h",
+        "cuando": "Antiemético de elección aquí, porque actúa a nivel central y no estimula el intestino"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis habituales por peso, SC o en infusión continua",
+        "cuando": "Dolor continuo asociado"
+      },
+      {
+        "farmaco": "Octreótido",
+        "dosis": "1 a 10 microgramos/kg/día SC en 2 o 3 dosis o en infusión continua",
+        "cuando": "Cuando lo anterior no basta. Reduce mucho el volumen de secreciones y permite retirar la sonda"
+      },
+      {
+        "farmaco": "Metoclopramida",
+        "dosis": "0.1 a 0.15 mg/kg cada 8 h",
+        "cuando": "Solo en obstrucción incompleta. Contraindicada en la completa, porque estimular contra un obstáculo produce dolor"
+      }
+    ],
+    "escalar": "Valorar cirugía o prótesis solo si hay una obstrucción única, buen estado funcional y una expectativa que lo justifique. Si aparecen signos de perforación o de isquemia, revalorar los objetivos con la familia de forma urgente. Consultar con un equipo especializado en cuanto se plantee el octreótido.",
+    "queDecirALaFamilia": "El intestino está bloqueado y no vamos a poder desbloquearlo, pero sí podemos quitarle el dolor y los vómitos con medicinas, y en muchos casos conseguimos retirar la sonda. Puede seguir tomando pequeñas cantidades de lo que le apetezca.",
+    "evitar": [
+      "Usar procinéticos en la obstrucción completa",
+      "Mantener la sonda nasogástrica por rutina cuando el tratamiento médico ya controla el vómito",
+      "Prohibir toda ingesta oral, que no aporta nada y quita mucho",
+      "Operar sin una expectativa razonable de beneficio",
+      "Pedir pruebas de imagen que no van a cambiar la conducta",
+      "No descartar la impactación fecal, que se resuelve y se confunde con obstrucción maligna"
+    ],
+    "perla": "Conseguir retirar una sonda nasogástrica es un objetivo terapéutico de primer orden en esta situación. La combinación de butilhioscina, dexametasona y haloperidol, con octreótido si hace falta, lo logra en una proporción alta de casos y cambia por completo la experiencia del niño.",
+    "temaRelacionado": "via-subcutanea",
+    "etiquetas": [
+      "obstrucción",
+      "octreótido",
+      "sonda nasogástrica",
+      "butilhioscina",
+      "confort"
+    ]
+  },
+  {
+    "codigo": "disfagia",
+    "titulo": "Disfagia y decisiones sobre la alimentación",
+    "dominio": "Digestivo",
+    "nivel": "Avanzado",
+    "urgencia": false,
+    "edades": "Niño con enfermedad neurológica",
+    "descripcion": "La dificultad para tragar es un problema clínico y a la vez una de las decisiones más cargadas emocionalmente de toda la pediatría, porque alimentar a un hijo es el gesto de cuidado más básico que existe y perder esa posibilidad se vive como una pérdida en sí misma.",
+    "porQueOcurre": "La deglución segura requiere coordinación entre la fase oral, la faríngea y el cierre de la vía aérea. La disfunción bulbar en las enfermedades neurológicas rompe esa coordinación y produce aspiración, muchas veces silente, es decir sin tos ni signo alguno en el momento.",
+    "causas": [
+      "Disfunción bulbar en parálisis cerebral y enfermedades neurodegenerativas",
+      "Debilidad muscular en enfermedades neuromusculares",
+      "Tumor de tronco o de cabeza y cuello",
+      "Mucositis y dolor al tragar",
+      "Sequedad de boca extrema",
+      "Disminución del nivel de conciencia en la fase de últimos días"
+    ],
+    "evaluar": [
+      "Observar una toma completa: Tiempo que tarda, tos, cambio de voz, atragantamientos, fatiga al final",
+      "Sospechar aspiración silente si hay neumonías de repetición sin atragantamientos evidentes",
+      "Valorar el tiempo y el esfuerzo que le cuesta comer, que a veces es el dato decisivo",
+      "Valorar la seguridad de cada textura por separado: Los líquidos suelen ser lo primero que se pierde",
+      "Preguntar si comer sigue siendo un placer o se ha convertido en un trabajo angustioso",
+      "Valorar con logopedia o con el equipo de deglución cuando esté disponible"
+    ],
+    "noFarmacologico": [
+      "Espesar líquidos y ajustar texturas según lo que resulte seguro",
+      "Postura correcta: Sentado, con la cabeza ligeramente flexionada hacia delante y nunca extendida",
+      "Comidas pequeñas, sin prisa y sin distracciones",
+      "Cuidado de la boca antes y después, que reduce la carga bacteriana y con ella el riesgo de neumonía",
+      "Mantener la alimentación por placer en pequeñas cantidades aunque exista sonda, si es seguro y el niño disfruta",
+      "Formación de la familia en técnica de alimentación segura"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Glicopirronio o escopolamina",
+        "dosis": "Dosis habituales por peso",
+        "cuando": "Sialorrea asociada, que empeora la aspiración"
+      },
+      {
+        "farmaco": "Omeprazol",
+        "dosis": "0.7 a 1.4 mg/kg/día VO",
+        "cuando": "Reflujo asociado, que contribuye a la aspiración"
+      },
+      {
+        "farmaco": "Anestésico tópico oral",
+        "dosis": "Según preparado",
+        "cuando": "Disfagia por dolor de mucositis, aplicado antes de comer"
+      }
+    ],
+    "escalar": "Cuando se plantea la gastrostomía, la decisión debe deliberarse con tiempo, con la familia y con el equipo, valorando el grupo ACT del niño y su trayectoria. En el grupo 4 y en el 3 en fase intermedia suele mejorar mucho la calidad de vida y reducir el sufrimiento de las comidas. En la fase de últimos días, en cambio, no está indicada.",
+    "queDecirALaFamilia": "La sonda no es rendirse ni dejar de darle de comer: Es quitarle a las comidas la angustia y el riesgo, y devolverles a ustedes el rato de estar con él sin pelear. Y si sigue siendo seguro, podrá seguir probando por la boca las cosas que le gustan.",
+    "evitar": [
+      "Plantear la gastrostomía en una crisis o tras una neumonía, cuando la decisión se toma con miedo",
+      "Presentarla como un fracaso o como el paso previo al final",
+      "Prohibir por completo la alimentación oral cuando pequeñas cantidades siguen siendo seguras y placenteras",
+      "Colocar una sonda en la fase de últimos días, donde no aporta y sí carga",
+      "No valorar el tiempo y el esfuerzo que le cuesta comer, que a veces importa más que la aspiración",
+      "Dejar la decisión únicamente en manos de la familia sin una recomendación clara del equipo"
+    ],
+    "perla": "La pregunta que ordena esta decisión no es si el niño aspira, sino si comer sigue siendo para él un placer o se ha convertido en un trabajo agotador y angustioso. Cuando la respuesta es la segunda, la sonda casi siempre mejora la calidad de vida de todos.",
+    "temaRelacionado": "adecuacion-del-esfuerzo-terapeutico",
+    "etiquetas": [
+      "disfagia",
+      "aspiración",
+      "gastrostomía",
+      "decisión",
+      "textura"
+    ]
+  },
+  {
+    "codigo": "sialorrea",
+    "titulo": "Sialorrea",
+    "dominio": "Digestivo",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Niño con enfermedad neurológica",
+    "descripcion": "El babeo continuo produce lesiones en la piel del mentón, empapa la ropa varias veces al día, obliga a cambios constantes, aísla socialmente al niño mayor y aumenta el riesgo de aspiración. Se trata poco porque se considera parte inevitable de la enfermedad de base, y no lo es.",
+    "porQueOcurre": "En la inmensa mayoría de los casos el niño no produce más saliva de lo normal: Lo que ocurre es que no la traga. El problema es de deglución y de control postural de la cabeza, no de hipersecreción, aunque el tratamiento eficaz sea reducir la producción.",
+    "causas": [
+      "Disfunción bulbar y mal control de la deglución",
+      "Mal control postural de la cabeza y boca abierta",
+      "Maloclusión dental",
+      "Reflujo gastroesofágico, que aumenta la salivación refleja",
+      "Fármacos que aumentan la salivación, como la ketamina y algunos antipsicóticos",
+      "Obstrucción nasal que obliga a respirar por la boca"
+    ],
+    "evaluar": [
+      "Puntuar la frecuencia y la gravedad con una escala sencilla, para poder comparar tras el tratamiento",
+      "Explorar la piel del mentón y del cuello buscando dermatitis y maceración",
+      "Valorar el impacto social en el niño mayor y en el adolescente, que suele ser el motivo real de consulta",
+      "Revisar la postura de la cabeza y el sistema de sedestación",
+      "Descartar reflujo y obstrucción nasal",
+      "Revisar los fármacos que puedan estar contribuyendo"
+    ],
+    "noFarmacologico": [
+      "Optimizar la postura de la cabeza y el sistema de sedestación",
+      "Protección cutánea del mentón con crema barrera",
+      "Baberos discretos y cambios frecuentes de ropa",
+      "Logopedia y terapia orofacial cuando el niño puede colaborar",
+      "Tratar la obstrucción nasal si la hay, para que pueda cerrar la boca"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Glicopirronio",
+        "dosis": "Inicio 20 microgramos/kg VO cada 8 h, subiendo cada 5 a 7 días hasta 100 microgramos/kg",
+        "cuando": "Primera línea. Es el más eficaz y no atraviesa la barrera hematoencefálica, así que no seda ni confunde"
+      },
+      {
+        "farmaco": "Escopolamina en parche",
+        "dosis": "1 mg cada 72 h, medio parche en niños pequeños",
+        "cuando": "Alternativa cómoda, aunque puede producir sedación y confusión"
+      },
+      {
+        "farmaco": "Amitriptilina",
+        "dosis": "0.2 a 0.5 mg/kg VO por la noche",
+        "cuando": "Si además hay dolor neuropático o insomnio, porque resuelve dos cosas con un fármaco"
+      },
+      {
+        "farmaco": "Toxina botulínica en glándulas salivales",
+        "dosis": "Según protocolo de la unidad",
+        "cuando": "Refractaria a anticolinérgicos. Efecto de 3 a 6 meses"
+      }
+    ],
+    "escalar": "Si no responde a anticolinérgicos bien titulados, valorar toxina botulínica en glándulas salivales con el equipo correspondiente. La cirugía de derivación o de ligadura de conductos se reserva para casos muy seleccionados.",
+    "queDecirALaFamilia": "No produce más saliva de lo normal: Lo que le pasa es que no consigue tragarla. El objetivo no es dejarle la boca seca, porque eso es muy incómodo, sino que no se empape la ropa y que la piel del mentón esté sana.",
+    "evitar": [
+      "Aceptarlo como inevitable y no tratarlo",
+      "Pasarse de dosis y dejar la boca pastosa, que empeora la higiene oral y resulta muy desagradable",
+      "Usar escopolamina en el niño consciente sin advertir el riesgo de confusión",
+      "Olvidar la protección cutánea del mentón",
+      "No valorar el impacto social en el adolescente, que suele ser lo que más le pesa",
+      "Espesar tanto las secreciones que aparezcan tapones mucosos"
+    ],
+    "perla": "El punto correcto de dosis no es la boca seca sino la ropa seca. Se titula despacio hasta que el niño deja de empapar y la piel del mentón está sana, y ahí se para: Seguir subiendo solo añade incomodidad y riesgo de tapones bronquiales.",
+    "temaRelacionado": "grupos-act",
+    "etiquetas": [
+      "sialorrea",
+      "glicopirronio",
+      "piel",
+      "titulación",
+      "deglución"
+    ]
+  },
+  {
+    "codigo": "convulsiones",
+    "titulo": "Convulsiones",
+    "dominio": "Neurológico",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Presenciar una convulsión es una de las experiencias más aterradoras para una familia, y el miedo a que se repita condiciona toda su vida. Una parte esencial del tratamiento es que la familia sepa exactamente qué hacer y tenga la medicación en casa, ya calculada y a mano.",
+    "porQueOcurre": "En cuidados paliativos las convulsiones aparecen por lesión estructural, por la propia enfermedad de base, por alteraciones metabólicas o por la retirada brusca de fármacos. En la fase de últimos días son frecuentes en el niño con enfermedad neurológica y hay que anticiparlas.",
+    "causas": [
+      "Tumor cerebral primario o metastásico, y edema peritumoral",
+      "Enfermedad neurodegenerativa o metabólica de base",
+      "Hipertensión intracraneal",
+      "Alteraciones metabólicas: Hipoglucemia, hiponatremia, hipocalcemia",
+      "Infección del sistema nervioso central",
+      "Retirada brusca de anticonvulsivos, de benzodiacepinas o de opioides",
+      "Pérdida de la vía oral en los últimos días, que interrumpe el tratamiento de base"
+    ],
+    "evaluar": [
+      "Caracterizar el tipo de crisis, su duración y su frecuencia",
+      "Identificar desencadenantes: Fiebre, olvido de dosis, cambios de fármaco",
+      "Revisar si el tratamiento de base sigue llegando, sobre todo si el niño ya no traga bien",
+      "Descartar causas metabólicas reversibles solo si la conducta va a cambiar",
+      "Comprobar que la familia sabe qué hacer y tiene la medicación de rescate en casa",
+      "Anticipar la pérdida de la vía oral y planificar la conversión a subcutánea antes de que ocurra"
+    ],
+    "noFarmacologico": [
+      "Enseñar a la familia la actuación durante la crisis: Colocar de lado, retirar objetos peligrosos, no meter nada en la boca, no sujetar",
+      "Enseñar a cronometrar la crisis, porque el tiempo decide cuándo administrar el rescate",
+      "Dejar la dosis de rescate escrita en miligramos y en mililitros en un lugar visible de la casa",
+      "Practicar la administración bucal con una jeringa vacía, porque explicarla no basta",
+      "Mantener rutinas de sueño y evitar la privación de sueño",
+      "Avisar a la escuela y dejarles instrucciones escritas"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Midazolam bucal",
+        "dosis": "0.3 mg/kg en el surco entre encía y mejilla, máximo 10 mg, repetible una vez a los 10 minutos",
+        "cuando": "Crisis de más de 5 minutos en domicilio. Es la primera línea"
+      },
+      {
+        "farmaco": "Midazolam intranasal",
+        "dosis": "0.2 a 0.3 mg/kg con atomizador, máximo 10 mg",
+        "cuando": "Alternativa si la vía bucal no es posible"
+      },
+      {
+        "farmaco": "Diazepam rectal",
+        "dosis": "0.3 a 0.5 mg/kg, máximo 10 mg",
+        "cuando": "Si no se dispone de midazolam bucal"
+      },
+      {
+        "farmaco": "Levetiracetam",
+        "dosis": "Inicio 10 mg/kg VO cada 12 h, subiendo hasta 30 mg/kg cada 12 h",
+        "cuando": "Prevención de base. Interacciona poco, lo que importa en un niño con muchos fármacos"
+      },
+      {
+        "farmaco": "Fenobarbital",
+        "dosis": "Carga 10 a 20 mg/kg SC, mantenimiento 5 a 20 mg/kg en 24 h",
+        "cuando": "Crisis refractarias o pérdida de la vía oral. Requiere línea subcutánea propia"
+      },
+      {
+        "farmaco": "Midazolam en infusión continua",
+        "dosis": "0.02 a 0.1 mg/kg/h SC",
+        "cuando": "Crisis repetidas en la fase de últimos días"
+      }
+    ],
+    "escalar": "Una crisis de más de 5 minutos, o dos crisis seguidas sin recuperación de la conciencia entre ellas, es un estado epiléptico y se trata como urgencia. Si aparecen crisis de novo con cefalea y vómito, valorar hipertensión intracraneal.",
+    "queDecirALaFamilia": "Van a tener la medicina en casa, ya preparada y con la dosis escrita, y van a practicar conmigo cómo dársela. Si la crisis dura más de cinco minutos, se la ponen entre la encía y la mejilla. Después se quedará dormido un rato, y eso es normal.",
+    "evitar": [
+      "No dejar medicación de rescate en el domicilio, que es la causa principal de traslados nocturnos",
+      "Explicar la técnica sin que la familia la practique",
+      "Meter algo en la boca o sujetar al niño durante la crisis",
+      "Suspender un anticonvulsivo de forma brusca",
+      "No anticipar la pérdida de la vía oral y quedarse sin tratamiento de base en los últimos días",
+      "Pedir pruebas de imagen o analíticas que no van a cambiar la conducta"
+    ],
+    "perla": "La intervención más eficaz no es farmacológica: Es que la familia tenga la dosis calculada, escrita en la nevera y practicada con una jeringa vacía. Eso evita la mayoría de los traslados a urgencias y devuelve a los padres la sensación de control.",
+    "temaRelacionado": "atencion-domiciliaria",
+    "etiquetas": [
+      "convulsión",
+      "midazolam bucal",
+      "kit domiciliario",
+      "familia",
+      "rescate"
+    ]
+  },
+  {
+    "codigo": "espasticidad",
+    "titulo": "Espasticidad, distonía y espasmos",
+    "dominio": "Neurológico",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Niño con enfermedad neurológica",
+    "descripcion": "El aumento del tono y los espasmos son una causa de dolor muy importante y muy poco reconocida en el niño con daño neurológico. Además dificultan el cuidado, deforman las articulaciones, impiden la sedestación y hacen que cada cambio de pañal sea doloroso.",
+    "porQueOcurre": "La lesión de la vía piramidal libera reflejos medulares y aumenta el tono dependiente de la velocidad, que es la espasticidad. La distonía nace de los ganglios basales y produce contracciones sostenidas y posturas anómalas. Ambas se agravan con cualquier estímulo nocivo, de modo que el dolor produce espasmo y el espasmo produce dolor.",
+    "causas": [
+      "Parálisis cerebral y lesiones de la vía piramidal",
+      "Enfermedades neurodegenerativas",
+      "Lesión medular",
+      "Desencadenantes que aumentan el tono: Dolor, estreñimiento, retención urinaria, infección urinaria, úlcera por presión, uña encarnada",
+      "Postura inadecuada y ortesis mal ajustadas",
+      "Frío, ruido y ansiedad"
+    ],
+    "evaluar": [
+      "Buscar siempre un desencadenante antes de subir el relajante: Un aumento brusco del tono suele tener causa",
+      "Distinguir espasticidad de distonía, porque el tratamiento difiere",
+      "Valorar el impacto funcional: Cuidado, higiene, sedestación, sueño, dolor",
+      "Explorar caderas buscando subluxación, que es frecuente y muy dolorosa",
+      "Revisar el sistema de sedestación y las ortesis",
+      "Valorar el dolor con la r-FLACC individualizada"
+    ],
+    "noFarmacologico": [
+      "Corregir el desencadenante, que muchas veces resuelve el cuadro sin fármacos",
+      "Posicionamiento correcto y sistema de sedestación bien adaptado",
+      "Movilizaciones lentas y anunciadas, nunca bruscas ni por sorpresa",
+      "Calor local sobre la musculatura contracturada",
+      "Fisioterapia y estiramientos suaves",
+      "Ambiente tranquilo, sin frío ni ruidos bruscos"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Baclofeno",
+        "dosis": "Según pauta de neurología, con titulación lenta",
+        "cuando": "Espasticidad de base. No suspender de forma brusca por el riesgo de síndrome de retirada"
+      },
+      {
+        "farmaco": "Diazepam",
+        "dosis": "0.1 a 0.3 mg/kg VO cada 8 a 12 h",
+        "cuando": "Espasmo doloroso agudo y espasticidad nocturna"
+      },
+      {
+        "farmaco": "Gabapentina",
+        "dosis": "Inicio 5 mg/kg VO nocturno, subiendo a 10 a 20 mg/kg cada 8 h",
+        "cuando": "Componente doloroso y de irritabilidad asociado. Muy útil en esta población"
+      },
+      {
+        "farmaco": "Trihexifenidilo",
+        "dosis": "Según pauta de neurología",
+        "cuando": "Distonía predominante"
+      },
+      {
+        "farmaco": "Toxina botulínica",
+        "dosis": "Según protocolo de la unidad",
+        "cuando": "Espasticidad focal que limita el cuidado o produce dolor localizado"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis habituales por peso",
+        "cuando": "Dolor por espasmo que no cede con lo anterior"
+      }
+    ],
+    "escalar": "Ante un aumento brusco e inexplicable del tono, buscar causa aguda: Fractura, abdomen agudo, retención urinaria, infección. Si el niño lleva bomba de baclofeno intratecal, un aumento súbito del tono obliga a descartar fallo de la bomba como urgencia.",
+    "queDecirALaFamilia": "Cuando de pronto se pone más rígido, casi siempre es que algo le está molestando: Dolor, la vejiga llena, el estreñimiento o una postura incómoda. Antes de subirle la medicina vamos a buscar qué es, porque muchas veces con corregir eso se resuelve.",
+    "evitar": [
+      "Subir el relajante sin buscar antes el desencadenante",
+      "Suspender el baclofeno de forma brusca, que produce un síndrome de retirada grave",
+      "Movilizar de forma brusca o sin avisar al niño",
+      "No explorar caderas y no reconocer la subluxación como causa de dolor",
+      "Sedar la conducta en lugar de tratar el dolor que la produce",
+      "Ignorar la comodidad del sistema de sedestación"
+    ],
+    "perla": "El aumento brusco del tono en un niño con parálisis cerebral es un signo, no un diagnóstico. Funciona como el llanto en un lactante: Indica que algo pasa. Buscar la causa antes de subir la medicación resuelve muchos casos en minutos.",
+    "temaRelacionado": "grupos-act",
+    "etiquetas": [
+      "espasticidad",
+      "distonía",
+      "desencadenante",
+      "baclofeno",
+      "dolor"
+    ]
+  },
+  {
+    "codigo": "agitacion-delirium",
+    "titulo": "Agitación y delirium",
+    "dominio": "Neurológico",
+    "nivel": "Avanzado",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "El delirium es una alteración aguda y fluctuante de la atención y de la conciencia. Es muy frecuente en los últimos días, se confunde con ansiedad o con dolor, y se trata mal con benzodiacepinas, que en la forma hiperactiva lo empeoran. Reconocerlo cambia por completo el tratamiento.",
+    "porQueOcurre": "Es una disfunción cerebral global producida por causas sistémicas: Fármacos, alteraciones metabólicas, infección, hipoxia, dolor no tratado o retención urinaria. Fluctúa a lo largo del día y empeora por la noche. Puede ser hiperactivo con agitación, hipoactivo con somnolencia y retraimiento, o mixto.",
+    "causas": [
+      "Fármacos: Anticolinérgicos, corticoides, benzodiacepinas, opioides en acumulación",
+      "Retirada brusca de benzodiacepinas o de opioides",
+      "Dolor no controlado, que es una causa frecuentísima y reversible",
+      "Retención urinaria y fecaloma, que son las dos causas más fáciles de resolver",
+      "Alteraciones metabólicas: Hipercalcemia, hiponatremia, uremia, insuficiencia hepática",
+      "Infección",
+      "Hipoxia",
+      "Progresión de la enfermedad en el sistema nervioso central",
+      "Privación de sueño y desorientación ambiental"
+    ],
+    "evaluar": [
+      "Reconocer el patrón: Inicio agudo, curso fluctuante y alteración de la atención",
+      "No confundir el delirium hipoactivo con depresión o con sedación por opioides",
+      "Revisar de forma sistemática la lista de fármacos, con especial atención a los anticolinérgicos acumulados",
+      "Comprobar globo vesical y fecaloma antes que nada, porque se resuelven en minutos",
+      "Valorar el dolor, que puede ser la causa y no puede expresarse",
+      "Usar la escala RASS para objetivar el nivel de agitación o de sedación"
+    ],
+    "noFarmacologico": [
+      "Ambiente tranquilo, con luz suave y sin ruidos, evitando la penumbra total que favorece las alucinaciones",
+      "Presencia de personas conocidas y voces familiares",
+      "Reorientar con suavidad, sin discutir el contenido de las alucinaciones",
+      "Objetos familiares a la vista y rutina de día y noche",
+      "Retirar sondas, vías y dispositivos que no sean imprescindibles",
+      "Explicar a la familia lo que está pasando, porque es lo que más les angustia de toda la fase final"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Haloperidol",
+        "dosis": "0.01 a 0.05 mg/kg VO o SC cada 8 h",
+        "cuando": "Primera línea del delirium hiperactivo. Funciona mejor que cualquier benzodiacepina"
+      },
+      {
+        "farmaco": "Levomepromazina",
+        "dosis": "0.05 a 0.2 mg/kg SC, subiendo según respuesta",
+        "cuando": "Si el haloperidol no basta o hace falta además sedación"
+      },
+      {
+        "farmaco": "Risperidona",
+        "dosis": "Según pauta, en niño mayor",
+        "cuando": "Alternativa oral en delirium mantenido"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.05 a 0.1 mg/kg SC",
+        "cuando": "Solo asociado a un antipsicótico, o si hay agitación con riesgo inmediato. En solitario puede empeorar el delirium"
+      }
+    ],
+    "escalar": "Si la agitación es refractaria pese al tratamiento de las causas y a los antipsicóticos, y produce sufrimiento intolerable en la fase final, es indicación de sedación paliativa, que debe plantearse con el equipo y con la familia.",
+    "queDecirALaFamilia": "No está loco ni ha perdido la cabeza: Es el cerebro que funciona mal por la enfermedad y por los medicamentos, y fluctúa, así que habrá ratos en que esté como siempre. No hace falta discutirle lo que dice, basta con acompañarlo y hablarle con calma.",
+    "evitar": [
+      "Tratarlo solo con benzodiacepinas, que en la forma hiperactiva empeoran el cuadro",
+      "No buscar globo vesical ni fecaloma, que son las causas reversibles más frecuentes",
+      "Confundir la forma hipoactiva con depresión y prescribir un antidepresivo",
+      "Discutir con el niño el contenido de sus alucinaciones",
+      "Añadir más anticolinérgicos a un cuadro que probablemente causan ellos",
+      "Sedar sin haber buscado la causa"
+    ],
+    "perla": "Ante un niño agitado en la fase final, las tres primeras comprobaciones son la vejiga, el recto y la lista de fármacos. Un globo vesical resuelto con una sonda evita una sedación, y esa comprobación cuesta un minuto.",
+    "temaRelacionado": "sedacion-paliativa",
+    "etiquetas": [
+      "delirium",
+      "haloperidol",
+      "globo vesical",
+      "fluctuante",
+      "últimos días"
+    ]
+  },
+  {
+    "codigo": "hipertension-intracraneal",
+    "titulo": "Hipertensión intracraneal",
+    "dominio": "Neurológico",
+    "nivel": "Avanzado",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Produce cefalea intensa de predominio matutino, vómito en escopetazo y deterioro progresivo del nivel de conciencia. Los corticoides la alivian con rapidez y de forma muy notable, lo que la convierte en una de las situaciones en las que un tratamiento sencillo cambia mucho el bienestar del niño.",
+    "porQueOcurre": "El cráneo es una cavidad de volumen fijo. Cuando aumenta el volumen del tumor, del edema peritumoral o del líquido cefalorraquídeo, la presión sube y comprime estructuras. El decúbito y el sueño aumentan la presión, lo que explica el patrón matutino característico.",
+    "causas": [
+      "Tumor cerebral primario o metastásico",
+      "Edema peritumoral, que suele responder muy bien al corticoide",
+      "Hidrocefalia obstructiva",
+      "Carcinomatosis meníngea",
+      "Hemorragia intracraneal",
+      "Disfunción de una válvula de derivación ya existente"
+    ],
+    "evaluar": [
+      "Buscar el patrón característico: Cefalea que despierta de madrugada o está presente al despertar y mejora al incorporarse",
+      "Vómito en escopetazo, sin náusea previa, que alivia la cefalea",
+      "Valorar el nivel de conciencia y su evolución en horas o días",
+      "Explorar pupilas, movimientos oculares y postura, buscando signos de focalidad o de herniación",
+      "En el lactante, medir perímetro cefálico y explorar la fontanela",
+      "Comprobar si hay válvula de derivación y si funciona",
+      "Pedir imagen solo si va a cambiar la conducta"
+    ],
+    "noFarmacologico": [
+      "Cabecera elevada a 30 grados de forma continua, incluso durante el sueño",
+      "Cabeza en posición neutra, sin rotación ni flexión, para no dificultar el retorno venoso",
+      "Ambiente tranquilo, con luz suave y sin ruidos",
+      "Evitar maniobras que aumenten la presión: Aspiración innecesaria, esfuerzo defecatorio, tos",
+      "Prevenir el estreñimiento de forma activa, porque el esfuerzo aumenta la presión"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.25 a 0.5 mg/kg VO, SC o IV cada 6 h las primeras 48 h, techo habitual de 16 mg al día, y después la mínima eficaz",
+        "cuando": "Primera línea. El alivio de la cefalea aparece en 24 a 48 h"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis habituales por peso",
+        "cuando": "Cefalea que no cede con el corticoide"
+      },
+      {
+        "farmaco": "Paracetamol",
+        "dosis": "15 mg/kg VO cada 4 a 6 h",
+        "cuando": "Base analgésica asociada"
+      },
+      {
+        "farmaco": "Dimenhidrinato",
+        "dosis": "1 a 1.5 mg/kg cada 6 a 8 h",
+        "cuando": "Vómito asociado, por su acción central"
+      },
+      {
+        "farmaco": "Levetiracetam",
+        "dosis": "10 a 30 mg/kg VO cada 12 h",
+        "cuando": "Prevención de crisis convulsivas si ya las ha tenido"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.3 mg/kg bucal en crisis",
+        "cuando": "Rescate para convulsión, disponible en el domicilio"
+      }
+    ],
+    "escalar": "Un deterioro rápido del nivel de conciencia, la aparición de anisocoria o de postura de descerebración indican herniación inminente. En ese momento, lo que corresponde es priorizar el confort, asegurar analgesia y sedación y acompañar a la familia, salvo que exista una opción quirúrgica acordada de antemano.",
+    "queDecirALaFamilia": "La cefalea de la mañana viene de que la presión dentro de la cabeza sube al estar acostado. Con el corticoide suele mejorar mucho en uno o dos días, y ayuda mantener la cabecera elevada también por la noche.",
+    "evitar": [
+      "Mantener la dexametasona a dosis alta indefinidamente sin revisar el objetivo",
+      "Administrarla por la tarde, lo que produce insomnio",
+      "No prevenir el estreñimiento, cuyo esfuerzo aumenta la presión",
+      "Pedir imagen que no va a cambiar la conducta",
+      "No dejar prescrito el rescate para crisis convulsiva en el domicilio",
+      "Trasladar a urgencias en la fase final por un deterioro esperable y ya conversado"
+    ],
+    "perla": "La combinación de cefalea al despertar que mejora al incorporarse y vómito en escopetazo sin náusea previa es casi diagnóstica, y no necesita imagen para empezar el corticoide. El alivio que produce la dexametasona en 24 a 48 h es de los más agradecidos de toda la práctica paliativa.",
+    "temaRelacionado": "adecuacion-del-esfuerzo-terapeutico",
+    "etiquetas": [
+      "hipertensión intracraneal",
+      "dexametasona",
+      "cefalea matutina",
+      "tumor cerebral"
+    ]
+  },
+  {
+    "codigo": "ulceras-presion",
+    "titulo": "Úlceras por presión",
+    "dominio": "Piel y mucosas",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Niño encamado",
+    "descripcion": "Aparecen en el niño inmóvil, desnutrido y con mala perfusión, que es exactamente el perfil de la enfermedad avanzada. Duelen, huelen, se infectan y las familias las viven como una prueba de que no están cuidando bien, así que su prevención tiene también un valor emocional importante.",
+    "porQueOcurre": "La presión mantenida sobre una prominencia ósea ocluye los capilares y produce isquemia. Se suman la fricción y el cizallamiento al arrastrar al niño en lugar de levantarlo, y la humedad por incontinencia o sudoración, que macera la piel y la vuelve frágil.",
+    "causas": [
+      "Inmovilidad y encamamiento prolongado",
+      "Desnutrición e hipoalbuminemia",
+      "Humedad por incontinencia, sudoración o exudados",
+      "Fricción y cizallamiento al movilizar arrastrando",
+      "Dispositivos: Sondas, mascarillas de ventilación, férulas, sensores de saturación",
+      "Mala perfusión periférica y edema",
+      "Espasticidad que mantiene posturas fijas"
+    ],
+    "evaluar": [
+      "Valorar el riesgo con la escala Braden Q al inicio del seguimiento y ante cualquier cambio",
+      "Inspeccionar la piel a diario, con especial atención a sacro, talones, occipucio, orejas y trocánteres",
+      "En el lactante, el occipucio es la localización más frecuente y la que más se olvida",
+      "Revisar la piel bajo los dispositivos, que producen lesiones muy típicas y evitables",
+      "Clasificar la lesión por estadios y fotografiarla si el seguimiento lo va a usar",
+      "Valorar el dolor asociado a la lesión y a la cura, que se infratrata sistemáticamente"
+    ],
+    "noFarmacologico": [
+      "Cambios posturales programados, adaptados a lo que el niño tolere sin dolor",
+      "Superficie de redistribución de presión: Colchón o cojín adecuados al peso",
+      "Apósitos protectores preventivos sobre las prominencias de mayor riesgo",
+      "Levantar al movilizar en lugar de arrastrar, con sábana de traslado y dos personas",
+      "Mantener la piel limpia y seca, con crema barrera en la zona del pañal",
+      "Revisar y rotar la posición de todos los dispositivos",
+      "Cura en ambiente húmedo, con apósitos que no se peguen y que permitan espaciar las curas"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Dosis de rescate del opioide",
+        "dosis": "10 a 15 por ciento de la dosis diaria, 30 minutos antes de la cura",
+        "cuando": "Siempre antes de una cura dolorosa. Es lo que más se olvida"
+      },
+      {
+        "farmaco": "Morfina tópica en gel",
+        "dosis": "Según formulación local, sobre la úlcera",
+        "cuando": "Dolor local de la úlcera, aprovechando los receptores opioides periféricos"
+      },
+      {
+        "farmaco": "Metronidazol tópico",
+        "dosis": "Gel al 0.75 a 1 por ciento sobre la lesión",
+        "cuando": "Úlcera maloliente por anaerobios. El olor es lo que más aísla socialmente al niño"
+      },
+      {
+        "farmaco": "Ketamina o midazolam",
+        "dosis": "Dosis para procedimiento por peso",
+        "cuando": "Curas muy dolorosas, bajo supervisión con experiencia"
+      },
+      {
+        "farmaco": "Apósito de plata o antimicrobiano",
+        "dosis": "Según producto",
+        "cuando": "Signos de infección local, no de forma profiláctica"
+      }
+    ],
+    "escalar": "Ante celulitis extensa, fiebre con afectación general o sospecha de osteomielitis, valorar el tratamiento sistémico teniendo en cuenta los objetivos del niño. En la fase de últimos días, el objetivo pasa de curar la úlcera a que no duela.",
+    "queDecirALaFamilia": "Estas heridas aparecen porque la piel ya no aguanta la presión, no porque ustedes no lo estén cuidando bien. En esta fase muchas no van a cerrar, y eso no es un fracaso: Lo que buscamos es que no le duelan y que no huelan.",
+    "evitar": [
+      "Hacer una cura sin analgesia previa, que es de los dolores peor tratados que existen",
+      "Movilizar cada 2 h de forma rígida en un niño que tiene dolor con cada movimiento",
+      "Perseguir el cierre de la úlcera en la fase de últimos días a costa del confort",
+      "Usar apósitos que se pegan y hay que arrancar",
+      "No revisar la piel bajo los dispositivos",
+      "Culpabilizar a la familia, explícita o implícitamente"
+    ],
+    "perla": "En la fase de últimos días la prevención estricta entra en conflicto con el confort, y hay que decidir a favor del confort y decirlo en voz alta al equipo y a la familia. Movilizar cada 2 h a un niño que tiene dolor con cada cambio deja de ser buena praxis y pasa a ser lo contrario.",
+    "temaRelacionado": "ultimos-dias",
+    "etiquetas": [
+      "úlceras",
+      "Braden Q",
+      "curas",
+      "dolor",
+      "prevención"
+    ]
+  },
+  {
+    "codigo": "mucositis",
+    "titulo": "Mucositis y cuidado de la boca",
+    "dominio": "Piel y mucosas",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "El cuidado de la boca es la intervención con mejor relación entre esfuerzo y beneficio de todos los cuidados paliativos, y a la vez la más descuidada. Una boca sana permite comer, hablar y besar; una boca enferma produce dolor constante, impide alimentarse y quita el poco placer que queda.",
+    "porQueOcurre": "La mucosa oral se renueva cada pocos días, lo que la hace muy vulnerable a la quimioterapia y a la radioterapia. A eso se suman la sequedad por fármacos y por respiración bucal, la inmunosupresión que favorece la candidiasis, y la falta de higiene en el niño que ya no puede lavarse los dientes.",
+    "causas": [
+      "Quimioterapia y radioterapia de cabeza y cuello",
+      "Candidiasis oral, frecuentísima y muy infradiagnosticada",
+      "Sequedad de boca por opioides, anticolinérgicos, oxígeno y respiración bucal",
+      "Herpes simple reactivado",
+      "Neutropenia",
+      "Deshidratación",
+      "Higiene oral insuficiente en el niño dependiente"
+    ],
+    "evaluar": [
+      "Explorar la boca de forma sistemática en cada visita, con luz y retirando prótesis o dispositivos si los hay",
+      "Buscar placas blancas de candidiasis, que se desprenden y dejan una base eritematosa",
+      "Buscar úlceras aftosas y lesiones herpéticas",
+      "Valorar el grado de sequedad y la cantidad de saliva",
+      "Preguntar por dolor al tragar y por cambios en el gusto",
+      "Revisar el estado dental y las encías, que casi nunca se miran"
+    ],
+    "noFarmacologico": [
+      "Higiene oral suave con cepillo infantil de cerdas blandas o con gasa, al menos dos veces al día",
+      "Enjuagues con suero fisiológico o con agua con bicarbonato, evitando los colutorios con alcohol",
+      "Humedecer la mucosa cada 15 a 30 minutos en el niño que ya no bebe, con gasas, torundas o pulverizador",
+      "Hidratación de los labios con vaselina o bálsamo",
+      "Trocitos de hielo o de fruta congelada para chupar, si es seguro",
+      "Retirar de la dieta lo ácido, lo salado, lo muy caliente y lo áspero durante la mucositis",
+      "Enseñar a la familia a hacerlo, porque es un cuidado que ellos pueden dar y agradecen enormemente"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Nistatina",
+        "dosis": "Según pauta por edad, tras las comidas y sin comer ni beber después",
+        "cuando": "Candidiasis oral. Primera línea"
+      },
+      {
+        "farmaco": "Fluconazol",
+        "dosis": "Según pauta por peso",
+        "cuando": "Candidiasis extensa, esofágica o que no responde a la nistatina"
+      },
+      {
+        "farmaco": "Aciclovir",
+        "dosis": "Según pauta por peso",
+        "cuando": "Lesiones herpéticas"
+      },
+      {
+        "farmaco": "Lidocaína viscosa al 2 por ciento",
+        "dosis": "Aplicar antes de comer, con precaución por el riesgo de aspiración al anestesiar la faringe",
+        "cuando": "Dolor que impide comer"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis habituales por peso, o enjuague de morfina si está disponible",
+        "cuando": "Mucositis dolorosa que no cede con lo tópico"
+      },
+      {
+        "farmaco": "Saliva artificial",
+        "dosis": "Según producto",
+        "cuando": "Xerostomía marcada"
+      }
+    ],
+    "escalar": "Si hay fiebre con neutropenia y mucositis, valorar sepsis de origen oral. Si el dolor impide por completo la ingesta y la hidratación, valorar la vía subcutánea para la analgesia y replantear el aporte.",
+    "queDecirALaFamilia": "Cuidarle la boca es de las cosas que más le van a aliviar, y la pueden hacer ustedes. Con una gasa húmeda cada media hora basta para que no tenga sensación de sed, aunque ya no beba nada.",
+    "evitar": [
+      "No explorar la boca, que es el error más frecuente y el más fácil de corregir",
+      "Usar colutorios con alcohol o con clorhexidina concentrada, que irritan la mucosa dañada",
+      "Usar torundas de glicerina y limón, que resecan más de lo que hidratan",
+      "Dar lidocaína viscosa sin advertir del riesgo de aspiración por anestesia faríngea",
+      "Suspender la higiene oral por miedo al sangrado en el niño trombopénico: Se hace con gasa, con suavidad, pero se hace",
+      "Confundir la sensación de sed con necesidad de sueroterapia, cuando se alivia mucho mejor con cuidados de la boca"
+    ],
+    "perla": "En los últimos días, la boca sustituye a la hidratación intravenosa. Un niño con la mucosa húmeda no tiene sensación de sed aunque no reciba una gota de líquido, y ese cuidado lo puede dar la familia, lo cual les devuelve un papel activo justo cuando más lo necesitan.",
+    "temaRelacionado": "ultimos-dias",
+    "etiquetas": [
+      "boca",
+      "candidiasis",
+      "xerostomía",
+      "familia",
+      "hidratación"
+    ]
+  },
+  {
+    "codigo": "prurito",
+    "titulo": "Prurito",
+    "dominio": "Piel y mucosas",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "El picor persistente desespera, impide dormir, produce lesiones por rascado que se infectan y se trata mal porque se recurre por defecto a un antihistamínico que en la mayoría de las causas de este ámbito no hace nada salvo sedar.",
+    "porQueOcurre": "El prurito histaminérgico, que sí responde a antihistamínicos, es solo uno de los mecanismos. En cuidados paliativos predominan el colestásico, el urémico, el paraneoplásico y el inducido por opioides, que son de mecanismo central y no dependen de la histamina.",
+    "causas": [
+      "Opioides, sobre todo la morfina, por liberación de histamina y por acción central",
+      "Colestasis por obstrucción biliar o infiltración hepática",
+      "Insuficiencia renal y uremia",
+      "Piel seca, que es causa frecuentísima y se pasa por alto",
+      "Linfoma y otros procesos paraneoplásicos",
+      "Reacción a fármacos",
+      "Dermatitis del pañal e infección cutánea",
+      "Radioterapia sobre la piel"
+    ],
+    "evaluar": [
+      "Identificar el mecanismo, porque determina el tratamiento por completo",
+      "Explorar la piel buscando sequedad, lesiones primarias, signos de rascado e infección",
+      "Preguntar si es generalizado o localizado y si empeora por la noche",
+      "Revisar los fármacos y la fecha en que se introdujo cada uno",
+      "Valorar la ictericia y la función renal si la conducta va a cambiar",
+      "Valorar el impacto sobre el sueño, que suele ser lo que más pesa"
+    ],
+    "noFarmacologico": [
+      "Hidratación intensiva de la piel con emolientes sin perfume, varias veces al día",
+      "Baños cortos con agua tibia, nunca caliente, y secado sin frotar",
+      "Uñas cortas y limadas, y guantes de algodón por la noche en los niños pequeños",
+      "Ropa de algodón, holgada y sin costuras que rocen",
+      "Ambiente fresco, porque el calor empeora el picor",
+      "Frío local sobre la zona, que compite con la señal de picor",
+      "Distracción, sobre todo en el momento de acostarse"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Emolientes",
+        "dosis": "Aplicar varias veces al día",
+        "cuando": "Base del tratamiento en todos los casos, sea cual sea la causa"
+      },
+      {
+        "farmaco": "Rotación de opioide",
+        "dosis": "Según equianalgesia, reduciendo un 25 a 50 por ciento",
+        "cuando": "Prurito por opioides. Suele resolverlo mejor que añadir un antihistamínico sedante"
+      },
+      {
+        "farmaco": "Difenhidramina o hidroxizina",
+        "dosis": "1 mg/kg VO cada 6 a 8 h",
+        "cuando": "Prurito histaminérgico. Fuera de ese mecanismo solo aporta sedación"
+      },
+      {
+        "farmaco": "Ondansetrón",
+        "dosis": "0.1 a 0.15 mg/kg cada 8 h",
+        "cuando": "Prurito por opioides y colestásico, donde tiene mejor base que los antihistamínicos"
+      },
+      {
+        "farmaco": "Colestiramina",
+        "dosis": "Según pauta por peso",
+        "cuando": "Prurito colestásico con vía biliar permeable"
+      },
+      {
+        "farmaco": "Gabapentina",
+        "dosis": "Inicio 5 mg/kg VO nocturno, con titulación",
+        "cuando": "Prurito urémico y neuropático"
+      },
+      {
+        "farmaco": "Corticoide tópico",
+        "dosis": "Según potencia y zona",
+        "cuando": "Componente inflamatorio localizado"
+      }
+    ],
+    "escalar": "Si el prurito es generalizado, intenso y refractario, y no se identifica causa tratable, consultar con un equipo especializado. Si aparece ictericia progresiva, valorar si hay opción de drenaje biliar según los objetivos del niño.",
+    "queDecirALaFamilia": "El picor de la morfina suele ceder en unos días, y si no, podemos cambiar de opioide en lugar de añadir otra medicina que le dé sueño. Mientras tanto, lo que más ayuda es la crema hidratante varias veces al día y mantenerlo fresco.",
+    "evitar": [
+      "Prescribir un antihistamínico por defecto sin identificar el mecanismo",
+      "Añadir sedación en un niño que ya está somnoliento por los opioides",
+      "Olvidar la piel seca, que es causa frecuente y se resuelve con emolientes",
+      "Baños calientes y prolongados",
+      "Corticoides tópicos potentes de forma prolongada en zonas extensas",
+      "No valorar la rotación de opioide, que resuelve el problema sin añadir fármacos"
+    ],
+    "perla": "Ante un prurito que aparece al iniciar morfina, la mejor opción no es añadir un antihistamínico sedante sino rotar de opioide. El prurito varía mucho entre ellos y el problema desaparece sin sumar somnolencia a un niño que ya la tiene.",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "prurito",
+      "opioides",
+      "colestasis",
+      "rotación",
+      "emolientes"
+    ]
+  },
+  {
+    "codigo": "fatiga",
+    "titulo": "Fatiga",
+    "dominio": "General",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es el síntoma más prevalente de toda la enfermedad avanzada y el que menos se pregunta. No es cansancio: Es un agotamiento desproporcionado al esfuerzo que no mejora con el descanso, y que limita más la vida del niño que casi cualquier otro síntoma.",
+    "porQueOcurre": "Es multifactorial. Se combinan el efecto de las citocinas inflamatorias de la propia enfermedad, la pérdida de masa muscular, la anemia, la mala calidad del sueño, los fármacos sedantes, el estado de ánimo y el desacondicionamiento por inmovilidad. Rara vez hay una sola causa.",
+    "causas": [
+      "Enfermedad de base y su componente inflamatorio",
+      "Anemia",
+      "Fármacos: Opioides, benzodiacepinas, antihistamínicos, anticonvulsivos",
+      "Mala calidad del sueño, por dolor, por ruido o por interrupciones nocturnas",
+      "Depresión y ansiedad",
+      "Desnutrición y pérdida de masa muscular",
+      "Alteraciones metabólicas y endocrinas",
+      "Infección",
+      "Desacondicionamiento por inmovilidad prolongada"
+    ],
+    "evaluar": [
+      "Preguntar de forma explícita, porque casi nunca se refiere de manera espontánea",
+      "Cuantificarla con la escala ESAS-r y seguir su evolución",
+      "Buscar causas reversibles: Anemia, fármacos, mal sueño, depresión, infección",
+      "Preguntar en qué momento del día está mejor, porque eso permite planificar",
+      "Valorar el impacto: Qué ha dejado de hacer y qué le gustaría poder volver a hacer",
+      "Revisar el número de interrupciones nocturnas que impone el propio equipo"
+    ],
+    "noFarmacologico": [
+      "Priorizar: Decidir con el niño qué es lo importante del día y reservar energía para eso",
+      "Planificar las actividades en el momento del día en que está mejor",
+      "Fraccionar las tareas y programar descansos antes de agotarse, no después",
+      "Adaptar el entorno para reducir el esfuerzo: Silla de ruedas para desplazamientos largos, ducha en lugar de baño",
+      "Actividad física suave y adaptada, que tiene mejor evidencia que cualquier fármaco",
+      "Higiene del sueño y agrupar las intervenciones nocturnas para no despertarlo varias veces",
+      "Explicar a la familia que no es pereza ni desánimo, para que no le insistan"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Revisión y retirada de fármacos sedantes",
+        "dosis": "Ajuste individual",
+        "cuando": "Es la primera intervención farmacológica y la más rentable"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.1 a 0.2 mg/kg/día VO en dosis matutina",
+        "cuando": "Beneficio real pero de pocas semanas. Se reserva para un objetivo concreto y con fecha de revisión"
+      },
+      {
+        "farmaco": "Hierro o transfusión",
+        "dosis": "Según indicación",
+        "cuando": "Anemia sintomática, valorando la carga que supone la transfusión frente al beneficio esperado"
+      },
+      {
+        "farmaco": "Metilfenidato",
+        "dosis": "Según pauta, en casos seleccionados",
+        "cuando": "Fatiga refractaria con expectativa suficiente para notar el beneficio, bajo indicación de equipo con experiencia"
+      }
+    ],
+    "escalar": "Si la fatiga empeora bruscamente, buscar causa aguda: Infección, anemización, alteración metabólica, progresión. Si hay componente depresivo importante, tratarlo de forma específica.",
+    "queDecirALaFamilia": "Esto no es que esté desanimado ni que no ponga de su parte: Es un cansancio que produce la enfermedad y que no se quita durmiendo. Lo que mejor funciona es elegir juntos una cosa importante al día y guardar fuerzas para eso.",
+    "evitar": [
+      "No preguntar por ella, que es lo más frecuente",
+      "Insistir en que se levante y se active sin adaptar la actividad",
+      "Aceptar que es inevitable sin buscar causas reversibles",
+      "Mantener fármacos sedantes que ya no son necesarios",
+      "Despertar al niño de madrugada para constantes que no van a cambiar nada",
+      "Prometer que un estimulante o un corticoide lo van a resolver"
+    ],
+    "perla": "La intervención que más rinde no es un fármaco sino una conversación: Elegir con el niño qué es lo importante de ese día y organizar todo lo demás alrededor. Eso convierte la fatiga de una limitación difusa en un problema de gestión de energía, que sí se puede trabajar.",
+    "temaRelacionado": "calidad-de-vida",
+    "etiquetas": [
+      "fatiga",
+      "ESAS",
+      "priorizar",
+      "sueño",
+      "fármacos sedantes"
+    ]
+  },
+  {
+    "codigo": "insomnio",
+    "titulo": "Insomnio",
+    "dominio": "General",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Dormir mal amplifica todos los demás síntomas: El dolor duele más, la fatiga aumenta y la tolerancia emocional se agota. Además el insomnio del niño es también el insomnio de su cuidador, así que tratarlo bien tiene un efecto doble sobre la familia entera.",
+    "porQueOcurre": "En este contexto el insomnio casi nunca es primario. Suele ser la manifestación nocturna de otro problema: Dolor mal cubierto de madrugada, disnea que empeora al acostarse, miedo, corticoides administrados demasiado tarde o simplemente un entorno hospitalario que no permite dormir.",
+    "causas": [
+      "Dolor no cubierto durante la noche, por intervalo demasiado largo entre dosis",
+      "Disnea o tos que empeoran en decúbito",
+      "Corticoides administrados por la tarde",
+      "Ansiedad, miedo a dormirse y a no despertar",
+      "Ambiente hospitalario: Ruido, luz, constantes nocturnas, alarmas",
+      "Alteración del ritmo circadiano por hospitalización prolongada o por daño neurológico",
+      "Síndrome de piernas inquietas y prurito",
+      "Retirada de fármacos"
+    ],
+    "evaluar": [
+      "Distinguir insomnio de conciliación, de mantenimiento o despertar precoz, porque orientan a causas distintas",
+      "Preguntar qué le despierta: Dolor, ganas de orinar, tos, miedo, ruido",
+      "Revisar la hora de administración de corticoides y de diuréticos",
+      "Comprobar si el intervalo de la analgesia deja un hueco de madrugada",
+      "Preguntar al niño mayor si tiene miedo a dormirse, que se calla casi siempre",
+      "Contar cuántas veces lo despierta el propio equipo cada noche"
+    ],
+    "noFarmacologico": [
+      "Cubrir el dolor durante la noche, ajustando la pauta o usando una presentación de liberación prolongada",
+      "Rutina de sueño estable y previsible, con las mismas señales cada noche",
+      "Agrupar las intervenciones nocturnas y suprimir las que no cambien la conducta",
+      "Reducir luz y ruido, y respetar el contraste entre día y noche",
+      "Exposición a la luz natural durante el día",
+      "Que el niño duerma acompañado si eso lo tranquiliza, sin considerarlo un mal hábito en esta situación",
+      "Hablar del miedo si lo hay, porque muchas veces el insomnio se resuelve al nombrarlo"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Melatonina",
+        "dosis": "2 a 6 mg VO, de 30 a 60 minutos antes de acostarse",
+        "cuando": "Primera línea. No seda, no crea tolerancia y no suma depresión respiratoria"
+      },
+      {
+        "farmaco": "Amitriptilina",
+        "dosis": "0.2 a 0.5 mg/kg VO 1 a 2 h antes de acostarse",
+        "cuando": "Insomnio con dolor neuropático asociado: Resuelve las dos cosas"
+      },
+      {
+        "farmaco": "Lorazepam",
+        "dosis": "0.02 a 0.05 mg/kg sublingual, máximo 2 mg",
+        "cuando": "Insomnio con ansiedad marcada, por periodos cortos"
+      },
+      {
+        "farmaco": "Levomepromazina",
+        "dosis": "0.05 a 0.1 mg/kg VO por la noche",
+        "cuando": "Insomnio refractario, sobre todo si hay náusea o delirium asociado"
+      },
+      {
+        "farmaco": "Ajuste del opioide nocturno",
+        "dosis": "Presentación de liberación prolongada o dosis mayor antes de dormir",
+        "cuando": "Cuando el despertar es por dolor de final de dosis"
+      }
+    ],
+    "escalar": "Si el insomnio es de despertar precoz con anhedonia y tristeza mantenida, valorar depresión. Si hay inversión completa del ritmo día y noche con desorientación, sospechar delirium y tratarlo como tal.",
+    "queDecirALaFamilia": "Antes de darle algo para dormir, vamos a mirar qué le está despertando, porque casi siempre hay una causa: Muchas veces es que la analgesia no le cubre toda la noche. Y si duerme mejor él, duermen mejor ustedes.",
+    "evitar": [
+      "Prescribir un hipnótico sin buscar la causa",
+      "Administrar corticoides por la tarde",
+      "Mantener las constantes nocturnas por rutina cuando no van a cambiar nada",
+      "Añadir una benzodiacepina a un niño con delirium, que empeorará",
+      "Considerar un mal hábito que el niño duerma acompañado en esta situación",
+      "No preguntar por el miedo a dormirse, que es frecuente y casi nunca se dice"
+    ],
+    "perla": "El insomnio de madrugada en un niño con dolor casi siempre es dolor de final de dosis, no insomnio. Antes de añadir un hipnótico conviene comprobar si la analgesia cubre las últimas horas de la noche, porque corregir eso resuelve las dos cosas a la vez.",
+    "temaRelacionado": "calidad-de-vida",
+    "etiquetas": [
+      "insomnio",
+      "melatonina",
+      "dolor nocturno",
+      "ritmo circadiano",
+      "cuidador"
+    ]
+  },
+  {
+    "codigo": "fiebre",
+    "titulo": "Fiebre en el niño paliativo",
+    "dominio": "General",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "La fiebre obliga a una decisión que no es automática: Buscar y tratar la causa, o tratar solo el malestar que produce. La respuesta depende del momento de la trayectoria del niño y de lo que se haya acordado con la familia, y conviene haberlo hablado antes de que aparezca.",
+    "porQueOcurre": "Puede deberse a infección, a la propia enfermedad tumoral, a fármacos o a alteración de la termorregulación central en el niño con daño neurológico. En la fase de últimos días es frecuente y muchas veces no tiene un origen infeccioso que merezca la pena buscar.",
+    "causas": [
+      "Infección: Respiratoria, urinaria, de catéter, de úlcera por presión",
+      "Fiebre tumoral, típica de linfomas y de algunos sarcomas",
+      "Fármacos",
+      "Alteración de la termorregulación central en el daño neurológico",
+      "Deshidratación",
+      "Transfusión y hemoderivados",
+      "Trombosis"
+    ],
+    "evaluar": [
+      "Antes de nada, decidir con la familia el objetivo: Buscar causa y tratarla, o tratar solo el malestar",
+      "Valorar el estado general y el grado de malestar, más que la cifra del termómetro",
+      "Buscar foco de forma dirigida por la exploración, no por protocolo automático",
+      "Revisar catéteres, úlceras y sondas, que son los focos más frecuentes en esta población",
+      "Comprobar si hay neutropenia, que cambia por completo la conducta",
+      "Preguntarse si el resultado de una prueba va a cambiar lo que se va a hacer"
+    ],
+    "noFarmacologico": [
+      "Ambiente fresco, ropa ligera y descubrir al niño",
+      "Paños tibios, nunca fríos ni con alcohol, que producen escalofríos y aumentan el malestar",
+      "Ofrecer líquidos si los tolera y le apetecen",
+      "Cuidado de la boca, que se reseca mucho con la fiebre",
+      "No despertar al niño para medir la temperatura si está durmiendo tranquilo"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Paracetamol",
+        "dosis": "15 mg/kg VO o rectal cada 4 a 6 h",
+        "cuando": "Primera línea para el malestar. Seguro incluso con trombopenia"
+      },
+      {
+        "farmaco": "Ibuprofeno",
+        "dosis": "5 a 10 mg/kg VO cada 6 a 8 h",
+        "cuando": "Si el paracetamol no basta y no hay trombopenia ni nefropatía"
+      },
+      {
+        "farmaco": "Metamizol",
+        "dosis": "10 a 20 mg/kg VO o IV cada 6 a 8 h",
+        "cuando": "Fiebre que no cede con lo anterior, con precaución si hay neutropenia"
+      },
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "0.1 a 0.2 mg/kg/día",
+        "cuando": "Fiebre tumoral confirmada, donde responde muy bien"
+      },
+      {
+        "farmaco": "Antibiótico",
+        "dosis": "Según foco y protocolo",
+        "cuando": "Cuando se ha decidido tratar la infección y el objetivo lo justifica. En neutropenia febril, siempre y de forma urgente si ese es el plan acordado"
+      }
+    ],
+    "escalar": "La neutropenia febril sigue siendo una urgencia mientras el niño esté en tratamiento activo y ese sea el plan acordado. En la fase de últimos días, la fiebre suele tratarse solo por confort, y eso debe estar escrito en el plan para que el equipo de guardia no traslade al niño al hospital.",
+    "queDecirALaFamilia": "La fiebre en sí no le hace daño: Lo que le molesta es el malestar que produce, y eso lo tratamos siempre. Lo que tenemos que decidir juntos es si en este momento tiene sentido buscar de dónde viene y ponerle antibiótico, o si preferimos que esté tranquilo en casa.",
+    "evitar": [
+      "Aplicar un protocolo automático de búsqueda de foco sin preguntarse si va a cambiar la conducta",
+      "Usar paños fríos o con alcohol, que producen escalofríos y empeoran el malestar",
+      "Perseguir la normotermia en lugar de perseguir el confort",
+      "Trasladar al hospital en la fase final por una fiebre esperable y ya conversada",
+      "No dejar escrito en el plan domiciliario qué hacer si aparece fiebre",
+      "Olvidar que en neutropenia el manejo es distinto y urgente"
+    ],
+    "perla": "La pregunta clave no es de dónde viene la fiebre, sino qué vamos a hacer con la respuesta. Si la conducta va a ser la misma se sepa o no el foco, la búsqueda solo añade punciones y traslados. Conviene haberlo acordado con la familia antes de que la fiebre llegue de madrugada.",
+    "temaRelacionado": "adecuacion-del-esfuerzo-terapeutico",
+    "etiquetas": [
+      "fiebre",
+      "objetivos",
+      "neutropenia",
+      "confort",
+      "plan domiciliario"
+    ]
+  },
+  {
+    "codigo": "ansiedad-miedo",
+    "titulo": "Ansiedad y miedo",
+    "dominio": "Emocional",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "El miedo del niño enfermo casi nunca es a la muerte en abstracto: Es al dolor, a los procedimientos, a quedarse solo y a lo que será de sus padres. Identificar cuál de esos miedos es el que tiene delante permite responder a algo concreto en lugar de tranquilizar en el vacío.",
+    "porQueOcurre": "Se combinan la amenaza real de la enfermedad, la pérdida de control sobre el propio cuerpo y la rutina, la experiencia acumulada de procedimientos dolorosos y la percepción muy aguda del estado emocional de los padres. En el niño pequeño, la ansiedad de la madre se transmite casi por completo.",
+    "causas": [
+      "Miedo al dolor y a los procedimientos, que es el más frecuente con diferencia",
+      "Miedo a la separación y a quedarse solo",
+      "Miedo a lo desconocido y a lo que no se le ha explicado",
+      "Preocupación por sus padres y por sus hermanos",
+      "Ansiedad anticipatoria aprendida tras procedimientos mal manejados",
+      "Disnea, que genera pánico de forma casi inmediata",
+      "Fármacos: Corticoides, broncodilatadores, retirada de benzodiacepinas",
+      "Delirium, que puede presentarse como agitación ansiosa"
+    ],
+    "evaluar": [
+      "Preguntar directamente qué es lo que más le preocupa, en lugar de suponerlo",
+      "Ofrecer un espacio a solas al niño mayor y al adolescente, porque delante de sus padres callará",
+      "Observar el juego y el dibujo en el niño pequeño, que expresan lo que no dice",
+      "Distinguir ansiedad de delirium y de disnea, que se tratan de forma distinta",
+      "Valorar el estado emocional de los padres, que es a la vez causa y consecuencia",
+      "Preguntar si hay miedo a dormirse, que es frecuente y casi nunca se verbaliza"
+    ],
+    "noFarmacologico": [
+      "Información honesta y adaptada: La mayor parte del miedo viene de lo que no se ha explicado",
+      "Prometer solo lo que se puede cumplir, y cumplirlo siempre: Que no va a doler y que no va a estar solo",
+      "Devolver control en lo que se pueda: Elegir el brazo, decidir el orden, decir cuándo empezar",
+      "Presencia constante de una figura de referencia y rutinas estables",
+      "Juego, dibujo y narración como vía de expresión en el niño pequeño",
+      "Técnicas de respiración y relajación adaptadas a la edad",
+      "Preparar cada procedimiento con antelación y no improvisar",
+      "Atender la ansiedad de los padres, porque el niño la percibe entera"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Lorazepam",
+        "dosis": "0.02 a 0.05 mg/kg sublingual u oral, máximo 2 mg",
+        "cuando": "Ansiedad puntual y ansiedad anticipatoria, administrado con tiempo suficiente"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.5 mg/kg VO 30 minutos antes, máximo 20 mg; o 0.2 a 0.3 mg/kg bucal o nasal en crisis",
+        "cuando": "Ansiólisis para procedimientos y crisis de pánico"
+      },
+      {
+        "farmaco": "Inhibidor de la recaptación de serotonina",
+        "dosis": "Según pauta pediátrica",
+        "cuando": "Ansiedad mantenida con expectativa de vida suficiente para notar el efecto, que tarda semanas"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis de disnea por peso",
+        "cuando": "Cuando la ansiedad es secundaria a disnea: Se trata la disnea, no la ansiedad"
+      }
+    ],
+    "escalar": "Si hay ideación autolítica en un adolescente, o ansiedad incapacitante que no responde, derivar a salud mental. Si la ansiedad aparece de forma aguda con desorientación y fluctuación, sospechar delirium.",
+    "queDecirALaFamilia": "Casi siempre el miedo es a algo concreto y no a la muerte: Al dolor, a estar solo o a lo que va a pasar con ustedes. Si conseguimos que nos diga qué es, podemos responderle de verdad en lugar de decirle que no se preocupe.",
+    "evitar": [
+      "Tranquilizar en falso con frases como no pasa nada o no te preocupes",
+      "Prometer que no habrá dolor en un procedimiento que va a doler",
+      "Mentir sobre lo que va a ocurrir, que destruye la confianza de forma irreversible",
+      "Sedar sin haber explorado el contenido del miedo",
+      "No ofrecer nunca al adolescente un espacio a solas",
+      "Confundir con ansiedad una disnea o un delirium"
+    ],
+    "perla": "Cuando un niño pregunta con miedo, la mejor primera respuesta no es una respuesta sino una pregunta: Qué has pensado tú sobre eso. Casi siempre lo que teme es algo concreto y abordable, y muy distinto de lo que el adulto había supuesto.",
+    "temaRelacionado": "comprension-de-la-muerte-por-edad",
+    "etiquetas": [
+      "ansiedad",
+      "miedo",
+      "procedimientos",
+      "control",
+      "escuchar"
+    ]
+  },
+  {
+    "codigo": "tristeza-depresion",
+    "titulo": "Tristeza y depresión",
+    "dominio": "Emocional",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Escolar y adolescente",
+    "descripcion": "Estar triste ante una enfermedad grave es una respuesta adecuada y no requiere tratamiento farmacológico. La depresión clínica es otra cosa, se infradiagnostica mucho porque se da por descontada, y sí responde al tratamiento. Distinguir ambas es el trabajo principal.",
+    "porQueOcurre": "La tristeza adaptativa fluctúa, permite momentos de disfrute y se acompaña de esperanza en algo, aunque sea pequeño. La depresión es persistente, impregna todo el día, quita la capacidad de disfrutar de cualquier cosa y se acompaña de desesperanza, sensación de ser una carga y culpa desproporcionada.",
+    "causas": [
+      "Pérdidas acumuladas: De funciones, de autonomía, de escuela, de amigos, de futuro",
+      "Síntomas mal controlados, sobre todo dolor y fatiga, que son causa frecuente de ánimo bajo",
+      "Aislamiento social y hospitalizaciones prolongadas",
+      "Fármacos: Corticoides, algunos antiepilépticos, interferón",
+      "Alteraciones metabólicas y endocrinas",
+      "Antecedentes personales o familiares de depresión",
+      "Depresión de los padres, que influye de forma directa"
+    ],
+    "evaluar": [
+      "Buscar los síntomas que orientan a depresión y no a tristeza: Anhedonia completa, desesperanza, culpa desproporcionada, sensación de ser una carga",
+      "Preguntar de forma directa y a solas por ideación autolítica en el adolescente: Preguntarlo no la induce",
+      "Comprobar antes que el dolor y la fatiga están bien controlados, porque su tratamiento cambia el ánimo",
+      "Revisar los fármacos, en especial los corticoides",
+      "Valorar el estado emocional de los padres",
+      "Usar la escala ESAS-r para seguir la evolución, sabiendo que una puntuación baja no descarta depresión"
+    ],
+    "noFarmacologico": [
+      "Escuchar sin corregir ni animar de forma automática: La tristeza necesita ser reconocida, no resuelta",
+      "Optimizar el control de síntomas antes que nada",
+      "Recuperar actividades con sentido, adaptadas a lo que ahora puede hacer",
+      "Mantener el vínculo con amigos y con la escuela, por videollamada si hace falta",
+      "Apoyo psicológico especializado, que es la primera línea en niños y adolescentes",
+      "Trabajar con el niño lo que sí puede controlar y decidir",
+      "Atender a los padres, cuyo estado influye directamente"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Inhibidor de la recaptación de serotonina",
+        "dosis": "Según pauta pediátrica, con titulación",
+        "cuando": "Depresión establecida con expectativa de vida de semanas o meses, porque tarda de 2 a 4 semanas en hacer efecto"
+      },
+      {
+        "farmaco": "Mirtazapina",
+        "dosis": "Según pauta",
+        "cuando": "Depresión con insomnio, náusea y pérdida de apetito, porque mejora las tres cosas"
+      },
+      {
+        "farmaco": "Metilfenidato",
+        "dosis": "Según pauta, en casos seleccionados",
+        "cuando": "Expectativa de vida corta, cuando no hay tiempo para esperar a un antidepresivo. Bajo indicación de equipo con experiencia"
+      },
+      {
+        "farmaco": "Revisión de corticoides",
+        "dosis": "Ajuste individual",
+        "cuando": "Cuando el cambio de ánimo coincide con su introducción o con una subida de dosis"
+      }
+    ],
+    "escalar": "Ante ideación autolítica, plan estructurado o negativa persistente a todo tratamiento con desesperanza marcada, derivar a salud mental de forma preferente. Si la desesperanza es refractaria y produce sufrimiento existencial intolerable en la fase final, es una situación compleja que requiere equipo especializado.",
+    "queDecirALaFamilia": "Que esté triste con lo que está viviendo es normal y no hace falta medicarlo. Lo que sí tratamos es cuando ya no disfruta de nada en ningún momento, se siente una carga o pierde la esperanza en todo, porque eso es otra cosa y sí tiene tratamiento.",
+    "evitar": [
+      "Dar por descontado que la tristeza es inevitable y no explorarla",
+      "Animar de forma automática con frases del tipo hay que ser positivo",
+      "Prescribir un antidepresivo antes de optimizar el control del dolor y de la fatiga",
+      "No preguntar por ideación autolítica al adolescente por miedo a inducirla",
+      "Iniciar un antidepresivo en un niño con expectativa de días, cuando no dará tiempo a que actúe",
+      "Olvidar que el estado de los padres influye directamente en el del niño"
+    ],
+    "perla": "La diferencia práctica entre tristeza y depresión está en la anhedonia y en la desesperanza. Un niño triste sigue esperando algo, aunque sea pequeño: La visita de un amigo, un partido, un cumpleaños. Cuando ya no espera nada de nada y no disfruta de nada, eso es depresión y merece tratamiento.",
+    "temaRelacionado": "calidad-de-vida",
+    "etiquetas": [
+      "depresión",
+      "tristeza",
+      "anhedonia",
+      "ideación",
+      "adolescente"
+    ]
+  },
+  {
+    "codigo": "sobrecarga-cuidador",
+    "titulo": "Sobrecarga y claudicación del cuidador",
+    "dominio": "Familia y entorno",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Se aplica a la familia",
+    "descripcion": "El cuidador principal, que en cuidados paliativos pediátricos es casi siempre la madre, sostiene un trabajo de veinticuatro horas durante meses o años. Su agotamiento no es un asunto privado de la familia: Es un problema clínico que determina si el niño puede seguir en casa.",
+    "porQueOcurre": "La claudicación es el punto en que el cuidador ya no puede seguir. No aparece de golpe: Se construye con privación crónica de sueño, aislamiento social, pérdida del empleo y de los ingresos, deterioro de la salud propia, sensación de no hacerlo bien y ausencia total de tiempo para sí mismo.",
+    "causas": [
+      "Privación crónica de sueño, que es el factor que más pesa",
+      "Cuidador único, sin relevo real",
+      "Aislamiento social y pérdida de la red de apoyo",
+      "Pérdida del empleo y dificultades económicas derivadas del cuidado",
+      "Enfermedad propia del cuidador, a menudo desatendida",
+      "Conflicto de pareja o falta de apoyo mutuo",
+      "Otros hijos que también requieren atención",
+      "Culpa por descansar o por sentir enfado"
+    ],
+    "evaluar": [
+      "Preguntar por el cuidador en cada visita, por su nombre y en primera persona: Y usted cómo está",
+      "Aplicar la escala de Zarit breve, a solas y explicando que no hay respuestas que le hagan quedar mal",
+      "Preguntar cuántas horas seguidas duerme, que es el dato que mejor predice la claudicación",
+      "Preguntar cuándo fue la última vez que salió de casa sin el niño",
+      "Buscar signos de alarma: Llanto fácil, irritabilidad, quejas somáticas, aumento del consumo de alcohol o de hipnóticos",
+      "Detectar la minimización: Una puntuación baja en un cuidador visiblemente agotado no significa que esté bien"
+    ],
+    "noFarmacologico": [
+      "Organizar tiempos de respiro reales, aunque sean cortos, y no solo ofrecerlos de palabra",
+      "Repartir tareas concretas dentro de la familia extensa, con nombre y horario, porque el ofrecimiento genérico no se usa nunca",
+      "Simplificar el plan terapéutico: Menos tomas, menos horarios, menos desplazamientos",
+      "Enseñar y dar por escrito lo que tienen que saber hacer, para que no vivan con miedo a equivocarse",
+      "Teléfono de contacto veinticuatro horas, que reduce mucho la ansiedad aunque no se use",
+      "Reconocer explícitamente y en voz alta el trabajo que están haciendo",
+      "Facilitar el acceso a trabajo social para las ayudas y trámites que correspondan",
+      "Apoyo psicológico para el cuidador, presentado como parte del cuidado y no como un signo de debilidad"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Tratamiento del insomnio del cuidador",
+        "dosis": "Derivar a su médico de referencia",
+        "cuando": "Cuando la privación de sueño es el factor principal. No se prescribe al cuidador desde el equipo del niño, pero sí se detecta y se deriva"
+      },
+      {
+        "farmaco": "Optimizar la pauta nocturna del niño",
+        "dosis": "Ajuste individual",
+        "cuando": "Si el cuidador no duerme porque el niño despierta: Cubrir el dolor nocturno resuelve a los dos"
+      }
+    ],
+    "escalar": "Una puntuación de Zarit de 22 o más, un cuidador que verbaliza que no puede más, o la aparición de negligencia involuntaria en los cuidados, son motivo de intervención inmediata: Respiro, apoyo psicológico y valoración de ingreso de descarga. La claudicación no anunciada es la causa más frecuente de ingreso urgente evitable.",
+    "queDecirALaFamilia": "Ustedes también son parte de a quién cuidamos. Descansar no es abandonarlo: Es lo que les va a permitir seguir haciéndolo. Y si en algún momento no pueden más, no pasa nada por decirlo, buscamos otra solución sin ningún reproche.",
+    "evitar": [
+      "No preguntar nunca por el cuidador",
+      "Ofrecer respiro de forma genérica sin organizarlo de verdad",
+      "Añadir tareas al plan sin quitar ninguna",
+      "Interpretar el agotamiento como falta de implicación",
+      "Elogiar la entrega hasta el punto de que pedir ayuda parezca una traición",
+      "Esperar a la claudicación para actuar, cuando ya solo cabe el ingreso urgente"
+    ],
+    "perla": "La pregunta más útil de toda la valoración es cuántas horas seguidas duerme usted. Un cuidador que lleva meses durmiendo en tramos de dos horas va a claudicar, y muchas veces la solución no es psicológica sino ajustar la pauta nocturna del niño o conseguir una noche de relevo a la semana.",
+    "temaRelacionado": "duelo",
+    "etiquetas": [
+      "cuidador",
+      "Zarit",
+      "claudicación",
+      "respiro",
+      "sueño"
+    ]
+  },
+  {
+    "codigo": "hermanos",
+    "titulo": "El hermano del niño enfermo",
+    "dominio": "Familia y entorno",
+    "nivel": "Básico",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Son los dolientes olvidados. Pierden atención, rutina y a veces su casa, y aprenden muy pronto que la forma de ayudar es no dar problemas, lo que los vuelve invisibles justo cuando más necesitan que alguien los mire.",
+    "porQueOcurre": "La enfermedad reorganiza la familia entera alrededor del niño enfermo. El hermano vive una pérdida real de sus padres, que están física y emocionalmente ausentes, y a la vez siente que no tiene derecho a quejarse porque lo suyo no es grave. A eso se añade una culpa que casi nunca expresa.",
+    "causas": [
+      "Ausencia física y emocional de los padres durante ingresos prolongados",
+      "Cambios de domicilio y de rutina, con estancias en casas de familiares",
+      "Información escasa o falsa, que le lleva a imaginar cosas peores",
+      "Culpa por celos previos, por enfados o por haber deseado alguna vez que el hermano desapareciera",
+      "Miedo a enfermar él también",
+      "Asunción de un papel adulto que no le corresponde",
+      "Duelo anticipado no reconocido"
+    ],
+    "evaluar": [
+      "Preguntar por ellos en cada visita, por su nombre",
+      "Preguntar de forma directa por la culpa, porque no aparece sola",
+      "Preguntar si le han contado lo que pasa y qué entiende él",
+      "Buscar señales que no parecen duelo: Regresión, pesadillas, dolores abdominales o de cabeza sin causa, caída del rendimiento escolar",
+      "Desconfiar de la madurez y la obediencia repentinas, que suelen significar más que la mala conducta",
+      "Comprobar si existe un adulto de referencia disponible que no sean los padres"
+    ],
+    "noFarmacologico": [
+      "Información veraz y adaptada a su edad desde el principio, sin esperar a que la situación sea grave",
+      "Un adulto de referencia que no sean los padres, porque en esta etapa no tienen disponibilidad emocional aunque quieran tenerla",
+      "Mantener rutinas y escolarización, que son su ancla de normalidad",
+      "Tiempo exclusivo con cada padre, aunque sea corto, protegido y previsible",
+      "Un papel concreto si lo quiere: Elegir la música, hacer un dibujo, traerle algo suyo",
+      "Permiso explícito para jugar, reírse y pasarlo bien sin sentirse culpable",
+      "Avisar a la escuela para que su tutor sepa lo que ocurre en casa",
+      "Ofrecerle ver al hermano, también después de morir, explicándole antes lo que va a ver, sin obligar y sin impedir"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "No procede de forma habitual",
+        "dosis": "Se interviene con apoyo psicosocial",
+        "cuando": "El tratamiento de los hermanos es de acompañamiento, no farmacológico"
+      },
+      {
+        "farmaco": "Derivación a salud mental infantil",
+        "dosis": "Valoración especializada",
+        "cuando": "Síntomas persistentes, deterioro funcional marcado o duelo complicado"
+      }
+    ],
+    "escalar": "Si aparecen síntomas mantenidos más allá de unos meses, deterioro escolar importante, conductas de riesgo en el adolescente o ideación autolítica, derivar a salud mental infantil. Anotar en la historia si el hermano queda identificado como de riesgo para el seguimiento de duelo.",
+    "queDecirALaFamilia": "Sus otros hijos también están pasando por esto, aunque no lo digan. Ayuda muchísimo que sepan la verdad, que mantengan su rutina y su escuela, y que haya un adulto de confianza al que puedan preguntar cuando ustedes no puedan.",
+    "evitar": [
+      "Excluirlos de la información para protegerlos, lo que los deja imaginando cosas peores",
+      "Convertirlos en cuidadores o en el apoyo emocional de sus padres",
+      "Interpretar la buena conducta como que están bien",
+      "Impedirles ver al hermano, antes o después de la muerte",
+      "No preguntar nunca por la culpa",
+      "Olvidar avisar a la escuela"
+    ],
+    "perla": "El hermano que no da ningún problema es el que más debería preocupar. La madurez y la obediencia repentinas suelen ser la forma en que un niño intenta no añadir carga a unos padres que ya no pueden más, y esconden un sufrimiento que nadie está mirando.",
+    "temaRelacionado": "duelo",
+    "etiquetas": [
+      "hermanos",
+      "culpa",
+      "invisibles",
+      "adulto de referencia",
+      "escuela"
+    ]
+  },
+  {
+    "codigo": "sufrimiento-espiritual",
+    "titulo": "Sufrimiento espiritual y existencial",
+    "dominio": "Espiritual",
+    "nivel": "Avanzado",
+    "urgencia": false,
+    "edades": "Escolar y adolescente",
+    "descripcion": "Es el sufrimiento que nace de las preguntas por el sentido, la justicia y el valor de la propia vida. No se resuelve con fármacos y no requiere que el equipo tenga respuestas: Requiere que alguien esté dispuesto a sostener la pregunta sin salir corriendo.",
+    "porQueOcurre": "La enfermedad grave rompe los supuestos básicos sobre los que se construye una vida: Que el mundo es justo, que uno controla lo que le pasa y que hay un futuro. En el niño mayor y en el adolescente eso genera preguntas por qué a mí, para qué sirvo ahora y qué queda de mí, que son de naturaleza espiritual aunque no tengan nada de religioso.",
+    "causas": [
+      "Pérdida de sentido y de proyecto vital",
+      "Sensación de ser una carga para la familia",
+      "Percepción de injusticia y enfado con la vida o con Dios",
+      "Pérdida de la identidad construida: Deportista, buen estudiante, hermano mayor",
+      "Miedo a ser olvidado",
+      "Conflictos no resueltos con alguien cercano",
+      "Crisis de la fe previa o, al contrario, necesidad espiritual no atendida",
+      "Aislamiento y pérdida del papel social"
+    ],
+    "evaluar": [
+      "Preguntar de forma abierta y sin presuponer religión: Qué es lo que le da fuerzas, qué es importante para usted ahora",
+      "Distinguir sufrimiento espiritual de depresión, aunque a menudo coexisten",
+      "Explorar si hay algo pendiente que le preocupe resolver",
+      "Preguntar por la fe o la práctica espiritual de la familia y respetarla, sea cual sea",
+      "Detectar la sensación de ser una carga, que es una de las expresiones más frecuentes y más dolorosas",
+      "Ofrecer tiempo a solas al adolescente, porque delante de sus padres no lo dirá"
+    ],
+    "noFarmacologico": [
+      "Estar presente y escuchar sin intentar arreglarlo: Esta es la intervención principal",
+      "Tolerar el silencio y la pregunta sin respuesta, sin llenarlos con frases hechas",
+      "Facilitar el acompañamiento espiritual o religioso que la familia desee, y saber a quién llamar",
+      "Trabajo de legado: Cartas, vídeos, una caja de recuerdos, un álbum, dejar algo escrito para alguien",
+      "Ayudar a cerrar asuntos pendientes: Perdonar, despedirse, decir algo que no se ha dicho",
+      "Reconocer lo que ha aportado y lo que sigue aportando, de forma concreta y no genérica",
+      "Facilitar rituales que tengan sentido para esa familia"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "No hay tratamiento farmacológico del sufrimiento espiritual",
+        "dosis": "No procede",
+        "cuando": "Medicar una pregunta existencial la silencia, no la responde"
+      },
+      {
+        "farmaco": "Tratamiento de la depresión asociada",
+        "dosis": "Según pauta",
+        "cuando": "Si coexiste una depresión establecida, que sí se trata"
+      },
+      {
+        "farmaco": "Sedación paliativa",
+        "dosis": "Según protocolo",
+        "cuando": "Sufrimiento existencial refractario en la fase final. Indicación admitida pero muy controvertida, que exige evaluación completa, tiempo y más de un profesional en la decisión"
+      }
+    ],
+    "escalar": "Si el sufrimiento existencial es intenso y persistente, involucrar a psicología y al acompañamiento espiritual, y no dejarlo en manos de una sola persona del equipo. Si se plantea sedación por esta indicación, nunca se decide en una guardia ni por un solo profesional.",
+    "queDecirALaFamilia": "No tengo una respuesta para por qué le ha pasado esto a él, y no se la voy a inventar. Lo que sí puedo decirle es que no van a estar solos en esto y que voy a seguir viniendo.",
+    "evitar": [
+      "Responder con frases hechas: Todo pasa por algo, Dios sabe lo que hace, hay que ser fuerte",
+      "Imponer o presuponer una creencia religiosa, propia o ajena",
+      "Medicar la pregunta existencial para no tener que sostenerla",
+      "Cambiar de tema cuando el niño lo saca, que le enseña a no volver a sacarlo",
+      "Confundirlo automáticamente con depresión y tratarlo solo con fármacos",
+      "Delegarlo entero en el capellán o en el psicólogo y desentenderse"
+    ],
+    "perla": "Ante la pregunta por qué a mí, no hace falta tener una respuesta y no conviene inventarla. Lo que cura no es la respuesta sino que alguien se quede sentado mientras se formula la pregunta, sin mirar el reloj y sin cambiar de tema.",
+    "temaRelacionado": "cuidado-del-equipo",
+    "etiquetas": [
+      "espiritual",
+      "sentido",
+      "legado",
+      "escuchar",
+      "adolescente"
+    ]
+  },
+  {
+    "codigo": "reconocer-ultimos-dias",
+    "titulo": "Reconocer los últimos días",
+    "dominio": "Últimos días",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Identificar que un niño ha entrado en los últimos días de vida es una de las decisiones clínicas más útiles que existen, porque cambia todo el plan: Los objetivos, los fármacos, las pruebas, el lugar y las conversaciones. No reconocerlo lleva a que el niño muera con una vía puesta esperando un resultado de laboratorio que ya no importa.",
+    "porQueOcurre": "El organismo entra en un proceso de apagado progresivo y ordenado: Baja el nivel de conciencia, se pierde el interés por comer y beber, se pierde el reflejo de deglución, cambia el patrón respiratorio y se centraliza la circulación. Cada uno de esos cambios es esperable y tiene una explicación que se puede dar a la familia.",
+    "causas": [
+      "Progresión de la enfermedad de base",
+      "Complicación aguda irreversible sobre una enfermedad avanzada",
+      "Fallo multiorgánico"
+    ],
+    "evaluar": [
+      "Buscar el conjunto de signos, no uno aislado: Disminución progresiva de la conciencia, debilidad extrema con incapacidad de moverse en la cama, desinterés por comer y beber",
+      "Dificultad para tragar, incluida la medicación, que obliga a planificar la vía subcutánea",
+      "Cambios en el patrón respiratorio, con pausas y respiración irregular",
+      "Aparición de estertores",
+      "Frialdad y moteado de las extremidades, y disminución de la diuresis",
+      "Valorar la puntuación PPS, que en 20 o menos orienta a esta fase",
+      "Comprobar que la familia ha sido informada y que el equipo de guardia y urgencias conocen el plan"
+    ],
+    "noFarmacologico": [
+      "Retirar todo lo que no aporte confort: Analíticas de rutina, constantes cada cuatro horas, monitorización que solo produce alarmas",
+      "Reducir o suspender la sueroterapia, que aumenta secreciones y edemas",
+      "Suspender la medicación crónica sin efecto sintomático inmediato",
+      "Cuidado intensivo de la boca, cada 15 a 30 minutos, que la familia puede hacer",
+      "Cambios posturales suaves y solo los que no produzcan dolor",
+      "Ambiente tranquilo, con las personas que el niño y la familia quieran",
+      "Preparar a la familia describiendo con antelación lo que van a ver"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Conversión de la analgesia a vía subcutánea",
+        "dosis": "Dosis oral de 24 h dividida entre 2 o entre 3",
+        "cuando": "En cuanto se pierde la vía oral. No se suspende nunca la analgesia"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Infusión continua SC más rescates del 10 por ciento",
+        "cuando": "Dolor y disnea"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.02 a 0.1 mg/kg/h SC, con rescates de 0.05 mg/kg",
+        "cuando": "Agitación, ansiedad o convulsiones"
+      },
+      {
+        "farmaco": "Butilhioscina",
+        "dosis": "0.3 a 0.5 mg/kg SC cada 6 a 8 h",
+        "cuando": "Estertores. Se administra al primer estertor, no cuando ya son intensos"
+      },
+      {
+        "farmaco": "Haloperidol",
+        "dosis": "0.01 a 0.05 mg/kg SC cada 8 h",
+        "cuando": "Náusea o delirium"
+      },
+      {
+        "farmaco": "Prescripción anticipada",
+        "dosis": "Las cuatro anteriores, ya pautadas y disponibles en el domicilio",
+        "cuando": "Antes de que hagan falta, para las cuatro situaciones que aparecen de madrugada"
+      }
+    ],
+    "escalar": "Si aparece un síntoma refractario que produce sufrimiento intolerable pese al tratamiento correcto, plantear sedación paliativa con el equipo y con la familia. Si la familia no puede sostener el domicilio, organizar el traslado sin que se viva como un fracaso.",
+    "queDecirALaFamilia": "Creemos que quedan días, quizá horas. Puede que nos equivoquemos en el tiempo, pero no en la dirección. Voy a contarles ahora lo que van a ver, para que cuando pase sepan que es normal y no se asusten.",
+    "evitar": [
+      "No reconocer la fase y seguir con pruebas y tratamientos que ya no cambian nada",
+      "Mantener la sueroterapia a volumen completo",
+      "Retirar la analgesia porque el niño ya no se queja",
+      "No dejar prescripción anticipada en el domicilio",
+      "No avisar al servicio de urgencias ni a la ambulancia del plan acordado",
+      "No anticipar a la familia la respiración irregular, los estertores y la frialdad"
+    ],
+    "perla": "Hay que avisar de antemano de que muchos niños mueren justo en el momento en que el familiar que llevaba días sin moverse sale un momento de la habitación. Si ocurre y no se ha dicho antes, la culpa por no haber estado puede durar años.",
+    "temaRelacionado": "ultimos-dias",
+    "etiquetas": [
+      "últimos días",
+      "reconocer",
+      "subcutánea",
+      "prescripción anticipada",
+      "familia"
+    ]
+  },
+  {
+    "codigo": "plan-ultimos-dias",
+    "titulo": "Plan de últimos días y kit de urgencias en casa",
+    "dominio": "Últimos días",
+    "nivel": "Intermedio",
+    "urgencia": false,
+    "edades": "Cualquier edad",
+    "descripcion": "Es el documento y el conjunto de fármacos que permiten que un niño muera en su casa sin que la primera crisis termine en una ambulancia. Prepararlo con antelación es lo que separa una muerte acompañada de un traslado que nadie quería.",
+    "porQueOcurre": "Las crisis de los últimos días son previsibles: Dolor, disnea, agitación, convulsión y estertores. Si están anticipadas, con la medicación en casa y la dosis ya calculada, la familia puede resolverlas. Si no lo están, a las tres de la mañana solo queda llamar al servicio de emergencias.",
+    "causas": [
+      "Progresión esperable de la enfermedad en la fase final",
+      "Pérdida de la vía oral, que interrumpe todo el tratamiento de base",
+      "Aparición de síntomas nuevos propios de esta fase"
+    ],
+    "evaluar": [
+      "Comprobar que existe un teléfono que responde veinticuatro horas y que lo atiende alguien que conoce el caso",
+      "Comprobar que el plan está escrito, en lenguaje llano y en un lugar visible de la casa",
+      "Comprobar que los fármacos están físicamente en el domicilio y no en una receta pendiente de surtir",
+      "Verificar que la familia sabe administrarlos y lo ha practicado, no solo que se lo han explicado",
+      "Confirmar que urgencias y la ambulancia de la zona conocen el plan y las decisiones documentadas",
+      "Revisar si hay riesgos específicos que requieran preparación adicional, como el de hemorragia"
+    ],
+    "noFarmacologico": [
+      "Plan escrito con qué puede pasar, qué hacer, qué dar y a quién llamar",
+      "Material: Jeringas, agujas, catéteres subcutáneos, apósitos, gasas, guantes, contenedor de punzantes y, si se usa, el infusor",
+      "Formación práctica del cuidador con demostración y ensayo, no solo explicación",
+      "Decir con claridad qué hacer cuando el niño muera, y sobre todo que no hay que llamar a una ambulancia y que no hay ninguna prisa",
+      "Dejar por escrito a quién llamar, en qué orden y quién acudirá a certificar la muerte",
+      "Anticipar los trámites posteriores con delicadeza pero con concreción"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis de rescate calculada para ese niño, en miligramos y en mililitros, VO, bucal o SC",
+        "cuando": "Dolor y disnea"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.3 mg/kg bucal o 0.2 a 0.3 mg/kg nasal, máximo 10 mg",
+        "cuando": "Convulsión, agitación o crisis de ansiedad extrema"
+      },
+      {
+        "farmaco": "Butilhioscina",
+        "dosis": "0.3 a 0.5 mg/kg SC",
+        "cuando": "Estertores, administrada al primer ruido"
+      },
+      {
+        "farmaco": "Haloperidol",
+        "dosis": "0.01 a 0.02 mg/kg SC",
+        "cuando": "Náusea o vómito, y delirium"
+      },
+      {
+        "farmaco": "Preparación específica de riesgo",
+        "dosis": "Toallas oscuras y midazolam preparado",
+        "cuando": "Si existe riesgo de hemorragia masiva"
+      }
+    ],
+    "escalar": "Si la familia no puede sostener la situación en casa, organizar el traslado de forma programada y presentarlo sin reproche. La reversibilidad de la decisión sobre el lugar debe decirse de forma explícita desde el principio.",
+    "queDecirALaFamilia": "Les voy a dejar las medicinas en casa, con la dosis ya calculada y escrita, para lo que pueda pasar de madrugada. Y quiero que practiquemos ahora cómo se dan, porque en el momento nadie recuerda instrucciones nuevas.",
+    "evitar": [
+      "Dejar una receta en lugar de los fármacos ya en el domicilio",
+      "Explicar la administración sin que la familia la practique",
+      "No calcular las dosis por adelantado y dejar que se calculen en el momento",
+      "Olvidar anticipar los trámites de los opioides, que es la causa más frecuente de que un buen plan falle",
+      "No coordinar con urgencias y con la ambulancia, con el riesgo de una reanimación no deseada",
+      "Presentar el domicilio como la única opción correcta y generar culpa en quien no puede sostenerlo"
+    ],
+    "perla": "Lo primero que hay que decirle a una familia sobre el momento de la muerte no es qué hacer, sino qué no hacer: No hay que llamar a una ambulancia y no hay ninguna prisa. La incertidumbre sobre ese punto concreto es lo que provoca reanimaciones no deseadas sobre niños que acaban de morir en paz en su casa.",
+    "esquema": "img/esquema-kit-urgencias.svg",
+    "esquemaPie": "Los cuatro fármacos del kit de urgencias domiciliario y su indicación",
+    "temaRelacionado": "atencion-domiciliaria",
+    "etiquetas": [
+      "kit",
+      "domicilio",
+      "prescripción anticipada",
+      "plan escrito",
+      "urgencias"
+    ]
+  },
+  {
+    "codigo": "crisis-disnea",
+    "titulo": "Crisis de disnea terminal",
+    "dominio": "Urgencias",
+    "nivel": "Avanzado",
+    "urgencia": true,
+    "edades": "Cualquier edad",
+    "descripcion": "Es la aparición brusca de disnea intensa con sensación de ahogo y pánico. Es una de las situaciones más angustiosas que puede vivir una familia y requiere una respuesta inmediata, ordenada y practicada de antemano.",
+    "porQueOcurre": "Sobre una reserva respiratoria ya mínima, cualquier factor añadido descompensa: Un tapón mucoso, una infección, un derrame, un broncoespasmo o simplemente el esfuerzo de un cambio postural. Al componente físico se suma el pánico, que aumenta la frecuencia respiratoria y empeora la sensación en un círculo que hay que romper.",
+    "causas": [
+      "Progresión de la enfermedad pulmonar o de la debilidad muscular",
+      "Tapón mucoso u obstrucción de la vía aérea",
+      "Infección respiratoria",
+      "Derrame pleural o pericárdico",
+      "Insuficiencia cardiaca aguda",
+      "Tromboembolismo",
+      "Neumotórax",
+      "Pánico, que puede ser desencadenante y siempre es agravante"
+    ],
+    "evaluar": [
+      "Valorar en segundos: Trabajo respiratorio, capacidad de hablar, nivel de conciencia y grado de angustia",
+      "No guiarse por la saturación, que no mide la disnea ni el sufrimiento",
+      "Buscar una causa reversible solo si el estado del niño y los objetivos acordados lo justifican",
+      "Revisar el plan acordado con la familia antes de plantear traslados o pruebas"
+    ],
+    "noFarmacologico": [
+      "Aire en la cara de inmediato, con ventilador de mano o ventana abierta",
+      "Incorporar al niño y aflojar la ropa",
+      "Reducir el número de personas en la habitación y bajar el tono de voz",
+      "Alguien conocido a su lado marcando el ritmo respiratorio con la voz",
+      "Mantener la calma de forma visible: La ansiedad del adulto empeora de forma medible la disnea del niño",
+      "Compañía continua: No dejarlo solo en ningún momento"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis de rescate, SC o IV. Sin opioide previo: 0.05 mg/kg SC. Repetible cada 20 a 30 minutos hasta el alivio",
+        "cuando": "Primera línea inmediata. Es el fármaco que rompe la crisis"
+      },
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.05 a 0.1 mg/kg SC, o 0.2 a 0.3 mg/kg bucal o nasal",
+        "cuando": "Componente de pánico, siempre asociado al opioide y nunca en su lugar"
+      },
+      {
+        "farmaco": "Butilhioscina",
+        "dosis": "0.3 a 0.5 mg/kg SC",
+        "cuando": "Si hay secreciones que contribuyen"
+      },
+      {
+        "farmaco": "Oxígeno",
+        "dosis": "Según tolerancia",
+        "cuando": "Solo si el niño está hipoxémico y solo si mejora su sensación. Si no la mejora, se retira porque la mascarilla agobia"
+      },
+      {
+        "farmaco": "Sedación paliativa",
+        "dosis": "Midazolam en infusión continua tras inducción",
+        "cuando": "Disnea refractaria con sufrimiento intolerable, decidida con el equipo y con la familia"
+      }
+    ],
+    "escalar": "Si la crisis no cede tras dos o tres rescates bien administrados, avisar al equipo de referencia y valorar sedación paliativa. La disnea refractaria en la fase final es una de las indicaciones más claras y menos discutidas de sedación.",
+    "queDecirALaFamilia": "Póngale el aire en la cara, incorpórelo y déle la dosis de rescate que tiene preparada. Yo me quedo al teléfono con usted. Esa medicina no le va a parar la respiración: Le va a quitar la sensación de ahogo.",
+    "evitar": [
+      "No administrar morfina por miedo a la depresión respiratoria, que es el error que más sufrimiento produce",
+      "Tratar la crisis solo con una benzodiacepina",
+      "Llenar la habitación de gente y de aparatos",
+      "Poner oxígeno de forma automática y mantenerlo aunque no alivie",
+      "Trasladar al hospital contra el plan acordado por no tener medicación en casa",
+      "Dejar al niño solo en algún momento de la crisis"
+    ],
+    "perla": "El orden importa y hay que enseñarlo así a la familia: Primero el aire en la cara, que actúa en segundos y no tiene ningún riesgo, y a la vez la dosis de rescate. Empezar por buscar el pulsioxímetro es perder el tiempo que más cuenta.",
+    "temaRelacionado": "sedacion-paliativa",
+    "etiquetas": [
+      "disnea",
+      "crisis",
+      "morfina",
+      "pánico",
+      "sedación"
+    ]
+  },
+  {
+    "codigo": "hemorragia-masiva",
+    "titulo": "Hemorragia masiva",
+    "dominio": "Urgencias",
+    "nivel": "Avanzado",
+    "urgencia": true,
+    "edades": "Cualquier edad",
+    "descripcion": "Es poco frecuente pero es la urgencia más traumática de todas para quien la presencia. Cuando el riesgo es previsible, prepararlo con antelación cambia por completo la experiencia de la familia, y esa preparación es casi toda la intervención posible.",
+    "porQueOcurre": "Un tumor que erosiona un vaso, una trombopenia grave o una coagulopatía pueden producir un sangrado masivo por boca, por nariz, por recto o por una lesión cutánea. En esa situación el niño pierde la conciencia en poco tiempo y no hay maniobra que revierta el cuadro en el contexto paliativo.",
+    "causas": [
+      "Erosión tumoral de un vaso, sobre todo en tumores de cabeza y cuello y en el pulmón",
+      "Trombopenia grave por infiltración medular o por tratamiento",
+      "Coagulopatía por insuficiencia hepática",
+      "Varices esofágicas",
+      "Úlcera o lesión digestiva"
+    ],
+    "evaluar": [
+      "Identificar de antemano a los niños con riesgo previsible, que es la única forma de prepararse",
+      "Buscar signos de aviso: Sangrados centinela pequeños y repetidos, que a veces preceden al masivo",
+      "Revisar cifra de plaquetas y coagulación cuando el dato vaya a cambiar la conducta",
+      "Acordar con la familia y con el equipo, por anticipado y por escrito, qué se hará si ocurre"
+    ],
+    "noFarmacologico": [
+      "Preparar con antelación toallas y sábanas de color oscuro, azul marino o verde, que disimulan la sangre y reducen enormemente el impacto visual",
+      "Tener las toallas y la medicación en la habitación del niño, no en otro lugar de la casa",
+      "Presión local si el punto es accesible",
+      "Colocar en decúbito lateral si el sangrado es por boca, para proteger la vía aérea",
+      "No dejar al niño solo en ningún momento",
+      "Compañía y contacto físico: En esos minutos lo que importa es que no esté solo y que no tenga miedo",
+      "Hablar después con la familia y con el equipo sobre lo ocurrido, porque el impacto es duradero"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Midazolam",
+        "dosis": "0.1 mg/kg IV o SC, o 0.3 mg/kg bucal o nasal, repetible",
+        "cuando": "De inmediato, para reducir la conciencia y la angustia. Es la intervención farmacológica principal"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis de rescate SC o IV",
+        "cuando": "Si hay dolor asociado. No sustituye al midazolam"
+      },
+      {
+        "farmaco": "Ácido tranexámico",
+        "dosis": "Según pauta por peso, tópico o sistémico",
+        "cuando": "Sangrados menores y de forma preventiva en el niño con sangrados centinela. No tiene papel en la hemorragia masiva ya establecida"
+      },
+      {
+        "farmaco": "Adrenalina tópica",
+        "dosis": "Compresa empapada sobre el punto sangrante",
+        "cuando": "Sangrado localizado y accesible"
+      }
+    ],
+    "escalar": "En el contexto paliativo, la hemorragia masiva es habitualmente un evento terminal y no se trata de revertirlo, sino de que el niño no sufra y no esté solo. Esa decisión debe estar acordada y documentada antes de que ocurra, y compartida con el equipo de guardia y con la ambulancia.",
+    "queDecirALaFamilia": "Es poco probable, pero por si ocurriera quiero que lo tengan preparado. Estas toallas oscuras están aquí para eso, y esta jeringa es para dormirlo enseguida y que no pase miedo. Ustedes quédense con él y llámennos.",
+    "evitar": [
+      "No preparar a la familia cuando el riesgo es previsible, que multiplica el trauma",
+      "Usar toallas blancas, que hacen que la escena sea mucho más impactante",
+      "Guardar la medicación de urgencia lejos de la habitación",
+      "Intentar maniobras de reanimación en una situación acordada como terminal",
+      "Dejar al niño solo para ir a buscar material",
+      "No hacer una revisión posterior con la familia y con el equipo que lo presenció"
+    ],
+    "perla": "Las toallas de color oscuro son una de las intervenciones de menor coste y mayor impacto de toda la medicina paliativa. Reducen de forma drástica el recuerdo traumático de la escena, y ese recuerdo es lo que la familia va a llevar consigo durante años.",
+    "temaRelacionado": "atencion-domiciliaria",
+    "etiquetas": [
+      "hemorragia",
+      "toallas oscuras",
+      "midazolam",
+      "preparación",
+      "trauma"
+    ]
+  },
+  {
+    "codigo": "estatus-convulsivo",
+    "titulo": "Estado epiléptico",
+    "dominio": "Urgencias",
+    "nivel": "Avanzado",
+    "urgencia": true,
+    "edades": "Cualquier edad",
+    "descripcion": "Es la crisis que dura más de cinco minutos, o dos crisis seguidas sin recuperación de la conciencia entre ellas. Requiere tratamiento inmediato, y en el domicilio ese tratamiento tiene que estar ya en casa y la familia tiene que saber administrarlo.",
+    "porQueOcurre": "La actividad epiléptica mantenida agota los mecanismos inhibitorios y se autoperpetúa: Cuanto más dura, más difícil es cortarla y menos responden las benzodiacepinas. Por eso el tiempo importa y por eso la primera dosis debe darse en casa y no esperando a una ambulancia.",
+    "causas": [
+      "Tumor cerebral y edema peritumoral",
+      "Enfermedad neurodegenerativa o metabólica de base",
+      "Alteración metabólica aguda: Hipoglucemia, hiponatremia, hipocalcemia",
+      "Infección del sistema nervioso central",
+      "Retirada brusca de anticonvulsivos o de benzodiacepinas",
+      "Pérdida de la vía oral que interrumpió el tratamiento de base",
+      "Hipertensión intracraneal"
+    ],
+    "evaluar": [
+      "Cronometrar desde el inicio: El tiempo es lo que define la conducta",
+      "Comprobar la vía aérea y la posición",
+      "Descartar hipoglucemia si es fácil y rápido de comprobar",
+      "Revisar si se ha interrumpido el tratamiento de base o si se ha perdido la vía oral",
+      "Revisar el plan acordado sobre traslados antes de decidirlo"
+    ],
+    "noFarmacologico": [
+      "Colocar en decúbito lateral y retirar objetos con los que pueda golpearse",
+      "No introducir nada en la boca y no sujetar al niño",
+      "Aflojar la ropa del cuello",
+      "Cronometrar y anotar la hora de inicio y de cada dosis administrada",
+      "Mantener la calma y acompañar: La familia necesita saber que están haciendo lo correcto"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Midazolam bucal",
+        "dosis": "0.3 mg/kg entre encía y mejilla, máximo 10 mg",
+        "cuando": "Primera dosis, a los 5 minutos de crisis. Es la vía de elección en domicilio"
+      },
+      {
+        "farmaco": "Midazolam bucal, segunda dosis",
+        "dosis": "Repetir la misma dosis",
+        "cuando": "Si a los 10 minutos la crisis no ha cedido. Avisar al equipo"
+      },
+      {
+        "farmaco": "Midazolam intranasal",
+        "dosis": "0.2 a 0.3 mg/kg con atomizador",
+        "cuando": "Alternativa si la vía bucal no es posible"
+      },
+      {
+        "farmaco": "Diazepam rectal",
+        "dosis": "0.3 a 0.5 mg/kg, máximo 10 mg",
+        "cuando": "Si no se dispone de midazolam bucal"
+      },
+      {
+        "farmaco": "Fenobarbital",
+        "dosis": "Carga de 10 a 20 mg/kg SC o IV",
+        "cuando": "Crisis que no cede a benzodiacepinas. Requiere línea subcutánea propia porque es incompatible con casi todo"
+      },
+      {
+        "farmaco": "Midazolam en infusión continua",
+        "dosis": "0.02 a 0.1 mg/kg/h SC",
+        "cuando": "Crisis repetidas o refractarias, sobre todo en la fase de últimos días"
+      },
+      {
+        "farmaco": "Levetiracetam",
+        "dosis": "20 a 30 mg/kg IV",
+        "cuando": "En el hospital, como anticonvulsivo de segunda línea"
+      }
+    ],
+    "escalar": "Si tras dos dosis de benzodiacepina la crisis persiste, avisar al equipo de referencia. La decisión de trasladar al hospital depende del plan acordado y del momento de la trayectoria: En la fase final, el manejo suele hacerse en casa con fenobarbital o midazolam en infusión.",
+    "queDecirALaFamilia": "Si la crisis pasa de cinco minutos, le ponen la medicina entre la encía y la mejilla y apuntan la hora. Si a los diez minutos no ha parado, repiten la dosis y nos llaman. Después va a quedarse dormido un buen rato, y eso es esperable.",
+    "evitar": [
+      "Esperar a que llegue una ambulancia para administrar la primera dosis",
+      "Introducir objetos en la boca o sujetar al niño",
+      "No cronometrar, con lo que se pierde la referencia para decidir",
+      "No dejar la medicación de rescate en el domicilio, que es el fallo más frecuente",
+      "Suspender de forma brusca un anticonvulsivo de base",
+      "Trasladar al hospital contra un plan acordado, sin valorar el momento de la trayectoria"
+    ],
+    "perla": "En el domicilio, el tratamiento del estado epiléptico empieza en la nevera: Con la dosis escrita en miligramos y en mililitros, la jeringa preparada y la familia habiendo practicado. Todo lo demás llega tarde.",
+    "temaRelacionado": "atencion-domiciliaria",
+    "etiquetas": [
+      "estado epiléptico",
+      "midazolam bucal",
+      "cronometrar",
+      "domicilio",
+      "fenobarbital"
+    ]
+  },
+  {
+    "codigo": "compresion-medular",
+    "titulo": "Compresión medular",
+    "dominio": "Urgencias",
+    "nivel": "Avanzado",
+    "urgencia": true,
+    "edades": "Cualquier edad",
+    "descripcion": "Es una urgencia en la que el tiempo determina el resultado funcional: Lo que se pierde antes de tratar rara vez se recupera. El objetivo no es solo la supervivencia sino evitar una paraplejia que cambiaría por completo los últimos meses de vida del niño.",
+    "porQueOcurre": "Una masa tumoral en el cuerpo vertebral, en el espacio epidural o un colapso vertebral comprimen la médula. Primero aparece dolor, después alteración sensitiva, luego debilidad y por último la alteración de esfínteres. Ese orden es constante y explica por qué el dolor de espalda es la oportunidad que no hay que dejar pasar.",
+    "causas": [
+      "Metástasis vertebrales: Neuroblastoma, sarcoma de Ewing, linfoma, meduloblastoma",
+      "Tumor epidural o paravertebral con extensión al canal",
+      "Colapso vertebral patológico",
+      "Tumor intramedular primario"
+    ],
+    "evaluar": [
+      "Sospecharlo ante todo dolor de espalda nuevo o que cambia de carácter en un niño oncológico",
+      "El dolor que empeora en decúbito o por la noche y el dolor en cinturón son especialmente sugerentes",
+      "Explorar fuerza en las cuatro extremidades y buscar un nivel sensitivo",
+      "Explorar reflejos y buscar signos de primera motoneurona",
+      "Preguntar por retención urinaria y por estreñimiento de reciente aparición",
+      "Solicitar resonancia magnética urgente de todo el raquis si la conducta va a cambiar",
+      "Registrar la exploración basal, porque la evolución en horas es lo que decide"
+    ],
+    "noFarmacologico": [
+      "Reposo en cama con movilización en bloque hasta descartar inestabilidad",
+      "Evitar la sedestación y la carga axial mientras no se haya valorado",
+      "Sondaje vesical si hay retención",
+      "Prevención de úlceras por presión desde el primer momento",
+      "Explicar a la familia el motivo de la urgencia, porque el tiempo que se gana es función que se conserva"
+    ],
+    "farmacologico": [
+      {
+        "farmaco": "Dexametasona",
+        "dosis": "Dosis de carga de 0.5 a 1 mg/kg IV o SC, seguida de 0.25 a 0.5 mg/kg cada 6 h",
+        "cuando": "De inmediato, ante la sospecha, sin esperar a la confirmación por imagen"
+      },
+      {
+        "farmaco": "Morfina",
+        "dosis": "Dosis habituales por peso, titulando",
+        "cuando": "Dolor asociado, que suele ser intenso"
+      },
+      {
+        "farmaco": "Ibuprofeno",
+        "dosis": "5 a 10 mg/kg VO cada 6 a 8 h",
+        "cuando": "Componente óseo e inflamatorio, si no hay contraindicación"
+      },
+      {
+        "farmaco": "Gabapentina",
+        "dosis": "Inicio 5 mg/kg VO nocturno, con titulación",
+        "cuando": "Componente neuropático establecido"
+      },
+      {
+        "farmaco": "Radioterapia urgente",
+        "dosis": "Según protocolo",
+        "cuando": "Tratamiento definitivo en la mayoría de los casos, valorado con oncología radioterápica"
+      }
+    ],
+    "escalar": "Es una urgencia. Se inicia dexametasona ante la sospecha, sin esperar a la imagen, y se contacta de inmediato con oncología y con radioterapia. La cirugía descompresiva se valora en casos seleccionados. La decisión debe tener en cuenta el pronóstico global, pero incluso en fase avanzada evitar una paraplejia mejora mucho los últimos meses.",
+    "queDecirALaFamilia": "Esto es urgente porque cada hora cuenta: Lo que pierda de fuerza antes de empezar el tratamiento es difícil que lo recupere. Vamos a empezar ya con el corticoide y a organizar la resonancia.",
+    "evitar": [
+      "Atribuir un dolor de espalda nuevo a una contractura sin explorar",
+      "Esperar a la imagen para iniciar el corticoide",
+      "No explorar la fuerza ni preguntar por esfínteres en un niño con dolor de espalda",
+      "Demorar el contacto con oncología y radioterapia",
+      "Descartar el tratamiento por considerar que el niño ya está en fase paliativa, sin valorar el impacto de una paraplejia en los meses que le queden",
+      "No registrar la exploración basal, con lo que se pierde la referencia de la evolución"
+    ],
+    "perla": "El dolor de espalda precede a la debilidad en días o semanas, y la alteración de esfínteres aparece la última. Ese orden constante convierte todo dolor de espalda nuevo en un niño oncológico en una oportunidad: Explorar la fuerza en ese momento cuesta un minuto y puede evitar una silla de ruedas.",
+    "temaRelacionado": "escalera-analgesica",
+    "etiquetas": [
+      "compresión medular",
+      "urgencia",
+      "dexametasona",
+      "dolor de espalda",
+      "radioterapia"
+    ]
+  }
+]

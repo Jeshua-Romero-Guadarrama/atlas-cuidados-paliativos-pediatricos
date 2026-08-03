@@ -1,0 +1,1036 @@
+[
+  {
+    "codigo": "morfina-oral-inicial",
+    "nombre": "Dosis inicial de morfina oral",
+    "categoria": "Dosis de opioide",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de inicio de morfina de liberación inmediata por vía oral en el niño que no ha recibido opioides antes, junto con la dosis diaria total y la dosis de rescate que corresponde. Es el punto de partida de toda titulación y el cálculo que más veces se hace en cuidados paliativos pediátricos.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso del niño (kg)", "unidad": "kg", "min": 0, "paso": 0.1, "referencia": "En lactantes menores de 6 meses la dosis por kilogramo es menor: Consultar la ficha del fármaco" }
+    ],
+    "ejemplo": { "peso": 18 },
+    "resultados": [
+      { "etiqueta": "Dosis por toma cada 4 h", "formula": "Math.min(0.2 * peso, 5)", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Dosis diaria total", "formula": "Math.min(0.2 * peso, 5) * 6", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Rescate, el 10 por ciento", "formula": "Math.min(0.2 * peso, 5) * 0.6", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Rescate, el 15 por ciento", "formula": "Math.min(0.2 * peso, 5) * 0.9", "unidad": "mg", "decimales": 1 }
+    ],
+    "interpretacion": [
+      { "si": "peso < 6", "texto": "Lactante pequeño: La dosis por kilogramo es menor que en el niño mayor y conviene empezar por 0.08 a 0.1 mg/kg cada 4 h con vigilancia estrecha.", "nivel": "alto" },
+      { "si": "peso < 12", "texto": "Niño pequeño: Empezar por el extremo bajo del rango y titular al alza según los rescates que necesite.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis de inicio dentro del rango habitual. Se pauta cada 4 h a horas fijas, con el rescate disponible cada hora, y se reajusta a las 24 h sumando los rescates administrados.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Dosis por toma = 0.2 mg/kg, sin superar 5 mg en la primera dosis. Dosis diaria total = dosis por toma multiplicada por 6. Rescate = del 10 al 15 por ciento de la dosis diaria total.",
+    "notas": "Este cálculo es para el niño que no ha recibido opioides previamente. Si ya los recibía, no se empieza de cero: Se convierte la dosis previa a su equivalente y se ajusta desde ahí. La dosis inicial máxima de 5 mg es una medida de prudencia, no un techo del tratamiento: La morfina no tiene dosis techo y la dosis correcta es la que controla el dolor."
+  },
+  {
+    "codigo": "dosis-rescate",
+    "nombre": "Dosis de rescate para el dolor irruptivo",
+    "categoria": "Dosis de opioide",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de rescate a partir de la dosis diaria total de opioide que ya recibe el niño. El rescate es del 10 al 15 por ciento de la dosis diaria total, se administra con el mismo opioide en presentación de liberación inmediata y se puede repetir cada hora por vía oral o cada 20 a 30 minutos por vía parenteral.",
+    "campos": [
+      { "id": "ddt", "etiqueta": "Dosis diaria total del opioide (mg/24 h)", "unidad": "mg", "min": 0, "paso": 0.5, "referencia": "Sumar todas las dosis fijas de las últimas 24 h, incluidas las de liberación prolongada" }
+    ],
+    "ejemplo": { "ddt": 36 },
+    "resultados": [
+      { "etiqueta": "Rescate mínimo, el 10 por ciento", "formula": "ddt * 0.1", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Rescate máximo, el 15 por ciento", "formula": "ddt * 0.15", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Dosis fija equivalente cada 4 h", "formula": "ddt / 6", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Número de rescates que obliga a reajustar", "formula": "3", "unidad": "al día", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "ddt > 200", "texto": "Dosis diaria elevada: Antes de seguir subiendo conviene revisar si el dolor es realmente sensible a opioides, valorar un coadyuvante o plantear una rotación de opioide.", "nivel": "alto" },
+      { "si": "ddt > 60", "texto": "Dosis diaria intermedia: Comprobar que el estreñimiento está cubierto con laxante pautado y revisar si hay componente neuropático que se beneficiaría de un coadyuvante.", "nivel": "medio" },
+      { "si": "true", "texto": "Rescate calculado sobre la dosis diaria total. Se administra con el mismo opioide en liberación inmediata y se registra cada vez que se usa, porque esos registros son la base del reajuste del día siguiente.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Rescate = dosis diaria total multiplicada por 0.10 a 0.15.",
+    "notas": "El rescate se calcula siempre sobre la dosis diaria total, nunca sobre la dosis por toma. Si el niño necesita tres rescates o más al día de forma mantenida, la dosis de fondo es insuficiente y hay que subirla en lugar de seguir rescatando."
+  },
+  {
+    "codigo": "titulacion-opioide",
+    "nombre": "Reajuste de la dosis según los rescates",
+    "categoria": "Dosis de opioide",
+    "tipo": "formula",
+    "descripcion": "Calcula la nueva dosis diaria a partir de la que el niño tenía pautada y de los rescates que ha necesitado en las últimas 24 h. Este es el mecanismo completo de la titulación de opioides y se repite cada 24 a 48 h hasta que el dolor está controlado con dos rescates diarios o menos.",
+    "campos": [
+      { "id": "ddtActual", "etiqueta": "Dosis diaria total actual (mg/24 h)", "unidad": "mg", "min": 0, "paso": 0.5 },
+      { "id": "numeroRescates", "etiqueta": "Número de rescates en 24 h", "unidad": "rescates", "min": 0, "paso": 1 },
+      { "id": "dosisRescate", "etiqueta": "Dosis de cada rescate (mg)", "unidad": "mg", "min": 0, "paso": 0.5 }
+    ],
+    "ejemplo": { "ddtActual": 36, "numeroRescates": 4, "dosisRescate": 4 },
+    "resultados": [
+      { "etiqueta": "Total administrado en rescates", "formula": "numeroRescates * dosisRescate", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Nueva dosis diaria total", "formula": "ddtActual + numeroRescates * dosisRescate", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Nueva dosis fija cada 4 h", "formula": "(ddtActual + numeroRescates * dosisRescate) / 6", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Nuevo rescate, el 10 por ciento", "formula": "(ddtActual + numeroRescates * dosisRescate) * 0.1", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Incremento respecto de la dosis previa", "formula": "(numeroRescates * dosisRescate / ddtActual) * 100", "unidad": "%", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "r4 > 50", "texto": "Incremento superior al 50 por ciento: Es un salto grande. Conviene subir de forma escalonada, revisar si hay una causa nueva del dolor y valorar si el dolor es realmente sensible a opioides.", "nivel": "alto" },
+      { "si": "r4 > 30", "texto": "Incremento importante: Aceptable si el dolor estaba mal controlado, pero conviene revalorar a las 24 h y vigilar la aparición de sedación.", "nivel": "medio" },
+      { "si": "true", "texto": "Incremento dentro de lo habitual. Se pauta la nueva dosis fija, se recalcula el rescate sobre la nueva dosis diaria total y se vuelve a revisar en 24 a 48 h.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Nueva dosis diaria total = dosis diaria actual + (número de rescates multiplicado por la dosis de cada rescate). Nueva dosis fija = nueva dosis diaria total dividida entre 6. Nuevo rescate = 10 por ciento de la nueva dosis diaria total.",
+    "notas": "El rescate se recalcula siempre sobre la nueva dosis diaria, no se deja el anterior. Olvidar ese paso es el error más frecuente de la titulación y deja al niño con un rescate que se ha quedado corto. Si el incremento necesario supera el 50 por ciento varios días seguidos, hay que replantear el diagnóstico del dolor antes de seguir subiendo."
+  },
+  {
+    "codigo": "morfina-disnea",
+    "nombre": "Morfina para la disnea",
+    "categoria": "Dosis de opioide",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de morfina indicada para el alivio de la disnea, que es inferior a la analgésica. Distingue entre el niño que no recibía opioides, en el que se empieza por una dosis baja, y el que ya los recibe, en el que se aumenta un porcentaje de lo que ya tenía.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso del niño (kg)", "unidad": "kg", "min": 0, "paso": 0.1 },
+      { "id": "ddtPrevia", "etiqueta": "Dosis diaria de morfina que ya recibe (mg/24 h)", "unidad": "mg", "min": 0, "paso": 0.5, "referencia": "Escribir 0 si el niño no recibía opioides" }
+    ],
+    "ejemplo": { "peso": 20, "ddtPrevia": 0 },
+    "resultados": [
+      { "etiqueta": "Sin opioide previo: Dosis oral por toma", "formula": "Math.min(0.1 * peso, 2.5)", "unidad": "mg", "decimales": 2 },
+      { "etiqueta": "Sin opioide previo: Dosis subcutánea por toma", "formula": "Math.min(0.05 * peso, 1.25)", "unidad": "mg", "decimales": 2 },
+      { "etiqueta": "Con opioide previo: Nueva dosis diaria con aumento del 25 por ciento", "formula": "ddtPrevia * 1.25", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Con opioide previo: Nueva dosis diaria con aumento del 50 por ciento", "formula": "ddtPrevia * 1.5", "unidad": "mg/24 h", "decimales": 1 }
+    ],
+    "interpretacion": [
+      { "si": "ddtPrevia > 0", "texto": "El niño ya recibe morfina: No se empieza de cero. Se aumenta entre un 25 y un 50 por ciento la dosis que ya tenía, y se deja un rescate del 10 por ciento de la nueva dosis diaria disponible para las crisis.", "nivel": "medio" },
+      { "si": "true", "texto": "Niño sin opioide previo: La dosis para disnea es aproximadamente la mitad de la analgésica. Se acompaña siempre de las medidas no farmacológicas, empezando por el aire en la cara, que es la más eficaz y la más olvidada.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Sin opioide previo: 0.1 mg/kg por vía oral o 0.05 mg/kg por vía subcutánea, cada 4 h. Con opioide previo: Aumentar entre un 25 y un 50 por ciento la dosis diaria que ya recibía.",
+    "notas": "La morfina alivia la disnea sin producir depresión respiratoria a estas dosis, y ese punto hay que explicárselo a la familia y al equipo, porque el miedo infundado a la depresión respiratoria es la causa principal de que la disnea se infratrate. La saturación de oxígeno no mide la disnea: Un niño puede estar al 96 por ciento y ahogarse, y estar al 88 por ciento y encontrarse tranquilo."
+  },
+  {
+    "codigo": "conversion-oral-parenteral",
+    "nombre": "Conversión de morfina oral a subcutánea o intravenosa",
+    "categoria": "Rotación de opioide",
+    "tipo": "formula",
+    "descripcion": "Convierte la dosis diaria de morfina oral a su equivalente por vía subcutánea o intravenosa. Es el cálculo que se hace cuando un niño deja de tolerar la vía oral, algo que ocurre en prácticamente todos los pacientes al llegar a los últimos días.",
+    "campos": [
+      { "id": "morfinaOral", "etiqueta": "Morfina oral en 24 h (mg)", "unidad": "mg", "min": 0, "paso": 0.5, "referencia": "Sumar todas las dosis fijas más los rescates habituales" }
+    ],
+    "ejemplo": { "morfinaOral": 60 },
+    "resultados": [
+      { "etiqueta": "Morfina subcutánea o intravenosa, razón 2 a 1", "formula": "morfinaOral / 2", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Morfina subcutánea o intravenosa, razón 3 a 1", "formula": "morfinaOral / 3", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Velocidad de infusión continua, razón 2 a 1", "formula": "morfinaOral / 48", "unidad": "mg/h", "decimales": 2 },
+      { "etiqueta": "Rescate subcutáneo, el 10 por ciento", "formula": "morfinaOral / 20", "unidad": "mg", "decimales": 2 }
+    ],
+    "interpretacion": [
+      { "si": "morfinaOral > 300", "texto": "Dosis muy elevada: El volumen resultante puede no caber en un punto subcutáneo. Valorar hidromorfona, que permite concentrar mucho más, o repartir en dos puntos de infusión.", "nivel": "alto" },
+      { "si": "morfinaOral > 100", "texto": "Dosis elevada: Comprobar el volumen total que resulta y la concentración de la ampolleta disponible antes de preparar la mezcla.", "nivel": "medio" },
+      { "si": "true", "texto": "Conversión estándar. La razón entre 2 a 1 y 3 a 1 depende de la fuente; conviene usar 2 a 1 si el dolor está mal controlado y 3 a 1 si está bien controlado y se busca solo mantener.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Morfina parenteral en 24 h = morfina oral en 24 h dividida entre 2 o entre 3.",
+    "notas": "Esta conversión es entre vías del mismo fármaco, así que no hay que aplicar la reducción por tolerancia cruzada incompleta que sí se aplica al cambiar de opioide. Aun así, conviene revalorar a las 4 a 6 h de hacer el cambio y disponer de rescate suficiente durante la transición."
+  },
+  {
+    "codigo": "rotacion-opioides",
+    "nombre": "Rotación de opioide y equianalgesia",
+    "categoria": "Rotación de opioide",
+    "tipo": "formula",
+    "descripcion": "Convierte la dosis diaria de morfina oral en su equivalente aproximado con los otros opioides. Se usa al rotar de opioide por efectos adversos intolerables, por toxicidad neurológica o por falta de respuesta pese a la escalada. Los factores son orientativos: La equianalgesia entre opioides no es una ciencia exacta.",
+    "campos": [
+      { "id": "morfinaOral", "etiqueta": "Morfina oral en 24 h (mg)", "unidad": "mg", "min": 0, "paso": 0.5, "referencia": "Si el niño toma otro opioide, convertirlo primero a morfina oral equivalente" }
+    ],
+    "ejemplo": { "morfinaOral": 90 },
+    "resultados": [
+      { "etiqueta": "Morfina subcutánea o intravenosa", "formula": "morfinaOral / 2", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Oxicodona oral", "formula": "morfinaOral / 1.5", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Hidromorfona oral", "formula": "morfinaOral / 5", "unidad": "mg/24 h", "decimales": 2 },
+      { "etiqueta": "Hidromorfona subcutánea", "formula": "morfinaOral / 10", "unidad": "mg/24 h", "decimales": 2 },
+      { "etiqueta": "Fentanilo transdérmico", "formula": "morfinaOral / 2.4", "unidad": "microgramos/h", "decimales": 0 },
+      { "etiqueta": "Dosis inicial recomendada tras reducir el 25 por ciento", "formula": "morfinaOral * 0.75", "unidad": "mg de morfina oral equivalente", "decimales": 1 },
+      { "etiqueta": "Dosis inicial recomendada tras reducir el 50 por ciento", "formula": "morfinaOral * 0.5", "unidad": "mg de morfina oral equivalente", "decimales": 1 }
+    ],
+    "interpretacion": [
+      { "si": "morfinaOral > 180", "texto": "Dosis alta: A partir de este nivel los factores de conversión pierden fiabilidad, sobre todo con metadona, cuya potencia relativa aumenta mucho a dosis altas. La rotación debe hacerla un equipo con experiencia.", "nivel": "alto" },
+      { "si": "morfinaOral > 60", "texto": "Dosis intermedia: Aplicar la reducción del 25 al 50 por ciento sobre la dosis calculada y cubrir con rescates las primeras 24 h.", "nivel": "medio" },
+      { "si": "true", "texto": "Equivalencias calculadas. Recordar que hay que reducir entre un 25 y un 50 por ciento la dosis equianalgésica al rotar, porque la tolerancia cruzada entre opioides es incompleta.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Factores respecto de la morfina oral: Morfina parenteral 2, oxicodona oral 1.5, hidromorfona oral 5, hidromorfona parenteral 10, fentanilo transdérmico 2.4 para pasar de mg/24 h a microgramos/h.",
+    "notas": "La metadona no aparece aquí a propósito: Su conversión no es lineal, depende de la dosis previa y requiere protocolos específicos y experiencia. Toda rotación debe recalcularse dos veces y por dos personas distintas, porque el error de conversión es una de las causas más frecuentes de sobredosis grave en cuidados paliativos."
+  },
+  {
+    "codigo": "fentanilo-parche",
+    "nombre": "Parche de fentanilo desde morfina oral",
+    "categoria": "Rotación de opioide",
+    "tipo": "formula",
+    "descripcion": "Calcula la potencia del parche transdérmico de fentanilo que corresponde a la dosis diaria de morfina oral que ya recibe el niño, junto con el rescate que hay que dejar pautado. Solo es aplicable al niño con dolor estable y ya tolerante a opioides.",
+    "campos": [
+      { "id": "morfinaOral", "etiqueta": "Morfina oral en 24 h (mg)", "unidad": "mg", "min": 0, "paso": 0.5, "referencia": "El parche solo se usa si el dolor está estable y el niño ya recibe opioides" }
+    ],
+    "ejemplo": { "morfinaOral": 60 },
+    "resultados": [
+      { "etiqueta": "Potencia teórica del parche", "formula": "morfinaOral / 2.4", "unidad": "microgramos/h", "decimales": 0 },
+      { "etiqueta": "Rescate de morfina oral, el 10 por ciento", "formula": "morfinaOral * 0.1", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Horas hasta el efecto pleno del parche", "formula": "18", "unidad": "h", "decimales": 0 },
+      { "etiqueta": "Horas que sigue liberando tras retirarlo", "formula": "18", "unidad": "h", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "morfinaOral < 30", "texto": "Dosis diaria demasiado baja para un parche: La potencia mínima disponible superaría lo que el niño necesita. Mantener la vía oral o valorar la subcutánea.", "nivel": "alto" },
+      { "si": "morfinaOral < 60", "texto": "Dosis en el límite inferior: Comprobar que existe una potencia de parche que se ajuste sin sobrepasar. Los parches no se cortan ni se dividen.", "nivel": "medio" },
+      { "si": "true", "texto": "Conversión posible. Se elige la potencia comercializada inmediatamente inferior a la calculada y se cubre la diferencia con rescates. Se mantiene la analgesia previa durante las primeras 12 h.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Microgramos por hora del parche = miligramos de morfina oral en 24 h divididos entre 2.4. Como referencia, un parche de 25 microgramos/h equivale aproximadamente a 60 mg de morfina oral al día.",
+    "notas": "Los parches matriciales no se cortan porque se altera la liberación. Se elige siempre la potencia inferior a la calculada y se ajusta con rescates, nunca la superior. La fiebre y el calor externo aumentan la absorción y pueden producir sobredosis, así que hay que advertirlo expresamente a la familia."
+  },
+  {
+    "codigo": "infusion-subcutanea",
+    "nombre": "Preparación de la infusión subcutánea continua",
+    "categoria": "Infusión subcutánea",
+    "tipo": "formula",
+    "descripcion": "Calcula el volumen de fármaco, el volumen de suero que hay que añadir y la velocidad de infusión para preparar una jeringa de 24 h. Es el cálculo que permite mantener a un niño con la medicación bien controlada en su casa, sin acceso venoso y sin bomba de hospital.",
+    "campos": [
+      { "id": "dosisDiaria", "etiqueta": "Dosis del fármaco en 24 h (mg)", "unidad": "mg", "min": 0, "paso": 0.5 },
+      { "id": "concentracion", "etiqueta": "Concentración de la ampolleta (mg/mL)", "unidad": "mg/mL", "min": 0.1, "paso": 0.1, "referencia": "Comprobarla en la ampolleta: Coexisten presentaciones muy distintas del mismo fármaco" },
+      { "id": "volumenTotal", "etiqueta": "Volumen total de la jeringa (mL)", "unidad": "mL", "min": 1, "paso": 1, "referencia": "Habitualmente entre 20 y 48 mL según el infusor" }
+    ],
+    "ejemplo": { "dosisDiaria": 30, "concentracion": 10, "volumenTotal": 24 },
+    "resultados": [
+      { "etiqueta": "Dosis por hora", "formula": "dosisDiaria / 24", "unidad": "mg/h", "decimales": 2 },
+      { "etiqueta": "Volumen de fármaco a cargar", "formula": "dosisDiaria / concentracion", "unidad": "mL", "decimales": 2 },
+      { "etiqueta": "Suero fisiológico a añadir", "formula": "volumenTotal - dosisDiaria / concentracion", "unidad": "mL", "decimales": 2 },
+      { "etiqueta": "Velocidad de infusión", "formula": "volumenTotal / 24", "unidad": "mL/h", "decimales": 2 }
+    ],
+    "interpretacion": [
+      { "si": "r3 > 2", "texto": "Velocidad superior a 2 mL/h: Es demasiado volumen para un solo punto subcutáneo y aparecerá induración. Hay que usar una concentración mayor, reducir el volumen total de la jeringa o repartir en dos puntos.", "nivel": "alto" },
+      { "si": "r3 > 1", "texto": "Velocidad entre 1 y 2 mL/h: Aceptable en niños mayores, pero conviene vigilar el punto de inserción a diario y valorar reducir el volumen en lactantes.", "nivel": "medio" },
+      { "si": "true", "texto": "Volumen y velocidad adecuados para un punto único. Revisar el punto de inserción cada día y cambiarlo cada 5 a 7 días o antes si aparece enrojecimiento, induración o dolor.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Volumen de fármaco = dosis en 24 h dividida entre la concentración. Suero a añadir = volumen total menos volumen de fármaco. Velocidad = volumen total dividido entre 24.",
+    "notas": "Si el resultado del volumen de fármaco es negativo o superior al volumen total de la jeringa, la concentración disponible no sirve para esa dosis y hay que buscar una presentación más concentrada. Con más de tres fármacos en la misma jeringa hay que comprobar la compatibilidad de la mezcla, y el fenobarbital nunca se mezcla: Requiere línea propia."
+  },
+  {
+    "codigo": "superficie-corporal",
+    "nombre": "Superficie corporal",
+    "categoria": "Antropometría",
+    "tipo": "formula",
+    "descripcion": "Calcula la superficie corporal por las tres fórmulas más usadas. Aunque en cuidados paliativos casi todo se dosifica por kilogramo, algunos fármacos, en particular los antineoplásicos y algunos corticoides, se siguen dosificando por metro cuadrado, y conviene saber por qué fórmula se ha calculado.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 },
+      { "id": "talla", "etiqueta": "Talla (cm)", "unidad": "cm", "min": 0, "paso": 0.5 }
+    ],
+    "ejemplo": { "peso": 20, "talla": 112 },
+    "resultados": [
+      { "etiqueta": "Mosteller", "formula": "Math.sqrt(talla * peso / 3600)", "unidad": "m²", "decimales": 2 },
+      { "etiqueta": "Haycock", "formula": "0.024265 * Math.pow(talla, 0.3964) * Math.pow(peso, 0.5378)", "unidad": "m²", "decimales": 2 },
+      { "etiqueta": "DuBois", "formula": "0.007184 * Math.pow(talla, 0.725) * Math.pow(peso, 0.425)", "unidad": "m²", "decimales": 2 }
+    ],
+    "interpretacion": [
+      { "si": "r0 < 0.4", "texto": "Superficie corporal muy pequeña: En lactantes la fórmula de Haycock es la más precisa y la de DuBois pierde exactitud. Conviene indicar en la prescripción con qué fórmula se ha calculado.", "nivel": "medio" },
+      { "si": "true", "texto": "Superficie corporal calculada. La fórmula de Mosteller es la más usada por su sencillez y ofrece resultados equivalentes a las demás en el rango pediátrico habitual.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Mosteller: Raíz cuadrada del producto de talla en cm por peso en kg dividido entre 3600. Haycock: 0.024265 por talla elevada a 0.3964 por peso elevado a 0.5378. DuBois: 0.007184 por talla elevada a 0.725 por peso elevado a 0.425.",
+    "notas": "En el niño con enfermedad avanzada, la caquexia y los edemas hacen que la superficie corporal calculada se aparte bastante de la real. Cuando existe la opción de dosificar por kilogramo, suele ser preferible en esta población."
+  },
+  {
+    "codigo": "peso-estimado",
+    "nombre": "Peso estimado por la edad",
+    "categoria": "Antropometría",
+    "tipo": "formula",
+    "descripcion": "Estima el peso de un niño a partir de su edad usando las fórmulas del curso APLS. Sirve exclusivamente para una situación de urgencia en la que no se puede pesar al niño y hay que calcular una dosis de inmediato, por ejemplo en una crisis convulsiva en el domicilio.",
+    "campos": [
+      { "id": "edad", "etiqueta": "Edad (años)", "unidad": "años", "min": 0, "paso": 0.5, "referencia": "Para menores de 1 año usar la fórmula de meses que aparece más abajo" }
+    ],
+    "ejemplo": { "edad": 5 },
+    "resultados": [
+      { "etiqueta": "Peso estimado", "formula": "edad < 6 ? (2 * edad) + 8 : (3 * edad) + 7", "unidad": "kg", "decimales": 1 },
+      { "etiqueta": "Margen inferior probable", "formula": "(edad < 6 ? (2 * edad) + 8 : (3 * edad) + 7) * 0.75", "unidad": "kg", "decimales": 1 },
+      { "etiqueta": "Margen superior probable", "formula": "(edad < 6 ? (2 * edad) + 8 : (3 * edad) + 7) * 1.25", "unidad": "kg", "decimales": 1 }
+    ],
+    "interpretacion": [
+      { "si": "edad > 12", "texto": "Por encima de los 12 años las fórmulas de estimación pierden validez por la variabilidad puberal: Hay que pesar al niño.", "nivel": "alto" },
+      { "si": "edad < 1", "texto": "En menores de 1 año la fórmula es distinta: Peso en kg igual a la mitad de la edad en meses más 4. Este resultado no es aplicable.", "nivel": "alto" },
+      { "si": "true", "texto": "Peso estimado para uso en urgencia. En cuanto sea posible hay que pesar al niño y recalcular todas las dosis.", "nivel": "normal" }
+    ],
+    "formulaTexto": "De 1 a 5 años: Peso = (2 por la edad en años) + 8. De 6 a 12 años: Peso = (3 por la edad en años) + 7. Menores de 1 año: Peso = (edad en meses dividida entre 2) + 4.",
+    "notas": "En el niño con enfermedad crónica, con desnutrición o con parálisis cerebral, estas fórmulas sobrestiman el peso real de forma importante, a veces en más de un 30 por ciento. En esa población nunca deben usarse para calcular opioides ni sedantes: Es preferible tener el peso real anotado en el plan domiciliario."
+  },
+  {
+    "codigo": "holliday-segar",
+    "nombre": "Requerimiento hídrico basal",
+    "categoria": "Antropometría",
+    "tipo": "formula",
+    "descripcion": "Calcula las necesidades de mantenimiento de líquidos por la regla de Holliday y Segar. En cuidados paliativos su utilidad no es tanto pautar sueroterapia como saber cuánto necesitaría un niño para poder decidir con criterio si aportarle menos, que muchas veces es lo correcto en la enfermedad avanzada.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 22 },
+    "resultados": [
+      { "etiqueta": "Requerimiento basal en 24 h", "formula": "peso <= 10 ? peso * 100 : (peso <= 20 ? 1000 + (peso - 10) * 50 : 1500 + (peso - 20) * 20)", "unidad": "mL/24 h", "decimales": 0 },
+      { "etiqueta": "Velocidad horaria equivalente", "formula": "(peso <= 10 ? peso * 100 : (peso <= 20 ? 1000 + (peso - 10) * 50 : 1500 + (peso - 20) * 20)) / 24", "unidad": "mL/h", "decimales": 1 },
+      { "etiqueta": "Dos tercios del basal, aporte habitual en enfermedad avanzada", "formula": "(peso <= 10 ? peso * 100 : (peso <= 20 ? 1000 + (peso - 10) * 50 : 1500 + (peso - 20) * 20)) * 0.66", "unidad": "mL/24 h", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 40", "texto": "En el adolescente el requerimiento calculado suele sobrestimar las necesidades reales del paciente encamado. Ajustar a la situación clínica.", "nivel": "medio" },
+      { "si": "true", "texto": "Requerimiento basal calculado. En la enfermedad avanzada y sobre todo en los últimos días, aportar el volumen completo aumenta las secreciones respiratorias, los edemas y la necesidad de sondaje sin mejorar el confort.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Primeros 10 kg: 100 mL/kg. De 11 a 20 kg: 1000 mL más 50 mL por cada kg por encima de 10. Más de 20 kg: 1500 mL más 20 mL por cada kg por encima de 20.",
+    "notas": "En los últimos días de vida, la hidratación artificial no mejora la sensación de sed, que se alivia con cuidados de la boca, y sí empeora los estertores y los edemas. Este cálculo sirve sobre todo para poder explicarle a una familia con números por qué se está aportando menos volumen del teórico."
+  },
+  {
+    "codigo": "imc-pediatrico",
+    "nombre": "Índice de masa corporal",
+    "categoria": "Antropometría",
+    "tipo": "formula",
+    "descripcion": "Calcula el índice de masa corporal a partir del peso y la talla. En cuidados paliativos pediátricos es una herramienta de seguimiento del estado nutricional, especialmente útil para objetivar la caquexia en enfermedades progresivas y para valorar la respuesta a las medidas nutricionales.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 },
+      { "id": "talla", "etiqueta": "Talla (cm)", "unidad": "cm", "min": 0, "paso": 0.5 }
+    ],
+    "ejemplo": { "peso": 21, "talla": 116 },
+    "resultados": [
+      { "etiqueta": "Índice de masa corporal", "formula": "peso / Math.pow(talla / 100, 2)", "unidad": "kg/m²", "decimales": 1 },
+      { "etiqueta": "Peso para un índice de 16", "formula": "16 * Math.pow(talla / 100, 2)", "unidad": "kg", "decimales": 1 }
+    ],
+    "interpretacion": [
+      { "si": "r0 < 13", "texto": "Índice muy bajo: Desnutrición grave. Valorar si el objetivo nutricional sigue siendo realista en el contexto de la enfermedad y evitar intervenciones agresivas que no vayan a cambiar el curso.", "nivel": "alto" },
+      { "si": "r0 < 15", "texto": "Índice bajo para la mayoría de las edades pediátricas: Valoración nutricional y revisión de las causas tratables de anorexia.", "nivel": "medio" },
+      { "si": "true", "texto": "Índice dentro de rango. En pediatría el valor absoluto tiene poco significado sin la referencia percentilada por edad y sexo: Lo que informa de verdad es la tendencia a lo largo del tiempo.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Índice de masa corporal = peso en kg dividido entre el cuadrado de la talla en metros.",
+    "notas": "En pediatría el índice debe interpretarse con las tablas percentiladas por edad y sexo, no con los puntos de corte del adulto. En el niño con enfermedad neurológica grave, la talla es difícil de medir y se recurre a medidas segmentarias, lo que resta fiabilidad al cálculo. En la enfermedad avanzada, la pérdida de peso puede ser una consecuencia inevitable del proceso y no un problema nutricional que haya que corregir."
+  },
+  {
+    "codigo": "paracetamol-dosis",
+    "nombre": "Dosis de paracetamol",
+    "categoria": "Dosis pediátrica",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis por toma, la dosis diaria y el techo de paracetamol según el peso. Es el fármaco con el que más errores de duplicación se producen, porque está presente en muchos preparados combinados y en presentaciones con concentraciones distintas.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 16 },
+    "resultados": [
+      { "etiqueta": "Dosis por toma", "formula": "Math.min(15 * peso, 1000)", "unidad": "mg", "decimales": 0 },
+      { "etiqueta": "Dosis diaria si se administra cada 6 h", "formula": "Math.min(15 * peso, 1000) * 4", "unidad": "mg/24 h", "decimales": 0 },
+      { "etiqueta": "Techo diario que no debe superarse", "formula": "Math.min(60 * peso, 4000)", "unidad": "mg/24 h", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso < 5", "texto": "Peso muy bajo: En neonatos y lactantes pequeños la dosis y el intervalo son menores. Consultar la pauta específica por edad gestacional y posnatal.", "nivel": "alto" },
+      { "si": "peso < 10", "texto": "Lactante: El techo diario es de 60 mg/kg. Comprobar con la familia la concentración exacta del frasco que tienen en casa.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis dentro del rango habitual. Conviene prescribir siempre en miligramos y comprobar después los mililitros con la presentación concreta que la familia tiene en casa.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Dosis por toma = 15 mg/kg cada 4 a 6 h. Techo = 60 mg/kg/día en lactantes y hasta 75 mg/kg/día en niños mayores, sin superar 4 g al día.",
+    "notas": "La duplicación es el error más frecuente y el más grave: Hay que revisar activamente si el niño recibe algún preparado combinado que también lo contenga. Reducir la dosis en desnutrición, hepatopatía o ayuno prolongado, situaciones muy frecuentes en esta población."
+  },
+  {
+    "codigo": "ibuprofeno-dosis",
+    "nombre": "Dosis de ibuprofeno",
+    "categoria": "Dosis pediátrica",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis por toma y el techo diario de ibuprofeno según el peso. Es especialmente útil en el dolor óseo, donde los antiinflamatorios superan claramente al paracetamol, siempre que no haya contraindicación por trombopenia o por función renal.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 16 },
+    "resultados": [
+      { "etiqueta": "Dosis por toma, rango bajo", "formula": "Math.min(5 * peso, 400)", "unidad": "mg", "decimales": 0 },
+      { "etiqueta": "Dosis por toma, rango alto", "formula": "Math.min(10 * peso, 600)", "unidad": "mg", "decimales": 0 },
+      { "etiqueta": "Dosis diaria si se administra cada 8 h", "formula": "Math.min(10 * peso, 600) * 3", "unidad": "mg/24 h", "decimales": 0 },
+      { "etiqueta": "Techo diario", "formula": "Math.min(40 * peso, 2400)", "unidad": "mg/24 h", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso < 6", "texto": "Peso muy bajo: No se recomienda por debajo de los 3 meses de edad. Verificar la edad además del peso.", "nivel": "alto" },
+      { "si": "true", "texto": "Dosis dentro del rango habitual. Antes de prescribirlo hay que comprobar la cifra de plaquetas, la función renal y el estado de hidratación, que son las tres cosas que más veces lo contraindican en esta población.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Dosis por toma = 5 a 10 mg/kg cada 6 a 8 h. Techo = 40 mg/kg/día, sin superar 2.4 g al día.",
+    "notas": "Contraindicado si hay trombopenia, alteración de la coagulación, insuficiencia renal o deshidratación. En el niño oncológico hay que revisar la biometría hemática antes de pautarlo. Si el uso va a ser prolongado, asociar protección gástrica."
+  },
+  {
+    "codigo": "dexametasona-htic",
+    "nombre": "Dexametasona en hipertensión intracraneal",
+    "categoria": "Dosis pediátrica",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de dexametasona para reducir el edema peritumoral en el niño con hipertensión intracraneal, así como la dosis menor que se usa como antiemético o como estimulante del apetito. Es una de las intervenciones que alivia con mayor rapidez la cefalea y el vómito del tumor cerebral.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 20 },
+    "resultados": [
+      { "etiqueta": "Hipertensión intracraneal: Dosis por toma cada 6 h, rango bajo", "formula": "Math.min(0.25 * peso, 4)", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Hipertensión intracraneal: Dosis por toma cada 6 h, rango alto", "formula": "Math.min(0.5 * peso, 8)", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Hipertensión intracraneal: Dosis diaria máxima", "formula": "Math.min(0.5 * peso * 4, 16)", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Antiemético o estimulante del apetito: Dosis única matutina", "formula": "Math.min(0.15 * peso, 8)", "unidad": "mg", "decimales": 1 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 32", "texto": "Peso elevado: La dosis alcanza el techo de 16 mg al día que se usa habitualmente en hipertensión intracraneal. Subir por encima rara vez aporta más beneficio y sí más efectos adversos.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis calculada. Se administra siempre por la mañana para no provocar insomnio, y se revisa a los 5 a 7 días para bajar a la dosis mínima eficaz.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Hipertensión intracraneal: 0.25 a 0.5 mg/kg cada 6 h durante 48 h, con techo habitual de 16 mg al día. Antiemético o estimulante del apetito: 0.1 a 0.2 mg/kg en dosis única matutina.",
+    "notas": "Hay que fijar de entrada una fecha de revisión y un objetivo comprobable, por ejemplo que ceda la cefalea al despertar. Si a los 5 o 7 días ese objetivo no se ha alcanzado, se retira de forma gradual en lugar de mantenerla por inercia. En el adolescente conviene hablar antes del cambio de aspecto físico, que es motivo frecuente de abandono."
+  },
+  {
+    "codigo": "butilhioscina-estertores",
+    "nombre": "Butilhioscina para estertores",
+    "categoria": "Dosis pediátrica",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de butilhioscina para el tratamiento de los estertores de los últimos días. Es el antisecretor de elección cuando el niño está consciente, porque no atraviesa la barrera hematoencefálica y por tanto no seda ni confunde.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 20 },
+    "resultados": [
+      { "etiqueta": "Dosis por bolo, rango bajo", "formula": "Math.min(0.3 * peso, 20)", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Dosis por bolo, rango alto", "formula": "Math.min(0.5 * peso, 20)", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Dosis diaria en infusión continua", "formula": "Math.min(0.5 * peso * 4, 100)", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Techo diario", "formula": "Math.min(5 * peso, 100)", "unidad": "mg/24 h", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 20", "texto": "Peso elevado: La dosis se acerca al techo diario de 100 mg. Si no hay respuesta, considerar cambiar a glicopirronio en lugar de seguir subiendo.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis calculada. La regla decisiva de los estertores es administrarlos pronto: Estos fármacos impiden que se produzcan nuevas secreciones pero no eliminan las que ya están acumuladas.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Butilhioscina: 0.3 a 0.5 mg/kg cada 6 a 8 h por vía subcutánea, con techo de 5 mg/kg/día sin superar 100 mg al día.",
+    "notas": "Los estertores molestan mucho más a quien los oye que al niño, que en esa fase está inconsciente. La intervención más importante no es farmacológica sino explicárselo a la familia, junto con colocar al niño en decúbito lateral y evitar la aspiración de secreciones, que es traumática y aumenta la producción."
+  },
+  {
+    "codigo": "gabapentina-titulacion",
+    "nombre": "Titulación de gabapentina",
+    "categoria": "Dosis pediátrica",
+    "tipo": "formula",
+    "descripcion": "Calcula la pauta escalonada de inicio de gabapentina y la dosis de mantenimiento por peso. La titulación lenta es lo que decide el éxito del tratamiento: Subir demasiado rápido produce sedación y es la causa más frecuente de que se abandone un fármaco que habría funcionado.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 20 },
+    "resultados": [
+      { "etiqueta": "Día 1: Dosis única nocturna", "formula": "5 * peso", "unidad": "mg", "decimales": 0 },
+      { "etiqueta": "Día 2: Dosis cada 12 h", "formula": "5 * peso", "unidad": "mg", "decimales": 0 },
+      { "etiqueta": "Día 3: Dosis cada 8 h", "formula": "5 * peso", "unidad": "mg", "decimales": 0 },
+      { "etiqueta": "Mantenimiento habitual: Dosis cada 8 h", "formula": "Math.min(10 * peso, 1200)", "unidad": "mg", "decimales": 0 },
+      { "etiqueta": "Techo diario", "formula": "Math.min(60 * peso, 3600)", "unidad": "mg/24 h", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 60", "texto": "Peso de adolescente: La dosis alcanza los límites del adulto. El techo diario de 3600 mg no debe superarse.", "nivel": "medio" },
+      { "si": "true", "texto": "Pauta de titulación calculada. Tras alcanzar la dosis de mantenimiento hay que esperar de 1 a 2 semanas antes de juzgar la eficacia sobre el dolor neuropático.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Día 1: 5 mg/kg por la noche. Día 2: 5 mg/kg cada 12 h. Día 3: 5 mg/kg cada 8 h. Después se sube cada 3 días hasta 10 a 20 mg/kg cada 8 h, con techo de 60 mg/kg/día sin superar 3600 mg.",
+    "notas": "Hay que advertir a la familia de que el efecto sobre el dolor neuropático tarda de 1 a 2 semanas en aparecer tras alcanzar la dosis eficaz, o abandonarán el tratamiento antes de tiempo. Reducir la dosis en insuficiencia renal y no suspender de forma brusca."
+  },
+  {
+    "codigo": "ondansetron-dosis",
+    "nombre": "Dosis de ondansetrón",
+    "categoria": "Dosis pediátrica",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de ondansetrón por peso. Conviene recordar antes de usarlo que su mecanismo es serotoninérgico y que en cuidados paliativos la náusea suele ser de origen central, donde rinde bastante menos que un antidopaminérgico como el haloperidol.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 24 },
+    "resultados": [
+      { "etiqueta": "Dosis por toma", "formula": "Math.min(0.15 * peso, 8)", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Dosis diaria si se administra cada 8 h", "formula": "Math.min(0.15 * peso, 8) * 3", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Techo diario", "formula": "24", "unidad": "mg/24 h", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 53", "texto": "Peso elevado: La dosis alcanza el máximo de 8 mg por toma, que no debe superarse por el riesgo de prolongación del intervalo QT.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis calculada. Vigilar el estreñimiento de forma activa, porque se suma al de los opioides y la combinación puede llegar a producir un cuadro obstructivo.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Dosis = 0.1 a 0.15 mg/kg cada 8 h, sin superar 8 mg por toma ni 24 mg al día.",
+    "notas": "Antes de prescribirlo hay que preguntarse cuál es el mecanismo de la náusea de ese niño. Si es por opioides, metabólica, urémica o por hipertensión intracraneal, el fármaco correcto es un antidopaminérgico y no este. Precaución al asociarlo con otros fármacos que prolonguen el QT."
+  },
+  {
+    "codigo": "ketamina-dolor",
+    "nombre": "Ketamina en dolor refractario",
+    "categoria": "Dosis pediátrica",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis subanestésica de ketamina para el dolor refractario a opioides. Se usa cuando la escalada del opioide ya no controla el dolor y solo añade sedación, que es la firma de la hiperalgesia inducida por opioides. Requiere indicación y seguimiento por un equipo con experiencia.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 25 },
+    "resultados": [
+      { "etiqueta": "Bolo subcutáneo, rango bajo", "formula": "0.1 * peso", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Bolo subcutáneo, rango alto", "formula": "0.3 * peso", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Infusión continua en 24 h, inicio", "formula": "0.1 * peso * 24", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Infusión continua en 24 h, rango alto", "formula": "0.3 * peso * 24", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Reducción sugerida del opioide al iniciarla", "formula": "25", "unidad": "% a 50 %", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 50", "texto": "Peso de adolescente: Las dosis se aproximan a las del adulto y conviene empezar por el extremo bajo del rango y subir cada 24 h según respuesta.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis subanestésicas calculadas. A este nivel no hay depresión respiratoria ni compromiso de la vía aérea, pero sí puede haber fenómenos psicomiméticos que ceden bajando la dosis o añadiendo una benzodiacepina.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Bolo: 0.1 a 0.3 mg/kg por vía subcutánea. Infusión continua: 0.1 a 0.3 mg/kg/h, ajustando cada 24 h.",
+    "notas": "Al iniciar la ketamina suele ser necesario reducir la dosis de opioide entre un 25 y un 50 por ciento, porque el efecto ahorrador es notable. No hacerlo produce sedación y lleva a atribuirla erróneamente a la ketamina. Requiere indicación de un equipo con experiencia en el fármaco."
+  },
+  {
+    "codigo": "midazolam-sedacion",
+    "nombre": "Midazolam para sedación paliativa",
+    "categoria": "Sedación paliativa",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de inducción y el rango de infusión continua de midazolam para la sedación paliativa. La sedación se titula hasta el nivel mínimo que alivia el síntoma refractario, no hasta la inconsciencia, y ese nivel se fija por escrito antes de empezar.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 25 },
+    "resultados": [
+      { "etiqueta": "Bolo de inducción, rango bajo", "formula": "0.05 * peso", "unidad": "mg", "decimales": 2 },
+      { "etiqueta": "Bolo de inducción, rango alto", "formula": "0.1 * peso", "unidad": "mg", "decimales": 2 },
+      { "etiqueta": "Infusión continua en 24 h, inicio", "formula": "0.02 * peso * 24", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Infusión continua en 24 h, rango alto", "formula": "0.1 * peso * 24", "unidad": "mg/24 h", "decimales": 1 },
+      { "etiqueta": "Rescate durante la sedación", "formula": "0.05 * peso", "unidad": "mg", "decimales": 2 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 50", "texto": "Peso de adolescente: Las dosis se acercan a las del adulto. Empezar por el extremo bajo y titular con bolos repetidos hasta alcanzar el nivel de sedación fijado.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis calculadas. Se administra el bolo de inducción, se espera y se repite hasta alcanzar el nivel objetivo, y la infusión continua se calcula a partir de lo que ha hecho falta para la inducción.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Inducción: 0.05 a 0.1 mg/kg en bolo, repetible cada 10 a 15 minutos hasta el nivel objetivo. Mantenimiento: 0.02 a 0.1 mg/kg/h en infusión continua.",
+    "notas": "La analgesia nunca se retira ni se reduce al sedar: El niño sedado sigue teniendo dolor aunque no pueda expresarlo, y este es uno de los errores más graves y más frecuentes. Se fija por escrito el nivel objetivo de sedación con una escala como la RASS, habitualmente entre menos 1 y menos 3, y se registra la indicación, la refractariedad del síntoma y quién ha consentido."
+  },
+  {
+    "codigo": "midazolam-crisis",
+    "nombre": "Midazolam bucal en crisis convulsiva",
+    "categoria": "Urgencias",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de midazolam bucal o nasal para la crisis convulsiva prolongada en domicilio, y el volumen que corresponde según la concentración de la ampolleta disponible. Este es el cálculo que hay que dejar escrito en la casa antes de que haga falta.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 },
+      { "id": "concentracion", "etiqueta": "Concentración de la presentación (mg/mL)", "unidad": "mg/mL", "min": 0.1, "paso": 0.1, "referencia": "Comprobarla en la ampolleta: Coexisten presentaciones de 1, 2 y 5 mg/mL" }
+    ],
+    "ejemplo": { "peso": 20, "concentracion": 5 },
+    "resultados": [
+      { "etiqueta": "Dosis a administrar", "formula": "Math.min(0.3 * peso, 10)", "unidad": "mg", "decimales": 1 },
+      { "etiqueta": "Volumen a administrar", "formula": "Math.min(0.3 * peso, 10) / concentracion", "unidad": "mL", "decimales": 2 },
+      { "etiqueta": "Minutos antes de repetir la dosis", "formula": "10", "unidad": "minutos", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "r1 > 5", "texto": "Volumen superior a 5 mL: Es demasiado para la vía bucal o nasal y se perderá parte de la dosis. Hay que usar una presentación más concentrada o repartir entre las dos fosas nasales y ambos carrillos.", "nivel": "alto" },
+      { "si": "peso > 33", "texto": "La dosis alcanza el máximo de 10 mg, que es el techo por dosis independientemente del peso.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis y volumen calculados. Se administra en el surco entre la encía y la mejilla, repartido entre ambos lados. Si la crisis no cede en 10 minutos se puede repetir una vez y hay que solicitar ayuda.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Dosis = 0.3 mg/kg por vía bucal, o 0.2 a 0.3 mg/kg por vía nasal, sin superar 10 mg por dosis. Volumen = dosis dividida entre la concentración de la presentación.",
+    "notas": "Esta dosis, en miligramos y en mililitros, debe estar escrita en el plan de la casa y en un lugar visible antes de que ocurra la crisis, no calcularse en el momento. La familia debe haber practicado la administración con una jeringa vacía, porque explicarla no basta. Tras administrarlo, el niño quedará somnoliento un rato, y eso hay que avisarlo para que no se interprete como un empeoramiento."
+  },
+  {
+    "codigo": "naloxona-diluida",
+    "nombre": "Naloxona diluida en depresión respiratoria por opioide",
+    "categoria": "Urgencias",
+    "tipo": "formula",
+    "descripcion": "Calcula la dosis de naloxona muy diluida para revertir de forma titulada una depresión respiratoria en un niño que recibe opioides de forma crónica. El manejo es radicalmente distinto del de una intoxicación aguda: Revertir de golpe produce dolor incontrolable y una crisis de abstinencia gravísima.",
+    "campos": [
+      { "id": "peso", "etiqueta": "Peso (kg)", "unidad": "kg", "min": 0, "paso": 0.1 }
+    ],
+    "ejemplo": { "peso": 20 },
+    "resultados": [
+      { "etiqueta": "Dosis por administración", "formula": "peso", "unidad": "microgramos", "decimales": 1 },
+      { "etiqueta": "Volumen de la dilución de 40 microgramos/mL", "formula": "peso / 40", "unidad": "mL", "decimales": 2 },
+      { "etiqueta": "Intervalo entre dosis", "formula": "2", "unidad": "minutos", "decimales": 0 },
+      { "etiqueta": "Duración del efecto, más corta que la del opioide", "formula": "30", "unidad": "minutos", "decimales": 0 }
+    ],
+    "interpretacion": [
+      { "si": "peso > 40", "texto": "Peso de adolescente: La pauta es la misma, siempre diluida y titulada. La dosis de reanimación convencional está contraindicada en el paciente con tratamiento opioide crónico.", "nivel": "medio" },
+      { "si": "true", "texto": "Dosis calculada sobre la dilución de 1 ampolleta de 0.4 mg en 10 mL de suero fisiológico. Se administra cada 2 minutos hasta que mejore la respiración, no hasta que el niño despierte.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Diluir 1 ampolleta de 0.4 mg en 10 mL de suero fisiológico, quedando 40 microgramos/mL. Administrar de 0.5 a 1 microgramo/kg cada 1 a 2 minutos hasta recuperar una respiración adecuada.",
+    "notas": "Antes de recurrir a la naloxona hay que comprobar lo básico: Estimular al niño, colocarlo en posición adecuada, administrar oxígeno y suspender la infusión de opioide. En muchos casos eso basta. El objetivo es una respiración adecuada, no la conciencia plena. Como la naloxona dura menos que casi todos los opioides, hay que vigilar varias horas por la posible reaparición. Y en el niño en situación de últimos días, la bradipnea suele formar parte del proceso y no es una indicación de revertir nada."
+  },
+  {
+    "codigo": "flacc",
+    "nombre": "FLACC, escala observacional de dolor",
+    "categoria": "Escala de dolor",
+    "tipo": "puntuacion",
+    "descripcion": "Escala observacional de dolor para el niño de 2 meses a 7 años que todavía no puede autoinformar. Valora cinco conductas de 0 a 2 puntos cada una, con un total de 0 a 10 comparable con la escala numérica del niño mayor.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "cara",
+        "etiqueta": "Cara",
+        "opciones": [
+          { "texto": "Expresión neutra o sonrisa", "puntos": 0 },
+          { "texto": "Mueca o ceño ocasional, retraído o desinteresado", "puntos": 1 },
+          { "texto": "Ceño constante, mandíbula apretada, mentón tembloroso", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "piernas",
+        "etiqueta": "Piernas",
+        "opciones": [
+          { "texto": "Posición normal o relajada", "puntos": 0 },
+          { "texto": "Inquietas, intranquilas, tensas", "puntos": 1 },
+          { "texto": "Pataleo o piernas encogidas", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "actividad",
+        "etiqueta": "Actividad",
+        "opciones": [
+          { "texto": "Tumbado tranquilo, posición normal, se mueve con facilidad", "puntos": 0 },
+          { "texto": "Se retuerce, se balancea, tenso", "puntos": 1 },
+          { "texto": "Arqueado, rígido o con movimientos de sacudida", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "llanto",
+        "etiqueta": "Llanto",
+        "opciones": [
+          { "texto": "No llora, despierto o dormido", "puntos": 0 },
+          { "texto": "Gime o se queja, quejido ocasional", "puntos": 1 },
+          { "texto": "Llanto mantenido, grito o sollozo, quejas frecuentes", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "consuelo",
+        "etiqueta": "Capacidad de consuelo",
+        "opciones": [
+          { "texto": "Contento, relajado", "puntos": 0 },
+          { "texto": "Se tranquiliza con el contacto, el abrazo o la voz; se puede distraer", "puntos": 1 },
+          { "texto": "Difícil de consolar o de confortar", "puntos": 2 }
+        ]
+      }
+    ],
+    "ejemplo": { "cara": 1, "piernas": 1, "actividad": 1, "llanto": 2, "consuelo": 1 },
+    "interpretacion": [
+      { "si": "total >= 7", "texto": "Dolor intenso. Requiere analgesia inmediata con opioide y dosis de rescate, búsqueda de causa tratable y revaloración a los 30 minutos.", "nivel": "alto" },
+      { "si": "total >= 4", "texto": "Dolor moderado. Pautar analgesia, considerar opioide a dosis baja y revalorar en 30 a 60 minutos.", "nivel": "medio" },
+      { "si": "total >= 1", "texto": "Molestia leve. Aplicar medidas no farmacológicas y revisar causas de incomodidad antes de escalar la analgesia.", "nivel": "medio" },
+      { "si": "true", "texto": "Sin dolor ni malestar aparente. Mantener la pauta actual y seguir valorando de forma periódica.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Suma de las cinco categorías, de 0 a 2 puntos cada una. Total de 0 a 10.",
+    "notas": "Se observa al niño de 1 a 5 minutos con las piernas y el cuerpo descubiertos, preferiblemente antes de tocarlo. Una puntuación alta no significa necesariamente dolor: También puede reflejar hambre, miedo o incomodidad postural, así que obliga a buscar la causa. Lo que más informa no es la cifra aislada sino el cambio antes y después de una intervención analgésica."
+  },
+  {
+    "codigo": "r-flacc",
+    "nombre": "FLACC revisada para el niño con discapacidad",
+    "categoria": "Escala de dolor",
+    "tipo": "puntuacion",
+    "descripcion": "Adaptación de la FLACC para el niño con parálisis cerebral o discapacidad intelectual, la población en la que peor se reconoce el dolor y en la que más se infratrata. Añade descriptores específicos a cada categoría.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "cara",
+        "etiqueta": "Cara",
+        "opciones": [
+          { "texto": "Expresión neutra o sonrisa", "puntos": 0 },
+          { "texto": "Mueca o ceño ocasional, retraído, desinteresado, aspecto triste o preocupado", "puntos": 1 },
+          { "texto": "Ceño constante, mandíbula apretada, mentón tembloroso, expresión de angustia o de pánico", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "piernas",
+        "etiqueta": "Piernas",
+        "opciones": [
+          { "texto": "Posición habitual del niño, relajada, tono normal para él", "puntos": 0 },
+          { "texto": "Inquietas, intranquilas, tensas, temblor ocasional", "puntos": 1 },
+          { "texto": "Pataleo, piernas encogidas, aumento marcado de la espasticidad, temblor constante o sacudidas", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "actividad",
+        "etiqueta": "Actividad",
+        "opciones": [
+          { "texto": "Tranquilo, en su posición habitual, se mueve como de costumbre", "puntos": 0 },
+          { "texto": "Se retuerce, se balancea, tenso o cauteloso, movimientos de cabeza de lado a lado, se frota una zona", "puntos": 1 },
+          { "texto": "Arqueado, rígido, sacudidas, agitación intensa, contiene la respiración o jadea", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "llanto",
+        "etiqueta": "Llanto y vocalización",
+        "opciones": [
+          { "texto": "Sin vocalizaciones de malestar, despierto o dormido", "puntos": 0 },
+          { "texto": "Gime, se queja, gruñidos ocasionales, estallidos verbales aislados", "puntos": 1 },
+          { "texto": "Llanto mantenido, grito, sollozo, aumento marcado de las vocalizaciones habituales", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "consuelo",
+        "etiqueta": "Capacidad de consuelo",
+        "opciones": [
+          { "texto": "Contento y relajado", "puntos": 0 },
+          { "texto": "Se tranquiliza con el contacto, el abrazo o la voz, aunque cuesta más de lo habitual", "puntos": 1 },
+          { "texto": "Imposible de consolar, rechaza el contacto o el consuelo que normalmente acepta", "puntos": 2 }
+        ]
+      }
+    ],
+    "ejemplo": { "cara": 2, "piernas": 2, "actividad": 1, "llanto": 1, "consuelo": 2 },
+    "interpretacion": [
+      { "si": "total >= 7", "texto": "Dolor intenso. Analgesia inmediata y búsqueda sistemática de causa: Considerar fractura oculta, luxación de cadera, abdomen agudo, retención urinaria y fecaloma.", "nivel": "alto" },
+      { "si": "total >= 4", "texto": "Dolor moderado. Buscar causa tratable y pautar analgesia. Considerar reflujo gastroesofágico, estreñimiento y espasticidad, que son las tres causas más frecuentes en esta población.", "nivel": "medio" },
+      { "si": "total >= 1", "texto": "Molestia leve. Revisar causas de incomodidad: Postura, ropa, temperatura, distensión vesical, saliva acumulada.", "nivel": "medio" },
+      { "si": "true", "texto": "Sin dolor aparente respecto de su estado habitual. Mantener la pauta y seguir valorando.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Suma de las cinco categorías, de 0 a 2 puntos cada una. Total de 0 a 10.",
+    "notas": "Muchos niños con discapacidad grave tienen una puntuación basal superior a cero cuando están bien, así que lo que informa es el cambio respecto de su estado habitual y no la cifra absoluta. Antes de usarla por primera vez conviene preguntar a la familia cómo saben ellos que a su hijo le duele algo: Esa información individualizada es la parte más valiosa de la escala."
+  },
+  {
+    "codigo": "pipp-r",
+    "nombre": "PIPP-R, dolor en el recién nacido",
+    "categoria": "Escala de dolor",
+    "tipo": "puntuacion",
+    "descripcion": "Perfil de dolor del prematuro en su versión revisada, para valorar el dolor agudo por procedimiento en el recién nacido. Corrige la puntuación según la edad gestacional y el estado de comportamiento previo, porque el prematuro más inmaduro y el que está dormido expresan menos, no sienten menos.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "gestacional",
+        "etiqueta": "Edad gestacional",
+        "opciones": [
+          { "texto": "36 semanas o más", "puntos": 0 },
+          { "texto": "De 32 a 35 semanas y 6 días", "puntos": 1 },
+          { "texto": "De 28 a 31 semanas y 6 días", "puntos": 2 },
+          { "texto": "Menos de 28 semanas", "puntos": 3 }
+        ]
+      },
+      {
+        "id": "estado",
+        "etiqueta": "Estado de comportamiento antes del procedimiento",
+        "opciones": [
+          { "texto": "Despierto y activo, ojos abiertos, con movimientos faciales", "puntos": 0 },
+          { "texto": "Despierto y tranquilo, ojos abiertos, sin movimientos faciales", "puntos": 1 },
+          { "texto": "Dormido y activo, ojos cerrados, con movimientos faciales", "puntos": 2 },
+          { "texto": "Dormido y tranquilo, ojos cerrados, sin movimientos faciales", "puntos": 3 }
+        ]
+      },
+      {
+        "id": "frecuencia",
+        "etiqueta": "Aumento máximo de la frecuencia cardiaca",
+        "opciones": [
+          { "texto": "De 0 a 4 latidos por minuto", "puntos": 0 },
+          { "texto": "De 5 a 14 latidos por minuto", "puntos": 1 },
+          { "texto": "De 15 a 24 latidos por minuto", "puntos": 2 },
+          { "texto": "25 latidos por minuto o más", "puntos": 3 }
+        ]
+      },
+      {
+        "id": "saturacion",
+        "etiqueta": "Descenso mínimo de la saturación de oxígeno",
+        "opciones": [
+          { "texto": "Del 0 al 2.4 por ciento", "puntos": 0 },
+          { "texto": "Del 2.5 al 4.9 por ciento", "puntos": 1 },
+          { "texto": "Del 5 al 7.4 por ciento", "puntos": 2 },
+          { "texto": "Del 7.5 por ciento o más", "puntos": 3 }
+        ]
+      },
+      {
+        "id": "ceno",
+        "etiqueta": "Ceño fruncido",
+        "opciones": [
+          { "texto": "Ausente, menos del 9 por ciento del tiempo", "puntos": 0 },
+          { "texto": "Mínimo, del 10 al 39 por ciento del tiempo", "puntos": 1 },
+          { "texto": "Moderado, del 40 al 69 por ciento del tiempo", "puntos": 2 },
+          { "texto": "Máximo, el 70 por ciento del tiempo o más", "puntos": 3 }
+        ]
+      },
+      {
+        "id": "ojos",
+        "etiqueta": "Ojos fuertemente cerrados",
+        "opciones": [
+          { "texto": "Ausente, menos del 9 por ciento del tiempo", "puntos": 0 },
+          { "texto": "Mínimo, del 10 al 39 por ciento del tiempo", "puntos": 1 },
+          { "texto": "Moderado, del 40 al 69 por ciento del tiempo", "puntos": 2 },
+          { "texto": "Máximo, el 70 por ciento del tiempo o más", "puntos": 3 }
+        ]
+      },
+      {
+        "id": "surco",
+        "etiqueta": "Surco nasolabial marcado",
+        "opciones": [
+          { "texto": "Ausente, menos del 9 por ciento del tiempo", "puntos": 0 },
+          { "texto": "Mínimo, del 10 al 39 por ciento del tiempo", "puntos": 1 },
+          { "texto": "Moderado, del 40 al 69 por ciento del tiempo", "puntos": 2 },
+          { "texto": "Máximo, el 70 por ciento del tiempo o más", "puntos": 3 }
+        ]
+      }
+    ],
+    "ejemplo": { "gestacional": 1, "estado": 1, "frecuencia": 2, "saturacion": 1, "ceno": 2, "ojos": 2, "surco": 1 },
+    "interpretacion": [
+      { "si": "total >= 13", "texto": "Dolor moderado a intenso. Requiere analgesia farmacológica además de las medidas no farmacológicas.", "nivel": "alto" },
+      { "si": "total >= 7", "texto": "Dolor leve a moderado. Aplicar medidas no farmacológicas: Sacarosa oral, succión no nutritiva, contención y contacto piel con piel.", "nivel": "medio" },
+      { "si": "true", "texto": "Dolor mínimo o ausente. No requiere intervención analgésica adicional, pero se mantienen las medidas de confort.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Suma de siete componentes, de 0 a 3 puntos cada uno. Total de 0 a 21.",
+    "notas": "Está validada para dolor agudo por procedimiento, no para dolor persistente ni postoperatorio prolongado. Requiere monitorización de frecuencia cardiaca y saturación, lo que la hace inaplicable en el domicilio. Los indicadores fisiológicos se alteran por muchas causas distintas del dolor."
+  },
+  {
+    "codigo": "cries",
+    "nombre": "CRIES, dolor postoperatorio neonatal",
+    "categoria": "Escala de dolor",
+    "tipo": "puntuacion",
+    "descripcion": "Escala de dolor postoperatorio para el neonato y el lactante de hasta 6 meses. Más sencilla que la PIPP-R y por tanto más fácil de aplicar de forma repetida, combina signos fisiológicos y de comportamiento en cinco componentes.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "llanto",
+        "etiqueta": "Llanto",
+        "opciones": [
+          { "texto": "Ausente o no agudo", "puntos": 0 },
+          { "texto": "Agudo pero consolable", "puntos": 1 },
+          { "texto": "Agudo e inconsolable", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "oxigeno",
+        "etiqueta": "Necesidad de oxígeno para mantener la saturación por encima del 95 por ciento",
+        "opciones": [
+          { "texto": "No requiere oxígeno", "puntos": 0 },
+          { "texto": "Requiere menos del 30 por ciento", "puntos": 1 },
+          { "texto": "Requiere más del 30 por ciento", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "constantes",
+        "etiqueta": "Aumento de frecuencia cardiaca y tensión arterial",
+        "opciones": [
+          { "texto": "Iguales o menores que el basal", "puntos": 0 },
+          { "texto": "Aumento de menos del 20 por ciento sobre el basal", "puntos": 1 },
+          { "texto": "Aumento de más del 20 por ciento sobre el basal", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "expresion",
+        "etiqueta": "Expresión facial",
+        "opciones": [
+          { "texto": "Neutra o sonriente", "puntos": 0 },
+          { "texto": "Mueca", "puntos": 1 },
+          { "texto": "Mueca con gruñido", "puntos": 2 }
+        ]
+      },
+      {
+        "id": "sueno",
+        "etiqueta": "Sueño en la última hora",
+        "opciones": [
+          { "texto": "Ha dormido con normalidad", "puntos": 0 },
+          { "texto": "Se despierta con frecuencia", "puntos": 1 },
+          { "texto": "Ha estado despierto constantemente", "puntos": 2 }
+        ]
+      }
+    ],
+    "ejemplo": { "llanto": 1, "oxigeno": 0, "constantes": 1, "expresion": 1, "sueno": 1 },
+    "interpretacion": [
+      { "si": "total >= 7", "texto": "Dolor intenso. Analgesia inmediata, considerar opioide y revaloración a los 30 minutos.", "nivel": "alto" },
+      { "si": "total >= 4", "texto": "Dolor moderado. Requiere intervención analgésica y revaloración.", "nivel": "medio" },
+      { "si": "true", "texto": "Dolor ausente o leve. Mantener medidas de confort y revalorar de forma periódica.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Suma de los cinco componentes, de 0 a 2 puntos cada uno. Total de 0 a 10. Se considera que 4 o más requiere intervención.",
+    "notas": "Los signos vitales son poco específicos y se alteran por hipovolemia, fiebre, ansiedad o simple manipulación. El componente de oxígeno pierde valor en el neonato con patología respiratoria de base. No está validada para dolor crónico."
+  },
+  {
+    "codigo": "esas-r",
+    "nombre": "ESAS-r, valoración de nueve síntomas",
+    "categoria": "Escala de síntomas",
+    "tipo": "formula",
+    "descripcion": "Sistema de valoración de síntomas de Edmonton en su versión revisada. Mide la intensidad de nueve síntomas de 0 a 10 cada uno y ofrece un perfil completo del paciente en un minuto. Su valor está en que detecta lo que nadie preguntó.",
+    "campos": [
+      { "id": "dolor", "etiqueta": "Dolor (0 a 10)", "unidad": "", "min": 0, "paso": 1, "referencia": "0 sin dolor, 10 el peor posible" },
+      { "id": "cansancio", "etiqueta": "Cansancio (0 a 10)", "unidad": "", "min": 0, "paso": 1 },
+      { "id": "somnolencia", "etiqueta": "Somnolencia (0 a 10)", "unidad": "", "min": 0, "paso": 1 },
+      { "id": "nausea", "etiqueta": "Náusea (0 a 10)", "unidad": "", "min": 0, "paso": 1 },
+      { "id": "apetito", "etiqueta": "Falta de apetito (0 a 10)", "unidad": "", "min": 0, "paso": 1 },
+      { "id": "disnea", "etiqueta": "Dificultad para respirar (0 a 10)", "unidad": "", "min": 0, "paso": 1 },
+      { "id": "tristeza", "etiqueta": "Tristeza o depresión (0 a 10)", "unidad": "", "min": 0, "paso": 1 },
+      { "id": "ansiedad", "etiqueta": "Ansiedad o nerviosismo (0 a 10)", "unidad": "", "min": 0, "paso": 1 },
+      { "id": "malestar", "etiqueta": "Malestar general (0 a 10)", "unidad": "", "min": 0, "paso": 1, "referencia": "0 el mejor bienestar posible, 10 el peor" }
+    ],
+    "ejemplo": { "dolor": 6, "cansancio": 7, "somnolencia": 4, "nausea": 2, "apetito": 8, "disnea": 3, "tristeza": 5, "ansiedad": 6, "malestar": 6 },
+    "resultados": [
+      { "etiqueta": "Puntuación total", "formula": "dolor + cansancio + somnolencia + nausea + apetito + disnea + tristeza + ansiedad + malestar", "unidad": "de 90", "decimales": 0 },
+      { "etiqueta": "Número de síntomas de intensidad moderada o mayor", "formula": "(dolor>=4)+(cansancio>=4)+(somnolencia>=4)+(nausea>=4)+(apetito>=4)+(disnea>=4)+(tristeza>=4)+(ansiedad>=4)+(malestar>=4)", "unidad": "de 9", "decimales": 0 },
+      { "etiqueta": "Número de síntomas de intensidad grave", "formula": "(dolor>=7)+(cansancio>=7)+(somnolencia>=7)+(nausea>=7)+(apetito>=7)+(disnea>=7)+(tristeza>=7)+(ansiedad>=7)+(malestar>=7)", "unidad": "de 9", "decimales": 0 },
+      { "etiqueta": "Intensidad media por síntoma", "formula": "(dolor + cansancio + somnolencia + nausea + apetito + disnea + tristeza + ansiedad + malestar) / 9", "unidad": "de 10", "decimales": 1 }
+    ],
+    "interpretacion": [
+      { "si": "r0 >= 45", "texto": "Carga sintomática muy alta. Hay que revisar el plan de cuidados completo y no solo el síntoma peor puntuado, y revalorar en 24 a 48 h.", "nivel": "alto" },
+      { "si": "r0 >= 25", "texto": "Carga sintomática moderada. Identificar los síntomas de 4 o más y actuar de forma específica sobre cada uno.", "nivel": "medio" },
+      { "si": "true", "texto": "Carga sintomática baja. Registrar y comparar con las valoraciones previas, porque la tendencia informa más que la cifra aislada.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Suma de los nueve síntomas, puntuados de 0 a 10 cada uno. Total de 0 a 90.",
+    "notas": "Lo rellena el propio paciente siempre que pueda. Si lo rellena el cuidador, hay que anotarlo, porque las puntuaciones difieren de forma sistemática. Un síntoma de intensidad 4 puede resultar más incapacitante que otro de 7, así que conviene preguntar además cuál es el que más le molesta. Está validado en adolescentes y adultos, no en niños pequeños."
+  },
+  {
+    "codigo": "borg",
+    "nombre": "Escala de Borg modificada para disnea",
+    "categoria": "Escala de síntomas",
+    "tipo": "puntuacion",
+    "descripcion": "Escala de autoinforme de la sensación de falta de aire, que es lo que define la disnea. Mide lo que siente el paciente y no lo que mide el pulsioxímetro, dos datos que se disocian con mucha frecuencia en cuidados paliativos.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "disnea",
+        "etiqueta": "Cuánta falta de aire siente en este momento",
+        "opciones": [
+          { "texto": "Nada", "puntos": 0 },
+          { "texto": "Muy muy leve, apenas perceptible", "puntos": 1 },
+          { "texto": "Muy leve", "puntos": 2 },
+          { "texto": "Leve", "puntos": 3 },
+          { "texto": "Moderada", "puntos": 4 },
+          { "texto": "Algo intensa", "puntos": 5 },
+          { "texto": "Intensa", "puntos": 6 },
+          { "texto": "Muy intensa", "puntos": 8 },
+          { "texto": "Máxima, insoportable", "puntos": 10 }
+        ]
+      }
+    ],
+    "ejemplo": { "disnea": 5 },
+    "interpretacion": [
+      { "si": "total >= 6", "texto": "Disnea intensa. Opioide de rescate inmediato, aire en la cara, posición incorporada y considerar una benzodiacepina si hay pánico asociado. Revalorar a los 20 minutos.", "nivel": "alto" },
+      { "si": "total >= 3", "texto": "Disnea moderada. Opioide a dosis de disnea, ventilador de aire dirigido a la cara y trabajo de la respiración con la familia.", "nivel": "medio" },
+      { "si": "true", "texto": "Disnea ausente o leve. Medidas ambientales y posturales: Aire fresco, posición incorporada, ropa holgada y ambiente tranquilo.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Escala de 0 a 10, donde 0 es ninguna falta de aire y 10 la máxima imaginable.",
+    "notas": "Requiere autoinforme, así que no sirve por debajo de los 8 años ni en el niño con deterioro cognitivo, en los que hay que recurrir a signos observacionales: Uso de músculos accesorios, aleteo nasal, incapacidad de completar frases y expresión de angustia. La escala no se correlaciona con la saturación de oxígeno ni con la frecuencia respiratoria."
+  },
+  {
+    "codigo": "lansky",
+    "nombre": "Escala de juego de Lansky",
+    "categoria": "Escala funcional",
+    "tipo": "puntuacion",
+    "descripcion": "Medida de estado funcional diseñada para niños, en la que la unidad de medida es el juego y no el trabajo. Permite seguir el deterioro funcional a lo largo del tiempo con un solo número comprensible para todo el equipo.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "nivel",
+        "etiqueta": "Qué describe mejor lo que el niño ha hecho en un día normal de la última semana",
+        "opciones": [
+          { "texto": "Plenamente activo, normal", "puntos": 100 },
+          { "texto": "Restricciones menores en la actividad física intensa", "puntos": 90 },
+          { "texto": "Activo, pero se cansa más rápido de lo habitual", "puntos": 80 },
+          { "texto": "Juega menos y durante menos tiempo", "puntos": 70 },
+          { "texto": "Se levanta, pero juega poco y de forma tranquila", "puntos": 60 },
+          { "texto": "Se viste, pero no juega activamente; participa en actividades tranquilas", "puntos": 50 },
+          { "texto": "Casi todo el tiempo en la cama, con juegos tranquilos", "puntos": 40 },
+          { "texto": "Necesita ayuda incluso para el juego tranquilo", "puntos": 30 },
+          { "texto": "Muy somnoliento, actividad muy limitada, ve televisión", "puntos": 20 },
+          { "texto": "No juega, no se levanta de la cama", "puntos": 10 },
+          { "texto": "No responde", "puntos": 0 }
+        ]
+      }
+    ],
+    "ejemplo": { "nivel": 5 },
+    "interpretacion": [
+      { "si": "total >= 80", "texto": "Función conservada. El niño puede mantener escolarización y actividad social. Seguimiento habitual y buen momento para la planificación anticipada.", "nivel": "normal" },
+      { "si": "total >= 50", "texto": "Deterioro moderado. Adaptar actividades y objetivos, revisar la carga de tratamiento y los desplazamientos que se le imponen.", "nivel": "medio" },
+      { "si": "total >= 30", "texto": "Deterioro importante. Reforzar el apoyo domiciliario y revisar la planificación anticipada mientras el niño y la familia aún pueden participar.", "nivel": "alto" },
+      { "si": "true", "texto": "Deterioro grave. Reconsiderar todo tratamiento que no aporte confort y preparar los últimos días: Convertir la medicación a vía subcutánea y dejar el kit de urgencias en la casa.", "nivel": "alto" }
+    ],
+    "formulaTexto": "Puntuación de 0 a 100 en tramos de 10, según el nivel de juego y de actividad.",
+    "notas": "No es aplicable al niño con discapacidad grave de base, cuyo estado funcional basal ya es bajo sin que eso indique deterioro. Es una medida de función, no de bienestar: Un niño con 40 puede estar tranquilo y contento y otro con 70 puede estar sufriendo mucho. Lo que más informa es la pendiente del descenso a lo largo de las semanas."
+  },
+  {
+    "codigo": "pps",
+    "nombre": "Escala de rendimiento paliativo (PPS)",
+    "categoria": "Escala funcional",
+    "tipo": "puntuacion",
+    "descripcion": "Modificación del índice de Karnofsky específica para cuidados paliativos, que añade la ingesta oral y el nivel de conciencia a la valoración funcional. Se usa como referencia común entre equipos y tiene valor orientativo en los tramos bajos.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "nivel",
+        "etiqueta": "Qué nivel describe mejor la situación actual",
+        "opciones": [
+          { "texto": "Deambulación completa, actividad normal, sin evidencia de enfermedad, autocuidado completo, ingesta normal, alerta", "puntos": 100 },
+          { "texto": "Deambulación completa, actividad normal, alguna evidencia de enfermedad, autocuidado completo, ingesta normal, alerta", "puntos": 90 },
+          { "texto": "Deambulación completa, actividad normal con esfuerzo, autocuidado completo, ingesta normal o reducida, alerta", "puntos": 80 },
+          { "texto": "Deambulación reducida, incapaz de actividad habitual, autocuidado completo, ingesta normal o reducida, alerta", "puntos": 70 },
+          { "texto": "Deambulación reducida, incapaz de aficiones y trabajo doméstico, requiere asistencia ocasional, ingesta normal o reducida, alerta o con confusión", "puntos": 60 },
+          { "texto": "Principalmente sentado o tumbado, incapaz de cualquier trabajo, requiere asistencia considerable, ingesta normal o reducida, alerta o con confusión", "puntos": 50 },
+          { "texto": "Principalmente encamado, incapaz de cualquier trabajo, asistencia casi completa, ingesta normal o reducida, alerta, somnoliento o confuso", "puntos": 40 },
+          { "texto": "Totalmente encamado, asistencia completa, ingesta reducida, alerta, somnoliento o confuso", "puntos": 30 },
+          { "texto": "Totalmente encamado, asistencia completa, ingesta mínima a cucharadas, alerta, somnoliento o confuso", "puntos": 20 },
+          { "texto": "Totalmente encamado, asistencia completa, solo cuidados de la boca, somnoliento o en coma", "puntos": 10 }
+        ]
+      }
+    ],
+    "ejemplo": { "nivel": 6 },
+    "interpretacion": [
+      { "si": "total >= 70", "texto": "Estado funcional conservado. Seguimiento habitual y buen momento para la planificación anticipada de la atención.", "nivel": "normal" },
+      { "si": "total >= 40", "texto": "Dependencia creciente con ingesta reducida. Reforzar el apoyo domiciliario y revisar los objetivos del tratamiento.", "nivel": "medio" },
+      { "si": "total >= 20", "texto": "Encamado, ingesta mínima y conciencia fluctuante. Preparar los últimos días: Convertir la medicación a vía subcutánea, prescribir el kit de urgencias y hablar con la familia de lo que van a ver.", "nivel": "alto" },
+      { "si": "true", "texto": "Situación de últimos días u horas. Cuidados de confort exclusivos, retirada de todo lo que no alivie y acompañamiento a la familia.", "nivel": "alto" }
+    ],
+    "formulaTexto": "Puntuación de 10 a 100 en tramos de 10, integrando deambulación, actividad, autocuidado, ingesta y nivel de conciencia.",
+    "notas": "Se lee de izquierda a derecha empezando por la deambulación, y cuando el paciente no encaja limpiamente en un nivel se elige el más bajo de los que se ajustan. Está validada en adultos, con poca evidencia pediátrica. Como todo instrumento pronóstico, informa sobre grupos y no sobre individuos: Nunca debe usarse para dar una cifra de tiempo restante a una familia."
+  },
+  {
+    "codigo": "zarit",
+    "nombre": "Sobrecarga del cuidador, Zarit breve",
+    "categoria": "Familia",
+    "tipo": "puntuacion",
+    "descripcion": "Versión breve de siete ítems de la escala de sobrecarga del cuidador de Zarit. En cuidados paliativos pediátricos el cuidador principal es casi siempre la madre, y este instrumento convierte en un dato objetivo algo que el equipo intuye pero no registra.",
+    "base": 0,
+    "preguntas": [
+      {
+        "id": "tiempo",
+        "etiqueta": "Siente que por el cuidado no tiene tiempo suficiente para usted",
+        "opciones": [
+          { "texto": "Nunca", "puntos": 1 },
+          { "texto": "Rara vez", "puntos": 2 },
+          { "texto": "Algunas veces", "puntos": 3 },
+          { "texto": "Bastantes veces", "puntos": 4 },
+          { "texto": "Casi siempre", "puntos": 5 }
+        ]
+      },
+      {
+        "id": "estres",
+        "etiqueta": "Se siente estresado entre el cuidado y sus otras responsabilidades",
+        "opciones": [
+          { "texto": "Nunca", "puntos": 1 },
+          { "texto": "Rara vez", "puntos": 2 },
+          { "texto": "Algunas veces", "puntos": 3 },
+          { "texto": "Bastantes veces", "puntos": 4 },
+          { "texto": "Casi siempre", "puntos": 5 }
+        ]
+      },
+      {
+        "id": "enfado",
+        "etiqueta": "Siente enfado cuando está cerca de la persona a la que cuida",
+        "opciones": [
+          { "texto": "Nunca", "puntos": 1 },
+          { "texto": "Rara vez", "puntos": 2 },
+          { "texto": "Algunas veces", "puntos": 3 },
+          { "texto": "Bastantes veces", "puntos": 4 },
+          { "texto": "Casi siempre", "puntos": 5 }
+        ]
+      },
+      {
+        "id": "relaciones",
+        "etiqueta": "Siente que el cuidado afecta negativamente a su relación con otros familiares",
+        "opciones": [
+          { "texto": "Nunca", "puntos": 1 },
+          { "texto": "Rara vez", "puntos": 2 },
+          { "texto": "Algunas veces", "puntos": 3 },
+          { "texto": "Bastantes veces", "puntos": 4 },
+          { "texto": "Casi siempre", "puntos": 5 }
+        ]
+      },
+      {
+        "id": "agotamiento",
+        "etiqueta": "Se siente agotado cuando tiene que estar junto a la persona a la que cuida",
+        "opciones": [
+          { "texto": "Nunca", "puntos": 1 },
+          { "texto": "Rara vez", "puntos": 2 },
+          { "texto": "Algunas veces", "puntos": 3 },
+          { "texto": "Bastantes veces", "puntos": 4 },
+          { "texto": "Casi siempre", "puntos": 5 }
+        ]
+      },
+      {
+        "id": "salud",
+        "etiqueta": "Siente que su salud se ha resentido por cuidar",
+        "opciones": [
+          { "texto": "Nunca", "puntos": 1 },
+          { "texto": "Rara vez", "puntos": 2 },
+          { "texto": "Algunas veces", "puntos": 3 },
+          { "texto": "Bastantes veces", "puntos": 4 },
+          { "texto": "Casi siempre", "puntos": 5 }
+        ]
+      },
+      {
+        "id": "control",
+        "etiqueta": "Siente que ha perdido el control de su vida desde que cuida",
+        "opciones": [
+          { "texto": "Nunca", "puntos": 1 },
+          { "texto": "Rara vez", "puntos": 2 },
+          { "texto": "Algunas veces", "puntos": 3 },
+          { "texto": "Bastantes veces", "puntos": 4 },
+          { "texto": "Casi siempre", "puntos": 5 }
+        ]
+      }
+    ],
+    "ejemplo": { "tiempo": 4, "estres": 3, "enfado": 1, "relaciones": 2, "agotamiento": 3, "salud": 3, "control": 4 },
+    "interpretacion": [
+      { "si": "total >= 22", "texto": "Sobrecarga intensa. Es una prioridad clínica por riesgo de claudicación familiar: Organizar respiro, evaluar la salud del cuidador y considerar un ingreso de descarga.", "nivel": "alto" },
+      { "si": "total >= 17", "texto": "Sobrecarga moderada. Intervención activa: Redistribuir tareas dentro de la familia, gestionar tiempos de respiro y valorar apoyo psicológico.", "nivel": "medio" },
+      { "si": "true", "texto": "Sobrecarga ausente o leve. Reforzar los apoyos que ya existen y volver a valorar en cada visita, porque la situación cambia rápido.", "nivel": "normal" }
+    ],
+    "formulaTexto": "Suma de los siete ítems, de 1 a 5 puntos cada uno. Total de 7 a 35.",
+    "notas": "Se administra al cuidador principal a solas, no delante del niño ni del resto de la familia, explicando que sirve para saber cómo está él. La pregunta sobre el enfado es la que más cuesta responder con sinceridad y suele ser la más informativa. Una puntuación baja en un cuidador visiblemente agotado debe hacer pensar en minimización por miedo a ser juzgado, no en ausencia de problema."
+  }
+]

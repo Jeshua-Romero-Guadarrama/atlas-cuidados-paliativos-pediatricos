@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img"
+     aria-label="Los cuatro farmacos del kit de urgencias domiciliario y su indicacion">
+  <title>Kit de urgencias domiciliario</title>
+  <desc>Esquema propio. Autor: Jeshua Romero Guadarrama.</desc>
+  <style>
+    .fondo { fill: #faf8fd; }
+    .txt   { fill: #1e1830; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt2  { fill: #55496b; font-family: "Segoe UI", system-ui, sans-serif; }
+    .txt3  { fill: #837792; font-family: "Segoe UI", system-ui, sans-serif; }
+    .caja  { fill: #ffffff; stroke: #e5dff0; }
+    .k1 { fill: #ffe4e9; stroke: #be123c; }
+    .k2 { fill: #e4e2ff; stroke: #4f46e5; }
+    .k3 { fill: #d1fae5; stroke: #047857; }
+    .k4 { fill: #dcfce7; stroke: #15803d; }
+    .calido { fill: #fdf0e4; stroke: #c2622c; }
+    @media (prefers-color-scheme: dark) {
+      .fondo { fill: #231c3b; }
+      .txt   { fill: #efe9f8; }
+      .txt2  { fill: #b6a9cd; }
+      .txt3  { fill: #8b7da3; }
+      .caja  { fill: #1c1630; stroke: #33294f; }
+      .k1 { fill: #3d1220; stroke: #fda4b8; }
+      .k2 { fill: #201f4d; stroke: #a5a1ff; }
+      .k3 { fill: #0a3126; stroke: #6ee7b7; }
+      .k4 { fill: #0d3320; stroke: #6ee7a8; }
+      .calido { fill: #3a2413; stroke: #e8955f; }
+    }
+  </style>
+
+  <rect class="fondo" width="640" height="430" rx="12"/>
+
+  <text class="txt" x="320" y="34" font-size="16" font-weight="700" text-anchor="middle">Kit de urgencias en casa</text>
+  <text class="txt3" x="320" y="54" font-size="12.5" text-anchor="middle" font-style="italic">Prescritos por adelantado, ya en el domicilio y con la dosis escrita en miligramos y mililitros</text>
+
+  <!-- 1 Morfina -->
+  <rect class="k1" x="28" y="74" width="286" height="96" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="48" y="100" font-size="14" font-weight="700">Morfina</text>
+  <text class="txt2" x="48" y="122" font-size="12.5">Dolor y disnea</text>
+  <text class="txt2" x="48" y="140" font-size="12.5">Dosis de rescate: 10 a 15 % de la</text>
+  <text class="txt2" x="48" y="156" font-size="12.5">dosis diaria. Oral, bucal o subcutánea</text>
+
+  <!-- 2 Midazolam -->
+  <rect class="k2" x="326" y="74" width="286" height="96" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="346" y="100" font-size="14" font-weight="700">Midazolam</text>
+  <text class="txt2" x="346" y="122" font-size="12.5">Convulsión, agitación, pánico</text>
+  <text class="txt2" x="346" y="140" font-size="12.5">0.3 mg/kg bucal, máximo 10 mg</text>
+  <text class="txt2" x="346" y="156" font-size="12.5">Repetible una vez a los 10 minutos</text>
+
+  <!-- 3 Butilhioscina -->
+  <rect class="k3" x="28" y="184" width="286" height="96" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="48" y="210" font-size="14" font-weight="700">Butilhioscina</text>
+  <text class="txt2" x="48" y="232" font-size="12.5">Estertores de los últimos días</text>
+  <text class="txt2" x="48" y="250" font-size="12.5">0.3 a 0.5 mg/kg subcutánea</text>
+  <text class="txt2" x="48" y="266" font-size="12.5">Al primer ruido, no cuando ya es intenso</text>
+
+  <!-- 4 Haloperidol -->
+  <rect class="k4" x="326" y="184" width="286" height="96" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="346" y="210" font-size="14" font-weight="700">Haloperidol</text>
+  <text class="txt2" x="346" y="232" font-size="12.5">Náusea, vómito y delirium</text>
+  <text class="txt2" x="346" y="250" font-size="12.5">0.01 a 0.02 mg/kg subcutánea</text>
+  <text class="txt2" x="346" y="266" font-size="12.5">Compatible con morfina en la misma jeringa</text>
+
+  <!-- Material -->
+  <rect class="caja" x="28" y="294" width="584" height="52" rx="10" stroke-width="1.5"/>
+  <text class="txt" x="48" y="316" font-size="13" font-weight="700">Además, en la casa</text>
+  <text class="txt2" x="48" y="336" font-size="12.5">Jeringas, agujas y catéteres subcutáneos, apósitos, gasas, guantes, contenedor de punzantes y el plan escrito</text>
+
+  <!-- Aviso -->
+  <rect class="calido" x="28" y="358" width="584" height="52" rx="10" stroke-width="1.6"/>
+  <text class="txt" x="48" y="380" font-size="13" font-weight="700">Lo primero que hay que decirle a la familia sobre el momento de la muerte</text>
+  <text class="txt2" x="48" y="400" font-size="12.5">No hay que llamar a una ambulancia y no hay ninguna prisa</text>
+</svg>
